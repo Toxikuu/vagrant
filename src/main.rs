@@ -61,7 +61,9 @@ fn log() {
 
 fn increment_runcount() -> Result<()> {
     let path = Path::new("runcount");
-    let runcount = fs::read_to_string(path)?.trim().parse::<u32>()? + 1;
+    let runcount = fs::read_to_string(path).ok()
+        .and_then(|s| s.trim().parse::<u64>().ok())
+        .unwrap_or(0u64) + 1;
     fs::write(path, runcount.to_string())?;
     Ok(())
 }
