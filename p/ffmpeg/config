@@ -1,0 +1,4 @@
+upstream = "ffmpeg/ffmpeg"
+
+release.fetch = "gr | tolower | vtrim -e 's,^n,,' | vfs | vsort"
+unstable.fetch = "gr | tolower | vtrim -e 's,^n,,' | vsort"

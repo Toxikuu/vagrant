@@ -1,0 +1,26 @@
+# If any key in this config is undefined, a reasonable default is used.
+
+# A url to the upstream target (can be a git repository, or any url)
+# Shortform "haampie/libtree" would also be accepted
+upstream = "https://github.com/haampie/libtree"
+
+# This option is for packages whose version shouldn't be checked every run. A
+# package with a delay of 32 will only have its version fetched every 32 runs. A
+# file will store a counter for this.
+delay = 32
+
+# If left empty, the url would be analyzed and a default would be decided on.
+#
+# The value for fetch is evaluated in a shell. `ghr` is a function to call
+# github's api's releases endpoint, as defined below.
+[release]
+enabled = true # Whether to fetch, defaults to true
+fetch = "ghr"
+
+[unstable]
+enabled = true # Whether to fetch, defaults to true
+fetch = "ght"
+
+[commit]
+enabled  = true # Whether to fetch, defaults to true
+fetch = "ghc"

@@ -1,0 +1,4 @@
+upstream = "gregkh/usbutils"
+
+release.fetch = "gr | grep -v post_ | vsort"
+unstable.fetch = "gr | grep -v post_ | vsort"

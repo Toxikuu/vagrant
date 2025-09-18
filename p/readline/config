@@ -1,0 +1,7 @@
+upstream = "http://mirror.rit.edu/gnu/readline/?C=M&O=D"
+
+release.fetch = '''cr | grep $name | cut -d\" -f8 | vtrim -E -e 's,.tar.gz.*$,,' | grep -Ev 'diff|doc|patches|a$|<' | vsort'''
+
+unstable.fetch = '''cr | grep $name | cut -d\" -f8 | vtrim -E -e 's,.tar.gz.*$,,' | grep -Ev 'diff|doc|patches|a$|<' | vfs | vsort'''
+
+commit.enabled = false

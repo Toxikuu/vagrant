@@ -1,0 +1,3 @@
+upstream = "tmux/tmux"
+
+unstable.enabled = false

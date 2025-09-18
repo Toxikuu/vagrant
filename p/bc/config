@@ -1,0 +1,2 @@
+# TODO: `ghr` appears to not care about prereleases.
+upstream = "gavinhoward/bc"

@@ -1,0 +1,2 @@
+upstream = "http://mirror.rit.edu/gnu/dejagnu/?C=M;O=D"
+delay = 16

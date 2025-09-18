@@ -1,0 +1,4 @@
+upstream = "file/file"
+
+release.fetch = "gr | vtrim -e 's,^FILE,,' -e 's,_,.,g' | fsl | vsort"
+unstable.enabled = false

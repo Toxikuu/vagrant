@@ -1,0 +1,4 @@
+upstream = "gnome/glib"
+
+release.fetch = "gr | v3grep | vtrim | vfem | vsort"
+unstable.fetch = "gr | v3grep | vtrim | vsort"

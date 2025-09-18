@@ -1,0 +1,5 @@
+#!/usr/bin/env false
+#shellcheck shell=bash
+
+. sh/dev-utils.env
+. sh/lib.env

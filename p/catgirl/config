@@ -1,0 +1,4 @@
+upstream = "https://git.causal.agency/catgirl"
+
+release.fetch = "gr | vtrim | sort -V" # vsort incorrectly detects a as alpha
+unstable.fetch = "gr | vtrim | sort -V" # vsort incorrectly detects a as alpha
