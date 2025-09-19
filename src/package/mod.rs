@@ -48,6 +48,7 @@ pub struct PackageConfig {
 #[serde(default)]
 pub struct PackageRelease {
     pub enabled: bool,
+    pub upstream: Option<String>,
     pub fetch: String,
 }
 
@@ -56,6 +57,7 @@ impl Default for PackageRelease {
     fn default() -> Self {
         Self {
             enabled: true,
+            upstream: None,
             fetch: String::new(),
         }
     }
@@ -65,6 +67,7 @@ impl Default for PackageRelease {
 #[serde(default)]
 pub struct PackageUnstable {
     pub enabled: bool,
+    pub upstream: Option<String>,
     pub fetch: String,
 }
 
@@ -73,6 +76,7 @@ impl Default for PackageUnstable {
     fn default() -> Self {
         Self {
             enabled: true,
+            upstream: None,
             fetch: String::new(),
         }
     }
@@ -82,6 +86,7 @@ impl Default for PackageUnstable {
 #[serde(default)]
 pub struct PackageCommit {
     pub enabled: bool,
+    pub upstream: Option<String>,
     pub fetch: String,
 }
 
@@ -90,6 +95,7 @@ impl Default for PackageCommit {
     fn default() -> Self {
         Self {
             enabled: true,
+            upstream: None,
             fetch: String::new(),
         }
     }
@@ -113,6 +119,7 @@ pub enum UpstreamType {
     GitHub,
     // GitLab,
     Git,
+    Empty,
 }
 
 impl UpstreamType {
@@ -127,6 +134,7 @@ impl UpstreamType {
             // match github links or shortform
             s if s.starts_with("https://github.com/") || s.split('/').count() == 2 => Self::GitHub,
 
+            s if s.is_empty() => Self::Empty,
             // match gitlab links
             // s if s.contains("://gitlab.com/") => Self::GitLab,
 
@@ -141,6 +149,7 @@ impl UpstreamType {
             Self::Curl => String::from("ca | vsort"),
             Self::GitHub => String::from("ghr | tolower | vtrim | fsl"),
             Self::Git => String::from("gr | vfs | tolower | vtrim | fsl | vsort"),
+            Self::Empty => String::with_capacity(0),
         }
     }
 
@@ -150,6 +159,7 @@ impl UpstreamType {
             Self::Curl => String::from("ca | vsort"),
             Self::GitHub => String::from("gr | tolower | vtrim | fsl | vsort"),
             Self::Git => String::from("gr | tolower | vtrim | fsl | vsort"),
+            Self::Empty => String::with_capacity(0),
         }
     }
 
@@ -159,6 +169,7 @@ impl UpstreamType {
             Self::Curl => String::from(""), // WARN: Curl-type upstreams don't have commits
             Self::GitHub => String::from("ghc"),
             Self::Git => String::from("githead"),
+            Self::Empty => String::with_capacity(0),
         }
     }
 }
@@ -187,25 +198,27 @@ impl Package {
     }
 
     pub fn set_default_fetches(&mut self) {
-        let upstream_type = UpstreamType::from_str(&self.config.upstream);
-
-        // Disable commit fetches automatically for unsupported upstreams
-        if matches!(upstream_type, UpstreamType::Curl | UpstreamType::Arch)
-            && self.config.commit.fetch.is_empty()
-        {
-            self.config.commit.enabled = false
-        }
-
         if self.config.release.enabled && self.config.release.fetch.is_empty() {
+            let upstream = &self.config.release.upstream.as_ref().unwrap_or(&self.config.upstream);
+            let upstream_type = UpstreamType::from_str(upstream);
             self.config.release.fetch = upstream_type.default_fetch_release();
         }
 
         if self.config.unstable.enabled && self.config.unstable.fetch.is_empty() {
+            let upstream = &self.config.unstable.upstream.as_ref().unwrap_or(&self.config.upstream);
+            let upstream_type = UpstreamType::from_str(upstream);
             self.config.unstable.fetch = upstream_type.default_fetch_unstable();
         }
 
         if self.config.commit.enabled && self.config.commit.fetch.is_empty() {
-            self.config.commit.fetch = upstream_type.default_fetch_commit();
+            let upstream = &self.config.commit.upstream.as_ref().unwrap_or(&self.config.upstream);
+            let upstream_type = UpstreamType::from_str(upstream);
+
+            if matches!(upstream_type, UpstreamType::Curl | UpstreamType::Arch | UpstreamType::Empty) {
+                self.config.commit.enabled = false
+            } else {
+                self.config.commit.fetch = upstream_type.default_fetch_commit();
+            }
         }
     }
 
@@ -266,9 +279,11 @@ impl Package {
     }
 
     fn fetch_release(&self) -> Result<String> {
+        let _upstream = &self.config.release.upstream.as_ref().unwrap_or(&self.config.upstream);
+
         let _name = format!("name={}", self.name);
-        let _upstream = format!("upstream={}", get_longform(&self.config.upstream));
-        let _shortform = format!("shortform={}", get_shortform(&self.config.upstream));
+        let _upstream = format!("upstream={}", get_longform(_upstream));
+        let _shortform = format!("shortform={}", get_shortform(&_upstream));
         let _fetch = format!(". sh/lib.env && {}", self.config.release.fetch);
 
         let command = vec![
@@ -293,9 +308,11 @@ impl Package {
     }
 
     fn fetch_unstable(&self) -> Result<String> {
+        let _upstream = &self.config.unstable.upstream.as_ref().unwrap_or(&self.config.upstream);
+
         let _name = format!("name={}", self.name);
-        let _upstream = format!("upstream={}", get_longform(&self.config.upstream));
-        let _shortform = format!("shortform={}", get_shortform(&self.config.upstream));
+        let _upstream = format!("upstream={}", get_longform(_upstream));
+        let _shortform = format!("shortform={}", get_shortform(&_upstream));
         let _fetch = format!(". sh/lib.env && {}", self.config.unstable.fetch);
 
         let command = vec![
@@ -320,9 +337,11 @@ impl Package {
     }
 
     fn fetch_commit(&self) -> Result<String> {
+        let _upstream = self.config.commit.upstream.as_ref().unwrap_or(&self.config.upstream);
+
         let _name = format!("name={}", self.name);
-        let _upstream = format!("upstream={}", get_longform(&self.config.upstream));
-        let _shortform = format!("shortform={}", get_shortform(&self.config.upstream));
+        let _upstream = format!("upstream={}", get_longform(_upstream));
+        let _shortform = format!("shortform={}", get_shortform(&_upstream));
         let _fetch = format!(". sh/lib.env && {}", self.config.commit.fetch);
 
         let command = vec![
