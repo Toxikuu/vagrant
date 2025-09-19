@@ -1,0 +1,4 @@
+upstream = "python/cpython"
+
+release.fetch = "gr | vtrim | fsl | vsort | fl"
+unstable.fetch = "gr | vtrim | fsl | vsort"

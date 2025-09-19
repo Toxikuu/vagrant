@@ -1,0 +1,4 @@
+upstream = "perl/perl5"
+
+release.fetch = "gr | vtrim | tolower | fsl | fdate | vfem | vfs | vsort"
+unstable.fetch = "gr | vtrim | tolower | fsl | fdate | vsort"
