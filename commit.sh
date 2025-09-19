@@ -21,8 +21,8 @@ Run #$(<runcount) took $(<elapsed)
 "
 
 echo "$desc"
-# git add p/*/delay runcount
-# git commit -m "auto(aux): update internal data"
-#
-# git add p/ALL p/*/{release,unstable,commit}
-# git commit -m "auto(p): update versions" -m "$desc"
+git add p/*/delay runcount
+git commit -m "auto(aux): update internal data"
+
+git add p/ALL p/*/{release,unstable,commit}
+git commit -m "auto(p): update versions" -m "$desc"
