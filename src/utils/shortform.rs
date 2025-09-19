@@ -8,7 +8,7 @@ pub fn get_shortform(maybe_short: &str) -> String {
     let parts = maybe_short.split('/').collect::<Vec<_>>();
 
     if parts.len() > 3 {
-        parts[3..5].join("/")
+        parts[3..5].join("/").trim_end_matches(".git").to_string()
     } else {
         maybe_short.to_string()
     }
