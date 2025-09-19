@@ -34,8 +34,10 @@ fn main() -> color_eyre::Result<()> {
     let map = bulk::fetch_all(&packages)?;
     bulk::write_all(map)?;
 
-    increment_runcount()?;
-    debug!("Incremented runcount");
+    if packages.is_empty() {
+        increment_runcount()?;
+        debug!("Incremented runcount");
+    }
 
     let elapsed = humantime::format_duration(start_timestamp.elapsed()).to_string();
     fs::write("elapsed", &elapsed)?;
