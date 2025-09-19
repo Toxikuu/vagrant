@@ -1,0 +1,4 @@
+upstream = "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
+
+release.fetch = '''upstream="https://www.kernel.org/feeds/kdist.xml" cr | grep -Eo '[0-9\.]+: stable' | head -n1 | cut -d: -f1'''
+unstable.fetch = "gr | vtrim | grep -v dontuse | vsort"

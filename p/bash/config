@@ -1,0 +1,7 @@
+upstream = "https://ftp.gnu.org/gnu/bash/?C=M;O=D"
+
+release.fetch = '''cr | grep $name | cut -d\" -f8 | grep -Ev 'diff|patches|doc|<' | vtrim -re 's,.tar.gz(|.sig)$,,' | fsl | vsort | vfs'''
+
+unstable.fetch = '''cr | grep $name | cut -d\" -f8 | grep -Ev 'diff|patches|doc|<' | vtrim -re 's,.tar.gz(|.sig)$,,' | fsl | vsort'''
+
+commit.enabled = false

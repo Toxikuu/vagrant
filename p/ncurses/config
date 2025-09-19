@@ -1,0 +1,6 @@
+upstream = "https://invisible-mirror.net/archives/ncurses"
+
+release.fetch = '''cr | cut -d\" -f4 | grep -Ev 'diff|doc|patch|asc|<|/|^t' | vtrim -re 's,.tar.gz$,,' | fl | vsort'''
+unstable.fetch = '''upstream+='/current/?C=M;O=D' cr | cut -d\" -f4 | grep -Ev 'diff|doc|patch|asc|<|/|^t' | vtrim -re 's,.tgz$,,' -e s,-,.,g | fl | vsort'''
+
+commit.enabled = false

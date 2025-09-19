@@ -1,0 +1,4 @@
+upstream = "benhoyt/inih"
+
+release.fetch = "gr | vtrim -e s,^r,, | vfs | vsort"
+unstable.fetch = "gr | vtrim -e s,^r,, | vsort"

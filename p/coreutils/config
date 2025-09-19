@@ -1,0 +1,4 @@
+upstream = "coreutils/coreutils"
+
+release.fetch = "gr | vtrim | fsl | vsort | vfs"
+unstable.fetch = "gr | vtrim | fsl | vsort"

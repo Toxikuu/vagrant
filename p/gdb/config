@@ -1,0 +1,4 @@
+upstream = "bminor/binutils-gdb"
+
+release.fetch = '''gr | grep '^gdb' | vtrim -e 's,_,.,g' -e 's,-release$,,' | fsl | grep '\.' | vsort | grep -v branchpoint'''
+unstable.enabled = false
