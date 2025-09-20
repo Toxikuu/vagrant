@@ -1,0 +1,4 @@
+upstream = "util-linux/util-linux"
+
+release.fetch = "gr | vtrim | grep -v start | vfs | vsort"
+unstable.fetch = "gr | vtrim | grep -v start | vsort"
