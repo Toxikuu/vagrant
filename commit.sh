@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-packages_updated=$(git status -s p | grep '^ M' | grep -Ev 'ALL|delay' | cut -d/ -f2 | uniq | wc -l)
+packages_updated=$(git status -s p | grep '^ M' | grep -Ev 'ALL' | cut -d/ -f2 | uniq | wc -l)
 
 release_versions_updates=$(git status -s p | grep '^ M' | cut -d/ -f2- | uniq | grep release | wc -l)
 unstable_versions_updates=$(git status -s p | grep '^ M' | cut -d/ -f2- | uniq | grep unstable | wc -l)
@@ -21,7 +21,7 @@ Run #$(<runcount) took $(<elapsed)
 "
 
 echo "$desc"
-git add p/*/delay runcount
+git add runcount
 git commit -m "auto(aux): update internal data"
 
 git add p/ALL p/*/{release,unstable,commit}
