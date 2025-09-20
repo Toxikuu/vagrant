@@ -1,2 +1,2 @@
 upstream = "lloyd/yajl"
-delay = 256
+chance = 0.01

@@ -1,2 +1,2 @@
 upstream = "https://gitlab.com/bzip2/bzip2.git/"
-delay = 128 # last commit dated 2023-05-31
+chance = 0.05 # last commit dated 2023-05-31

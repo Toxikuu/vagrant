@@ -5,9 +5,8 @@
 upstream = "https://github.com/haampie/libtree"
 
 # This option is for packages whose version shouldn't be checked every run. A
-# package with a delay of 32 will only have its version fetched every 32 runs. A
-# file will store a counter for this.
-delay = 32
+# package with a chance of 0.1 will have a 10% chance of being checked.
+chance = 0.1
 
 # If left empty, the url would be analyzed and a default would be decided on.
 #

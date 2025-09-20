@@ -1,2 +1,2 @@
 upstream = "akheron/jansson"
-delay = 8
+chance = 0.25

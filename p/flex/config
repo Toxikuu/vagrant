@@ -1,4 +1,4 @@
 upstream = "westes/flex"
-delay = 4
+chance = 0.5
 
 unstable.fetch = "gr | vtrim -e 's,-,.,g' | vsort"

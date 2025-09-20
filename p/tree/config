@@ -1,2 +1,2 @@
 upstream = "old-man-programmer/tree"
-delay = 8
+chance = 0.5

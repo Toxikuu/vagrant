@@ -37,7 +37,7 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Versions>> {
     for package in packages {
         let versions = match package.fetch() {
             Ok(v) => v,
-            Err(e) if e.to_string().contains("Delayed") => {
+            Err(e) if e.to_string().contains("Tails!") => {
                 skipped_count += 1;
                 package.retrieve_versions()
                     .wrap_err_with(|| format!("Failed to retrieve versions for skipped {}", package.name))?
@@ -69,8 +69,6 @@ pub fn write_all(map: IndexMap<Package, Versions>) -> Result<()> {
 
         let formatted = format!("{},{},{},{}\n", k.name, v.0, v.1, v.2);
         buf.push_str(&formatted);
-
-        k.update_delay()?;
     }
 
     let path = Path::new("p").join("ALL");

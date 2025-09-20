@@ -1,2 +1,2 @@
 upstream = "madler/zlib"
-delay = 8
+chance = 0.5

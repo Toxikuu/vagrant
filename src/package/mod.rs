@@ -4,13 +4,16 @@ pub mod bulk;
 
 use std::fmt::Debug;
 use std::fs;
+use std::hash::Hash;
 use std::path::Path;
+use rand::random_range;
 use serde::Deserialize;
 use color_eyre::Result;
 use color_eyre::eyre::bail;
 use tracing::info;
 
 use crate::utils::cmd::cmd;
+use crate::utils::float::defloat;
 use crate::utils::shortform::{get_shortform, get_longform};
 use crate::utils::ver::Version;
 
@@ -34,15 +37,37 @@ impl PartialOrd for Package {
     }
 }
 
-#[derive(Debug, Deserialize, Clone, Hash, Eq, PartialEq)]
+#[derive(Debug, Deserialize, Clone)]
 #[serde(default)]
 pub struct PackageConfig {
     pub upstream: String,
-    pub delay: u32,
+    pub chance: f64,
     pub release: PackageRelease,
     pub unstable: PackageUnstable,
     pub commit: PackageCommit,
 }
+
+impl Hash for PackageConfig {
+    fn hash<H: std::hash::Hasher>(&self, state: &mut H) {
+        self.upstream.hash(state);
+        defloat(self.chance).hash(state);
+        self.release.hash(state);
+        self.unstable.hash(state);
+        self.commit.hash(state);
+    }
+}
+
+impl PartialEq for PackageConfig {
+    fn eq(&self, other: &Self) -> bool {
+        self.upstream == other.upstream &&
+        (self.chance - other.chance).abs() < 0.01 &&
+        self.release == other.release &&
+        self.unstable == other.unstable &&
+        self.commit == other.commit
+    }
+}
+
+impl Eq for PackageConfig {}
 
 #[derive(Debug, Deserialize, Clone, Hash, Eq, PartialEq)]
 #[serde(default)]
@@ -105,7 +130,7 @@ impl Default for PackageConfig {
     fn default() -> Self {
         Self {
             upstream: String::new(),
-            delay: 1,
+            chance: 1.,
             release: PackageRelease::default(),
             unstable: PackageUnstable::default(),
             commit: PackageCommit::default(),
@@ -223,8 +248,11 @@ impl Package {
     }
 
     pub fn fetch(&self) -> Result<Versions> {
-        if self.get_current_delay()? > 1 {
-            bail!("Delayed")
+        if self.config.chance < 1.0 {
+            let r = random_range(0.0..=1.0);
+            if r < self.config.chance {
+                bail!("Tails!");
+            }
         }
 
         let release = if self.config.release.enabled { self.fetch_release()? } else { String::with_capacity(0) };
@@ -242,39 +270,6 @@ impl Package {
         fs::write(path.join("unstable"), versions.1)?;
         fs::write(path.join("commit"), versions.2)?;
 
-        Ok(())
-    }
-
-    pub fn get_current_delay(&self) -> Result<u32> {
-        let path = Path::new("p").join(&self.name).join("delay");
-        let config_delay = self.config.delay;
-
-        if !path.exists() {
-            return Ok(config_delay)
-        }
-
-        let read_delay = fs::read_to_string(&path)?.trim().parse::<u32>().unwrap_or(config_delay);
-
-        // Accounts for the case where the configured delay is changed. The counter is set to the
-        // newly configured delay if that delay is smaller than the read delay.
-        if read_delay > config_delay {
-            Ok(config_delay)
-        } else {
-            Ok(read_delay)
-        }
-    }
-
-    pub fn update_delay(&self) -> Result<()> {
-        let path = Path::new("p").join(&self.name).join("delay");
-        let mut delay = self.get_current_delay()?;
-
-        if self.get_current_delay()? == 0 {
-            delay = self.config.delay
-        } else {
-            delay -= 1
-        }
-
-        fs::write(path, delay.to_string())?;
         Ok(())
     }
 

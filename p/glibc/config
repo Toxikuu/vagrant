@@ -1,5 +1,5 @@
 upstream = "https://sourceware.org/git/glibc.git"
-delay = 4
+chance = 0.75
 
 release.fetch = "gr | tolower | vtrim | grep -Ev '90$|9000$|[a-z]|_' | vsort"
 unstable.fetch = "gr | tolower | vtrim | grep -Ev '^[a-z]|_' | vsort"
