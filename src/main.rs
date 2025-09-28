@@ -7,10 +7,12 @@ use std::path::Path;
 use color_eyre::Result;
 use tracing_subscriber::fmt::time;
 use tracing_subscriber::EnvFilter;
+use self::args::ARGS;
 use self::package::{bulk, Package};
 
 mod utils;
 mod package;
+mod args;
 
 fn main() -> color_eyre::Result<()> {
     let start_timestamp = Instant::now();
@@ -23,26 +25,25 @@ fn main() -> color_eyre::Result<()> {
 
     log();
 
-    let args = std::env::args().skip(1);
-    let packages = if args.len() > 0 {
-        args.map(Package::from_name).collect::<Result<Vec<_>>>()?
-    } else {
+    let packages = if ARGS.packages.is_empty() {
         bulk::find_all()?
+    } else {
+        ARGS.packages.iter().map(|s| Package::from_name(s.clone())).collect::<Result<Vec<_>>>()?
     };
 
     debug!("Detected packages: {packages:#?}");
     let map = bulk::fetch_all(&packages)?;
-    bulk::write_all(map)?;
-
-    if packages.is_empty() {
-        increment_runcount()?;
-        debug!("Incremented runcount");
-    }
 
     let elapsed = humantime::format_duration(start_timestamp.elapsed()).to_string();
-    fs::write("elapsed", &elapsed)?;
-    info!("Finished in {elapsed}");
 
+    if !ARGS.pretend {
+        bulk::write_all(map)?;
+        increment_runcount()?;
+        debug!("Incremented runcount");
+        fs::write("elapsed", &elapsed)?;
+    }
+
+    info!("Finished in {elapsed}");
     Ok(())
 }
 
