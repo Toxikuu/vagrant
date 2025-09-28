@@ -6,12 +6,15 @@ use std::fmt::Debug;
 use std::fs;
 use std::hash::Hash;
 use std::path::Path;
+use std::str::FromStr;
 use rand::random_range;
+use regex::Regex;
 use serde::Deserialize;
 use color_eyre::Result;
 use color_eyre::eyre::bail;
-use tracing::info;
+use tracing::{info, error};
 
+use crate::args::ARGS;
 use crate::utils::cmd::cmd;
 use crate::utils::float::defloat;
 use crate::utils::shortform::{get_shortform, get_longform};
@@ -75,6 +78,7 @@ pub struct PackageRelease {
     pub enabled: bool,
     pub upstream: Option<String>,
     pub fetch: String,
+    pub expected: Option<String>,
 }
 
 // The default value for fetch is filled out later, as it depends on the value of upstream
@@ -84,6 +88,7 @@ impl Default for PackageRelease {
             enabled: true,
             upstream: None,
             fetch: String::new(),
+            expected: Some(String::from(r#"^[0-9]+(\.[0-9]+)*$"#)),
         }
     }
 }
@@ -94,6 +99,7 @@ pub struct PackageUnstable {
     pub enabled: bool,
     pub upstream: Option<String>,
     pub fetch: String,
+    pub expected: Option<String>,
 }
 
 // The default value for fetch is filled out later, as it depends on the value of upstream
@@ -103,6 +109,7 @@ impl Default for PackageUnstable {
             enabled: true,
             upstream: None,
             fetch: String::new(),
+            expected: Some(String::from(r#"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$"#)),
         }
     }
 }
@@ -113,6 +120,7 @@ pub struct PackageCommit {
     pub enabled: bool,
     pub upstream: Option<String>,
     pub fetch: String,
+    pub expected: Option<String>,
 }
 
 // The default value for fetch is filled out later, as it depends on the value of upstream
@@ -122,6 +130,7 @@ impl Default for PackageCommit {
             enabled: true,
             upstream: None,
             fetch: String::new(),
+            expected: Some(String::from(r#"^[0-9a-f]{40}$"#)),
         }
     }
 }
@@ -248,7 +257,7 @@ impl Package {
     }
 
     pub fn fetch(&self) -> Result<Versions> {
-        if self.config.chance < 1.0 {
+        if self.config.chance < 1.0 && !ARGS.guarantee {
             let r = random_range(0.0..=1.0);
             if r < self.config.chance {
                 bail!("Tails!");
@@ -298,8 +307,24 @@ impl Package {
 
         let mut version = Version::new(ver);
         version.trim(self);
+        let v = version.fmt;
 
-        Ok(version.fmt)
+        if let Some(re) = &self.config.release.expected {
+            let re = match Regex::from_str(re) {
+                Ok(re) => re,
+                Err(e) => {
+                    error!("Invalid expected regex '{re}': {e}");
+                    bail!("Invalid expected regex");
+                }
+            };
+
+            if !re.is_match(&v) {
+                error!("Version '{v}' does not match expected '{re}'");
+                bail!("Version does not match expected");
+            }
+        }
+
+        Ok(v)
     }
 
     fn fetch_unstable(&self) -> Result<String> {
@@ -327,8 +352,24 @@ impl Package {
 
         let mut version = Version::new(ver);
         version.trim(self);
+        let v = version.fmt;
 
-        Ok(version.fmt)
+        if let Some(re) = &self.config.unstable.expected {
+            let re = match Regex::from_str(re) {
+                Ok(re) => re,
+                Err(e) => {
+                    error!("Invalid expected regex '{re}': {e}");
+                    bail!("Invalid expected regex");
+                }
+            };
+
+            if !re.is_match(&v) {
+                error!("Version '{v}' does not match expected '{re}'");
+                bail!("Version does not match expected");
+            }
+        }
+
+        Ok(v)
     }
 
     fn fetch_commit(&self) -> Result<String> {
@@ -356,7 +397,23 @@ impl Package {
 
         let mut version = Version::new(ver);
         version.trim(self);
+        let v = version.fmt;
 
-        Ok(version.fmt)
+        if let Some(re) = &self.config.commit.expected {
+            let re = match Regex::from_str(re) {
+                Ok(re) => re,
+                Err(e) => {
+                    error!("Invalid expected regex '{re}': {e}");
+                    bail!("Invalid expected regex");
+                }
+            };
+
+            if !re.is_match(&v) {
+                error!("Version '{v}' does not match expected '{re}'");
+                bail!("Version does not match expected");
+            }
+        }
+
+        Ok(v)
     }
 }
