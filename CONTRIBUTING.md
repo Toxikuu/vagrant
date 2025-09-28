@@ -1,10 +1,60 @@
 # Contributing
 
 ## Quick Start
-You're probably interested in adding a package. To do so, fork and clone this
-repo, then source the maintainer environment with `. sh/m`. Once you've done
-this, you can add a package with `va mypackage`. Take a look at the functions
-defined in `sh/lib.env`, and peruse existing packages.
+You're probably interested in adding a package. The first step is forking and
+cloning this repo.
+
+### Maintainer Utilities
+Maintainer utilities are provided in `./sh/m`. If you have `direnv`, this will
+automatically be sourced, and `./target/release` will be added to your `PATH`.
+
+You can add a package with `va mypackage`. There are various utility functions
+defined in `./sh/lib.env`. Peruse existing packages for an idea of how to use
+them.
+
+### Fields
+The available fields are as follows:
+
+```
+package
+ ├── upstream     (string)
+ ├── chance       (float between 0 and 1)
+ ├── release
+ │   ├── enabled  (bool)
+ │   ├── upstream (string)
+ │   ├── fetch    (string)
+ │   └── expected (string)
+ ├── unstable
+ │   ├── enabled  (bool)
+ │   ├── upstream (string)
+ │   ├── fetch    (string)
+ │   └── expected (string)
+ └── commit
+     ├── enabled  (bool)
+     ├── upstream (string)
+     ├── fetch    (string)
+     └── expected (string)
+```
+
+None of the fields are required, but you'll usually want at least an upstream.
+
+### Editor Configuration
+The following should make working with Vagrant in Neovim a little more pleasant:
+
+```lua
+-- Autocommand for Vagrant
+vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
+    pattern = "*/vagrant/p/*/config",
+    callback = function()
+        vim.opt.filetype = "toml"
+        vim.opt.wrap = false
+        vim.opt.expandtab = true
+        vim.opt.shiftwidth = 4
+        vim.opt.tabstop = 4
+        vim.opt.smartindent = true
+    end,
+})
+```
 
 ## Commits
 Vagrant follows a variant of conventional commits.
