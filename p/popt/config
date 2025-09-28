@@ -1,0 +1,4 @@
+upstream = "rpm-software-management/popt"
+
+unstable.fetch = "gr | vtrim -e 's,-release$,,' -e 's,_,.,g' | vsort"
+release.fetch = "gr | vtrim -e 's,-release$,,' -e 's,_,.,g' | vfs | vsort"

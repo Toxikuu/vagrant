@@ -1,0 +1,6 @@
+upstream = "https://mandoc.bsd.lv/"
+
+commit.enabled = false
+unstable.enabled = false
+
+release.fetch = "cr | grep 'current version' | awk '{print $3}'"

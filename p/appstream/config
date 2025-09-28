@@ -1,0 +1,4 @@
+upstream = "ximion/appstream"
+
+release.fetch = "gr | vtrim -e 's,^APPSTREAM_,,' -e 's,_,.,g' | vsort"
+unstable.fetch = "gr | vtrim -e 's,^APPSTREAM_,,' -e 's,_,.,g' | vsort"
