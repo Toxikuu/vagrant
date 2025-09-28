@@ -2,3 +2,5 @@ upstream = "perl/perl5"
 
 release.fetch = "gr | vtrim | tolower | fsl | fdate | vfem | vfs | vsort"
 unstable.fetch = "gr | vtrim | tolower | fsl | fdate | vsort"
+
+release.expected = '''^5\.[0-9]*[02468]\.[0-9]$'''

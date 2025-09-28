@@ -3,3 +3,6 @@ unstable.upstream = "https://invisible-mirror.net/archives/ncurses/current/?C=M;
 
 release.fetch = '''cr | cut -d\" -f4 | grep -Ev 'diff|doc|patch|asc|<|/|^t' | vtrim -re 's,.tar.gz$,,' | fl | vsort'''
 unstable.fetch = '''cr | cut -d\" -f4 | grep -Ev 'diff|doc|patch|asc|<|/|^t' | vtrim -re 's,.tgz$,,' -e s,-,.,g | fl | vsort'''
+
+release.expected = '''^[0-9]+\.[0-9]+$'''
+unstable.expected = '''^[0-9]+\.[0-9]+\.[0-9]{8}$'''
