@@ -20,12 +20,12 @@ pub fn find_all() -> Result<Vec<Package>> {
                 .to_string_lossy()
                 .to_string();
 
-            if let Ok(package) = Package::from_name(file_name) {
-                packages.push(package);
-            }
+            packages.push(Package::from_name(file_name.clone())
+                .wrap_err_with(|| format!("Failed to form package '{file_name}'"))?);
         }
     }
 
+    packages.sort();
     Ok(packages)
 }
 
