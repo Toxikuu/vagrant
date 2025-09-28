@@ -18,7 +18,7 @@ fetch = "ghr"
 
 [unstable]
 enabled = true # Whether to fetch, defaults to true
-fetch = "ght"
+fetch = "gr | vtrim | vsort"
 
 [commit]
 enabled  = true # Whether to fetch, defaults to true
