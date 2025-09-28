@@ -1,0 +1,1 @@
+upstream = "https://gitlab.kitware.com/cmake/cmake.git"
