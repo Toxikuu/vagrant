@@ -1,1 +1,3 @@
 upstream = "hummer12007/brightnessctl"
+
+chance = 0.2

@@ -1,1 +1,3 @@
 upstream = "http://mirror.rit.edu/gnu/autoconf/?C=M&O=D"
+
+chance = 0.7

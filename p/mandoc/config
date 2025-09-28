@@ -1,5 +1,7 @@
 upstream = "https://mandoc.bsd.lv/"
 
+chance = 0.1
+
 commit.enabled = false
 unstable.enabled = false
 

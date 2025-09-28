@@ -1,1 +1,3 @@
 upstream = "libcheck/check"
+
+chance = 0.1
