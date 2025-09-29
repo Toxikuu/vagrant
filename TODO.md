@@ -13,6 +13,5 @@
 - [ ] Write a shell script to find package versions that have not been updated
   in a while. These might then be manually confirmed.
 - [ ] Implement parallelization
-<!-- WARN: This should not be undertaken lightly and requires discussion. -->
-- [ ] Add normalization for pre-release versions (e.g. 'rc' should always be
-  prefixed by a '-')
+- [ ] Add GitHub issue templates
+- [ ] Mirror the results to vagrant.tox.wtf
