@@ -168,7 +168,7 @@ impl UpstreamType {
             // match github links or shortform
             s if s.starts_with("https://github.com/") || s.split('/').count() == 2 => Self::GitHub,
 
-            s if s.is_empty() => Self::Empty,
+            "" => Self::Empty,
             // match gitlab links
             // s if s.contains("://gitlab.com/") => Self::GitLab,
 
@@ -201,7 +201,7 @@ impl UpstreamType {
         match self {
             Self::Arch => String::from(""), // WARN: Arch-type upstreams don't have commits
             Self::Curl => String::from(""), // WARN: Curl-type upstreams don't have commits
-            Self::GitHub => String::from("ghc"),
+            Self::GitHub => String::from("githead"),
             Self::Git => String::from("githead"),
             Self::Empty => String::with_capacity(0),
         }
