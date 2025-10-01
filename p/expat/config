@@ -1,0 +1,4 @@
+upstream = "libexpat/libexpat"
+
+release.fetch = "gr | tolower | vtrim -e 's,^r_,,' -e 's,_,.,g' | fsl | grep -F . | vsort"
+unstable.enabled = false

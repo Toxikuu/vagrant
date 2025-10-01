@@ -1,0 +1,6 @@
+upstream = "curl/curl"
+
+release.fetch = "gr | vtrim -e 's,_,.,g' | fsl | vfs | vsort"
+unstable.fetch = "gr | vtrim -e 's,_,.,g' | fsl | vsort"
+
+

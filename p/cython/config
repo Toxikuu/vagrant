@@ -1,0 +1,6 @@
+upstream = "cython/cython"
+
+release.fetch = "gr | vtrim | fl | vfs | grep -vF -- - | vsort"
+unstable.fetch = "gr | vtrim | grep -vF -- - | vsort"
+
+

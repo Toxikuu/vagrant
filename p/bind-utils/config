@@ -1,0 +1,4 @@
+upstream = "https://gitlab.isc.org/isc-projects/bind9.git"
+
+release.fetch = "gr | vtrim | grep -F . | fsl | vfs | vsort"
+unstable.fetch = "gr | vtrim | grep -F . | vfs | vsort"

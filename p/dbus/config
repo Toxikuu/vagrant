@@ -1,0 +1,4 @@
+upstream = "https://gitlab.freedesktop.org/dbus/dbus.git"
+
+release.fetch = "gr | tolower | vtrim -e 's,_,.,g' | fsl | vfem | vsort"
+unstable.fetch = "gr | tolower | vtrim -e 's,_,.,g' | fsl | vsort"

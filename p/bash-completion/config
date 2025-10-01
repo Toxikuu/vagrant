@@ -1,0 +1,4 @@
+upstream = "scop/bash-completion"
+
+release.fetch = "gr | vtrim | fsl | grep -Ev '[0-9]{8}|alt' | vfs | vsort"
+unstable.fetch = "gr | vtrim | fsl | grep -Ev '[0-9]{8}|alt' | vsort"

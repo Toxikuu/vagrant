@@ -1,0 +1,4 @@
+upstream = "https://archlinux.org/packages/extra/any/docbook-xml/json/"
+
+# so dead
+chance = 0.01

@@ -1,0 +1,5 @@
+upstream = "elogind/elogind"
+
+# FIXME: vsort should account for 255.17 being more current than 255-alpha
+
+chance = 0.77

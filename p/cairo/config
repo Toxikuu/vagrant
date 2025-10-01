@@ -1,0 +1,6 @@
+upstream = "https://gitlab.freedesktop.org/cairo/cairo.git"
+
+chance = 0.55
+
+release.fetch = "gr | vtrim | fsl | vfem | vsort"
+unstable.fetch = "gr | vtrim | fsl | vsort"

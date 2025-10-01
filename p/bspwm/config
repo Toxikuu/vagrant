@@ -1,0 +1,3 @@
+upstream = "baskerville/bspwm"
+
+chance = 0.8
