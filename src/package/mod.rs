@@ -256,8 +256,19 @@ impl Package {
         }
     }
 
+    pub fn has_fallback_versions(&self) -> bool {
+        let path = Path::new("p").join(&self.name);
+        let mut has_fallbacks = true;
+        if self.config.release.enabled && !path.join("release").exists() { has_fallbacks = false }
+        if self.config.unstable.enabled && !path.join("unstable").exists() { has_fallbacks = false }
+        if self.config.commit.enabled && !path.join("commit").exists() { has_fallbacks = false }
+        has_fallbacks
+    }
+
     pub fn fetch(&self) -> Result<Versions> {
-        if self.config.chance < 1.0 && !ARGS.guarantee {
+        // if fallback versions don't exist, or --guarantee is passed, guarantee a fetch
+        let should_guarantee = ARGS.guarantee || !self.has_fallback_versions();
+        if self.config.chance < 1.0 && !should_guarantee {
             let r = random_range(0.0..=1.0);
             if r < self.config.chance {
                 bail!("Tails!");
