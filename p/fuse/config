@@ -1,0 +1,4 @@
+upstream = "libfuse/libfuse"
+
+release.fetch = "gr | vtrim -e s,_,.,g | fsl | grep -Ev 'merge|before|start' | vfs | vsort"
+unstable.fetch = "gr | vtrim -e s,_,.,g | fsl | grep -Ev 'merge|before|start' | vsort"

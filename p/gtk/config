@@ -1,0 +1,5 @@
+upstream = "gnome/gtk"
+
+# TODO: Add channels for gtk2 and gtk3
+release.fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vfem | vsort"
+unstable.fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vsort"

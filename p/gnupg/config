@@ -1,0 +1,4 @@
+upstream = "gpg/gnupg"
+
+release.fetch = "gr | vtrim | fsl | grep -v base | vfem | vsort"
+unstable.fetch = "gr | vtrim | fsl | grep -v base | vsort"

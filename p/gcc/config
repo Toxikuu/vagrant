@@ -1,0 +1,8 @@
+upstream = "https://gcc.gnu.org/git/gcc.git"
+
+release.fetch = "gr | vtrim | fsl | fl | grep -F . | vsort"
+unstable.fetch = "gr | vtrim | fsl | vsort"
+
+unstable.expected = "^[0-9]+$"
+
+chance = 0.89

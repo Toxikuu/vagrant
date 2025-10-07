@@ -1,0 +1,4 @@
+upstream = "https://gitlab.freedesktop.org/xorg/font/util.git"
+
+release.fetch = "gr font-util | vtrim -e 's,_,.,g' | fsl | vfs | vsort"
+unstable.fetch = "gr font-util | vtrim -e 's,_,.,g' | fsl | vsort"

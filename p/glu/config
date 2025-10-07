@@ -1,0 +1,3 @@
+upstream = "https://gitlab.freedesktop.org/mesa/glu.git"
+
+chance = 0.11 # last commit dated 2023-07-21

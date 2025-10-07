@@ -1,0 +1,4 @@
+upstream = "gstreamer/gstreamer"
+
+release.fetch = "gr | vtrim | fsl | grep -Ev '\.9[0-9]+$' | vsort"
+unstable.fetch = "gr | vtrim | fsl | vsort"

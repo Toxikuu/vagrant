@@ -1,0 +1,4 @@
+upstream = "gpg/gpgme"
+
+release.fetch = "gr | vtrim -re 's,(_|-|@),.,g' | fl | vsort"
+unstable.fetch = "gr | vtrim -re 's,(_|-|@),.,g' | fsl | grep -v base | vsort"

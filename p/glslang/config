@@ -1,0 +1,6 @@
+upstream = "khronosgroup/glslang"
+
+# TODO: Once I figure out version channels, add a channel for the sdk and don't
+# use unstable for regular releases
+release.fetch = "gr | grep '^vulkan-sdk-' | cut -d- -f3- | vsort" # sdk
+unstable.fetch = "gr | vtrim -re 's,^(vulkan(-sdk|)|sdk)-,,' | fsl | v3grepl | vsort"

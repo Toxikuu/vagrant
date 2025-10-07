@@ -1,0 +1,4 @@
+upstream = "golang/go"
+
+release.fetch = "gr | fdate | vtrim -e 's,^go,,' | fsl | vfs | vsort"
+unstable.fetch = "gr | fdate | vtrim -e 's,^go,,' | fsl | vsort"

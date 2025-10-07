@@ -1,0 +1,4 @@
+upstream = "gnutls/gnutls"
+
+release.fetch = "gr | vtrim -e 's,^gnutls,,' -re 's,(_|-),.,g' | grep -Ev '(win|with|before|real|netconf)' | vfs | vsort"
+unstable.fetch = "gr | vtrim -e 's,^gnutls,,' -re 's,(_|-),.,g' | grep -Ev '(win|with|before|real|netconf)' | vsort"
