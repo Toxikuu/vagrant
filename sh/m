@@ -1,5 +1,6 @@
 #!/usr/bin/env false
 #shellcheck shell=bash
 
+alias vagrant=target/release/vagrant
 . sh/dev-utils.env
 . sh/lib.env
