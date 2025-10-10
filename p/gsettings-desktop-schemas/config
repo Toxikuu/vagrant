@@ -1,1 +1,3 @@
 upstream = "gnome/gsettings-desktop-schemas"
+
+unstable.enabled = false # painful
