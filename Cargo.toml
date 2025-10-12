@@ -16,3 +16,12 @@ thiserror = "2"
 toml = "0.9"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+correctness = { level = "deny", priority = 9 }
+suspicious = { level = "deny", priority = 8 }
+complexity = { level = "deny", priority = 7 }
+perf = { level = "deny", priority = 6 }
+nursery = { level = "deny", priority = 2 }
+unwrap_used = { level = "deny" }
