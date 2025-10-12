@@ -18,7 +18,7 @@ pub fn find_all() -> Result<Vec<Package>> {
         let path = entry.path();
         if path.is_dir() {
             let file_name = path.file_name()
-                .wrap_err_with(|| format!("Invalid filename in {path:?}"))?
+                .wrap_err_with(|| format!("Invalid filename in {}", path.display()))?
                 .to_string_lossy()
                 .to_string();
 
@@ -64,10 +64,10 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionCh
     Ok(map)
 }
 
-pub fn write_all(map: IndexMap<Package, Vec<VersionChannel>>) -> Result<()> {
+pub fn write_all(map: &IndexMap<Package, Vec<VersionChannel>>) -> Result<()> {
     let mut all_vec = vec![];
 
-    for (k, v) in map.iter() {
+    for (k, v) in map {
         k.write_versions(v.clone())?;
         all_vec.push(PackageVersions { package: k.name.clone(), versions: v.clone() });
     }
@@ -80,7 +80,7 @@ pub fn write_all(map: IndexMap<Package, Vec<VersionChannel>>) -> Result<()> {
     let mut alltxt = String::new();
     for p in all_vec {
         for c in p.versions {
-            alltxt = format!("{alltxt}{}\t{}\t{}\n", p.package, c.channel, c.version)
+            alltxt = format!("{alltxt}{}\t{}\t{}\n", p.package, c.channel, c.version);
         }
     }
     fs::write(path.join("ALL.txt"), alltxt)?;

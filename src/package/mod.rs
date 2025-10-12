@@ -77,32 +77,32 @@ impl Default for PackageChannel {
 }
 
 impl PackageChannel {
-    pub fn fetch(&self, package: Package) -> Result<String> {
-        let _name = format!("name={}", package.name);
-        let _upstream = format!("upstream={}", get_longform(
+    pub fn fetch(&self, package: &Package) -> Result<String> {
+        let name = format!("name={}", package.name);
+        let upstream = format!("upstream={}", get_longform(
             self.upstream.as_ref().unwrap_or(&package.config.upstream)
         ));
 
-        let _shortform = format!("shortform={}", get_shortform(&_upstream));
-        let _fetch = format!(". sh/lib.env && {}", self.fetch);
+        let shortform = format!("shortform={}", get_shortform(&upstream));
+        let fetch = format!(". sh/lib.env && {}", self.fetch);
 
-        let command = vec![
+        let command = [
             "env",
-            &_name,
-            &_upstream,
-            &_shortform,
+            &name,
+            &upstream,
+            &shortform,
             "bash",
             "-c",
-            &_fetch,
+            &fetch,
         ];
 
-        let ver = match cmd(command) {
+        let ver = match cmd(&command) {
             | Err(e) => bail!("Failed to fetch version: {e}"),
             | Ok(v) => v,
         };
 
         let mut version = Version::new(ver);
-        version.trim(&package);
+        version.trim(package);
         let v = version.fmt;
 
         if let Some(re) = &self.expected {
@@ -161,7 +161,7 @@ impl Default for PackageConfig {
                         upstream: None,
                         // the default value of fetch is filled out later as it depends on upstream
                         fetch: String::new(),
-                        expected: Some(String::from(r#"^[0-9]+(\.[0-9]+)*$"#)),
+                        expected: Some(String::from(r"^[0-9]+(\.[0-9]+)*$")),
                     },
                     PackageChannel {
                         name: "unstable".into(),
@@ -169,7 +169,7 @@ impl Default for PackageConfig {
                         upstream: None,
                         // the default value of fetch is filled out later as it depends on upstream
                         fetch: String::new(),
-                        expected: Some(String::from(r#"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$"#)),
+                        expected: Some(String::from(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$")),
                     },
                     PackageChannel {
                         name: "commit".into(),
@@ -177,7 +177,7 @@ impl Default for PackageConfig {
                         upstream: None,
                         // the default value of fetch is filled out later as it depends on upstream
                         fetch: String::new(),
-                        expected: Some(String::from(r#"^[0-9a-f]{40}$"#)),
+                        expected: Some(String::from(r"^[0-9a-f]{40}$")),
                     },
                 ]
             },
@@ -224,21 +224,17 @@ impl UpstreamType {
 
     fn default_fetch_unstable(&self) -> String {
         match self {
-            Self::Arch   => String::from("archver"),
-            Self::Curl   => String::from("ca | vsort"),
-            Self::Empty  => String::with_capacity(0),
-            Self::Git    => String::from("gr | tolower | vtrim | fsl | vsort"),
-            Self::GitHub => String::from("gr | tolower | vtrim | fsl | vsort"),
+            Self::Arch               => String::from("archver"),
+            Self::Curl               => String::from("ca | vsort"),
+            Self::Empty              => String::with_capacity(0),
+            Self::Git | Self::GitHub => String::from("gr | tolower | vtrim | fsl | vsort"),
         }
     }
 
     fn default_fetch_commit(&self) -> String {
         match self {
-            Self::Arch   => String::from(""), // WARN: Arch-type upstreams don't have commits
-            Self::Curl   => String::from(""), // WARN: Curl-type upstreams don't have commits
-            Self::Empty  => String::with_capacity(0),
-            Self::Git    => String::from("githead"),
-            Self::GitHub => String::from("githead"),
+            Self::Arch | Self::Curl | Self::Empty => String::with_capacity(0),
+            Self::Git  | Self::GitHub             => String::from("githead"),
         }
     }
 }
@@ -274,7 +270,7 @@ impl Package {
             }
 
             if c.expected.is_none() {
-                c.expected = Some(r#"^[0-9]+(\.[0-9]+)*$"#.into());
+                c.expected = Some(r"^[0-9]+(\.[0-9]+)*$".into());
             }
         }
 
@@ -287,7 +283,7 @@ impl Package {
             }
 
             if c.expected.is_none() {
-                c.expected = Some(r#"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$"#.into());
+                c.expected = Some(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$".into());
             }
         }
 
@@ -298,27 +294,27 @@ impl Package {
                 let upstream_type = UpstreamType::from_str(upstream);
 
                 if matches!(upstream_type, UpstreamType::Curl | UpstreamType::Arch | UpstreamType::Empty) {
-                    c.enabled = false
+                    c.enabled = false;
                 } else {
                     c.fetch = upstream_type.default_fetch_commit();
                 }
             }
 
             if c.expected.is_none() {
-                c.expected = Some(r#"^[0-9a-f]{40}$"#.into());
+                c.expected = Some(r"^[0-9a-f]{40}$".into());
             }
         }
     }
 
     pub fn has_fallback_versions(&self) -> bool {
         let path = Path::new("p").join(&self.name).join("versions");
-        if !path.exists() { return false };
+        if !path.exists() { return false }
 
         let Ok(version_channels_str) = fs::read_to_string(path) else {return false};
         let Ok(version_channels) = serde_json::from_str::<Vec<VersionChannel>>(&version_channels_str) else { return false };
 
         for channel in &version_channels {
-            if self.get_channel(&channel.channel).is_none() { return false };
+            if self.get_channel(&channel.channel).is_none() { return false }
         }
 
         true
@@ -340,7 +336,7 @@ impl Package {
                 version_channels.push(
                     VersionChannel {
                         channel: channel.name.clone(),
-                        version: channel.fetch(self.clone())?,
+                        version: channel.fetch(self)?,
                     }
                 );
             }

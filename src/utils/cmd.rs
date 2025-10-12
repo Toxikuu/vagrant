@@ -20,7 +20,8 @@ enum CmdError {
 }
 
 /// # Lowish level function to execute a command and return stdout
-pub fn cmd(cmd: Vec<&str>) -> Result<String> {
+#[allow(clippy::similar_names)]
+pub fn cmd(cmd: &[&str]) -> Result<String> {
     trace!("Evaluating command: {}", cmd.join(" "));
 
     let (arg0, args) = cmd.split_first().expect("command should not be empty");
