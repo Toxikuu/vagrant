@@ -15,6 +15,7 @@ mod package;
 mod args;
 
 fn main() -> color_eyre::Result<()> {
+    let _ = fs::remove_dir_all(".vagrant-cache");
     let start_timestamp = Instant::now();
 
     HookBuilder::default()
@@ -44,6 +45,7 @@ fn main() -> color_eyre::Result<()> {
     }
 
     info!("Finished in {elapsed}");
+    let _ = fs::remove_dir_all(".vagrant-cache");
     Ok(())
 }
 
