@@ -28,7 +28,7 @@ package
 ```
 
 None of the fields are required, but the recommended fields are typed with
-brackets. Ommitted fields are populated with sane defaults.
+brackets. Omitted fields are populated with sane defaults.
 
 ### Editor Configuration
 The following config snippet should make working with Vagrant in Neovim a little
