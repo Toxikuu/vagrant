@@ -1,0 +1,40 @@
+name: Fix a package
+description: Fix a package
+title: "fix(p): fix <package>"
+labels: [p, fix]
+
+assignees:
+  - Toxikuu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Fix a package
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The name of the package
+      placeholder: glib
+    validations:
+      required: true
+
+  - type: input
+    id: channels
+    attributes:
+      label: Channels
+      description: The affected channels
+      placeholder: release, unstable, commit
+    validations:
+      required: false
+
+  - type: textarea
+    id: fixes
+    attributes:
+      label: Fixes
+      description: The problem and suggested fix(es)
+      placeholder: |
+        Upstream uses even minor versions to denote unstable versions. Add `vfem` to the release channel's fetch.
+    validations:
+      required: false

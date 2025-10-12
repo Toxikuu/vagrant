@@ -1,0 +1,39 @@
+name: Add a package
+description: Add a package
+title: "feat(p): add <package>"
+labels: [p, add]
+
+assignees:
+  - Toxikuu
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Add a package
+
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: The name of the package
+      placeholder: curl
+    validations:
+      required: true
+
+  - type: input
+    id: upstream
+    attributes:
+      label: Upstream
+      description: The package's upstream
+      placeholder: curl/curl
+    validations:
+      required: true
+
+  - type: input
+    id: channels
+    attributes:
+      label: Channels
+      description: The version channels to track
+      placeholder: release, unstable, commit
+    validations:
+      required: false
