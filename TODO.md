@@ -13,9 +13,10 @@
 - [ ] Write a shell script to find package versions that have not been updated
   in a while. These might then be manually confirmed.
 - [ ] Implement parallelization
-- [ ] Add GitHub issue templates
-- [ ] Mirror the results to vagrant.tox.wtf
-- [ ] Add version channels
-    - Syntax: release-CHANNEL, e.g. release-3 for gtk3, release-sdk for glslang
-    - Would require compatibility tweaks to commit.sh and the codebase
-    - Would require changing the p/ALL CSV (might be easiest to just use JSON?)
+- [x] Add GitHub issue templates
+- [ ] Mirror to vagrant.tox.wtf
+- [x] Add changelog
+- [x] Add caching for `gr`
+- [x] Add version channels
+    - [x] Overhaul the codebase and API
+- [ ] Test release.sh
