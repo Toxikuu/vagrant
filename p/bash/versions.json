@@ -1,0 +1,10 @@
+[
+  {
+    "channel": "release",
+    "version": "5.3"
+  },
+  {
+    "channel": "unstable",
+    "version": "5.3-rc2"
+  }
+]

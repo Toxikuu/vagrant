@@ -1,0 +1,2 @@
+release	1.0.8
+commit	66c46b8c9436613fd81bc5d03f63a61933a4dcc3

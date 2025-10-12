@@ -1,0 +1,2 @@
+release	6.0.0
+commit	71fecbbcde6878f20f16d4a557263d173ec3a18a

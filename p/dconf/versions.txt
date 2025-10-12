@@ -1,0 +1,3 @@
+release	0.49.0
+unstable	0.49.0
+commit	1f3a995aed4f64b356972cf0b7100ca5ccfeb4ba

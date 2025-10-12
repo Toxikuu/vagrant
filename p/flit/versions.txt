@@ -1,0 +1,2 @@
+release	3.12.0
+commit	7236f7e65e44f825fa88312074d0d043aa6ef08c

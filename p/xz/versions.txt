@@ -1,0 +1,3 @@
+release	5.8.1
+unstable	5.8.1
+commit	8d26b72915e0d373f898b55935505857c30dbdb3

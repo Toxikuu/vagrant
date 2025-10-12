@@ -1,0 +1,2 @@
+release	2.53.0
+commit	e3a698f7b1432821ec14eb480eea001cfac73fd6
