@@ -1,5 +1,7 @@
 /target
 
+/.vagrant-cache
+
 # Internal data
 failed
 checked
