@@ -1,3 +1,5 @@
 upstream = "http://mirror.rit.edu/gnu/groff/?C=M&O=D"
+chance = 0.34
 
-chance = 0.22
+[[channels]]
+name = "release"

@@ -1,2 +1,8 @@
 upstream = "old-man-programmer/tree"
 chance = 0.5
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

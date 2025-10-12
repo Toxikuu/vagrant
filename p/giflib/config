@@ -1,1 +1,8 @@
 upstream = "https://git.code.sf.net/p/giflib/code"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

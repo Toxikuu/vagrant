@@ -6,34 +6,71 @@ collection of packages. Though designed with Linux From Scratch maintenance in
 mind, Vagrant is generic enough to be applicable to most tasks requiring version
 fetching.
 
-## Usage
-Vagrant is intended to be used to quickly check for package updates, supporting
-both bulk requests and single requests.
+Feature set:
+- Arbitrary version channels
+- Multiple APIs
+- Single and bulk requests
 
-### Single
-For instance, to check the release version of only ffmpeg:
+### Plaintext API
+The plaintext API is accessible through a file hierarchy. Individual version
+channels are stored in files under `./p/$package/channels/$channel`.
+
+#### Examples
+To check the release version channel of ffmpeg:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ffmpeg/release
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ffmpeg/channels/release
 ```
 
-To check the unstable version of bc:
+To check the sdk version channel of glslang:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/bc/unstable
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/glslang/channels/sdk
 ```
 
-To check the commit version of btop:
+To retrieve the release, unstable, and commit version channels of bc, saving
+them to variables, in a single request:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/btop/commit
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/bc/versions.txt > _
+release=$(grep release _ | cut -f2)
+unstable=$(grep unstable _ | cut -f2)
+commit=$(grep commit _ | cut -f2)
+rm _
 ```
 
-### Bulk
-For bulk requests, a CSV file is made available:
-```
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL
+To retrieve all version channels for all packages, then parse out acl's release
+and inih's commit:
+```sh
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL.txt > _
+acl_release=$(grep acl _ | grep release | cut -f3)
+inih_commit=$(grep 'inih\scommit' _ | cut -f3)
+rm _
 ```
 
-It's recommended you cache this file and read multiple package versions from it.
-It should be pretty trivial to parse with `cut -d, -f1-4`.
+To count the number of tracked release versions:
+```sh
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL.txt |
+    grep '\srelease\s' |
+    wc -l
+```
+
+### JSON API
+
+#### Examples
+To retrieve a JSON object of all version channels of btop:
+```sh
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/btop/versions.json
+```
+
+To retrieve all versions and parse out lz4's release:
+```sh
+curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL.json |
+    jq -r '
+    .[] |
+    select(.package == "lz4") |
+    .versions[] |
+    select(.channel == "release") |
+    .version
+    '
+```
 
 ## Roadmap
 

@@ -1,3 +1,8 @@
 upstream = "aria2/aria2"
-
 chance = 0.44
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

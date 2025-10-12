@@ -1,5 +1,13 @@
 upstream = "mozilla/cbindgen"
 
 # cbindgen has a tag named '' lol
-release.fetch = '''gr | grep -vF \' | vtrim | fsl | vsort'''
-unstable.fetch = '''gr | grep -vF \' | vtrim | fsl | vsort'''
+[[channels]]
+name = "release"
+fetch = '''gr | grep -vF \' | vtrim | fsl | vsort'''
+
+[[channels]]
+name = "unstable"
+fetch = '''gr | grep -vF \' | vtrim | fsl | vsort'''
+
+[[channels]]
+name = "commit"

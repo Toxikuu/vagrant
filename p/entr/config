@@ -1,1 +1,7 @@
 upstream = "eradman/entr"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

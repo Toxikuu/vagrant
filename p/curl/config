@@ -1,6 +1,12 @@
 upstream = "curl/curl"
 
-release.fetch = "gr | vtrim -e 's,_,.,g' | fsl | vfs | vsort"
-unstable.fetch = "gr | vtrim -e 's,_,.,g' | fsl | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g' | fsl | vfs | vsort"
 
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,_,.,g' | fsl | vsort"
 
+[[channels]]
+name = "commit"

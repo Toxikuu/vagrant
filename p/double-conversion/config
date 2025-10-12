@@ -1,3 +1,8 @@
 upstream = "google/double-conversion"
-
 chance = 0.88
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

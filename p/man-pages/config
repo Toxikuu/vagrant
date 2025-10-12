@@ -1,1 +1,8 @@
 upstream = "https://git.kernel.org/pub/scm/docs/man-pages/man-pages.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | vfs | grep -v -- - | vsort"
+
+[[channels]]
+name = "commit"

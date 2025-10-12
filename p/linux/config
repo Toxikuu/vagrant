@@ -1,5 +1,15 @@
 upstream = "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"
-release.upstream = "https://www.kernel.org/feeds/kdist.xml"
 
-release.fetch = '''cr | grep -Eo '[0-9\.]+: stable' | head -n1 | cut -d: -f1'''
-unstable.fetch = "gr | vtrim | grep -v dontuse | vsort"
+# TODO: Consider tracking next
+
+[[channels]]
+name = "release"
+upstream = "https://www.kernel.org/feeds/kdist.xml"
+fetch = '''cr | grep -Eo '[0-9\.]+: stable' | head -n1 | cut -d: -f1'''
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | grep -v dontuse | vsort"
+
+[[channels]]
+name = "commit"

@@ -2,5 +2,13 @@ upstream = "rpm-software-management/popt"
 
 chance = 0.22
 
-unstable.fetch = "gr | vtrim -e 's,-release$,,' -e 's,_,.,g' | vsort"
-release.fetch = "gr | vtrim -e 's,-release$,,' -e 's,_,.,g' | vfs | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,-release$,,' -e 's,_,.,g' | vfs | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,-release$,,' -e 's,_,.,g' | vsort"
+
+[[channels]]
+name = "commit"

@@ -15,6 +15,7 @@ mod package;
 mod args;
 
 fn main() -> color_eyre::Result<()> {
+    let _ = fs::remove_dir_all(".vagrant-cache");
     let start_timestamp = Instant::now();
 
     HookBuilder::default()
@@ -37,19 +38,20 @@ fn main() -> color_eyre::Result<()> {
     let elapsed = humantime::format_duration(start_timestamp.elapsed()).to_string();
 
     if !ARGS.pretend {
-        bulk::write_all(map)?;
+        bulk::write_all(&map)?;
         increment_runcount()?;
         debug!("Incremented runcount");
         fs::write("elapsed", &elapsed)?;
     }
 
     info!("Finished in {elapsed}");
+    let _ = fs::remove_dir_all(".vagrant-cache");
     Ok(())
 }
 
 fn log() {
-    let level = env::var("LOG_LEVEL").unwrap_or(String::from("info"));
-    let filter = EnvFilter::new(format!("{level}"));
+    let level = env::var("LOG_LEVEL").unwrap_or_else(|_| String::from("info"));
+    let filter = EnvFilter::new(level);
 
     tracing_subscriber::fmt()
         .with_env_filter(filter)

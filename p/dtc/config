@@ -1,1 +1,7 @@
 upstream = "dgibson/dtc"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

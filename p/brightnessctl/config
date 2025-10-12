@@ -1,3 +1,8 @@
 upstream = "hummer12007/brightnessctl"
-
 chance = 0.2
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

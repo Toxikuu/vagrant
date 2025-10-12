@@ -1,3 +1,5 @@
 upstream = "http://mirror.rit.edu/gnu/texinfo/?C=M&O=D"
+chance = 0.34
 
-chance = 0.33
+[[channels]]
+name = "release"

@@ -1,1 +1,7 @@
 upstream = "cliutils/cli11"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,4 +1,5 @@
 upstream = "https://archlinux.org/packages/extra/any/docbook-sgml/json/"
+chance = 0.02 # so dead
 
-# so dead
-chance = 0.01
+[[channels]]
+name = "release"

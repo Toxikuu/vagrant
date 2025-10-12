@@ -1,3 +1,9 @@
 upstream = "gnome/gsettings-desktop-schemas"
 
-unstable.enabled = false # painful
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
+
+# unstable looks painful

@@ -1,1 +1,7 @@
 upstream = "openprinting/cups"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

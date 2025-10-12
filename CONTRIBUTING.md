@@ -5,8 +5,8 @@ You're probably interested in adding a package. The first step is forking and
 cloning this repo.
 
 ### Maintainer Utilities
-Maintainer utilities are provided in `./sh/m`. If you have `direnv`, this will
-automatically be sourced, and `./target/release` will be added to your `PATH`.
+Maintainer utilities are provided in `./sh/m`. You'll want to source this file
+from a POSIX-compliant shell.
 
 You can add a package with `va mypackage`. There are various utility functions
 defined in `./sh/lib.env`. Peruse existing packages for an idea of how to use
@@ -17,47 +17,36 @@ The available fields are as follows:
 
 ```
 package
- ├── upstream     (string)
+ ├── upstream     [string]
  ├── chance       (float between 0 and 1)
- ├── release
- │   ├── enabled  (bool)
- │   ├── upstream (string)
- │   ├── fetch    (string)
- │   └── expected (string)
- ├── unstable
- │   ├── enabled  (bool)
- │   ├── upstream (string)
- │   ├── fetch    (string)
- │   └── expected (string)
- └── commit
+ └── channels     [array]
+     ├── name     [string]
      ├── enabled  (bool)
      ├── upstream (string)
      ├── fetch    (string)
      └── expected (string)
 ```
 
-None of the fields are required, but you'll usually want at least an upstream.
+None of the fields are required, but the recommended fields are typed with
+brackets. Omitted fields are populated with sane defaults.
 
 ### Editor Configuration
-The following should make working with Vagrant in Neovim a little more pleasant:
+The following config snippet should make working with Vagrant in Neovim a little
+more pleasant by automatically setting the filetype to TOML, enabling syntax
+highlighting:
 
 ```lua
--- Autocommand for Vagrant
-vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
-    pattern = "*/vagrant/p/*/config",
-    callback = function()
-        vim.opt.filetype = "toml"
-        vim.opt.wrap = false
-        vim.opt.expandtab = true
-        vim.opt.shiftwidth = 4
-        vim.opt.tabstop = 4
-        vim.opt.smartindent = true
-    end,
+-- Vagrant config filetype
+vim.filetype.add({
+    pattern = {
+        [".*/p/.*/config"] = "toml",
+    }
 })
 ```
 
 ## Commits
-Vagrant follows a variant of conventional commits.
+Vagrant follows a variant of conventional commits, and uses pre-commit hooks to
+enforce these.
 
 Some general rules:
 - Keep commit subject length to 72 characters or fewer.
@@ -83,17 +72,19 @@ an issue, and signing off:
 > References: #122, #556
 
 ### Commit Types
-- auto: automatic commits made by vagrant
-- ci: changes to the ci files and scripts
-- chore: changes to auxiliary files
-- docs: changes to any documentation
-- feat: a new feature or package
-- fix: a bugfix
-- revert: revert something
+- auto:     automatic commits made by vagrant
+- ci:       changes to the ci files and scripts
+- chore:    changes to auxiliary files
+- docs:     changes to any documentation
+- feat:     a new feature or package
+- fix:      a bugfix
+- revert:   revert something
 
 ### Scopes
 Scopes include but are not limited to:
-- (p): packages
-- (lib): the shell library
+- (p):      packages
+- (lib):    the shell library
+- (sh):     other shell stuff
+- (src):    the codebase
 
 <!-- TODO: Add some more information -->

@@ -1,1 +1,12 @@
 upstream = "https://gitlab.gnome.org/GNOME/dconf.git"
+
+[[channels]]
+name = "release"
+fetch = ''' gr | vtrim | vsort | grep -Ev '^[0-9]+\.[0-9]+\.9[0-9]+$' '''
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | vsort"
+
+[[channels]]
+name = "commit"

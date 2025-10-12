@@ -1,4 +1,11 @@
 upstream = "gnome/glib-networking"
 
-release.fetch = '''gr | vtrim -e 's,^glib-,,' | vfs | grep -v '\.9[0-9]$' | vsort'''
-unstable.enabled = false # painful
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim -e 's,^glib-,,' | vfs | grep -v '\.9[0-9]$' | vsort'''
+
+[[channels]]
+name = "commit"
+
+# TODO: Add unstable once I make vsort properly sort prerelease versions with
+# fewer parts

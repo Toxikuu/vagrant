@@ -1,3 +1,5 @@
 upstream = "https://mirrors.rit.edu/gnu/autoconf-archive/?C=M;O=D"
-
 chance = 0.5
+
+[[channels]]
+name = "release"

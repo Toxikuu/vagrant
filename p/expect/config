@@ -1,2 +1,5 @@
 upstream = "https://archlinux.org/packages/extra/x86_64/expect/json/"
-chance = 0.01
+chance = 0.07
+
+[[channels]]
+name = "release"

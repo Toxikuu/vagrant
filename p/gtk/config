@@ -1,5 +1,22 @@
 upstream = "gnome/gtk"
 
-# TODO: Add channels for gtk2 and gtk3
-release.fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vfem | vsort"
-unstable.fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vfem | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vsort"
+
+[[channels]]
+name = "commit"
+
+[[channels]]
+name = "2"
+fetch = '''gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$|\.9[0-9]+\.)|^2\.(28|32)\.[0-9]+$' | grep '^2' | vfem | vsort'''
+expected = '''^2\.[0-9]*[02468]\.[0-9]+$'''
+
+[[channels]]
+name = "3"
+fetch = '''gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$|\.9[0-9]+\.)' | grep '^3' | vfem | vsort'''
+expected = '''^3\.[0-9]*[02468]\.[0-9]+$'''

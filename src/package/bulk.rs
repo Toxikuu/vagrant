@@ -1,12 +1,14 @@
 // package/bulk.rs
 
-use super::{Package, Versions};
+use crate::package::PackageVersions;
+
+use super::{Package, VersionChannel};
 use std::fs;
 use std::path::Path;
 use color_eyre::eyre::{Context, ContextCompat};
 use color_eyre::Result;
 use indexmap::IndexMap;
-use tracing::error;
+use tracing::{debug, error};
 
 pub fn find_all() -> Result<Vec<Package>> {
     let search_path = Path::new("p");
@@ -16,7 +18,7 @@ pub fn find_all() -> Result<Vec<Package>> {
         let path = entry.path();
         if path.is_dir() {
             let file_name = path.file_name()
-                .wrap_err_with(|| format!("Invalid filename in {path:?}"))?
+                .wrap_err_with(|| format!("Invalid filename in {}", path.display()))?
                 .to_string_lossy()
                 .to_string();
 
@@ -29,7 +31,7 @@ pub fn find_all() -> Result<Vec<Package>> {
     Ok(packages)
 }
 
-pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Versions>> {
+pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionChannel>>> {
     let mut map = IndexMap::new();
     let mut failed_count = 0;
     let mut skipped_count = 0;
@@ -39,14 +41,15 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Versions>> {
             Ok(v) => v,
             Err(e) if e.to_string().contains("Tails!") => {
                 skipped_count += 1;
-                package.retrieve_versions()
-                    .wrap_err_with(|| format!("Failed to retrieve versions for skipped {}", package.name))?
+                debug!("Skipped fetching versions for package '{}'", package.name);
+                package.read_versions()
+                    .wrap_err_with(|| format!("Failed to read old versions for skipped package '{}'", package.name))?
             },
             Err(e) => {
                 failed_count += 1;
                 error!("Failed to fetch versions for {}: {e}", package.name);
-                package.retrieve_versions()
-                    .wrap_err_with(|| format!("Failed to retrieve versions for failed {}", package.name))?
+                package.read_versions()
+                    .wrap_err_with(|| format!("Failed to read old versions for failed package '{}'", package.name))?
             }
         };
 
@@ -61,18 +64,26 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Versions>> {
     Ok(map)
 }
 
-pub fn write_all(map: IndexMap<Package, Versions>) -> Result<()> {
-    let mut buf = String::new();
+pub fn write_all(map: &IndexMap<Package, Vec<VersionChannel>>) -> Result<()> {
+    let mut all_vec = vec![];
 
-    for (k, v) in map.iter() {
-        k.write(v.clone())?;
-
-        let formatted = format!("{},{},{},{}\n", k.name, v.0, v.1, v.2);
-        buf.push_str(&formatted);
+    for (k, v) in map {
+        k.write_versions(v.clone())?;
+        all_vec.push(PackageVersions { package: k.name.clone(), versions: v.clone() });
     }
 
-    let path = Path::new("p").join("ALL");
-    fs::write(path, buf)?;
+    let path = Path::new("p");
+
+    let alljson = serde_json::to_string_pretty(&all_vec)?;
+    fs::write(path.join("ALL.json"), alljson)?;
+
+    let mut alltxt = String::new();
+    for p in all_vec {
+        for c in p.versions {
+            alltxt = format!("{alltxt}{}\t{}\t{}\n", p.package, c.channel, c.version);
+        }
+    }
+    fs::write(path.join("ALL.txt"), alltxt)?;
 
     Ok(())
 }

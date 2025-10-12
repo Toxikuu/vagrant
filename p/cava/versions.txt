@@ -1,0 +1,2 @@
+release	0.10.6
+commit	7b1487a91f49918b4f3d063aae8c0eefa19b58b8

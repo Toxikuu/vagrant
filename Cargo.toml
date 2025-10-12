@@ -1,6 +1,6 @@
 [package]
 name = "vagrant"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2024"
 
 [dependencies]
@@ -11,7 +11,17 @@ indexmap = "2.11"
 rand = "0.9"
 regex = "1.11"
 serde = { version = "1", features = ["derive"] }
+serde_json = "1.0.145"
 thiserror = "2"
 toml = "0.9"
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+[lints.clippy]
+pedantic = { level = "warn", priority = -1 }
+correctness = { level = "deny", priority = 9 }
+suspicious = { level = "deny", priority = 8 }
+complexity = { level = "deny", priority = 7 }
+perf = { level = "deny", priority = 6 }
+nursery = { level = "deny", priority = 2 }
+unwrap_used = { level = "deny" }

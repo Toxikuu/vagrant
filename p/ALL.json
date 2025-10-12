@@ -1,0 +1,2234 @@
+[
+  {
+    "package": "abseil-cpp",
+    "versions": [
+      {
+        "channel": "unstable",
+        "version": "20250814.1"
+      },
+      {
+        "channel": "release",
+        "version": "20250814.1"
+      },
+      {
+        "channel": "commit",
+        "version": "bf891a1c975345cca95c122a9810a86d4541bf06"
+      }
+    ]
+  },
+  {
+    "package": "acl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.3.2"
+      }
+    ]
+  },
+  {
+    "package": "alacritty",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.15.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "0.16.0-rc2"
+      },
+      {
+        "channel": "commit",
+        "version": "48e19ec3cb03f063710b24abf7a1d9ad753a7754"
+      }
+    ]
+  },
+  {
+    "package": "alsa-lib",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.14"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.2.14"
+      },
+      {
+        "channel": "commit",
+        "version": "d62b1d540781c61403681c1d903b7c74af6d1fa9"
+      }
+    ]
+  },
+  {
+    "package": "alsa-plugins",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.12"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.2.12"
+      },
+      {
+        "channel": "commit",
+        "version": "52574cb5ccbb8b546df2759e4b341a20332269b6"
+      }
+    ]
+  },
+  {
+    "package": "alsa-ucm-conf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.14"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.2.14"
+      },
+      {
+        "channel": "commit",
+        "version": "1e5f874de71844d559074ad1bc6c9f224825b442"
+      }
+    ]
+  },
+  {
+    "package": "alsa-utils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.14"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.2.14"
+      },
+      {
+        "channel": "commit",
+        "version": "8957eb224bf70133670b3543e4605de4293d223c"
+      }
+    ]
+  },
+  {
+    "package": "ani-cli",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.10"
+      },
+      {
+        "channel": "commit",
+        "version": "c8aa791982cd4c5d72234c590a2834cfa5a712e6"
+      }
+    ]
+  },
+  {
+    "package": "appstream",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.1"
+      },
+      {
+        "channel": "commit",
+        "version": "bd14fd774a4650e573b701de7cabc315ca3c5a10"
+      }
+    ]
+  },
+  {
+    "package": "aquamarine",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.9.5"
+      },
+      {
+        "channel": "commit",
+        "version": "1826a9923881320306231b1c2090379ebf9fa4f8"
+      }
+    ]
+  },
+  {
+    "package": "aria2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.37.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d372b788ec2891164a93556c4a7dd4b0cf74c669"
+      }
+    ]
+  },
+  {
+    "package": "at-spi2-core",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.58.1"
+      },
+      {
+        "channel": "commit",
+        "version": "47ce834d8eef190653878992304f6b5db278d8f3"
+      }
+    ]
+  },
+  {
+    "package": "attr",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.5.2"
+      },
+      {
+        "channel": "commit",
+        "version": "4d4a562d7b73dcea8bd4b2d40b8c030d5065111b"
+      }
+    ]
+  },
+  {
+    "package": "autoconf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.72"
+      }
+    ]
+  },
+  {
+    "package": "autoconf-archive",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2024.10.16"
+      }
+    ]
+  },
+  {
+    "package": "automake",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.18.1"
+      }
+    ]
+  },
+  {
+    "package": "avahi",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.8"
+      },
+      {
+        "channel": "unstable",
+        "version": "0.9-rc2"
+      },
+      {
+        "channel": "commit",
+        "version": "98e2487b420c1165b6a2faa96a28ddfb5214b702"
+      }
+    ]
+  },
+  {
+    "package": "bash",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "5.3-rc2"
+      }
+    ]
+  },
+  {
+    "package": "bash-completion",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.16.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.16.0"
+      },
+      {
+        "channel": "commit",
+        "version": "ab928cd8889ea2da4803f52e45732b0a1898c8a9"
+      }
+    ]
+  },
+  {
+    "package": "bc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "7.0.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "7.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "5545027fabe32b22138ace4f2ad1031abb7d8dd5"
+      }
+    ]
+  },
+  {
+    "package": "bind-utils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "9.21.12"
+      },
+      {
+        "channel": "unstable",
+        "version": "9.21.12"
+      }
+    ]
+  },
+  {
+    "package": "binutils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.45"
+      }
+    ]
+  },
+  {
+    "package": "bison",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.8.2"
+      }
+    ]
+  },
+  {
+    "package": "bottom",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.11.2"
+      },
+      {
+        "channel": "commit",
+        "version": "1ba734a65dabcad98c9211a6fc6984b13b17dcc5"
+      }
+    ]
+  },
+  {
+    "package": "brightnessctl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.5.1"
+      },
+      {
+        "channel": "commit",
+        "version": "e70bc55cf053caa285695ac77507e009b5508ee3"
+      }
+    ]
+  },
+  {
+    "package": "brotli",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.2.0rc1"
+      },
+      {
+        "channel": "commit",
+        "version": "4b0f27b6f985b4301ad5cec4a31b9792ecf252bc"
+      }
+    ]
+  },
+  {
+    "package": "bspwm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.9.12"
+      },
+      {
+        "channel": "commit",
+        "version": "c5cf7d3943f9a34a5cb2bab36bf473fd77e7d4f6"
+      }
+    ]
+  },
+  {
+    "package": "btop",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.5"
+      },
+      {
+        "channel": "commit",
+        "version": "845d2cb0663de0b0c0cfac1af43bea934203e3dc"
+      }
+    ]
+  },
+  {
+    "package": "btrfs-progs",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.17"
+      },
+      {
+        "channel": "commit",
+        "version": "c03e29f083678f47a7d7d810db4d21d905979b77"
+      }
+    ]
+  },
+  {
+    "package": "bubblewrap",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.11.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d6180f25b164c708b8b0a0d86d6a9642f30cd9a9"
+      }
+    ]
+  },
+  {
+    "package": "bzip2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.8"
+      },
+      {
+        "channel": "commit",
+        "version": "66c46b8c9436613fd81bc5d03f63a61933a4dcc3"
+      }
+    ]
+  },
+  {
+    "package": "c-ares",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.34.5"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.34.5"
+      },
+      {
+        "channel": "commit",
+        "version": "89f91c07436c5d18926f8b2ff3d078787c1c5fe2"
+      }
+    ]
+  },
+  {
+    "package": "caddy",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.10.2"
+      },
+      {
+        "channel": "commit",
+        "version": "2ec28bca43e5269511f8d9c1656244dd84acdad9"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.10.2"
+      }
+    ]
+  },
+  {
+    "package": "cairo",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.18.4"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.18.4"
+      },
+      {
+        "channel": "commit",
+        "version": "04656d7450e229622546fd2b11496aa58c44181d"
+      }
+    ]
+  },
+  {
+    "package": "cargo-c",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.10.16"
+      },
+      {
+        "channel": "commit",
+        "version": "5091d9613fc6536f2beb0e7e037597fe0e0146bf"
+      }
+    ]
+  },
+  {
+    "package": "catfetch",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.1"
+      },
+      {
+        "channel": "commit",
+        "version": "81201eaad30c5a8b6ab615cfd9631e22e3da3cc1"
+      }
+    ]
+  },
+  {
+    "package": "catgirl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.2a"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.2a"
+      },
+      {
+        "channel": "commit",
+        "version": "6842cc755ed186793c3b2fd2736e6efb497e52e7"
+      }
+    ]
+  },
+  {
+    "package": "cava",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.10.6"
+      },
+      {
+        "channel": "commit",
+        "version": "7b1487a91f49918b4f3d063aae8c0eefa19b58b8"
+      }
+    ]
+  },
+  {
+    "package": "cbindgen",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.29.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "0.29.0"
+      },
+      {
+        "channel": "commit",
+        "version": "307d1e96bc1cd6b70e73a6b81b84e8d5bb1fc21c"
+      }
+    ]
+  },
+  {
+    "package": "check",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.15.2"
+      },
+      {
+        "channel": "commit",
+        "version": "455005dc29dc6727de7ee36fee4b49a13b39f73f"
+      }
+    ]
+  },
+  {
+    "package": "chrony",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.8"
+      },
+      {
+        "channel": "unstable",
+        "version": "4.8"
+      },
+      {
+        "channel": "commit",
+        "version": "2e29935c548fe842e700ffef3ba79efc22a94a51"
+      }
+    ]
+  },
+  {
+    "package": "cli11",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.5.0"
+      },
+      {
+        "channel": "commit",
+        "version": "a41ba814b3202aeb35f6ed36f0fde80402bf85cc"
+      }
+    ]
+  },
+  {
+    "package": "cmake",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.1.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "4.1.2"
+      },
+      {
+        "channel": "commit",
+        "version": "48e608ad5d01776b24e7f85835644cfb7f910072"
+      }
+    ]
+  },
+  {
+    "package": "coreutils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "9.8"
+      },
+      {
+        "channel": "release",
+        "version": "9.8"
+      },
+      {
+        "channel": "commit",
+        "version": "dd3eab13ee35231b11a7814d75543e8ae02b0d52"
+      }
+    ]
+  },
+  {
+    "package": "cpio",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.15"
+      }
+    ]
+  },
+  {
+    "package": "cuda",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "13.0.2"
+      }
+    ]
+  },
+  {
+    "package": "cups",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.4.14"
+      },
+      {
+        "channel": "commit",
+        "version": "36809442d9c8a0b65e2a29f6df10f1c19fe642db"
+      }
+    ]
+  },
+  {
+    "package": "curl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "8.16.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "8.16.0"
+      },
+      {
+        "channel": "commit",
+        "version": "66753bc1203167c2a07737963149e83d93e3788c"
+      }
+    ]
+  },
+  {
+    "package": "cyrus-sasl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.28"
+      },
+      {
+        "channel": "commit",
+        "version": "ac0c278817a082c625c496ec812318c019e0b96f"
+      }
+    ]
+  },
+  {
+    "package": "cython",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.1.4"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.1.4"
+      },
+      {
+        "channel": "commit",
+        "version": "de0059e5f82b96570ba9dc84e01ce1d955e557f1"
+      }
+    ]
+  },
+  {
+    "package": "dbus",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.16.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.16.2"
+      },
+      {
+        "channel": "commit",
+        "version": "1bcf396c7872f317778f3ff5645af1630738d43f"
+      }
+    ]
+  },
+  {
+    "package": "dconf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.49.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "0.49.0"
+      },
+      {
+        "channel": "commit",
+        "version": "1f3a995aed4f64b356972cf0b7100ca5ccfeb4ba"
+      }
+    ]
+  },
+  {
+    "package": "ddcutil",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "16e03655caf9df9656593a41f6692750c61bec93"
+      }
+    ]
+  },
+  {
+    "package": "dejagnu",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.6.3"
+      }
+    ]
+  },
+  {
+    "package": "desktop-file-utils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.28"
+      },
+      {
+        "channel": "unstable",
+        "version": "0.28"
+      },
+      {
+        "channel": "commit",
+        "version": "673ec76e881b8dd7f710b846ae0418c09e6f5439"
+      }
+    ]
+  },
+  {
+    "package": "dhcpcd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "10.2.4"
+      },
+      {
+        "channel": "commit",
+        "version": "ba9f3823ae825c341ea30f45b46d942b4ce5b8d9"
+      }
+    ]
+  },
+  {
+    "package": "diffutils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.12"
+      }
+    ]
+  },
+  {
+    "package": "docbook-sgml",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.5"
+      }
+    ]
+  },
+  {
+    "package": "docbook-xml",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.5"
+      }
+    ]
+  },
+  {
+    "package": "docbook-xsl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.79.2"
+      }
+    ]
+  },
+  {
+    "package": "dosfstools",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.2"
+      },
+      {
+        "channel": "commit",
+        "version": "289a48b9cb5b3c589391d28aa2515c325c932c7a"
+      }
+    ]
+  },
+  {
+    "package": "double-conversion",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.3.1"
+      },
+      {
+        "channel": "commit",
+        "version": "60c4cc2566541ef157ca9e95a836f59aa3079550"
+      }
+    ]
+  },
+  {
+    "package": "dtc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.7.2"
+      },
+      {
+        "channel": "commit",
+        "version": "7f3184a6c550bb8fb59e93c9901d75dced889dcf"
+      }
+    ]
+  },
+  {
+    "package": "duktape",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.7.0"
+      },
+      {
+        "channel": "commit",
+        "version": "50af773b1b32067170786c2b7c661705ec7425d4"
+      }
+    ]
+  },
+  {
+    "package": "dust",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.3"
+      },
+      {
+        "channel": "commit",
+        "version": "67d23e80ff96db681da558321fc1058512424c73"
+      }
+    ]
+  },
+  {
+    "package": "e2fsprogs",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.47.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.47.3"
+      },
+      {
+        "channel": "commit",
+        "version": "4b02eb164221c079b428566499343af2766c2ec3"
+      }
+    ]
+  },
+  {
+    "package": "efibootmgr",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "18"
+      },
+      {
+        "channel": "commit",
+        "version": "0a85e9baaac8a34e4a0bb9c23dfcc9c4f759e061"
+      }
+    ]
+  },
+  {
+    "package": "efivar",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "39"
+      },
+      {
+        "channel": "commit",
+        "version": "68daa04654acbe1bbaa17ebfc23c371b39e69c6b"
+      }
+    ]
+  },
+  {
+    "package": "egl-gbm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "b24587d4871a630d05e9e26da94c95e6ce4324f2"
+      }
+    ]
+  },
+  {
+    "package": "egl-wayland",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.20"
+      },
+      {
+        "channel": "commit",
+        "version": "f81fcd016bb232c12ba59dddb240648203caaf4c"
+      }
+    ]
+  },
+  {
+    "package": "egl-x11",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.3"
+      },
+      {
+        "channel": "commit",
+        "version": "511591256a9271c494ffcb47ea542803f6280d1a"
+      }
+    ]
+  },
+  {
+    "package": "eglexternalplatform",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "cf9f10589775c1b4d90f1df6f417f8cf1bed7ec6"
+      }
+    ]
+  },
+  {
+    "package": "ell",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.80"
+      },
+      {
+        "channel": "commit",
+        "version": "bb3b98753e797fb96615a7b096604f38fc448a37"
+      }
+    ]
+  },
+  {
+    "package": "elogind",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "255.17"
+      },
+      {
+        "channel": "commit",
+        "version": "39c31cd9b2cdfccdb73cb9a21df5ac731b23a650"
+      }
+    ]
+  },
+  {
+    "package": "entr",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.7"
+      },
+      {
+        "channel": "commit",
+        "version": "4d6dda8e655895479e35fa618b7c49950b275d10"
+      }
+    ]
+  },
+  {
+    "package": "expat",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.7.3"
+      },
+      {
+        "channel": "commit",
+        "version": "4fb6357c327d1a2f77849119ea5769a7a0201f3e"
+      }
+    ]
+  },
+  {
+    "package": "expect",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.45.4"
+      }
+    ]
+  },
+  {
+    "package": "eza",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.23.4"
+      },
+      {
+        "channel": "commit",
+        "version": "5b7bc61765879cebc98613d65f7b99ceab9c6242"
+      }
+    ]
+  },
+  {
+    "package": "fastfetch",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.53.0"
+      },
+      {
+        "channel": "commit",
+        "version": "e3a698f7b1432821ec14eb480eea001cfac73fd6"
+      }
+    ]
+  },
+  {
+    "package": "fdk-aac",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.0.3"
+      },
+      {
+        "channel": "commit",
+        "version": "d8e6b1a3aa606c450241632b64b703f21ea31ce3"
+      }
+    ]
+  },
+  {
+    "package": "feh",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.11.2"
+      },
+      {
+        "channel": "commit",
+        "version": "00daaacddcce9bc9dc603a0f601ff3bd091e8c04"
+      }
+    ]
+  },
+  {
+    "package": "ffmpeg",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "7.1.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "8.0"
+      },
+      {
+        "channel": "commit",
+        "version": "0bc54cddb1050c3c55bc65adbd3c8aa90d7eb457"
+      }
+    ]
+  },
+  {
+    "package": "fftw",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.3.10"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.3.10"
+      },
+      {
+        "channel": "commit",
+        "version": "adde9bec41206a3d6bbb02bdbf9f64726d7d2009"
+      }
+    ]
+  },
+  {
+    "package": "file",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.46"
+      }
+    ]
+  },
+  {
+    "package": "findutils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.10.0"
+      }
+    ]
+  },
+  {
+    "package": "flac",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.0"
+      },
+      {
+        "channel": "commit",
+        "version": "9547dbc2ddfca06a70ea937dbb605bbe78ea5f90"
+      }
+    ]
+  },
+  {
+    "package": "flatpak",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.16.1"
+      },
+      {
+        "channel": "commit",
+        "version": "815301f3410499fb8c6f85ea0f99a9adc1c28487"
+      }
+    ]
+  },
+  {
+    "package": "flex",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.6.4"
+      },
+      {
+        "channel": "commit",
+        "version": "bf254c75b1e0d2641ebbd7fc85fb183f36a62ea7"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.6.4"
+      }
+    ]
+  },
+  {
+    "package": "flit",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.12.0"
+      },
+      {
+        "channel": "commit",
+        "version": "7236f7e65e44f825fa88312074d0d043aa6ef08c"
+      }
+    ]
+  },
+  {
+    "package": "floorp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "12.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "76151aa98be0e991adbcd79db9c99f5515539bb6"
+      }
+    ]
+  },
+  {
+    "package": "fmt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "12.0.0"
+      },
+      {
+        "channel": "commit",
+        "version": "1234bc312ec3f62f7b9bb80756bf4d6074949bfa"
+      }
+    ]
+  },
+  {
+    "package": "font-util",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.4.1"
+      },
+      {
+        "channel": "commit",
+        "version": "7af30077fc459e7fe3415ffa803583d7465a8a99"
+      }
+    ]
+  },
+  {
+    "package": "fontconfig",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.17.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.17.1"
+      },
+      {
+        "channel": "commit",
+        "version": "23b3fc6e58a13d126b9c30fafc9a16f8bd7143e9"
+      }
+    ]
+  },
+  {
+    "package": "freeglut",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.6.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.6.0"
+      },
+      {
+        "channel": "commit",
+        "version": "bfcae0a08de7ae21dd77e9bc8dcb6815bb9b1118"
+      }
+    ]
+  },
+  {
+    "package": "freetype",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.14.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.14.1"
+      },
+      {
+        "channel": "commit",
+        "version": "4334f009e7d20789cc7ee1224290ea1e22a17b5b"
+      }
+    ]
+  },
+  {
+    "package": "fribidi",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.16"
+      },
+      {
+        "channel": "commit",
+        "version": "b28f43bd3e8e31a5967830f721bab218c1aa114c"
+      }
+    ]
+  },
+  {
+    "package": "fuse",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.17.4"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.17.4"
+      },
+      {
+        "channel": "commit",
+        "version": "e12762b71c1cf37a9da535873a9ae17334610cb6"
+      }
+    ]
+  },
+  {
+    "package": "fzf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.65.2"
+      },
+      {
+        "channel": "commit",
+        "version": "4ffde48e2f4d5e745b757ba75f650ed6da4d6623"
+      }
+    ]
+  },
+  {
+    "package": "gawk",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.3.2"
+      }
+    ]
+  },
+  {
+    "package": "gcc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "15.2.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "16"
+      },
+      {
+        "channel": "commit",
+        "version": "767a93886a33a5719ce2027400567d97f6331b02"
+      }
+    ]
+  },
+  {
+    "package": "gdb",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "16.3"
+      }
+    ]
+  },
+  {
+    "package": "gdbm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.26"
+      }
+    ]
+  },
+  {
+    "package": "gdk-pixbuf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.44.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.44.3"
+      },
+      {
+        "channel": "commit",
+        "version": "a3798fccd41da4eaf50f576c9c32076886db0bb2"
+      }
+    ]
+  },
+  {
+    "package": "gettext",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.26"
+      }
+    ]
+  },
+  {
+    "package": "giflib",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.2.2"
+      },
+      {
+        "channel": "commit",
+        "version": "8bed392c280ad2c237e8bf1beca6f8f68f893e87"
+      }
+    ]
+  },
+  {
+    "package": "girara",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.4.5"
+      },
+      {
+        "channel": "commit",
+        "version": "66e20f92fab3a0262fa85887ef9a9cd788047e64"
+      }
+    ]
+  },
+  {
+    "package": "git",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.51.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.51.0"
+      },
+      {
+        "channel": "commit",
+        "version": "4b71b294773cc4f7fe48ec3a70079aa8783f373d"
+      }
+    ]
+  },
+  {
+    "package": "glad",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.0.8"
+      },
+      {
+        "channel": "commit",
+        "version": "431786d8126e4f383a81e36f47b61a5d52a1c20d"
+      }
+    ]
+  },
+  {
+    "package": "glaze",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.0.0"
+      },
+      {
+        "channel": "commit",
+        "version": "71fecbbcde6878f20f16d4a557263d173ec3a18a"
+      }
+    ]
+  },
+  {
+    "package": "glew",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.2.0"
+      },
+      {
+        "channel": "commit",
+        "version": "196b58d4414d3f10248e1ae2b106729c52a69d0e"
+      }
+    ]
+  },
+  {
+    "package": "glib",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.86.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.86.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d54816de375b89c23cb7937f2153856db508d616"
+      }
+    ]
+  },
+  {
+    "package": "glib-networking",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.80.1"
+      },
+      {
+        "channel": "commit",
+        "version": "60240c2394d6cc32e3cfba8985fb20518305399b"
+      }
+    ]
+  },
+  {
+    "package": "glibc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.42"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.42.9000"
+      },
+      {
+        "channel": "commit",
+        "version": "8ca2fe7e96c0ccf04d32d7002d7a6d9edcb9f8ee"
+      }
+    ]
+  },
+  {
+    "package": "glm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.1"
+      },
+      {
+        "channel": "commit",
+        "version": "8bed9b37fd565733920bb3a6c34c0d03f33c5036"
+      }
+    ]
+  },
+  {
+    "package": "glslang",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "16.0.0"
+      },
+      {
+        "channel": "sdk",
+        "version": "1.4.328.1"
+      },
+      {
+        "channel": "commit",
+        "version": "b5c046e58b216ee27fbdc1e3826a6d26868bfd86"
+      }
+    ]
+  },
+  {
+    "package": "glu",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "9.0.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "9.0.3"
+      },
+      {
+        "channel": "commit",
+        "version": "a2b96c7bba8db8fec3e02fb4227a7f7b02cabad1"
+      }
+    ]
+  },
+  {
+    "package": "gmp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.3.0"
+      }
+    ]
+  },
+  {
+    "package": "gnupg",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.4.8"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.5.12"
+      },
+      {
+        "channel": "commit",
+        "version": "973122f54aa37f05d0c76427d29f8be83071afd0"
+      }
+    ]
+  },
+  {
+    "package": "gnutls",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.8.10"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.8.10"
+      },
+      {
+        "channel": "commit",
+        "version": "2d87339810507c30f053fa7d237e4aec5226187e"
+      }
+    ]
+  },
+  {
+    "package": "go",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.25.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.25.2"
+      },
+      {
+        "channel": "commit",
+        "version": "1cd71689f2ed8f07031a0cc58fc3586ca501839f"
+      }
+    ]
+  },
+  {
+    "package": "gperf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.3"
+      }
+    ]
+  },
+  {
+    "package": "gpgme",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.0.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.0.1"
+      },
+      {
+        "channel": "commit",
+        "version": "5517c5fe3da6eab1ccddea6fbd7fde1aefdab25c"
+      }
+    ]
+  },
+  {
+    "package": "gpu-screen-recorder",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.8.0"
+      },
+      {
+        "channel": "commit",
+        "version": "8c42c47627768792004c26de2a9ff85c35b3f294"
+      }
+    ]
+  },
+  {
+    "package": "graphviz",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "14.0.1"
+      },
+      {
+        "channel": "commit",
+        "version": "f80077e4f7017386d4905531b9447453c88b3ae4"
+      }
+    ]
+  },
+  {
+    "package": "grep",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.12"
+      }
+    ]
+  },
+  {
+    "package": "grim",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.0"
+      },
+      {
+        "channel": "commit",
+        "version": "b7a99854e46945db9f50ba8d2417ac42321173d1"
+      }
+    ]
+  },
+  {
+    "package": "groff",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.23.0"
+      }
+    ]
+  },
+  {
+    "package": "gsettings-desktop-schemas",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "49.0"
+      },
+      {
+        "channel": "commit",
+        "version": "95c6cec03c42f21467caec9b6c34dba53eb9645a"
+      }
+    ]
+  },
+  {
+    "package": "gstreamer",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.27.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.27.2"
+      },
+      {
+        "channel": "commit",
+        "version": "d75192f5d5266758ae69c1a92c9901e932ae5caf"
+      }
+    ]
+  },
+  {
+    "package": "gtk",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.20.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "4.21.0"
+      },
+      {
+        "channel": "commit",
+        "version": "a78bc709189789cb5a65572aa07b8ea52a3e187f"
+      },
+      {
+        "channel": "2",
+        "version": "2.24.33"
+      },
+      {
+        "channel": "3",
+        "version": "3.24.51"
+      }
+    ]
+  },
+  {
+    "package": "gumbo-parser",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.13.2"
+      },
+      {
+        "channel": "commit",
+        "version": "6dddad6503480afc1a1379187aa114415ac7e640"
+      }
+    ]
+  },
+  {
+    "package": "gzip",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.14"
+      }
+    ]
+  },
+  {
+    "package": "hwdata",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.400"
+      },
+      {
+        "channel": "commit",
+        "version": "f5ce55230206fd647bbcae42012094eb04640740"
+      }
+    ]
+  },
+  {
+    "package": "iana-etc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "20250929"
+      }
+    ]
+  },
+  {
+    "package": "inih",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "62"
+      },
+      {
+        "channel": "unstable",
+        "version": "62"
+      },
+      {
+        "channel": "commit",
+        "version": "26254ee9de7681f8825433415443e7116ff24b98"
+      }
+    ]
+  },
+  {
+    "package": "jansson",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.14.1"
+      },
+      {
+        "channel": "commit",
+        "version": "154f8919fb0d3778282b797789ad985e3d99fdc8"
+      }
+    ]
+  },
+  {
+    "package": "kbd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.9.0"
+      },
+      {
+        "channel": "commit",
+        "version": "db82eb6f86e6c0b8ac4260e88b88d66e1cd7c077"
+      }
+    ]
+  },
+  {
+    "package": "libtree",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.1.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.1.1"
+      },
+      {
+        "channel": "commit",
+        "version": "95d8992968a18ae957fef723f103b416d0843398"
+      }
+    ]
+  },
+  {
+    "package": "limine",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "10.1.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "10.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "8297cc7c9a95db187a578fc2be91b1350b5e9ee0"
+      }
+    ]
+  },
+  {
+    "package": "linux",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.17.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "6.17-rc7"
+      },
+      {
+        "channel": "commit",
+        "version": "67029a49db6c1f21106a1b5fcdd0ea234a6e0711"
+      }
+    ]
+  },
+  {
+    "package": "lz4",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.10.0"
+      },
+      {
+        "channel": "commit",
+        "version": "f8e365036efc9e94bda616432eb8ad942c236d76"
+      }
+    ]
+  },
+  {
+    "package": "m4",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.20"
+      }
+    ]
+  },
+  {
+    "package": "make",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.4.1"
+      }
+    ]
+  },
+  {
+    "package": "man-pages",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.15"
+      },
+      {
+        "channel": "commit",
+        "version": "d8cfe5d33c48e0d9d676eb585b759ecf753ca47f"
+      }
+    ]
+  },
+  {
+    "package": "mandoc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.14.6"
+      }
+    ]
+  },
+  {
+    "package": "ncurses",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.5"
+      },
+      {
+        "channel": "unstable",
+        "version": "6.5.20251010"
+      }
+    ]
+  },
+  {
+    "package": "ogg",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.6"
+      },
+      {
+        "channel": "commit",
+        "version": "0288fadac3ac62d453409dfc83e9c4ab617d2472"
+      }
+    ]
+  },
+  {
+    "package": "patch",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.8"
+      }
+    ]
+  },
+  {
+    "package": "perl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.42.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "5.43.3"
+      },
+      {
+        "channel": "commit",
+        "version": "859b78b1a8287681e524286f4e989b01816433ba"
+      }
+    ]
+  },
+  {
+    "package": "popt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.19"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.19-rc1"
+      },
+      {
+        "channel": "commit",
+        "version": "f45bfaf0fe59984c25a6745d20d573303e4a6045"
+      }
+    ]
+  },
+  {
+    "package": "python",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.14.0"
+      },
+      {
+        "channel": "unstable",
+        "version": "3.14.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d6dd64ac654898b4ce713c16c49eadb0c6e9d7dc"
+      }
+    ]
+  },
+  {
+    "package": "readline",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "8.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "8.3-rc2"
+      }
+    ]
+  },
+  {
+    "package": "sed",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.9"
+      }
+    ]
+  },
+  {
+    "package": "tar",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.35"
+      }
+    ]
+  },
+  {
+    "package": "texinfo",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "7.2"
+      }
+    ]
+  },
+  {
+    "package": "tmux",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.5a"
+      },
+      {
+        "channel": "commit",
+        "version": "0ff2676a2594aa6a26de7232e605640c28021f28"
+      }
+    ]
+  },
+  {
+    "package": "tree",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "d501b58ff9cbfd64272c8cbcad0bda36a3fada06"
+      }
+    ]
+  },
+  {
+    "package": "typos",
+    "versions": [
+      {
+        "channel": "unstable",
+        "version": "1.38.1"
+      },
+      {
+        "channel": "release",
+        "version": "1.38.1"
+      },
+      {
+        "channel": "commit",
+        "version": "80c8a4945eec0f6d464eaf9e65ed98ef085283d1"
+      }
+    ]
+  },
+  {
+    "package": "usbutils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "018"
+      },
+      {
+        "channel": "unstable",
+        "version": "018"
+      },
+      {
+        "channel": "commit",
+        "version": "366f12c77d658c86e04a0401a3c7075d5be1505d"
+      }
+    ]
+  },
+  {
+    "package": "util-linux",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.41.2"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.41-rc2"
+      },
+      {
+        "channel": "commit",
+        "version": "db0efab5c3e13794ae79fcb3db8371e3af510169"
+      }
+    ]
+  },
+  {
+    "package": "xz",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.8.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "5.8.1"
+      },
+      {
+        "channel": "commit",
+        "version": "8d26b72915e0d373f898b55935505857c30dbdb3"
+      }
+    ]
+  },
+  {
+    "package": "yajl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "735ac9f42168c1ec7492358a5b1debcd8cb05525"
+      }
+    ]
+  },
+  {
+    "package": "zlib",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.1"
+      },
+      {
+        "channel": "commit",
+        "version": "5a82f71ed1dfc0bec044d9702463dbdf84ea3b71"
+      }
+    ]
+  },
+  {
+    "package": "zstd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.7"
+      },
+      {
+        "channel": "commit",
+        "version": "23dae4bf49a8b36ab88509c85137b49f74bbc76d"
+      }
+    ]
+  }
+]

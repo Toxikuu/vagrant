@@ -1,1 +1,7 @@
 upstream = "karlstav/cava"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

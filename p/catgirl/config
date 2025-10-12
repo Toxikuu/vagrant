@@ -1,7 +1,15 @@
 upstream = "https://git.causal.agency/catgirl"
+chance = 0.83
 
-release.fetch = "gr | vtrim | sort -V" # vsort incorrectly detects a as alpha
-unstable.fetch = "gr | vtrim | sort -V" # vsort incorrectly detects a as alpha
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | sort -V" # vsort incorrectly detects a as alpha
+expected = '''^[0-9]+\.[0-9]+[a-f]?$'''
 
-release.expected = '''^[0-9]+\.[0-9]+[a-f]?$'''
-unstable.expected = '''^[0-9]+\.[0-9]+[a-f]?$'''
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | sort -V" # vsort incorrectly detects a as alpha
+expected = '''^[0-9]+\.[0-9]+[a-f]?$'''
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,2 @@
+release	5.8.0
+commit	8c42c47627768792004c26de2a9ff85c35b3f294

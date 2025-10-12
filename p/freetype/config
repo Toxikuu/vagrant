@@ -1,4 +1,12 @@
 upstream = "https://gitlab.freedesktop.org/freetype/freetype.git"
 
-release.fetch = '''gr | vtrim -e 's,^VER-,,' -e 's,-,.,g' | fsl | grep -Ev '^[0-9]+\.[a-zA-Z]' | fl | vsort'''
-unstable.fetch = '''gr | vtrim -e 's,^VER-,,' -e 's,-,.,g' | fsl | grep -Ev '^[0-9]+\.[a-zA-Z]' | vsort'''
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim -e 's,^VER-,,' -e 's,-,.,g' | fsl | grep -Ev '^[0-9]+\.[a-zA-Z]' | fl | vsort'''
+
+[[channels]]
+name = "unstable"
+fetch = '''gr | vtrim -e 's,^VER-,,' -e 's,-,.,g' | fsl | grep -Ev '^[0-9]+\.[a-zA-Z]' | vsort'''
+
+[[channels]]
+name = "commit"

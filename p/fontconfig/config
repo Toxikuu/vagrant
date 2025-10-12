@@ -1,4 +1,12 @@
 upstream = "https://gitlab.freedesktop.org/fontconfig/fontconfig.git"
 
-release.fetch = '''gr | vtrim -e 's,_,.,g' | fsl | grep -v '\.9[0-9]+$' | vsort'''
-unstable.fetch = "gr | vtrim -e 's,_,.,g' | fsl | vsort"
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim -e 's,_,.,g' | fsl | grep -v '\.9[0-9]+$' | vsort'''
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,_,.,g' | fsl | vsort"
+
+[[channels]]
+name = "commit"

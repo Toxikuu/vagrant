@@ -1,1 +1,7 @@
 upstream = "pystardust/ani-cli"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,4 +1,8 @@
 upstream = "dosfstools/dosfstools"
+chance = 0.11 # last commit dated 2023-10-09
 
-# last commit dated 2023-10-09
-chance = 0.03
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,1 +1,11 @@
 upstream = "tukaani-project/xz"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | vfem | vfs | vsort"
+
+[[channels]]
+name = "unstable"
+
+[[channels]]
+name = "commit"

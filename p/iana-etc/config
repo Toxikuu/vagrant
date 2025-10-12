@@ -1,2 +1,4 @@
 upstream = "mic92/iana-etc"
-unstable.enabled = false
+
+[[channels]]
+name = "release"

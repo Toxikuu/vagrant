@@ -1,1 +1,7 @@
 upstream = "junegunn/fzf"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

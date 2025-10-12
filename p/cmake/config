@@ -1,1 +1,10 @@
 upstream = "https://gitlab.kitware.com/cmake/cmake.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "unstable"
+
+[[channels]]
+name = "commit"

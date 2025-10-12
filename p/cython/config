@@ -1,6 +1,12 @@
 upstream = "cython/cython"
 
-release.fetch = "gr | vtrim | fl | vfs | grep -vF -- - | vsort"
-unstable.fetch = "gr | vtrim | grep -vF -- - | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fl | vfs | grep -vF -- - | vsort"
 
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | grep -vF -- - | vsort"
 
+[[channels]]
+name = "commit"

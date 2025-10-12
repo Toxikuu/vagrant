@@ -1,1 +1,7 @@
 upstream = "nvidia/egl-gbm"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

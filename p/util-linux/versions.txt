@@ -1,0 +1,3 @@
+release	2.41.2
+unstable	2.41-rc2
+commit	db0efab5c3e13794ae79fcb3db8371e3af510169

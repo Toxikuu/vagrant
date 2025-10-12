@@ -9,8 +9,8 @@ pub struct Version {
 }
 
 impl Version {
-    pub fn new(raw: String) -> Self {
-        Version {
+    pub const fn new(raw: String) -> Self {
+        Self {
             raw,
             fmt: String::new(),
         }
@@ -22,10 +22,10 @@ impl Version {
             | Some(v) => v.to_lowercase(),
         };
 
-        let ver = ver.trim_start_matches("v");
+        let ver = ver.trim_start_matches('v');
         let ver = ver.trim_start_matches(&package.name);
-        let ver = ver.trim_start_matches("-");
-        let ver = ver.trim_start_matches("_");
+        let ver = ver.trim_start_matches('-');
+        let ver = ver.trim_start_matches('_');
 
         self.fmt = ver.trim().to_string();
     }
