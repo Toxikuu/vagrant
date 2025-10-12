@@ -1,1 +1,8 @@
 upstream = "facebook/zstd"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fsl | grep -v kernel | vsort"
+
+[[channels]]
+name = "commit"

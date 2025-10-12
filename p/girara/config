@@ -1,1 +1,7 @@
 upstream = "pwmt/girara"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

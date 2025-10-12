@@ -1,1 +1,8 @@
 upstream = "kdave/btrfs-progs"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,2 +1,8 @@
 upstream = "lloyd/yajl"
-chance = 0.01
+chance = 0.01 # last commit dated 2015-09-24
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

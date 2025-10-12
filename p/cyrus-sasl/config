@@ -1,1 +1,7 @@
 upstream = "cyrusimap/cyrus-sasl"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

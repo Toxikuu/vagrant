@@ -1,2 +1,8 @@
 upstream = "akheron/jansson"
-chance = 0.25
+chance = 0.35
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

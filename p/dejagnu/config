@@ -1,2 +1,5 @@
 upstream = "http://mirror.rit.edu/gnu/dejagnu/?C=M;O=D"
 chance = 0.15
+
+[[channels]]
+name = "release"

@@ -1,1 +1,7 @@
 upstream = "https://codeberg.org/gumbo-parser/gumbo-parser.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,3 +1,11 @@
 upstream = "avahi/avahi"
-
 chance = 0.44
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "unstable"
+
+[[channels]]
+name = "commit"

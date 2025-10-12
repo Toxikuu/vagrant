@@ -1,1 +1,7 @@
 upstream = "gnome/at-spi2-core"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

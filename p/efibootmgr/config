@@ -1,3 +1,9 @@
 upstream = "rhboot/efibootmgr"
-
 chance = 0.44
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^Release_,,' -e 's,_,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

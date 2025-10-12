@@ -1,1 +1,7 @@
 upstream = "dav1dde/glad"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

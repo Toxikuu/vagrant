@@ -1,1 +1,7 @@
 upstream = "stephenberry/glaze"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

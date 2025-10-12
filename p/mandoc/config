@@ -1,8 +1,6 @@
 upstream = "https://mandoc.bsd.lv/"
-
 chance = 0.1
 
-commit.enabled = false
-unstable.enabled = false
-
-release.fetch = "cr | grep 'current version' | awk '{print $3}'"
+[[channels]]
+name = "release"
+fetch = "cr | grep 'current version' | awk '{print $3}'"

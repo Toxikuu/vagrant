@@ -1,4 +1,12 @@
 upstream = "fftw/fftw3"
 
-release.fetch = "gr | vtrim | fsl | vfs | vsort"
-unstable.fetch = "gr | vtrim | fsl | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fsl | vfs | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | fsl | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,3 +1,8 @@
 upstream = "libcheck/check"
-
 chance = 0.1
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,1 +1,7 @@
 upstream = "clementtsang/bottom"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

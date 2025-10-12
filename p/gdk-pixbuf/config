@@ -2,5 +2,13 @@ upstream = "gnome/gdk-pixbuf"
 
 # the 2.90.3 tag was created in 2010 and fucks up vsort lol
 # thanks gnome
-release.fetch = '''gr | vtrim -e s,_,.,g | fsl | grep -v '\.9[0-9]\+\.[0-9]\+$' | vfem | vsort'''
-unstable.fetch = '''gr | vtrim -e s,_,.,g | fsl | grep -v '\.9[0-9]\+\.[0-9]\+$' | vsort'''
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim -e s,_,.,g | fsl | grep -v '\.9[0-9]\+\.[0-9]\+$' | vfem | vsort'''
+
+[[channels]]
+name = "unstable"
+fetch = '''gr | vtrim -e s,_,.,g | fsl | grep -v '\.9[0-9]\+\.[0-9]\+$' | vsort'''
+
+[[channels]]
+name = "commit"

@@ -1,1 +1,5 @@
 upstream = "http://mirror.rit.edu/gnu/sed/?C=M&O=D"
+chance = 0.44
+
+[[channels]]
+name = "release"

@@ -1,4 +1,12 @@
 upstream = "gpg/gpgme"
 
-release.fetch = "gr | vtrim -re 's,(_|-|@),.,g' | fl | vsort"
-unstable.fetch = "gr | vtrim -re 's,(_|-|@),.,g' | fsl | grep -v base | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -re 's,(_|-|@),.,g' | fl | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -re 's,(_|-|@),.,g' | fsl | grep -v base | vsort"
+
+[[channels]]
+name = "commit"

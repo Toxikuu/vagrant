@@ -1,4 +1,12 @@
 upstream = "westes/flex"
 chance = 0.5
 
-unstable.fetch = "gr | vtrim -e 's,-,.,g' | vsort"
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,-,.,g' | vsort"

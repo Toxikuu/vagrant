@@ -1,4 +1,12 @@
 upstream = "https://gitlab.freedesktop.org/xdg/desktop-file-utils.git"
 
-release.fetch = '''gr | tolower | sed -e 's,_,-,g' -re 's,([0-9])+-,\1.,' | vtrim | vsort'''
-unstable.fetch = '''gr | tolower | sed -e 's,_,-,g' -re 's,([0-9])+-,\1.,' | vtrim | vsort'''
+[[channels]]
+name = "release"
+fetch = '''gr | tolower | sed -e 's,_,-,g' -re 's,([0-9])+-,\1.,' | vtrim | vsort'''
+
+[[channels]]
+name = "unstable"
+fetch = '''gr | tolower | sed -e 's,_,-,g' -re 's,([0-9])+-,\1.,' | vtrim | vsort'''
+
+[[channels]]
+name = "commit"

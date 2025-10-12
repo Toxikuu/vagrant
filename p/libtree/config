@@ -12,14 +12,16 @@ chance = 0.1
 #
 # The value for fetch is evaluated in a shell. `ghr` is a function to call
 # github's api's releases endpoint, as defined below.
-[release]
+[[channels]]
+name = "release"
 enabled = true # Whether to fetch, defaults to true
 fetch = "ghr"
 
-[unstable]
-enabled = true # Whether to fetch, defaults to true
+[[channels]]
+name = "unstable"
 fetch = "gr | vtrim | vsort"
 
-[commit]
-enabled  = true # Whether to fetch, defaults to true
-fetch = "ghc"
+[[channels]]
+name = "commit"
+# Fetch defaults to `githead` if the upstream type is determined to be a git
+# repo. The release and unstable channels also have default fetches.

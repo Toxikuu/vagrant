@@ -1,3 +1,8 @@
 upstream = "baskerville/bspwm"
-
 chance = 0.8
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

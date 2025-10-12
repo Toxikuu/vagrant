@@ -1,1 +1,5 @@
 upstream = "http://mirror.rit.edu/gnu/gzip/?C=M&O=D"
+chance = 0.84
+
+[[channels]]
+name = "release"

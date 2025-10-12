@@ -1,4 +1,12 @@
 upstream = "coreutils/coreutils"
 
-release.fetch = "gr | vtrim | fsl | vsort | vfs"
-unstable.fetch = "gr | vtrim | fsl | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fsl | vsort | vfs"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fsl | vsort"
+
+[[channels]]
+name = "commit"

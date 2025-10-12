@@ -1,3 +1,5 @@
 upstream = "http://mirror.rit.edu/gnu/automake/?C=M&O=D"
-
 chance = 0.7
+
+[[channels]]
+name = "release"

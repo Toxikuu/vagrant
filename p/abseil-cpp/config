@@ -1,7 +1,14 @@
 upstream = "abseil/abseil-cpp"
 
-# TODO: not entirely sure why vsort sorts rcs wrong here
-unstable.fetch = "gr | sort -V"
+[[channels]]
+name = "unstable"
+# TODO: see if i can fix vsort here
+fetch = "gr | sort -V"
+expected = '''^[0-9]{8}\.(rc[0-9]+|[0-9]+)$'''
 
-unstable.expected = '''^[0-9]{8}\.(rc[0-9]+|[0-9]+)$'''
-release.expected = '''^[0-9]{8}\.[0-9]+$'''
+[[channels]]
+name = "release"
+expected = '''^[0-9]{8}\.[0-9]+$'''
+
+[[channels]]
+name = "commit"

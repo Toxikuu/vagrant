@@ -1,1 +1,7 @@
 upstream = "bootandy/dust"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

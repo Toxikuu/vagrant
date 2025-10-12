@@ -1,2 +1,11 @@
-# TODO: `ghr` appears to not care about prereleases.
 upstream = "gavinhoward/bc"
+
+[[channels]]
+name = "release"
+fetch = "ghr | vtrim"
+
+[[channels]]
+name = "unstable"
+
+[[channels]]
+name = "commit"

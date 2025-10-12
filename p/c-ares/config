@@ -2,5 +2,13 @@ upstream = "c-ares/c-ares"
 
 chance = 0.95
 
-release.fetch = "gr | vtrim -e 's,cares-,,' -e 's,_,.,g' | grep -v curl | vfs | vsort"
-unstable.fetch = "gr | vtrim -e 's,cares-,,' -e 's,_,.,g' | grep -v curl | vsort"
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,cares-,,' -e 's,_,.,g' | grep -v curl | vfs | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,cares-,,' -e 's,_,.,g' | grep -v curl | vsort"
+
+[[channels]]
+name = "commit"
