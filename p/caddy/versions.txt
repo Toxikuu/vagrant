@@ -1,3 +1,3 @@
 release	2.10.2
-commit	2ec28bca43e5269511f8d9c1656244dd84acdad9
+commit	de6b78009b840eb395c33b8d65c5d32746df38b6
 unstable	2.10.2
