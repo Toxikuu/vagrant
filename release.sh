@@ -7,7 +7,7 @@ nl="
 "
 
 die() {
-    printf "%s: %s" "$argv0" "$1"
+    printf "%s: %s\n" "$argv0" "$1"
     exit "${2:-1}"
 }
 
@@ -43,16 +43,16 @@ new_tag="$new_tag_major.$new_tag_minor.$new_tag_patch"
 
 # Update Cargo version
 old_sum=$(sha256sum Cargo.toml)
-sed -i "s|version = \"$old_tag\"|version = \"$new_tag\"|"
+sed -i "s|version = \"$old_tag\"|version = \"$new_tag\"|" Cargo.toml
 new_sum=$(sha256sum Cargo.toml)
 
 if [[ "$old_sum" == "$new_sum" ]]; then
     die "Failed to update version in Cargo.toml"
 fi
 
-old_sum=$(sha256sum Cargo.toml)
+old_sum=$(sha256sum Cargo.lock)
 cargo build --release
-new_sum=$(sha256sum Cargo.toml)
+new_sum=$(sha256sum Cargo.lock)
 
 if [[ "$old_sum" == "$new_sum" ]]; then
     die "Cargo.lock unchanged after version bump"
