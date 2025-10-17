@@ -115,8 +115,10 @@ if [ -n "${features-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
+            entry="${entry/^!!/}"
             changelog_entry+=" - **[!!]** ${entry^}$nl"
         elif echo "$entry" | grep -q '^!'; then
+            entry="${entry/^!/}"
             changelog_entry+=" - [!] ${entry^}$nl"
         else
             changelog_entry+=" - ${entry^}$nl"
@@ -126,15 +128,17 @@ if [ -n "${features-}" ]; then
     changelog_entry+="$nl"
 fi
 
-if [ -n "${fixes:?}" ]; then
+if [ -n "${fixes-}" ]; then
     changelog_entry+="### Fixes$nl$nl"
 
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
+            entry="${entry/^!!/}"
             changelog_entry+=" - **[!!]** ${entry^}$nl"
         elif echo "$entry" | grep -q '^!'; then
+            entry="${entry/^!/}"
             changelog_entry+=" - [!] ${entry^}$nl"
         else
             changelog_entry+=" - ${entry^}$nl"
@@ -151,8 +155,10 @@ if [ -n "${chores-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
+            entry="${entry/^!!/}"
             changelog_entry+=" - **[!!]** ${entry^}$nl"
         elif echo "$entry" | grep -q '^!'; then
+            entry="${entry/^!/}"
             changelog_entry+=" - [!] ${entry^}$nl"
         else
             changelog_entry+=" - ${entry^}$nl"
@@ -169,8 +175,10 @@ if [ -n "${docs-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
+            entry="${entry/^!!/}"
             changelog_entry+=" - **[!!]** ${entry^}$nl"
         elif echo "$entry" | grep -q '^!'; then
+            entry="${entry/^!/}"
             changelog_entry+=" - [!] ${entry^}$nl"
         else
             changelog_entry+=" - ${entry^}$nl"
@@ -187,8 +195,10 @@ if [ -n "${ci-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
+            entry="${entry/^!!/}"
             changelog_entry+=" - **[!!]** ${entry^}$nl"
         elif echo "$entry" | grep -q '^!'; then
+            entry="${entry/^!/}"
             changelog_entry+=" - [!] ${entry^}$nl"
         else
             changelog_entry+=" - ${entry^}$nl"
@@ -205,8 +215,10 @@ if [ -n "${reverts-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
+            entry="${entry/^!!/}"
             changelog_entry+=" - **[!!]** ${entry^}$nl"
         elif echo "$entry" | grep -q '^!'; then
+            entry="${entry/^!/}"
             changelog_entry+=" - [!] ${entry^}$nl"
         else
             changelog_entry+=" - ${entry^}$nl"
@@ -221,7 +233,7 @@ first_entry_lineno=$(grep '^## ' -n CHANGES.md | head -n1 | cut -d: -f1)
 first_entry_lineno=$((first_entry_lineno - 1))
 
 header_temp=$(mktemp)
-head -$first_entry_lineno CHANGES.md > "$header_temp"
+head -$((first_entry_lineno - 1)) CHANGES.md > "$header_temp"
 
 old_temp=$(mktemp)
 tail +$first_entry_lineno CHANGES.md > "$old_temp"
