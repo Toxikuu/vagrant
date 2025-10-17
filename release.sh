@@ -25,11 +25,11 @@ old_tag_patch=$(echo "$old_tag" | cut -d. -f3)
 changes=$(git log --pretty=%s "$old_tag"..)
 
 # Check for breaking changes, and determine new semver
-if echo "$changes" | grep '^!!'; then
+if echo "$changes" | grep -q '^!!'; then
     new_tag_major=$((old_tag_major + 1))
     new_tag_minor=0
     new_tag_patch=0
-elif echo "$changes" | grep '^!'; then
+elif echo "$changes" | grep -q '^!'; then
     new_tag_major=$old_tag_major
     new_tag_minor=$((old_tag_minor + 1))
     new_tag_patch=0
@@ -114,12 +114,12 @@ if [ -n "${features-}" ]; then
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
-        if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - **[!!]** $entry$nl"
-        elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry$nl"
+        if echo "$entry" | grep -q '^!!'; then
+            changelog_entry+=" - **[!!]** ${entry^}$nl"
+        elif echo "$entry" | grep -q '^!'; then
+            changelog_entry+=" - [!] ${entry^}$nl"
         else
-            changelog_entry+=" - $entry$nl"
+            changelog_entry+=" - ${entry^}$nl"
         fi
     done <<< "$features"
 
@@ -132,12 +132,12 @@ if [ -n "${fixes:?}" ]; then
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
-        if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - **[!!]** $entry$nl"
-        elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry$nl"
+        if echo "$entry" | grep -q '^!!'; then
+            changelog_entry+=" - **[!!]** ${entry^}$nl"
+        elif echo "$entry" | grep -q '^!'; then
+            changelog_entry+=" - [!] ${entry^}$nl"
         else
-            changelog_entry+=" - $entry$nl"
+            changelog_entry+=" - ${entry^}$nl"
         fi
     done <<< "$fixes"
 
@@ -150,12 +150,12 @@ if [ -n "${chores-}" ]; then
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
-        if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - **[!!]** $entry$nl"
-        elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry$nl"
+        if echo "$entry" | grep -q '^!!'; then
+            changelog_entry+=" - **[!!]** ${entry^}$nl"
+        elif echo "$entry" | grep -q '^!'; then
+            changelog_entry+=" - [!] ${entry^}$nl"
         else
-            changelog_entry+=" - $entry$nl"
+            changelog_entry+=" - ${entry^}$nl"
         fi
     done <<< "$chores"
 
@@ -168,12 +168,12 @@ if [ -n "${docs-}" ]; then
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
-        if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - **[!!]** $entry$nl"
-        elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry$nl"
+        if echo "$entry" | grep -q '^!!'; then
+            changelog_entry+=" - **[!!]** ${entry^}$nl"
+        elif echo "$entry" | grep -q '^!'; then
+            changelog_entry+=" - [!] ${entry^}$nl"
         else
-            changelog_entry+=" - $entry$nl"
+            changelog_entry+=" - ${entry^}$nl"
         fi
     done <<< "$docs"
 
@@ -186,12 +186,12 @@ if [ -n "${ci-}" ]; then
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
-        if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - **[!!]** $entry$nl"
-        elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry$nl"
+        if echo "$entry" | grep -q '^!!'; then
+            changelog_entry+=" - **[!!]** ${entry^}$nl"
+        elif echo "$entry" | grep -q '^!'; then
+            changelog_entry+=" - [!] ${entry^}$nl"
         else
-            changelog_entry+=" - $entry$nl"
+            changelog_entry+=" - ${entry^}$nl"
         fi
     done <<< "$ci"
 
@@ -204,12 +204,12 @@ if [ -n "${reverts-}" ]; then
     while IFS= read -r entry; do
         if [ -z "$entry" ]; then continue; fi
 
-        if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - **[!!]** $entry$nl"
-        elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry$nl"
+        if echo "$entry" | grep -q '^!!'; then
+            changelog_entry+=" - **[!!]** ${entry^}$nl"
+        elif echo "$entry" | grep -q '^!'; then
+            changelog_entry+=" - [!] ${entry^}$nl"
         else
-            changelog_entry+=" - $entry$nl"
+            changelog_entry+=" - ${entry^}$nl"
         fi
     done <<< "$reverts"
 
