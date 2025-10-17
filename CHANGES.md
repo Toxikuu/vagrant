@@ -6,6 +6,18 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 
 
 
+## 1.0.3 - 2025-10-17
+
+### Fixes
+
+ -  more release script fixes
+
+### Docs
+
+ -  update todos
+ -  fix changelog formatting
+
+
 ## 1.0.2 - 2025-10-17
 
 ### Fixes
