@@ -217,7 +217,7 @@ if [ -n "${reverts-}" ]; then
 fi
 
 # Write out the new changelog
-first_entry_lineno=$(grep '^## ' -n CHANGES.md | cut -d: -f1)
+first_entry_lineno=$(grep '^## ' -n CHANGES.md | head -n1 | cut -d: -f1)
 first_entry_lineno=$((first_entry_lineno - 1))
 
 header_temp=$(mktemp)
