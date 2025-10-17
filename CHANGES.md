@@ -10,12 +10,12 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 
 ### Fixes
 
- -  release script bugfix
- -  improve release script
+ -  Release script bugfix
+ -  Improve release script
 
 ### Docs
 
- -  fix changelog formatting
+ -  Fix changelog formatting
 
 
 ## 1.0.1 - 2025-10-17
