@@ -1,3 +1,3 @@
-release	2.51.0
-unstable	2.51.0
-commit	4b71b294773cc4f7fe48ec3a70079aa8783f373d
+release	2.51.1
+unstable	2.51.1
+commit	4253630c6f07a4bdcc9aa62a50e26a4d466219d1
