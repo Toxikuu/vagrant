@@ -9,14 +9,14 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 
 ### Fixes
 
- -  release script committing
- -  more release script fixes
- -  adjust release script
- -  tweak commit script
+ -  Release script committing
+ -  More release script fixes
+ -  Adjust release script
+ -  Tweak commit script
 
 ### Docs
 
- -  update todos
+ -  Update todos
 
 
 ## 1.0.0 - 2025-10-11
@@ -41,7 +41,7 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 - Address clippy lints
 - Add serde_json dependency
 
-### Documentation
+### Docs
 
 - Add changelog
 - Update readme
