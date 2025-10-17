@@ -3,6 +3,9 @@
 set -eu
 argv0="$0"
 
+nl="
+"
+
 die() {
     printf "%s: %s" "$argv0" "$1"
     exit "${2:-1}"
@@ -47,144 +50,170 @@ if [[ "$old_sum" == "$new_sum" ]]; then
     die "Failed to update version in Cargo.toml"
 fi
 
+old_sum=$(sha256sum Cargo.toml)
 cargo build --release
+new_sum=$(sha256sum Cargo.toml)
+
+if [[ "$old_sum" == "$new_sum" ]]; then
+    die "Cargo.lock unchanged after version bump"
+fi
 
 # Parse changes
 # NOTE: Automatic commits are excluded
-echo "$changes" | while IFS= read -r change; do
+features=""
+fixes=""
+chores=""
+ci=""
+docs=""
+revert=""
+while IFS= read -r change; do
     if echo "$change" | grep -q "feat.*:"; then
         msg="$(echo "$change" | cut -d: -f2-)"
-        features+="${msg^}\n"
+        features+="${msg^}$nl"
         continue
     fi
 
     if echo "$change" | grep -q "fix.*:"; then
         msg="$(echo "$change" | cut -d: -f2-)"
-        fixes+="${msg^}\n"
+        fixes+="${msg^}$nl"
+        echo "${fixes:?}"
         continue
     fi
 
     if echo "$change" | grep -q "chore.*:"; then
         msg="$(echo "$change" | cut -d: -f2-)"
-        chores+="${msg^}\n"
+        chores+="${msg^}$nl"
         continue
     fi
 
     if echo "$change" | grep -q "ci.*:"; then
         msg="$(echo "$change" | cut -d: -f2-)"
-        cis+="${msg^}\n"
+        cis+="${msg^}$nl"
         continue
     fi
 
     if echo "$change" | grep -q "docs.*:"; then
         msg="$(echo "$change" | cut -d: -f2-)"
-        docs+="${msg^}\n"
+        docs+="${msg^}$nl"
         continue
     fi
 
     if echo "$change" | grep -q "revert.*:"; then
         msg="$(echo "$change" | cut -d: -f2-)"
-        reverts+="${msg^}\n"
+        reverts+="${msg^}$nl"
         continue
     fi
-done
+done <<< "$changes"
 
 # Assemble the changelog entry
-changelog_entry="\n## $new_tag - $(date +%Y-%m-%d)\n"
+changelog_entry="$nl## $new_tag - $(date +%Y-%m-%d)$nl$nl"
+
 if [ -n "${features-}" ]; then
-    changelog_entry+="### Features\n\n"
+    changelog_entry+="### Features$nl$nl"
 
-    echo "$features" | while IFS= read -r entry; do
+    while IFS= read -r entry; do
+        if [ -z "$entry" ]; then continue; fi
+
         if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - [!!] $entry\n"
+            changelog_entry+=" - **[!!]** $entry$nl"
         elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry\n"
+            changelog_entry+=" - [!] $entry$nl"
         else
-            changelog_entry+=" - $entry\n"
+            changelog_entry+=" - $entry$nl"
         fi
-    done
+    done <<< "$features"
 
-    changelog_entry+="\n\n"
+    changelog_entry+="$nl"
 fi
 
-if [ -n "${fixes-}" ]; then
-    changelog_entry+="### Fixes\n\n"
+if [ -n "${fixes:?}" ]; then
+    changelog_entry+="### Fixes$nl$nl"
 
-    echo "$fixes" | while IFS= read -r entry; do
+    while IFS= read -r entry; do
+        if [ -z "$entry" ]; then continue; fi
+
         if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - [!!] $entry\n"
+            changelog_entry+=" - **[!!]** $entry$nl"
         elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry\n"
+            changelog_entry+=" - [!] $entry$nl"
         else
-            changelog_entry+=" - $entry\n"
+            changelog_entry+=" - $entry$nl"
         fi
-    done
+    done <<< "$fixes"
 
-    changelog_entry+="\n\n"
+    changelog_entry+="$nl"
 fi
 
 if [ -n "${chores-}" ]; then
-    changelog_entry+="### Chores\n\n"
+    changelog_entry+="### Chores$nl$nl"
 
-    echo "$chores" | while IFS= read -r entry; do
+    while IFS= read -r entry; do
+        if [ -z "$entry" ]; then continue; fi
+
         if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - [!!] $entry\n"
+            changelog_entry+=" - **[!!]** $entry$nl"
         elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry\n"
+            changelog_entry+=" - [!] $entry$nl"
         else
-            changelog_entry+=" - $entry\n"
+            changelog_entry+=" - $entry$nl"
         fi
-    done
+    done <<< "$chores"
 
-    changelog_entry+="\n\n"
+    changelog_entry+="$nl"
 fi
 
 if [ -n "${docs-}" ]; then
-    changelog_entry+="### Docs\n\n"
+    changelog_entry+="### Docs$nl$nl"
 
-    echo "$docs" | while IFS= read -r entry; do
+    while IFS= read -r entry; do
+        if [ -z "$entry" ]; then continue; fi
+
         if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - [!!] $entry\n"
+            changelog_entry+=" - **[!!]** $entry$nl"
         elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry\n"
+            changelog_entry+=" - [!] $entry$nl"
         else
-            changelog_entry+=" - $entry\n"
+            changelog_entry+=" - $entry$nl"
         fi
-    done
+    done <<< "$docs"
 
-    changelog_entry+="\n\n"
+    changelog_entry+="$nl"
 fi
 
 if [ -n "${ci-}" ]; then
-    changelog_entry+="### CI\n\n"
+    changelog_entry+="### CI$nl$nl"
 
-    echo "$ci" | while IFS= read -r entry; do
+    while IFS= read -r entry; do
+        if [ -z "$entry" ]; then continue; fi
+
         if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - [!!] $entry\n"
+            changelog_entry+=" - **[!!]** $entry$nl"
         elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry\n"
+            changelog_entry+=" - [!] $entry$nl"
         else
-            changelog_entry+=" - $entry\n"
+            changelog_entry+=" - $entry$nl"
         fi
-    done
+    done <<< "$ci"
 
-    changelog_entry+="\n\n"
+    changelog_entry+="$nl"
 fi
 
 if [ -n "${reverts-}" ]; then
-    changelog_entry+="### Reverts\n\n"
+    changelog_entry+="### Reverts$nl$nl"
 
-    echo "$reverts" | while IFS= read -r entry; do
+    while IFS= read -r entry; do
+        if [ -z "$entry" ]; then continue; fi
+
         if echo "$entry" | grep '^!!'; then
-            changelog_entry+=" - [!!] $entry\n"
+            changelog_entry+=" - **[!!]** $entry$nl"
         elif echo "$entry" | grep '^!'; then
-            changelog_entry+=" - [!] $entry\n"
+            changelog_entry+=" - [!] $entry$nl"
         else
-            changelog_entry+=" - $entry\n"
+            changelog_entry+=" - $entry$nl"
         fi
-    done
+    done <<< "$reverts"
 
-    changelog_entry+="\n\n"
+    changelog_entry+="$nl"
 fi
 
 # Write out the new changelog
@@ -200,6 +229,10 @@ tail +$first_entry_lineno CHANGES.md > "$old_temp"
 new_temp=$(mktemp)
 printf %s "$changelog_entry" > "$new_temp"
 
-cat "$header_temp" "$new_temp" "$body_temp" > CHANGES.md
+cat "$header_temp" "$new_temp" "$old_temp" > CHANGES.md
+rm  "$header_temp" "$new_temp" "$old_temp"
 
 git add Cargo.{toml,lock} CHANGES.md -m "auto(bump): $new_tag" -m "$changelog_entry"
+
+git tag "$new_tag"
+git push origin "$new_tag"
