@@ -19,5 +19,5 @@
 - [x] Add caching for `gr`
 - [x] Add version channels
     - [x] Overhaul the codebase and API
-- [ ] Test release.sh
+- [x] Test release.sh
 - [ ] Fix chance skipping
