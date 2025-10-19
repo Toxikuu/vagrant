@@ -16,9 +16,10 @@ commit_versions_updates=$(echo "$versions_updates" | grep -c 'channels/commit$')
 other_versions_updates=$(echo "$versions_updates" | grep -Evc 'channels/(release|unstable|commit)$')
 
 versions_updated=$(echo "$versions_updates" | wc -l)
+vagrant_version=$(git describe --tags || echo "???")
 
 desc="
-[$(date +"%Y-%m-%d %H:%M:%S %z")]
+[Vagrant v$vagrant_version - $(date +"%Y-%m-%d %H:%M:%S %z")]
 Run #$(<runcount) took $(<elapsed)
 
 - Checked $(<checked) packages
