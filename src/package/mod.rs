@@ -307,7 +307,7 @@ impl Package {
     }
 
     pub fn has_fallback_versions(&self) -> bool {
-        let path = Path::new("p").join(&self.name).join("versions");
+        let path = Path::new("p").join(&self.name).join("versions.json");
         if !path.exists() { return false }
 
         let Ok(version_channels_str) = fs::read_to_string(path) else {return false};
@@ -323,12 +323,11 @@ impl Package {
     pub fn fetch(&self) -> Result<Vec<VersionChannel>> {
         // if fallback versions don't exist, or --guarantee is passed, guarantee a fetch
         let should_guarantee = ARGS.guarantee || !self.has_fallback_versions();
-        if self.config.chance < 1.0 && !should_guarantee {
-            let r = random_range(0.0..=1.0);
-            if r < self.config.chance {
-                bail!("Tails!");
-            }
-        }
+
+        if self.config.chance < 1.0
+        && !should_guarantee
+        && random_range(0.0..=1.0) > self.config.chance
+        { bail!("Tails!") }
 
         let mut version_channels = vec![];
         for channel in &self.config.channels {
