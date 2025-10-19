@@ -1,0 +1,2 @@
+release	1.7.0
+commit	606f6627cf481ee6dcb32387edc010c502cdf38b

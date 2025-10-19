@@ -1,0 +1,2 @@
+release	1.1.2
+commit	513399df5206f52db92bb88970f38dc8a3ea1645

@@ -1,0 +1,2 @@
+release	3.5.2
+commit	2835f72cc7ee57edfc987da4b88b1f4c7c0386c3

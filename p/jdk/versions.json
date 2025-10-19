@@ -1,0 +1,26 @@
+[
+  {
+    "channel": "unstable",
+    "version": "26.20"
+  },
+  {
+    "channel": "release",
+    "version": "25.u36"
+  },
+  {
+    "channel": "21",
+    "version": "21.0.9.u9"
+  },
+  {
+    "channel": "17",
+    "version": "17.0.17.u9"
+  },
+  {
+    "channel": "11",
+    "version": "11.0.29.u6"
+  },
+  {
+    "channel": "8",
+    "version": "8.472.u07"
+  }
+]

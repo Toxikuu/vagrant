@@ -1,0 +1,2 @@
+release	1.1.8
+commit	dcdbcce903ee49200040c0da092b45253c20c6df

@@ -1,0 +1,2 @@
+release	3.0.2
+commit	7ecea1a9d3d31d143873a198bef5d71a3c56d1b1
