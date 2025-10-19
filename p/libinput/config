@@ -2,7 +2,7 @@ upstream = "https://gitlab.freedesktop.org/libinput/libinput.git"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | grep -Ev '\.9[0-9]+$' | vsort"
+fetch = '''gr | vtrim | grep -Ev '\.9[0-9]+$' | vsort'''
 
 [[channels]]
 name = "commit"

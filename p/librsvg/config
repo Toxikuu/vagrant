@@ -2,7 +2,7 @@ upstream = "gnome/librsvg"
 
 [[channels]]
 name = "release"
-fetch = "gr | tolower | vtrim -re 's,(_|-),.,g' | fl | grep -Ev '\.9[0-9]+$' | vsort"
+fetch = '''gr | tolower | vtrim -re 's,(_|-),.,g' | fl | grep -Ev '\.9[0-9]+$' | vsort'''
 
 [[channels]]
 name = "unstable"
