@@ -9,7 +9,7 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 
 ### Features
 
- - Change default release fetch
+ - **[!]** Change default release fetch
  - Include vagrant version in commit script
  - Add multiple packages
 
@@ -73,11 +73,11 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 
 ### Features
 
-- [!] Adapt commit.sh to new api
-- [!!] Adapt to version channel and api changes
+- **[!]** Adapt commit.sh to new api
+- **[!!]** Adapt to version channel and api changes
 - Add caching for some requests
 - Add github issue templates
-- [!!] Add version channels
+- **[!!]** Add version channels
 - Prepare support for caching
 
 ### Chores
