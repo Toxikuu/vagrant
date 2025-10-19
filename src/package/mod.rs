@@ -214,11 +214,10 @@ impl UpstreamType {
 
     fn default_fetch_release(&self) -> String {
         match self {
-            Self::Arch   => String::from("archver"),
-            Self::Curl   => String::from("ca | vsort"),
-            Self::Empty  => String::with_capacity(0),
-            Self::Git    => String::from("gr | vfs | tolower | vtrim | fsl | vsort"),
-            Self::GitHub => String::from("ghr | tolower | vtrim | fsl"),
+            Self::Arch               => String::from("archver"),
+            Self::Curl               => String::from("ca | vsort"),
+            Self::Empty              => String::with_capacity(0),
+            Self::Git | Self::GitHub => String::from("gr | tolower | vtrim | fsl | vfs | vsort"),
         }
     }
 
