@@ -2,7 +2,7 @@ upstream = "libjpeg-turbo/libjpeg-turbo"
 
 [[channels]]
 name = "release"
-fetch = '''gr | vtrim | fsl | grep -Ev '\.9[0-9]+$' vsort'''
+fetch = '''gr | vtrim | fsl | grep -Ev '\.9[0-9]+$' | vsort'''
 
 [[channels]]
 name = "commit"
