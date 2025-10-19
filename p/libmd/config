@@ -1,0 +1,8 @@
+upstream = "https://git.hadrons.org/git/libmd.git"
+chance = 0.32 # last commit dated 2024-02-21
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

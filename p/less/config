@@ -1,0 +1,12 @@
+upstream = "gwsw/less"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | grep rel | cut -d- -f1 | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | grep -v rel | vsort"
+
+[[channels]]
+name = "commit"

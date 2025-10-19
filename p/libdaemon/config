@@ -1,0 +1,5 @@
+upstream = "https://archlinux.org/packages/extra/x86_64/libdaemon/json"
+chance = 0.025 # last release dated 2009-10-18
+
+[[channels]]
+name = "release"

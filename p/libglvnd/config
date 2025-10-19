@@ -1,0 +1,8 @@
+upstream = "https://gitlab.freedesktop.org/glvnd/libglvnd.git"
+chance = 0.44 # last commit dated 2024-05-17
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

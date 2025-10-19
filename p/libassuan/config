@@ -1,0 +1,8 @@
+upstream = "gpg/libassuan"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim | fl | vsort"
+
+[[channels]]
+name = "commit"

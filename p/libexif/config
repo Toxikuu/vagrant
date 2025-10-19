@@ -1,0 +1,8 @@
+upstream = "libexif/libexif"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g' -e 's,-release$,,' | fsl | vfs | vsort"
+
+[[channels]]
+name = "commit"

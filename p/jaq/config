@@ -1,0 +1,7 @@
+upstream = "01mf02/jaq"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,8 @@
+upstream = "https://gitlab.freedesktop.org/libbsd/libbsd.git"
+chance = 0.88
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

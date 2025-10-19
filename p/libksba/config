@@ -1,0 +1,8 @@
+upstream = "gpg/libksba"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,-,.,g' | vsort"
+
+[[channels]]
+name = "commit"

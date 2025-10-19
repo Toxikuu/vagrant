@@ -1,0 +1,7 @@
+upstream = "https://git.ghostscript.com/jbig2dec.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

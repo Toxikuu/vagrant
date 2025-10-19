@@ -1,0 +1,9 @@
+upstream = "libevent/libevent"
+chance = 0.44 # last commit dated 2025-02-03
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,-stable$,,' | vfs | vsort"
+
+[[channels]]
+name = "commit"

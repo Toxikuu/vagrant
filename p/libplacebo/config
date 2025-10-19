@@ -1,0 +1,7 @@
+upstream = "haasn/libplacebo"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

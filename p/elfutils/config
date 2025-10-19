@@ -1,0 +1,7 @@
+upstream = "https://sourceware.org/git/elfutils.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

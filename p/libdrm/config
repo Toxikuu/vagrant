@@ -1,0 +1,8 @@
+upstream = "https://gitlab.freedesktop.org/mesa/drm.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g' | fsl | fdate | vsort"
+
+[[channels]]
+name = "commit"

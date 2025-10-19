@@ -1,0 +1,9 @@
+upstream = "json-c/json-c"
+chance = 0.9
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -re 's,-[0-9]{8}$,,' | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,5 @@
+upstream = "https://archlinux.org/packages/extra/x86_64/libmng/json"
+chance = 0.11 # last release dated 2015-04-20
+
+[[channels]]
+name = "release"

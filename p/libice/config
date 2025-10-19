@@ -1,0 +1,9 @@
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libice.git"
+chance = 0.44 # last commit dated 2024-08-24
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,_,.,g' | fsl | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,9 @@
+upstream = "https://pagure.io/libaio.git"
+chance = 0.09 # last commit dated 2022-06-02
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^libaio.,,' -e 's,-,.,g' | vsort"
+
+[[channels]]
+name = "commit"

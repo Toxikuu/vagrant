@@ -1,0 +1,9 @@
+upstream = "toxikuu/lfstage"
+chance = 0.77
+
+# no releases yet
+# [[channels]]
+# name = "release"
+
+[[channels]]
+name = "commit"

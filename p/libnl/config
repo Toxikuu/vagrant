@@ -1,0 +1,8 @@
+upstream = "thom311/libnl"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^libnl,,' -e 's,_,.,g' | vfs | vsort"
+
+[[channels]]
+name = "commit"

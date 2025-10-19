@@ -1,0 +1,8 @@
+upstream = "jasper-software/jasper"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^version-,,' | fsl | vsort"
+
+[[channels]]
+name = "commit"

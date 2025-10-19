@@ -1,0 +1,8 @@
+upstream = "https://gitlab.freedesktop.org/libdecor/libdecor.git"
+chance = 0.91
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

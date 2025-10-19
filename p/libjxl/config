@@ -1,0 +1,8 @@
+upstream = "libjxl/libjxl"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fl | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,8 @@
+upstream = "cjlin1/liblinear"
+chance = 0.88
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

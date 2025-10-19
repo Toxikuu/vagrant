@@ -1,0 +1,13 @@
+upstream = "https://aomedia.googlesource.com/aom.git"
+
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fsl | vfs | vsort"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | fsl | vsort"
+
+[[channels]]
+name = "commit"

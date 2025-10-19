@@ -1,0 +1,7 @@
+upstream = "libarchive/libarchive"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,8 @@
+upstream = "https://gitlab.com/libpipeline/libpipeline.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | vfs | grep -v ^2 | vsort"
+
+[[channels]]
+name = "commit"
