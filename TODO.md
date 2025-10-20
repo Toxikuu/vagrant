@@ -20,4 +20,5 @@
 - [x] Add version channels
     - [x] Overhaul the codebase and API
 - [x] Test release.sh
-- [ ] Fix chance skipping
+- [x] Fix chance skipping
+- [ ] Fix changelog formatting for breaking changes
