@@ -1,11 +1,11 @@
 [
   {
     "channel": "release",
-    "version": "2.61.1"
+    "version": "2.61.2"
   },
   {
     "channel": "unstable",
-    "version": "2.61.1"
+    "version": "2.61.2"
   },
   {
     "channel": "commit",

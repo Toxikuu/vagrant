@@ -1,14 +1,14 @@
 [
   {
     "channel": "release",
-    "version": "6.17.3"
+    "version": "6.17.4"
   },
   {
     "channel": "unstable",
-    "version": "6.18-rc1"
+    "version": "6.18-rc2"
   },
   {
     "channel": "commit",
-    "version": "1c64efcb083c48c85227cb4d72ab137feef2cdac"
+    "version": "211ddde0823f1442e4ad052a2f30f050145ccada"
   }
 ]

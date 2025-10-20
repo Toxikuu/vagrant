@@ -1,3 +1,3 @@
-release	3.1.4
-unstable	3.1.4
-commit	02d05df63381862f312e5973787932fb106c664f
+release	3.1.5
+unstable	3.1.5
+commit	75edf0245ba43cd8e0c5a6b17ce0574d919d6762
