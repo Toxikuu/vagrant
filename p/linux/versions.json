@@ -1,7 +1,7 @@
 [
   {
     "channel": "release",
-    "version": "6.17.4"
+    "version": "6.17.5"
   },
   {
     "channel": "unstable",
@@ -9,6 +9,6 @@
   },
   {
     "channel": "commit",
-    "version": "211ddde0823f1442e4ad052a2f30f050145ccada"
+    "version": "566771afc7a81e343da9939f0bd848d3622e2501"
   }
 ]

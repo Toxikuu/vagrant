@@ -1,3 +1,3 @@
 release	1.25.3
 unstable	1.25.3
-commit	a5f55a441ef497d8e2a12610f4ec2bd32fdc04b2
+commit	643f80a11f76ada6323bdcbc36add24832f5821b

@@ -1,3 +1,3 @@
 release	1.1.0
-unstable	1.2.0rc1
-commit	1964cdb1b9e16a2a0c27fbd3b2a3bccb2c1a8294
+unstable	1.2.0rc2
+commit	390de5b472ec8c40a7b8e5029e47fd6493f7a755

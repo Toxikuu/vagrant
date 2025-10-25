@@ -1,2 +1,2 @@
-release	1.29.1
-commit	3307341ebfac4824c839e4d7f0268daeebaf6f57
+release	1.29.2
+commit	141f571aae7938aa8e6407d9521feff12e3031a6

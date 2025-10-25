@@ -1,7 +1,7 @@
 [
   {
     "channel": "unstable",
-    "version": "26.20"
+    "version": "26.21"
   },
   {
     "channel": "release",
@@ -9,18 +9,18 @@
   },
   {
     "channel": "21",
-    "version": "21.0.9.u9"
+    "version": "21.0.9.u10"
   },
   {
     "channel": "17",
-    "version": "17.0.17.u9"
+    "version": "17.0.17.u10"
   },
   {
     "channel": "11",
-    "version": "11.0.29.u6"
+    "version": "11.0.29.u7"
   },
   {
     "channel": "8",
-    "version": "8.472.u07"
+    "version": "8.472.u08"
   }
 ]

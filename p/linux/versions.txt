@@ -1,3 +1,3 @@
-release	6.17.4
+release	6.17.5
 unstable	6.18-rc2
-commit	211ddde0823f1442e4ad052a2f30f050145ccada
+commit	566771afc7a81e343da9939f0bd848d3622e2501
