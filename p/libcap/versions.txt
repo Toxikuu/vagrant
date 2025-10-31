@@ -1,2 +1,2 @@
-release	2.76
-commit	c3ddf45d9afaab85d3b7db0dc7bfd1aafb8fde50
+release	2.77
+commit	3b2513a1ba696f01d31edfa93f35c30b379cc70e

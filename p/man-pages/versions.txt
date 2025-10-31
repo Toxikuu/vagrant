@@ -1,2 +1,2 @@
-release	6.15
-commit	cef39ff51bfd016d7079baefbf2a39f0fed7549b
+release	6.16
+commit	9fc323a61b5ad159350186e220820fc065e4a595
