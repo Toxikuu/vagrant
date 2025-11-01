@@ -1,0 +1,2 @@
+release	2.2.5
+commit	33f4dc41580c21d361232cb1be99e37443ef02df

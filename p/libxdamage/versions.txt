@@ -1,0 +1,2 @@
+release	1.1.6
+commit	1319ae5cfbde5b75e23383baa5e00cc23513448c

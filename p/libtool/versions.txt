@@ -1,0 +1,2 @@
+release	2.6.0
+commit	c4abf359f849187fa7f505a0a34f15f2bd66db24

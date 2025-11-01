@@ -1,0 +1,2 @@
+release	0.40.0
+commit	d3ec15bca87536341f121a4f0f97954d00a6cfe5

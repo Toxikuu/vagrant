@@ -478,7 +478,7 @@
       },
       {
         "channel": "commit",
-        "version": "5091d9613fc6536f2beb0e7e037597fe0e0146bf"
+        "version": "f7121938349213280ccc6072410b12667ff0170a"
       }
     ]
   },
@@ -598,7 +598,7 @@
       },
       {
         "channel": "commit",
-        "version": "26f02902847d6beb8254c2e076ea73a660d4a59d"
+        "version": "00f5aa25a31a790b45c8282dea587a39c1ff39f6"
       }
     ]
   },
@@ -615,7 +615,7 @@
       },
       {
         "channel": "commit",
-        "version": "eff5f82e92641b88e84b0aa0f8ac4eaa3859ee47"
+        "version": "58a66cf3fd3fede5390b796edc8763c1513a8426"
       }
     ]
   },
@@ -663,7 +663,7 @@
       },
       {
         "channel": "commit",
-        "version": "9c0b239ec1e970c8da2806c0550eb09ad4478232"
+        "version": "6a97bc2c97b54dc981f9a5d5ab542c30ea0acaad"
       }
     ]
   },
@@ -1372,7 +1372,7 @@
       },
       {
         "channel": "commit",
-        "version": "468f8a3df1cd9e63b38cd4855926e9507b916fd0"
+        "version": "806b229561f5380c00057c16bc1644dbf58cfa9b"
       }
     ]
   },
@@ -1704,7 +1704,7 @@
       },
       {
         "channel": "commit",
-        "version": "0303324f7d5f22c4d83a0c6ddf1d3b2aeec8e2b1"
+        "version": "66713263583f6adf6c659c7da72b20e0eb573cde"
       }
     ]
   },
@@ -1782,7 +1782,7 @@
       },
       {
         "channel": "commit",
-        "version": "8e0c260f37c1a0eda83990055178a703808c02bd"
+        "version": "a9a528e05e17a92f9e9545b38ed532ee8e11ff15"
       },
       {
         "channel": "2",
@@ -2674,6 +2674,149 @@
     ]
   },
   {
+    "package": "libseccomp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.6.0"
+      },
+      {
+        "channel": "commit",
+        "version": "2bc718995e782a8473ba9db8509a398ef69b2edc"
+      }
+    ]
+  },
+  {
+    "package": "libslirp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.9.1"
+      },
+      {
+        "channel": "commit",
+        "version": "1606c09a2feb5f19e5adaa4bb6694788e7a982b4"
+      }
+    ]
+  },
+  {
+    "package": "libsm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.6"
+      },
+      {
+        "channel": "commit",
+        "version": "5f6da959a34bcefc425b6e37462553acf44369a3"
+      }
+    ]
+  },
+  {
+    "package": "libsndfile",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.2"
+      },
+      {
+        "channel": "commit",
+        "version": "d9a35ea0d5c64c19dd635ae578e0028df8f66d6a"
+      }
+    ]
+  },
+  {
+    "package": "libsoup",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.6.5"
+      },
+      {
+        "channel": "commit",
+        "version": "cc1d4389ffd1b70f7eaee3cecfa66664aff2a5ef"
+      }
+    ]
+  },
+  {
+    "package": "libspng",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.7.4"
+      },
+      {
+        "channel": "commit",
+        "version": "adc94393dbeddf9e027d1b2dfff7c1bab975224e"
+      }
+    ]
+  },
+  {
+    "package": "libssh2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.11.1"
+      },
+      {
+        "channel": "commit",
+        "version": "455f062236fdd5deba9abb909dbe3b86463a23d8"
+      }
+    ]
+  },
+  {
+    "package": "libtasn1",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.20.0"
+      },
+      {
+        "channel": "commit",
+        "version": "a3d48c2d9845e54e099769242366d47c09c8464e"
+      }
+    ]
+  },
+  {
+    "package": "libtiff",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.7.1"
+      },
+      {
+        "channel": "commit",
+        "version": "5fe20d0e9aba49a6a350ed533459d1505203838f"
+      }
+    ]
+  },
+  {
+    "package": "libtirpc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.7"
+      },
+      {
+        "channel": "commit",
+        "version": "5bd87617e4b3129e76e79847c95bdea4b1290d9f"
+      }
+    ]
+  },
+  {
+    "package": "libtool",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.6.0"
+      },
+      {
+        "channel": "commit",
+        "version": "c4abf359f849187fa7f505a0a34f15f2bd66db24"
+      }
+    ]
+  },
+  {
     "package": "libtree",
     "versions": [
       {
@@ -2691,14 +2834,604 @@
     ]
   },
   {
+    "package": "libunistring",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.1"
+      }
+    ]
+  },
+  {
+    "package": "libunwind",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.3"
+      },
+      {
+        "channel": "commit",
+        "version": "bfc0d618f72ba4b725c3735188e0a6d8c710411c"
+      }
+    ]
+  },
+  {
+    "package": "liburcu",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.15.3"
+      },
+      {
+        "channel": "commit",
+        "version": "b4b25cd6f2ded330a00c1a9a51ac4914e952fe0c"
+      }
+    ]
+  },
+  {
+    "package": "libusb",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.29"
+      },
+      {
+        "channel": "commit",
+        "version": "912869b48163078103bd3b121abd68e5cde062f3"
+      }
+    ]
+  },
+  {
+    "package": "libutempter",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.3"
+      },
+      {
+        "channel": "commit",
+        "version": "4caa8ab94ff8b207228fa723a89214bf5e929321"
+      }
+    ]
+  },
+  {
+    "package": "libuv",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.51.0"
+      },
+      {
+        "channel": "commit",
+        "version": "12d1ed1380c59c5ec27503cf149833de6f0e6bb0"
+      }
+    ]
+  },
+  {
+    "package": "libva",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.22.0"
+      },
+      {
+        "channel": "commit",
+        "version": "3eb038aa13bdd785808286c0a4995bd7a1ef07e9"
+      }
+    ]
+  },
+  {
+    "package": "libvdpau",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5"
+      },
+      {
+        "channel": "commit",
+        "version": "2afa3f989af24a922692ac719fae23c321776cdb"
+      }
+    ]
+  },
+  {
+    "package": "libvpx",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.15.2"
+      },
+      {
+        "channel": "commit",
+        "version": "cb5a578a5767a95f29990861a9572ccb27f25793"
+      }
+    ]
+  },
+  {
+    "package": "libwebp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.6.0"
+      },
+      {
+        "channel": "commit",
+        "version": "2a755e7eecd2f167a5e150551bbdbaa2c4273b84"
+      }
+    ]
+  },
+  {
+    "package": "libx11",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.12"
+      },
+      {
+        "channel": "commit",
+        "version": "369c6a806554429798b531cbf4267d8c8fcf6ed1"
+      }
+    ]
+  },
+  {
+    "package": "libxau",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.12"
+      },
+      {
+        "channel": "commit",
+        "version": "962b015d498b1f186aea8e3b0b46fb9791831552"
+      }
+    ]
+  },
+  {
+    "package": "libxaw",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.16"
+      },
+      {
+        "channel": "commit",
+        "version": "12e81cd8ade629256488782a2e7ae0322d84da53"
+      }
+    ]
+  },
+  {
+    "package": "libxcb",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.17.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d2153baa9913fea961a0719db7893f0371ed732f"
+      }
+    ]
+  },
+  {
+    "package": "libxcomposite",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.4.6"
+      },
+      {
+        "channel": "commit",
+        "version": "f796f0a862849765ac5b6b5e861ea548b421b8f0"
+      }
+    ]
+  },
+  {
+    "package": "libxcrypt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.4.38"
+      },
+      {
+        "channel": "commit",
+        "version": "dcaf1f31046c26ab635b2ac04e420610ab32373e"
+      }
+    ]
+  },
+  {
+    "package": "libxcursor",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.3"
+      },
+      {
+        "channel": "commit",
+        "version": "2197ca8cbb743d2fcc43c155396a724cad8f26f3"
+      }
+    ]
+  },
+  {
+    "package": "libxcvt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.1.3"
+      },
+      {
+        "channel": "commit",
+        "version": "40de74eb5d7c402f82fe1f61beea515d17bcdd2a"
+      }
+    ]
+  },
+  {
+    "package": "libxdamage",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.6"
+      },
+      {
+        "channel": "commit",
+        "version": "1319ae5cfbde5b75e23383baa5e00cc23513448c"
+      }
+    ]
+  },
+  {
+    "package": "libxdmcp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.5"
+      },
+      {
+        "channel": "commit",
+        "version": "8f3408f3936bacd08f76d5ee22cbc86e6b627287"
+      }
+    ]
+  },
+  {
+    "package": "libxext",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.6"
+      },
+      {
+        "channel": "commit",
+        "version": "5ce2a6127889834082147dbcdd47731b7986961b"
+      }
+    ]
+  },
+  {
+    "package": "libxfixes",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.0.2"
+      },
+      {
+        "channel": "commit",
+        "version": "70d5b0e37f8a759f3dbc218f22954347ceed094a"
+      }
+    ]
+  },
+  {
+    "package": "libxfont",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.4"
+      },
+      {
+        "channel": "commit",
+        "version": "2c2e44c94ef17ecd5003a173237b57b315e28d93"
+      }
+    ]
+  },
+  {
+    "package": "libxft",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.3.9"
+      },
+      {
+        "channel": "commit",
+        "version": "69edd320e23b00d9aef240ce9b50f7bf482a12ef"
+      }
+    ]
+  },
+  {
+    "package": "libxi",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.2"
+      },
+      {
+        "channel": "commit",
+        "version": "3c2d5aedd7708c75710b39268631762de904c304"
+      }
+    ]
+  },
+  {
+    "package": "libxinerama",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.5"
+      },
+      {
+        "channel": "commit",
+        "version": "cc22c2f60c3862482562955116d5455263b443dc"
+      }
+    ]
+  },
+  {
+    "package": "libxkbcommon",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.12.3"
+      },
+      {
+        "channel": "commit",
+        "version": "52fe6980b6bcdc756b0b80f44aa3f54cf7a0d9ed"
+      }
+    ]
+  },
+  {
+    "package": "libxkbfile",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.3"
+      },
+      {
+        "channel": "commit",
+        "version": "cb177c4d0e6d24dd868d28d4c35f3af007e7023e"
+      }
+    ]
+  },
+  {
+    "package": "libxml2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.15.1"
+      },
+      {
+        "channel": "commit",
+        "version": "22f9d730898d2dfcc03a484e65e1f8fc3675225f"
+      }
+    ]
+  },
+  {
+    "package": "libxmlb",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.3.24"
+      },
+      {
+        "channel": "commit",
+        "version": "e92e0caf5072b3fe5db1eeb9454f145b1ab095c6"
+      }
+    ]
+  },
+  {
+    "package": "libxmu",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "bd64e44c0f76e7d01543060501bbd39561062996"
+      }
+    ]
+  },
+  {
+    "package": "libxpm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.5.17"
+      },
+      {
+        "channel": "commit",
+        "version": "10070a4e998c1a223dec437847c38dc27dbe85d4"
+      }
+    ]
+  },
+  {
+    "package": "libxpresent",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.2"
+      },
+      {
+        "channel": "commit",
+        "version": "4d92149372461bf575e8a09b1064a2884c38c3aa"
+      }
+    ]
+  },
+  {
+    "package": "libxrandr",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.4"
+      },
+      {
+        "channel": "commit",
+        "version": "242fae8378b213f8e477bde1c4be2fb654201b3d"
+      }
+    ]
+  },
+  {
+    "package": "libxres",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.3"
+      },
+      {
+        "channel": "commit",
+        "version": "30c789e5065f7af7d6a03c09e3ceb073ed810bdd"
+      }
+    ]
+  },
+  {
+    "package": "libxscrnsaver",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.5"
+      },
+      {
+        "channel": "commit",
+        "version": "60c957ba8a727d01b376da0142aef7e18aa86fe1"
+      }
+    ]
+  },
+  {
+    "package": "libxshmfence",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.3"
+      },
+      {
+        "channel": "commit",
+        "version": "2c3d85cf655f4c9a605f0353cc742f186af52835"
+      }
+    ]
+  },
+  {
+    "package": "libxslt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.43"
+      },
+      {
+        "channel": "commit",
+        "version": "1ea9faaf53dde9e5ebd5695412575a81c55726a3"
+      }
+    ]
+  },
+  {
+    "package": "libxt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.1"
+      },
+      {
+        "channel": "commit",
+        "version": "170a4edb3189810810ffbf2543bfb8ab96e1898c"
+      }
+    ]
+  },
+  {
+    "package": "libxtst",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.5"
+      },
+      {
+        "channel": "commit",
+        "version": "abf3ff74b97c4231d2324d66318bfa1d22e44913"
+      }
+    ]
+  },
+  {
+    "package": "libxv",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.13"
+      },
+      {
+        "channel": "commit",
+        "version": "d709b8efab4e28b3ad324ca30acdb81a527f69a4"
+      }
+    ]
+  },
+  {
+    "package": "libxvmc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.0.14"
+      },
+      {
+        "channel": "commit",
+        "version": "a819142dc8b8efd29aa90e5cfbcd8cd892e51033"
+      }
+    ]
+  },
+  {
+    "package": "libxxf86dga",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.6"
+      },
+      {
+        "channel": "commit",
+        "version": "6a9b590992e7d94a63d935bfe44402712f77dc0f"
+      }
+    ]
+  },
+  {
+    "package": "libxxf86vm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.6"
+      },
+      {
+        "channel": "commit",
+        "version": "63134ba6acf046099fc112e08942ff6549f2286a"
+      }
+    ]
+  },
+  {
+    "package": "libyaml",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.2.5"
+      },
+      {
+        "channel": "commit",
+        "version": "840b65c40675e2d06bf40405ad3f12dec7f35923"
+      }
+    ]
+  },
+  {
+    "package": "libzip",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.11.4"
+      },
+      {
+        "channel": "commit",
+        "version": "e16526dbb751dc31129b32ba667ce6aed5c42f97"
+      }
+    ]
+  },
+  {
     "package": "limine",
     "versions": [
       {
         "channel": "release",
-        "version": "10.2.1"
-      },
-      {
-        "channel": "unstable",
         "version": "10.2.1"
       },
       {
@@ -2720,7 +3453,99 @@
       },
       {
         "channel": "commit",
-        "version": "b909d77359b82821e1c6b6a3a8a51b355b06fdb5"
+        "version": "ba36dd5ee6fd4643ebbf6ee6eefcecf0b07e35c7"
+      }
+    ]
+  },
+  {
+    "package": "linux-pam",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.7.1"
+      },
+      {
+        "channel": "commit",
+        "version": "c4a53492e1b7aebcf7a65a778d9e3a78f196d117"
+      }
+    ]
+  },
+  {
+    "package": "little-cms",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.17"
+      },
+      {
+        "channel": "commit",
+        "version": "8888d842a7556a0aac093808f10d49c4141c354a"
+      }
+    ]
+  },
+  {
+    "package": "llvm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "21.1.4"
+      },
+      {
+        "channel": "commit",
+        "version": "f4f247f01efc6d78df260b325b8d72a91ed9fd32"
+      }
+    ]
+  },
+  {
+    "package": "lmdb",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.9.33"
+      }
+    ]
+  },
+  {
+    "package": "lsof",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.99.5"
+      },
+      {
+        "channel": "commit",
+        "version": "2a923667a6edc067a6b08f17d51032322b334d38"
+      }
+    ]
+  },
+  {
+    "package": "lua",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.4.8"
+      },
+      {
+        "channel": "commit",
+        "version": "fca974486d12aa29bb6d731fdb5b25055157ece8"
+      }
+    ]
+  },
+  {
+    "package": "luajit",
+    "versions": [
+      {
+        "channel": "commit",
+        "version": "a5b1c4d98eeb97a950774ae032f51f820dfbfc4c"
+      }
+    ]
+  },
+  {
+    "package": "lynx",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.9.2"
       }
     ]
   },
@@ -2738,11 +3563,33 @@
     ]
   },
   {
+    "package": "lzo",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.10"
+      }
+    ]
+  },
+  {
     "package": "m4",
     "versions": [
       {
         "channel": "release",
         "version": "1.4.20"
+      }
+    ]
+  },
+  {
+    "package": "maim",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.8.1"
+      },
+      {
+        "channel": "commit",
+        "version": "2c799f33746e908a966404302321add1d6a2ffcf"
       }
     ]
   },
@@ -2778,6 +3625,45 @@
     ]
   },
   {
+    "package": "mpv",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.40.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d3ec15bca87536341f121a4f0f97954d00a6cfe5"
+      }
+    ]
+  },
+  {
+    "package": "muon",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.5.0"
+      },
+      {
+        "channel": "commit",
+        "version": "3c35ff4985d260a55870dbb6c3f04abce71f96f1"
+      }
+    ]
+  },
+  {
+    "package": "nasm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.01"
+      },
+      {
+        "channel": "commit",
+        "version": "713fd1ffc82344f58a4ef94506a62c8e32704a2f"
+      }
+    ]
+  },
+  {
     "package": "ncurses",
     "versions": [
       {
@@ -2791,6 +3677,32 @@
     ]
   },
   {
+    "package": "neofetch",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "7.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f"
+      }
+    ]
+  },
+  {
+    "package": "neovim",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.11.4"
+      },
+      {
+        "channel": "commit",
+        "version": "b92b95e2c26d5cea86acd3116ee029cc57676f14"
+      }
+    ]
+  },
+  {
     "package": "ogg",
     "versions": [
       {
@@ -2800,6 +3712,32 @@
       {
         "channel": "commit",
         "version": "0288fadac3ac62d453409dfc83e9c4ab617d2472"
+      }
+    ]
+  },
+  {
+    "package": "openssh",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "10.2p1"
+      },
+      {
+        "channel": "commit",
+        "version": "984b064fe2a23733733262f88d2e1b2a1a501662"
+      }
+    ]
+  },
+  {
+    "package": "openssl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.6.0"
+      },
+      {
+        "channel": "commit",
+        "version": "c8b4a397d066857492c714735d7658cd1e545e81"
       }
     ]
   },
@@ -2859,7 +3797,7 @@
       },
       {
         "channel": "commit",
-        "version": "a17c57eee5b5cc81390750d07e4800b19c0c3084"
+        "version": "ede5693be1cefb859522b246897b6835c87ed6d9"
       }
     ]
   },
@@ -2877,11 +3815,63 @@
     ]
   },
   {
+    "package": "rip",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.4.1"
+      },
+      {
+        "channel": "commit",
+        "version": "e6f726152a465d5075b8249d3467f17626a67647"
+      }
+    ]
+  },
+  {
+    "package": "samurai",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2"
+      },
+      {
+        "channel": "commit",
+        "version": "737f702fed670acb25e5e70b4b802690df7a4a8b"
+      }
+    ]
+  },
+  {
     "package": "sed",
     "versions": [
       {
         "channel": "release",
         "version": "4.9"
+      }
+    ]
+  },
+  {
+    "package": "snowball",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.0.1"
+      },
+      {
+        "channel": "commit",
+        "version": "d23a20f0be487b711020b99a6cef575961eb9c1c"
+      }
+    ]
+  },
+  {
+    "package": "systemd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "258.1"
+      },
+      {
+        "channel": "commit",
+        "version": "dd15dd1a586ceed5e6b9bc6324227c09d7d4480e"
       }
     ]
   },
@@ -2900,6 +3890,19 @@
       {
         "channel": "release",
         "version": "7.2"
+      }
+    ]
+  },
+  {
+    "package": "tinyxxd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.7"
+      },
+      {
+        "channel": "commit",
+        "version": "0527410c6a033626a67fb306aad5b80f886a7aeb"
       }
     ]
   },
@@ -2930,6 +3933,19 @@
     ]
   },
   {
+    "package": "tuun",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.6.1"
+      },
+      {
+        "channel": "commit",
+        "version": "40c162cc971ad1fe28cf0e976037fe2e370e7ef9"
+      }
+    ]
+  },
+  {
     "package": "typos",
     "versions": [
       {
@@ -2942,7 +3958,16 @@
       },
       {
         "channel": "commit",
-        "version": "07d900b8fa1097806b8adb6391b0d3e0ac2fdea7"
+        "version": "eb913959b723a9fa82a9edb0b28321ee7a8ebc84"
+      }
+    ]
+  },
+  {
+    "package": "tzdata",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025b"
       }
     ]
   },
@@ -2964,6 +3989,19 @@
     ]
   },
   {
+    "package": "uthash",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.3.0"
+      },
+      {
+        "channel": "commit",
+        "version": "af6e637f19c102167fb914b9ebcc171389270b48"
+      }
+    ]
+  },
+  {
     "package": "util-linux",
     "versions": [
       {
@@ -2977,6 +4015,32 @@
       {
         "channel": "commit",
         "version": "7492ca660b235cfea5cf78f1c3d5f0dc4e535545"
+      }
+    ]
+  },
+  {
+    "package": "wev",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "b09b664dd2d1b11dd68e03f8c0363ac0ef76f1e0"
+      }
+    ]
+  },
+  {
+    "package": "xxhash",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.8.3"
+      },
+      {
+        "channel": "commit",
+        "version": "136cc1f8fe4d5ea62a7c16c8424d4fa5158f6d68"
       }
     ]
   },
@@ -3011,6 +4075,28 @@
     ]
   },
   {
+    "package": "yt-dlp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025.10.22"
+      },
+      {
+        "channel": "commit",
+        "version": "6224a3898821965a7d6a2cb9cc2de40a0fd6e6bc"
+      }
+    ]
+  },
+  {
+    "package": "zip",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.0"
+      }
+    ]
+  },
+  {
     "package": "zlib",
     "versions": [
       {
@@ -3020,6 +4106,19 @@
       {
         "channel": "commit",
         "version": "5a82f71ed1dfc0bec044d9702463dbdf84ea3b71"
+      }
+    ]
+  },
+  {
+    "package": "zlib-ng",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.2.5"
+      },
+      {
+        "channel": "commit",
+        "version": "33f4dc41580c21d361232cb1be99e37443ef02df"
       }
     ]
   },

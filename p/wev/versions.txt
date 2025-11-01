@@ -1,0 +1,2 @@
+release	1.1.0
+commit	b09b664dd2d1b11dd68e03f8c0363ac0ef76f1e0

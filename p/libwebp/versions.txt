@@ -1,0 +1,2 @@
+release	1.6.0
+commit	2a755e7eecd2f167a5e150551bbdbaa2c4273b84

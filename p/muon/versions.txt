@@ -1,0 +1,2 @@
+release	0.5.0
+commit	3c35ff4985d260a55870dbb6c3f04abce71f96f1

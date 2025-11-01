@@ -1,0 +1,10 @@
+[
+  {
+    "channel": "release",
+    "version": "1.15.2"
+  },
+  {
+    "channel": "commit",
+    "version": "cb5a578a5767a95f29990861a9572ccb27f25793"
+  }
+]
