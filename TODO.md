@@ -12,7 +12,7 @@
   correct version detection.
 - [ ] Write a shell script to find package versions that have not been updated
   in a while. These might then be manually confirmed.
-- [ ] Implement parallelization
+- [x] Implement parallelization
 - [x] Add GitHub issue templates
 - [ ] Mirror to vagrant.tox.wtf
 - [x] Add changelog
@@ -22,5 +22,6 @@
 - [x] Test release.sh
 - [x] Fix chance skipping
 - [ ] Fix changelog formatting for breaking changes
-- [ ] Define `defrelease`, `defunstable`, `defcommit`
-- [ ] Use mtime when caching
+- [x] Define `defgitrelease`, `defgitunstable`, `defgitcommit`
+- [x] Use mtime for cache
+- [x] Move transient data files to .vagrant-cache
