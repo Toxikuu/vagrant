@@ -217,7 +217,7 @@ impl UpstreamType {
             Self::Arch               => String::from("archver"),
             Self::Curl               => String::from("ca | vsort"),
             Self::Empty              => String::with_capacity(0),
-            Self::Git | Self::GitHub => String::from("gr | tolower | vtrim | fsl | vfs | vsort"),
+            Self::Git | Self::GitHub => String::from("defgitrelease"),
         }
     }
 
@@ -226,7 +226,7 @@ impl UpstreamType {
             Self::Arch               => String::from("archver"),
             Self::Curl               => String::from("ca | vsort"),
             Self::Empty              => String::with_capacity(0),
-            Self::Git | Self::GitHub => String::from("gr | tolower | vtrim | fsl | vsort"),
+            Self::Git | Self::GitHub => String::from("defgitunstable"),
         }
     }
 
