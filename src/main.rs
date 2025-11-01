@@ -1,6 +1,8 @@
 use color_eyre::config::HookBuilder;
+use color_eyre::eyre::WrapErr;
 use tracing::{debug, info};
-use std::time::Instant;
+use std::os::unix::fs::MetadataExt;
+use std::time::{Duration, Instant, SystemTime, UNIX_EPOCH};
 use std::{env, fs};
 use std::path::Path;
 
@@ -15,7 +17,7 @@ mod package;
 mod args;
 
 fn main() -> color_eyre::Result<()> {
-    let _ = fs::remove_dir_all(".vagrant-cache");
+    clean_cache()?;
     let start_timestamp = Instant::now();
 
     HookBuilder::default()
@@ -41,11 +43,10 @@ fn main() -> color_eyre::Result<()> {
         bulk::write_all(&map)?;
         increment_runcount()?;
         debug!("Incremented runcount");
-        fs::write("elapsed", &elapsed)?;
+        fs::write(".vagrant-cache/elapsed", &elapsed)?;
     }
 
     info!("Finished in {elapsed}");
-    let _ = fs::remove_dir_all(".vagrant-cache");
     Ok(())
 }
 
@@ -70,5 +71,28 @@ fn increment_runcount() -> Result<()> {
         .and_then(|s| s.trim().parse::<u64>().ok())
         .unwrap_or(0u64) + 1;
     fs::write(path, runcount.to_string())?;
+    Ok(())
+}
+
+fn clean_cache() -> Result<()> {
+    let cache_path = Path::new(".vagrant-cache");
+    if let Ok(m) = cache_path.metadata() {
+        #[allow(clippy::cast_sign_loss)]
+        let mtime = Duration::from_secs(m.mtime() as u64);
+        let now = SystemTime::now().duration_since(UNIX_EPOCH)
+            .wrap_err("Time travel detected")?;
+
+        if now - mtime > Duration::from_hours(1) {
+            debug!("Removing cache");
+            fs::remove_dir_all(cache_path)
+                .wrap_err("Failed to remove cache")?;
+            fs::create_dir(cache_path)
+                .wrap_err("Failed to create cache")?;
+        }
+    } else {
+        fs::create_dir(cache_path)
+            .wrap_err("Failed to create cache")?;
+    }
+
     Ok(())
 }
