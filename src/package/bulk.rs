@@ -70,7 +70,7 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionCh
                 Ok::<_, Error>((package.clone(), versions, skipped, failed))
             })
         .collect::<Result<Vec<_>, _>>()
-    })?;
+    }).wrap_err("Failed to bulk fetch versions")?;
 
     let mut map = IndexMap::new();
     let mut skipped_count = 0;
@@ -82,6 +82,7 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionCh
         failed_count += failed;
     }
 
+    fs::write("total", packages.len().to_string())?;
     fs::write("failed", failed_count.to_string())?;
     fs::write("skipped", skipped_count.to_string())?;
     fs::write("checked", map.len().to_string())?;
