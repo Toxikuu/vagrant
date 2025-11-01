@@ -3,12 +3,13 @@
 use crate::package::PackageVersions;
 
 use super::{Package, VersionChannel};
-use std::fs;
+use std::{env, fs};
 use std::path::Path;
-use color_eyre::eyre::{Context, ContextCompat};
+use color_eyre::eyre::{Context, ContextCompat, Error};
 use color_eyre::Result;
 use indexmap::IndexMap;
 use tracing::{debug, error};
+use rayon::prelude::*;
 
 pub fn find_all() -> Result<Vec<Package>> {
     let search_path = Path::new("p");
@@ -31,29 +32,54 @@ pub fn find_all() -> Result<Vec<Package>> {
     Ok(packages)
 }
 
+
+
 pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionChannel>>> {
+    let threads = env::var("RAYON_NUM_THREADS")
+        .ok()
+        .and_then(|v| v.parse::<usize>().ok())
+        .unwrap_or_else(|| num_cpus::get() * 2);
+
+    let pool = rayon::ThreadPoolBuilder::new()
+        .num_threads(threads)
+        .build()
+        .expect("Failed to create thread pool");
+
+    let res = pool.install(|| {
+        packages.par_iter()
+            .map(|package| {
+                let mut skipped = 0;
+                let mut failed = 0;
+
+                let versions = match package.fetch() {
+                    Ok(v) => v,
+                    Err(e) if e.to_string().contains("Tails!") => {
+                        skipped = 1;
+                        debug!("Skipped fetching versions for package '{}'", package.name);
+                        package.read_versions()
+                            .wrap_err_with(|| format!("Failed to read old versions for skipped package '{}'", package.name))?
+                    },
+                    Err(e) => {
+                        failed = 1;
+                        error!("Failed to fetch versions for {}: {e}", package.name);
+                        package.read_versions()
+                            .wrap_err_with(|| format!("Failed to read old versions for failed package '{}'", package.name))?
+                    }
+                };
+
+                Ok::<_, Error>((package.clone(), versions, skipped, failed))
+            })
+        .collect::<Result<Vec<_>, _>>()
+    })?;
+
     let mut map = IndexMap::new();
-    let mut failed_count = 0;
     let mut skipped_count = 0;
+    let mut failed_count = 0;
 
-    for package in packages {
-        let versions = match package.fetch() {
-            Ok(v) => v,
-            Err(e) if e.to_string().contains("Tails!") => {
-                skipped_count += 1;
-                debug!("Skipped fetching versions for package '{}'", package.name);
-                package.read_versions()
-                    .wrap_err_with(|| format!("Failed to read old versions for skipped package '{}'", package.name))?
-            },
-            Err(e) => {
-                failed_count += 1;
-                error!("Failed to fetch versions for {}: {e}", package.name);
-                package.read_versions()
-                    .wrap_err_with(|| format!("Failed to read old versions for failed package '{}'", package.name))?
-            }
-        };
-
-        map.insert(package.clone(), versions);
+    for (pkg, ver, skipped, failed) in res {
+        map.insert(pkg, ver);
+        skipped_count += skipped;
+        failed_count += failed;
     }
 
     fs::write("failed", failed_count.to_string())?;

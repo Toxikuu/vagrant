@@ -8,10 +8,12 @@ clap = { version = "4.5", features = ["derive"] }
 color-eyre = "0.6"
 humantime = "2.2"
 indexmap = "2.11"
+num_cpus = "1"
 rand = "0.9"
+rayon = "1.11"
 regex = "1.11"
 serde = { version = "1", features = ["derive"] }
-serde_json = "1.0.145"
+serde_json = "1"
 thiserror = "2"
 toml = "0.9"
 tracing = "0.1"
