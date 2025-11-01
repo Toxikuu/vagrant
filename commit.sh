@@ -18,21 +18,23 @@ other_versions_updates=$(echo "$versions_updates" | grep -Evc 'channels/(release
 versions_updated=$(echo "$versions_updates" | wc -l)
 vagrant_version=$(git describe --tags || echo "???")
 
+cd .vagrant-cache
 desc="
 [Vagrant v$vagrant_version - $(date +"%Y-%m-%d %H:%M:%S %z")]
 Run #$(<runcount) took $(<elapsed)
 
-- Checked $(<checked) packages
-- Skipped $(<skipped) packages
-- Failed to fetch versions for $(<failed) packages
+- Processed $(<total) packages
+    - Checked   $(<checked)
+    - Skipped   $(<skipped)
+    - Failed    $(<failed)
 
 - Updated $((versions_updated)) versions for $packages_updated packages:
-    - Release versions:  $release_versions_updates
-    - Unstable versions: $unstable_versions_updates
-    - Commit versions:   $commit_versions_updates
-    - Other versions:    $other_versions_updates
+    - Release   $release_versions_updates
+    - Unstable  $unstable_versions_updates
+    - Commit    $commit_versions_updates
+    - Other     $other_versions_updates
 "
+cd ..
 
 echo "$desc"
-
 git commit -m "auto(p): update versions" -m "$desc"
