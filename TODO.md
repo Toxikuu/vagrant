@@ -22,3 +22,5 @@
 - [x] Test release.sh
 - [x] Fix chance skipping
 - [ ] Fix changelog formatting for breaking changes
+- [ ] Define `defrelease`, `defunstable`, `defcommit`
+- [ ] Use mtime when caching
