@@ -1,0 +1,8 @@
+upstream = "linux-pam/linux-pam"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,_,.,g' -e 's,-,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

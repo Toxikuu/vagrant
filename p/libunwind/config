@@ -1,0 +1,8 @@
+upstream = "libunwind/libunwind"
+
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim | fl | grep -v '^4\.' | vsort'''
+
+[[channels]]
+name = "commit"

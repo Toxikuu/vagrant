@@ -1,0 +1,8 @@
+upstream = "netwide-assembler/nasm"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | vfs | fsl | vsort"
+
+[[channels]]
+name = "commit"

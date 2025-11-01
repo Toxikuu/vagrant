@@ -1,0 +1,8 @@
+upstream = "Cyan4973/xxhash"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | v3grep"
+
+[[channels]]
+name = "commit"

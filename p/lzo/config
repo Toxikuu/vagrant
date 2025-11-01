@@ -1,0 +1,5 @@
+upstream = "https://archlinux.org/packages/core/x86_64/lzo/json"
+chance = 0.09 # last release dated 2017-03-01
+
+[[channels]]
+name = "release"

@@ -1,0 +1,7 @@
+upstream = "xyproto/tinyxxd"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,5 @@
+upstream = "http://mirror.rit.edu/gnu/libunistring/?C=M&O=D"
+
+[[channels]]
+name = "release"
+fetch = "ca | uniq | vtrim | vsort"

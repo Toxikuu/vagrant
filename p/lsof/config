@@ -1,4 +1,4 @@
-upstream = "https://codeberg.org/Limine/Limine.git"
+upstream = "lsof-org/lsof"
 
 [[channels]]
 name = "release"

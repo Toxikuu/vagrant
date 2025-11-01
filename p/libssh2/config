@@ -1,0 +1,8 @@
+upstream = "libssh2/libssh2"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^RELEASE.,,' | fsl | vsort"
+
+[[channels]]
+name = "commit"

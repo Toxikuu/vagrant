@@ -1,0 +1,8 @@
+upstream = "https://gitlab.com/gnutls/libtasn1.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g' -e 's,-,.,g' | fsl | vsort"
+
+[[channels]]
+name = "commit"

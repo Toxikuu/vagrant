@@ -1,0 +1,5 @@
+upstream = "https://invisible-mirror.net/archives/lynx/tarballs/?C=M;O=D"
+
+[[channels]]
+name = "release"
+fetch = '''cr | v3grep | grep tar | cut -d\" -f4 | vtrim -e 's,^lynx,,' -e 's,rel\..*$,,' -e 's,dev.*$,,' -e 's,\.tar.*$,,' | uniq | vsort'''

@@ -1,0 +1,5 @@
+upstream = "eggert/tz"
+
+[[channels]]
+name = "release"
+expected = '^[0-9]{4}[a-z]$'

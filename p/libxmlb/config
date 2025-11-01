@@ -1,0 +1,7 @@
+upstream = "hughsie/libxmlb"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

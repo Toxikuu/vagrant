@@ -1,0 +1,8 @@
+upstream = "nih-at/libzip"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^rel-,,' -e 's,-,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

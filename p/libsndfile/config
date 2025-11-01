@@ -1,0 +1,8 @@
+upstream = "libsndfile/libsndfile"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | vfs | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "besser82/libxcrypt"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

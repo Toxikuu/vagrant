@@ -1,0 +1,8 @@
+upstream = "intel/libva"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fdate | fl | vsort"
+
+[[channels]]
+name = "commit"

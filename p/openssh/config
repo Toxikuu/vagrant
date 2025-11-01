@@ -1,0 +1,9 @@
+upstream = "openssh/openssh-portable"
+
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim -e 's,^V_,,' -e 's,_,.,g' -e 's,\.P,p,' | fsl | vfs | vsort'''
+expected = '''^[0-9]+\.[0-9]+p[0-9]+$'''
+
+[[channels]]
+name = "commit"

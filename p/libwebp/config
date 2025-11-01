@@ -1,4 +1,4 @@
-upstream = "https://codeberg.org/Limine/Limine.git"
+upstream = "https://chromium.googlesource.com/webm/libwebp"
 
 [[channels]]
 name = "release"

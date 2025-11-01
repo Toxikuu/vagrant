@@ -1,0 +1,8 @@
+upstream = "libusb/libusb"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | fl | v3grep | vsort"
+
+[[channels]]
+name = "commit"

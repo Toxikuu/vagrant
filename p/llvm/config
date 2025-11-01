@@ -1,0 +1,8 @@
+upstream = "llvm/llvm-project"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^llvmorg-,,' | fl | vsort"
+
+[[channels]]
+name = "commit"

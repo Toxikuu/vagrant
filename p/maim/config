@@ -1,0 +1,7 @@
+upstream = "naelstrof/maim"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
