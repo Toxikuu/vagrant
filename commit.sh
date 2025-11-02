@@ -21,7 +21,7 @@ vagrant_version=$(git describe --tags || echo "???")
 cd .vagrant-cache
 desc="
 [Vagrant v$vagrant_version - $(date +"%Y-%m-%d %H:%M:%S %z")]
-Run #$(<runcount) took $(<elapsed)
+Run #$(<../runcount) took $(<elapsed)
 
 - Processed $(<total) packages
     - Checked   $(<checked)
