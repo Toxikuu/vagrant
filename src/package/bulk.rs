@@ -82,10 +82,11 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionCh
         failed_count += failed;
     }
 
-    fs::write(".vagrant-cache/total", packages.len().to_string())?;
+    let total = map.len();
+    fs::write(".vagrant-cache/total", total.to_string())?;
     fs::write(".vagrant-cache/failed", failed_count.to_string())?;
     fs::write(".vagrant-cache/skipped", skipped_count.to_string())?;
-    fs::write(".vagrant-cache/checked", map.len().to_string())?;
+    fs::write(".vagrant-cache/checked", (total - failed_count - skipped_count ).to_string())?;
     map.sort_keys();
 
     Ok(map)
