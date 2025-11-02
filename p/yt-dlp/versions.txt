@@ -1,2 +1,2 @@
 release	2025.10.22
-commit	79f9232ffbd57dde91c372b673b42801edaa9e53
+commit	10dea209d2460daf924c93835ddc2f0301cf2cd4
