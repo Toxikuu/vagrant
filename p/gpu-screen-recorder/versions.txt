@@ -1,2 +1,2 @@
-release	5.8.0
-commit	e623145de880b8ff2b16df30151e2acf3b027868
+release	5.8.1
+commit	dc15c69848eb1aad7069716223310579bbb5e0a3
