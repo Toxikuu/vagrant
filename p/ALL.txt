@@ -4,7 +4,7 @@ abseil-cpp	commit	982f4254a1aa577d71a89f466053c0fb5ca004ed
 acl	release	2.3.2
 alacritty	release	0.16.1
 alacritty	unstable	0.16.1
-alacritty	commit	1399545f48f3a7ec558377a7b935b9a94482d22b
+alacritty	commit	fff942ac54e2b8dd78ced619413565601f2ac1ea
 alsa-lib	release	1.2.14
 alsa-lib	unstable	1.2.14
 alsa-lib	commit	e6d0db9d0c9160d880861138d1a270cfef70dd26
@@ -34,7 +34,7 @@ autoconf-archive	release	2024.10.16
 automake	release	1.18.1
 avahi	release	0.8
 avahi	unstable	0.9-rc2
-avahi	commit	d6a259244feecc67d91390da6ea858f193b5e889
+avahi	commit	a5fb340bfede604e54643829b00f5e36b8ed571f
 bash	release	5.3
 bash	unstable	5.3-rc2
 bash-completion	release	2.17.0
@@ -94,7 +94,7 @@ cli11	release	2.6.1
 cli11	commit	3a1946e965e3572ba23a9f0abfaadf0f534e7c9b
 cmake	release	4.1.2
 cmake	unstable	4.2.0-rc2
-cmake	commit	00f5aa25a31a790b45c8282dea587a39c1ff39f6
+cmake	commit	3a5a3af5d189f7726f9013030f438381e0f6f007
 coreutils	release	9.8
 coreutils	release	9.8
 coreutils	commit	fdf88157c6e8d1c5e84889cd3133e426f4688005
@@ -174,7 +174,7 @@ feh	release	3.11.2
 feh	commit	00daaacddcce9bc9dc603a0f601ff3bd091e8c04
 ffmpeg	release	7.1.2
 ffmpeg	unstable	8.0
-ffmpeg	commit	83e0298de217a7108ee703806d6380e554007972
+ffmpeg	commit	7770c0bf0d958851b4aaf42de9246a7cd874e15c
 fftw	release	3.3.10
 fftw	unstable	3.3.10
 fftw	commit	7947c101a5b724fe8b9784218388b46d7e247132
@@ -215,7 +215,7 @@ fzf	commit	4d563c6dfaf854260314cb5cdc9df577ec512805
 gawk	release	5.3.2
 gcc	release	15.2.0
 gcc	unstable	16
-gcc	commit	ac3eeb987ad04923ddc57a9dc9bd4ec98146a981
+gcc	commit	6b6696fa3dfc13d26fbb01856757b73df80fe161
 gdb	release	16.3
 gdbm	release	1.26
 gdk-pixbuf	release	2.44.4
@@ -288,7 +288,7 @@ gumbo-parser	commit	6dddad6503480afc1a1379187aa114415ac7e640
 gzip	release	1.14
 hwdata	release	0.400
 hwdata	commit	f5ce55230206fd647bbcae42012094eb04640740
-iana-etc	release	20251022
+iana-etc	release	20251030
 inih	release	62
 inih	unstable	62
 inih	commit	8e06f6b77b5d4471bdc6d85ada81b67d37354a5c
@@ -347,8 +347,8 @@ libdecor	release	0.2.4
 libdecor	commit	700aa1e6fb5dddc085d94dddf480e74b84c0ad88
 libdisplay-info	release	0.3.0
 libdisplay-info	commit	788c056e24eaf412832889afd46aaa41bec94e6a
-libdrm	release	2.4.127
-libdrm	commit	aaf8a893e1733e6c9663c869549ba3cf7204a935
+libdrm	release	2.4.128
+libdrm	commit	679c4749740eb84dd9f07933291dddf19bdcfcda
 libepoxy	release	1.5.10
 libepoxy	commit	167802b7db5b753798d2208f393e3ab45201dd5f
 libev	release	4.33
@@ -545,7 +545,7 @@ linux-pam	commit	c4a53492e1b7aebcf7a65a778d9e3a78f196d117
 little-cms	release	2.17
 little-cms	commit	8888d842a7556a0aac093808f10d49c4141c354a
 llvm	release	21.1.4
-llvm	commit	acdcac01453226194b115b1cb2c6b2ee654b03d4
+llvm	commit	46ecf458e16bde0b5784d1cfe7837f683e54ee0d
 lmdb	release	0.9.33
 lsof	release	4.99.5
 lsof	commit	2a923667a6edc067a6b08f17d51032322b334d38
@@ -574,7 +574,7 @@ ncurses	unstable	6.5.20251101
 neofetch	release	7.1.0
 neofetch	commit	ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f
 neovim	release	0.11.4
-neovim	commit	d847548a1cf18fa5d6cdad6c482dfd38fbbb9f91
+neovim	commit	02cd564896502462e01d08a2a0901213f96456e7
 ogg	release	1.3.6
 ogg	commit	0288fadac3ac62d453409dfc83e9c4ab617d2472
 openssh	release	10.2p1
