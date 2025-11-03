@@ -2,6 +2,7 @@
 
 pub mod bulk;
 
+use std::fmt::Write;
 use std::fmt::Debug;
 use std::fs;
 use std::hash::Hash;
@@ -319,6 +320,16 @@ impl Package {
         true
     }
 
+    /// Used for log output only
+    pub fn format_fetched(&self, version_channels: &[VersionChannel]) -> String {
+        let mut s = String::new();
+        let _ = writeln!(&mut s, "Fetched versions for {}", self.name);
+        for vc in version_channels {
+            let _ = writeln!(&mut s, "        - {}: {}", vc.channel, vc.version);
+        }
+        s
+    }
+
     pub fn fetch(&self) -> Result<Vec<VersionChannel>> {
         // if fallback versions don't exist, or --guarantee is passed, guarantee a fetch
         let should_guarantee = ARGS.guarantee || !self.has_fallback_versions();
@@ -340,7 +351,7 @@ impl Package {
             }
         }
 
-        info!("Fetched versions for {}: {version_channels:#?}", self.name);
+        info!("{}", self.format_fetched(&version_channels));
         debug!("Versions as JSON: {}", serde_json::to_string_pretty(&version_channels)?);
 
         Ok(version_channels)
