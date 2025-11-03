@@ -25,3 +25,4 @@
 - [x] Define `defgitrelease`, `defgitunstable`, `defgitcommit`
 - [x] Use mtime for cache
 - [x] Move transient data files to .vagrant-cache
+- [x] Better display for fetched versions
