@@ -47,7 +47,7 @@ pub fn cmd(cmd: &[&str]) -> Result<String> {
         return Err(CmdError::NonzeroStatus).wrap_err("Exited with nonzero status");
     }
 
-    if out.is_empty() {
+    if out.trim().is_empty() {
         warn!("No output in stdout");
         return Err(CmdError::EmptyStdout).wrap_err("No output in stdout");
     }
