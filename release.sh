@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -eu
+set +H # disable history expansion
 argv0="$0"
 
 nl="
@@ -115,10 +116,10 @@ if [ -n "${features-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=" - **[!!]** ${entry/^!!/}$nl"
+            changelog_entry+=' - **[!!]** '"${entry/^!!/}$nl"
         elif echo "$entry" | grep -q '^!'; then
             entry="${entry/^!/}"
-            changelog_entry+=" - [!] ${entry/^!/}$nl"
+            changelog_entry+=' - **[!]** '"${entry/^!/}$nl"
         else
             changelog_entry+=" - $entry$nl"
         fi
@@ -134,9 +135,9 @@ if [ -n "${fixes-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=" - **[!!]** ${entry/^!!/}$nl"
+            changelog_entry+=' - **[!!]** '"${entry/^!!/}$nl"
         elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=" - [!] ${entry/^!/}$nl"
+            changelog_entry+=' - **[!]** '"${entry/^!/}$nl"
         else
             changelog_entry+=" - $entry$nl"
         fi
@@ -152,9 +153,9 @@ if [ -n "${chores-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=" - **[!!]** ${entry/^!!/}$nl"
+            changelog_entry+=' - **[!!]** '"${entry/^!!/}$nl"
         elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=" - [!] ${entry/^!/}$nl"
+            changelog_entry+=' - **[!]** '"${entry/^!/}$nl"
         else
             changelog_entry+=" - $entry$nl"
         fi
@@ -170,9 +171,9 @@ if [ -n "${docs-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=" - **[!!]** ${entry/^!!/}$nl"
+            changelog_entry+=' - **[!!]** '"${entry/^!!/}$nl"
         elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=" - [!] ${entry/^!/}$nl"
+            changelog_entry+=' - **[!]** '"${entry/^!/}$nl"
         else
             changelog_entry+=" - $entry$nl"
         fi
@@ -189,9 +190,9 @@ if [ -n "${ci-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=" - **[!!]** ${entry/^!!/}$nl"
+            changelog_entry+=' - **[!!]** '"${entry/^!!/}$nl"
         elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=" - [!] ${entry/^!/}$nl"
+            changelog_entry+=' - **[!]** '"${entry/^!/}$nl"
         else
             changelog_entry+=" - $entry$nl"
         fi
@@ -207,9 +208,9 @@ if [ -n "${reverts-}" ]; then
         if [ -z "$entry" ]; then continue; fi
 
         if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=" - **[!!]** ${entry/^!!/}$nl"
+            changelog_entry+=' - **[!!]** '"${entry/^!!/}$nl"
         elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=" - [!] ${entry/^!/}$nl"
+            changelog_entry+=' - **[!]** '"${entry/^!/}$nl"
         else
             changelog_entry+=" - $entry$nl"
         fi
