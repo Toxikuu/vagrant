@@ -1,0 +1,7 @@
+upstream = "mesonbuild/meson"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

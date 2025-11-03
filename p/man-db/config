@@ -1,0 +1,7 @@
+upstream = "https://gitlab.com/man-db/man-db.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
