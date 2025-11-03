@@ -1,7 +1,7 @@
 all: build
 
 run: build
-	target/release/vagrant
+	target/release/vagrant | tee vagrant.log
 
 build:
 	cargo build --release
