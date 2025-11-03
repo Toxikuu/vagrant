@@ -2,4 +2,4 @@ upstream = "https://www.mpg123.de/index.shtml"
 
 [[channels]]
 name = "release"
-fetch = "cr | grep -Eo 'Releasing mpg123 version .+:' | cut -d\  -f4 | cut -d: -f1 | vsort"
+fetch = '''cr | grep -Eo 'Releasing mpg123 version .+:' | cut -d\  -f4 | cut -d: -f1 | vsort'''
