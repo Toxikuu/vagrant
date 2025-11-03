@@ -34,7 +34,7 @@ autoconf-archive	release	2024.10.16
 automake	release	1.18.1
 avahi	release	0.8
 avahi	unstable	0.9-rc2
-avahi	commit	a5fb340bfede604e54643829b00f5e36b8ed571f
+avahi	commit	9fde934cd449a7ac99c0c32424b1c3c5cfd7f50e
 bash	release	5.3
 bash	unstable	5.3-rc2
 bash-completion	release	2.17.0
@@ -215,7 +215,7 @@ fzf	commit	4d563c6dfaf854260314cb5cdc9df577ec512805
 gawk	release	5.3.2
 gcc	release	15.2.0
 gcc	unstable	16
-gcc	commit	d66209cee5dda39ac4add589f4535f35c5736c63
+gcc	commit	28d20a591ddf1618d75f2b8261ba85bf15a49876
 gdb	release	16.3
 gdbm	release	1.26
 gdk-pixbuf	release	2.44.4
@@ -260,7 +260,7 @@ gnutls	unstable	3.8.10
 gnutls	commit	8f6293c750b4cf0c5948cd1820beeea9891beab1
 go	release	1.25.3
 go	unstable	1.25.3
-go	commit	5132158ac2dee721790ad4b9f745bb6364406ea0
+go	commit	e12d8a90bf877af5984ae74b4eff00006d4d953a
 gperf	release	3.3
 gpgme	release	2.0.1
 gpgme	unstable	2.0.1
@@ -545,7 +545,7 @@ linux-pam	commit	c4a53492e1b7aebcf7a65a778d9e3a78f196d117
 little-cms	release	2.17
 little-cms	commit	8888d842a7556a0aac093808f10d49c4141c354a
 llvm	release	21.1.4
-llvm	commit	6747ea050dfc917b78c205102d9545902140ea2d
+llvm	commit	425fe3362d49ff1b2958f8ec9cae49e587b57e7e
 lmdb	release	0.9.33
 lsof	release	4.99.5
 lsof	commit	2a923667a6edc067a6b08f17d51032322b334d38
@@ -618,7 +618,7 @@ popt	unstable	1.19-rc1
 popt	commit	f45bfaf0fe59984c25a6745d20d573303e4a6045
 python	release	3.14.0
 python	unstable	3.15.0a1
-python	commit	b373d3494c587cf27b31f3dff89a8d96f7d29b9d
+python	commit	4e2ff4ac4cc725572e1458a91418deeadd03d8aa
 readline	release	8.3
 readline	unstable	8.3-rc2
 rip	release	0.4.1
