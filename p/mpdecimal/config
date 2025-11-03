@@ -3,6 +3,3 @@ upstream = "https://www.bytereef.org/mpdecimal/download.html"
 [[channels]]
 name = "release"
 fetch = "ca | uniq | vtrim | vsort"
-
-[[channels]]
-name = "commit"
