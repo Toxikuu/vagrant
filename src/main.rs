@@ -16,6 +16,9 @@ mod utils;
 mod package;
 mod args;
 
+/// Timeout for .vagrant-cache
+const CACHE_TIMEOUT: Duration = Duration::from_hours(1);
+
 fn main() -> color_eyre::Result<()> {
     clean_cache()?;
     let start_timestamp = Instant::now();
@@ -82,7 +85,7 @@ fn clean_cache() -> Result<()> {
         let now = SystemTime::now().duration_since(UNIX_EPOCH)
             .wrap_err("Time travel detected")?;
 
-        if now - mtime > Duration::from_hours(1) {
+        if now - mtime > CACHE_TIMEOUT {
             debug!("Removing cache");
             fs::remove_dir_all(cache_path)
                 .wrap_err("Failed to remove cache")?;
