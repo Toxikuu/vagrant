@@ -2,11 +2,11 @@ upstream = "cython/cython"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | fl | vfs | grep -vF -- - | vsort"
+fetch = "gr | vtrim | fl | vfs | fdash | vsort"
 
 [[channels]]
 name = "unstable"
-fetch = "gr | vtrim | grep -vF -- - | vsort"
+fetch = "gr | vtrim | fdash | vsort"
 
 [[channels]]
 name = "commit"

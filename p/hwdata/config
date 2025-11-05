@@ -2,7 +2,7 @@ upstream = "vcrhonek/hwdata"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | grep -v -- - | vsort"
+fetch = "gr | vtrim | fdash | vsort"
 
 [[channels]]
 name = "commit"
