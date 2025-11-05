@@ -9,18 +9,18 @@
   },
   {
     "channel": "21",
-    "version": "21.0.9.u10"
+    "version": "21.0.10.u1"
   },
   {
     "channel": "17",
-    "version": "17.0.17.u10"
+    "version": "17.0.18.u1"
   },
   {
     "channel": "11",
-    "version": "11.0.29.u7"
+    "version": "11.0.30.u1"
   },
   {
     "channel": "8",
-    "version": "8.472.u08"
+    "version": "8.482.u01"
   }
 ]

@@ -1,2 +1,2 @@
-release	5.6.1
-commit	40c162cc971ad1fe28cf0e976037fe2e370e7ef9
+release	5.7.0
+commit	6e4e6be9696de5cdcfb9626e7a3f2bd0cf5780e5

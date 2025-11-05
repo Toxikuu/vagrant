@@ -1,2 +1,2 @@
-release	0.15.3
-commit	b4b25cd6f2ded330a00c1a9a51ac4914e952fe0c
+release	0.15.4
+commit	7ed32a52faf7f15daebbe8a3f76a838d9503abf7
