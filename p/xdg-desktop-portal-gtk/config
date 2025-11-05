@@ -1,0 +1,7 @@
+upstream = "flatpak/xdg-desktop-portal-gtk"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

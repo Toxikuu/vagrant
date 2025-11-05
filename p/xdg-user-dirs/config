@@ -1,0 +1,7 @@
+upstream = "https://gitlab.freedesktop.org/xdg/xdg-user-dirs.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

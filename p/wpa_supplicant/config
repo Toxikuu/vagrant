@@ -1,0 +1,8 @@
+upstream = "https://git.w1.fi/hostap.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -re 's,^hostap(_|-)?,,' -e 's,_,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

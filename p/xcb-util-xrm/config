@@ -1,0 +1,8 @@
+upstream = "airblader/xcb-util-xrm"
+chance = 0.22
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

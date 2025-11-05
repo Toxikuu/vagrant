@@ -1,0 +1,5 @@
+upstream = "https://code.videolan.org/videolan/x264.git"
+
+# no tags
+[[channels]]
+name = "commit"

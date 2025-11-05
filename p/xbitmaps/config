@@ -1,0 +1,7 @@
+upstream = "https://gitlab.freedesktop.org/xorg/data//bitmaps.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

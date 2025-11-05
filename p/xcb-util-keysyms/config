@@ -1,0 +1,7 @@
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxcb-keysyms.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

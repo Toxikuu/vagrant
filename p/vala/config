@@ -1,0 +1,8 @@
+upstream = "gnome/vala"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,_,.,g' | vfem | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "pwmt/zathura-pdf-mupdf"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

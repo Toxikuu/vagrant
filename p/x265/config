@@ -1,0 +1,7 @@
+upstream = "https://bitbucket.org/multicoreware/x265_git.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

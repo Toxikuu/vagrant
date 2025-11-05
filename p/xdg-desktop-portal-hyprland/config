@@ -1,0 +1,7 @@
+upstream = "hyprwm/xdg-desktop-portal-hyprland"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

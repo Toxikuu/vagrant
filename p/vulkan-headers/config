@@ -1,0 +1,12 @@
+upstream = "KhronosGroup/vulkan-headers"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -re 's,^(vulkan(-sdk|)|sdk)-,,' | fsl | v3grepl | vsort"
+
+[[channels]]
+name = "sdk"
+fetch = "gr | grep '^vulkan-sdk-' | cut -d- -f3- | vsort"
+
+[[channels]]
+name = "commit"

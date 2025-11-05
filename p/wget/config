@@ -1,0 +1,8 @@
+upstream = "https://gitlab.com/gnuwget/wget.git"
+chance = 0.87
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
