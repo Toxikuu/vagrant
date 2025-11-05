@@ -1,0 +1,2 @@
+release	1.3.7
+commit	851cce991da34adf5e1f3132588683758a6369ec

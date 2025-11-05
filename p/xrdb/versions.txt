@@ -1,0 +1,2 @@
+release	1.2.2
+commit	20fc79a257ecaba0df3af8485dbf64fd73003a73

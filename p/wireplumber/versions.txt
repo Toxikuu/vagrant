@@ -1,0 +1,2 @@
+release	0.5.12
+commit	0dad52f7741726f0cd7917f9ad521a77bd50eb31

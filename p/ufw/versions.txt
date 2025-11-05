@@ -1,0 +1,2 @@
+release	0.36.2
+commit	bdb71dc636c918421d50cac647353b2be08202a0

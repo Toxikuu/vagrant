@@ -1,0 +1,2 @@
+release	1.4.4
+commit	e039b40052b66839d3df51cf3f129a399f2ada0f

@@ -1,0 +1,14 @@
+[
+  {
+    "channel": "release",
+    "version": "1.4.331"
+  },
+  {
+    "channel": "sdk",
+    "version": "1.4.328.1"
+  },
+  {
+    "channel": "commit",
+    "version": "8a25939012fb114404594ac0a64478275faa88e6"
+  }
+]
