@@ -2,4 +2,5 @@ upstream = "eggert/tz"
 
 [[channels]]
 name = "release"
+fetch = "gr"
 expected = '^[0-9]{4}[a-z]$'
