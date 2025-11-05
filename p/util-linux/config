@@ -5,8 +5,4 @@ name = "release"
 fetch = "gr | vtrim | grep -v start | vfs | vsort"
 
 [[channels]]
-name = "unstable"
-fetch = "gr | vtrim | grep -v start | vsort"
-
-[[channels]]
 name = "commit"
