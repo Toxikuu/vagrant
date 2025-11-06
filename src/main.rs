@@ -17,7 +17,7 @@ mod package;
 mod args;
 
 /// Timeout for .vagrant-cache
-const CACHE_TIMEOUT: Duration = Duration::from_hours(1);
+const CACHE_TIMEOUT: Duration = Duration::from_secs(3600); // 1 hr
 
 fn main() -> color_eyre::Result<()> {
     clean_cache()?;
