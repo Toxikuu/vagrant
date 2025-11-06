@@ -2,4 +2,4 @@ upstream = "https://archive.mozilla.org/pub/nspr/releases/"
 
 [[channels]]
 name = "release"
-fetch = "cr | grep -F /pub/nspr/releases/ | cut -d/ -f5 | vtrim | grep '[0-9]' | vsort"
+fetch = "cr | grep -F /pub/nspr/releases/ | cut -d/ -f5 | vtrim | fnd | vsort"
