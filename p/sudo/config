@@ -3,6 +3,7 @@ upstream = "sudo-project/sudo"
 [[channels]]
 name = "release"
 fetch = "gr | tolower | vtrim -e 's,_,.,g' | fsl | vsort"
+expected = '''^[0-9]+(\.[0-9]+)*(p[0-9]+)?$'''
 
 [[channels]]
 name = "commit"
