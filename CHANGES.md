@@ -10,7 +10,7 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 ### Features
 
  - Add several packages
- - Allow v3grep to accept flags
+ - **[!]** Allow v3grep to accept flags
  - Add a few packages
  - Add fdash
  - Add several packages
