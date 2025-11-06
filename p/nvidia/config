@@ -1,0 +1,5 @@
+upstream = "https://download.nvidia.com/XFree86/Linux-x86_64/latest.txt"
+
+[[channels]]
+name = "release"
+fetch = "cr | cut -d\  -f1"

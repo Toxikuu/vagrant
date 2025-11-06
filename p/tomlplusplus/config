@@ -1,0 +1,8 @@
+upstream = "marzer/tomlplusplus"
+
+[[channels]]
+name = "release"
+fetch = '''gr | vtrim -e 's,^v\.,,' | vsort'''
+
+[[channels]]
+name = "commit"

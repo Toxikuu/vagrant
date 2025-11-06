@@ -1,0 +1,8 @@
+upstream = "https://gitlab.freedesktop.org/xdg/shared-mime-info.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,-,.,g' | vsort"
+
+[[channels]]
+name = "commit"

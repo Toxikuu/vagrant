@@ -1,0 +1,8 @@
+upstream = "trifectatechfoundation/sudo-rs"
+
+[[channels]]
+name = "release"
+fetch = "defgitrelease | fl"
+
+[[channels]]
+name = "commit"

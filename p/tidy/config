@@ -1,0 +1,12 @@
+upstream = "htacg/tidy-html5"
+
+[[channels]]
+name = "release"
+fetch = "gr | fl | vsort"
+
+[[channels]]
+name = "next"
+fetch = "gr | grep -F next | vsort"
+
+[[channels]]
+name = "commit"

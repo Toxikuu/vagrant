@@ -1,0 +1,12 @@
+upstream = "https://repo.or.cz/socat.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^tag-,,' | vsort | fl"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,^tag-,,' | vsort"
+
+[[channels]]
+name = "commit"

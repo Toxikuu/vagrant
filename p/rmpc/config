@@ -1,0 +1,7 @@
+upstream = "mierak/rmpc"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

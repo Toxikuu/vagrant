@@ -1,0 +1,8 @@
+upstream = "gpg/pinentry"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,-,.,g' | fl"
+
+[[channels]]
+name = "commit"

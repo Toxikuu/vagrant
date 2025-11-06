@@ -1,0 +1,5 @@
+upstream = "https://sourceforge.net/projects/traceroute/files/"
+
+[[channels]]
+name = "release"
+fetch = "cr | grep -F /latest/download | v3grep -o"

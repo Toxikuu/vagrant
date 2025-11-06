@@ -1,0 +1,8 @@
+upstream = "plougher/squashfs-tools"
+
+[[channels]]
+name = "release"
+fetch = "defgitrelease | fl"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "uclouvain/openjpeg"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

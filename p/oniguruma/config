@@ -1,0 +1,9 @@
+upstream = "kkos/oniguruma"
+chance = 0 # "This project ended on April 24, 2025."
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_p,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

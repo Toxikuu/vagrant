@@ -1,0 +1,8 @@
+upstream = "https://git.openldap.org/openldap/openldap.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^OPENLDAP_REL_ENG_,,' -e 's,_,.,g' | fl | vsort"
+
+[[channels]]
+name = "commit"

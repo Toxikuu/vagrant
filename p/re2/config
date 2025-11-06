@@ -1,0 +1,7 @@
+upstream = "google/re2"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,8 @@
+upstream = "xyproto/setconf"
+chance = 0.44 # last commit dated 2024-07-27
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

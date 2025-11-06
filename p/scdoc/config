@@ -1,0 +1,8 @@
+upstream = "https://git.sr.ht/~sircmpwn/scdoc"
+chance = 0.94
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

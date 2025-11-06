@@ -1,0 +1,12 @@
+upstream = "qt/qtbase"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,-lts-lgpl$,,' | vfs | vsort"
+
+[[channels]]
+name = "5"
+fetch = '''gr | vtrim -e 's,-lts-lgpl$,,' | vfs | grep '^5\.' | vsort'''
+
+[[channels]]
+name = "commit"

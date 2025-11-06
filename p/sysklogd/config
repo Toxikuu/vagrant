@@ -1,0 +1,7 @@
+upstream = "troglobit/sysklogd"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

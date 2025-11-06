@@ -1,0 +1,7 @@
+upstream = "https://git.sr.ht/~kennylevinsen/seatd"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

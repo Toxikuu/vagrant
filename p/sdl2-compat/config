@@ -1,0 +1,7 @@
+upstream = "libsdl-org/sdl2-compat"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

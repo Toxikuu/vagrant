@@ -1,0 +1,7 @@
+upstream = "tealdeer-rs/tealdeer"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

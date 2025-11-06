@@ -1,0 +1,8 @@
+upstream = "https://gitlab.freedesktop.org/xdg/startup-notification.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,^startup_notification_?,,' -e 's,_,.,g' | vsort"
+
+[[channels]]
+name = "commit"

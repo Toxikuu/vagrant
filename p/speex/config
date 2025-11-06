@@ -1,0 +1,7 @@
+upstream = "xiph/speex"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

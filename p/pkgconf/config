@@ -1,0 +1,7 @@
+upstream = "pkgconf/pkgconf"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

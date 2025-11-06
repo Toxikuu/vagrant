@@ -1,0 +1,7 @@
+upstream = "baskerville/sxhkd"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,8 @@
+upstream = "shadow-maint/shadow"
+
+[[channels]]
+name = "release"
+fetch = "defgitrelease | fdate | fl"
+
+[[channels]]
+name = "commit"

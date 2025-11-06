@@ -1,0 +1,12 @@
+upstream = "https://gitlab.freedesktop.org/pipewire/pipewire.git"
+
+[[channels]]
+name = "release"
+fetch = "defgitrelease | vfem"
+
+[[channels]]
+name = "unstable"
+fetch = "defgitrelease | vfem"
+
+[[channels]]
+name = "commit"

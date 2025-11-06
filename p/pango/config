@@ -1,0 +1,8 @@
+upstream = "gnome/pango"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,_,.,g' | fl | fdash | grep -vF .90 | vsort"
+
+[[channels]]
+name = "commit"

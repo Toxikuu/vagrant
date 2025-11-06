@@ -1,0 +1,8 @@
+upstream = "sqlite/sqlite"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^ver?sion-?,,' | fsl | vsort"
+
+[[channels]]
+name = "commit"
