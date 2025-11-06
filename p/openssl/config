@@ -2,7 +2,6 @@ upstream = "openssl/openssl"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | fl | vsort"
 
 [[channels]]
 name = "commit"
