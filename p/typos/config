@@ -2,7 +2,7 @@ upstream = "crate-ci/typos"
 
 [[channels]]
 name = "unstable"
-fetch = "gr | vtrim | grep -v '^[a-zA-Z]' | v3grep | vsort"
+fetch = "gr | vtrim | fsl | v3grep | vsort"
 
 [[channels]]
 name = "release"
