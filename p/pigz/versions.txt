@@ -1,0 +1,2 @@
+release	2.8
+commit	fe4894f57739e3039a2ffc2a2a360d35e19bacbe

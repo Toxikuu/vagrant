@@ -1,0 +1,2 @@
+release	1.5.2
+commit	71056d73fb39dad9b27b641a2683baed09dd4ecc

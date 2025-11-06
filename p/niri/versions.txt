@@ -1,0 +1,2 @@
+release	25.08
+commit	a2ca2b3c866bc781b12c334a9f949b3db6d7c943

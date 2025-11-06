@@ -1,0 +1,2 @@
+release	3.2.26
+commit	c94da8977d49c71c074037201e18edc97b1a8f7f

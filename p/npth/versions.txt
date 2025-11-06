@@ -1,0 +1,2 @@
+release	1.8
+commit	59987e37a587ea7c4d6485ac9069c2bd199ff9a4

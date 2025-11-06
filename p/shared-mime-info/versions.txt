@@ -1,0 +1,2 @@
+release	2.4
+commit	381dba8e91427336b993e976ab1c785e6ece78f5

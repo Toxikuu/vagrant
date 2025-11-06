@@ -1,0 +1,2 @@
+release	2025.6
+commit	88e4f3356a7435ad8c9cce489359b9785bdf5672

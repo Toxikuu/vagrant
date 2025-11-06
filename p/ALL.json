@@ -12,7 +12,7 @@
       },
       {
         "channel": "commit",
-        "version": "0f891910976813f95d10a5f46afad2ba32d7ee6a"
+        "version": "ff4395895672c03fb544be00e3d66ebada1fcc47"
       }
     ]
   },
@@ -229,6 +229,19 @@
       {
         "channel": "commit",
         "version": "e5d15ee00838f5faff25f74338044d2f7a35496d"
+      }
+    ]
+  },
+  {
+    "package": "awww",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.11.2"
+      },
+      {
+        "channel": "commit",
+        "version": "cb3be3691a65485cddca8bf5e8b0ac6d4a18f13a"
       }
     ]
   },
@@ -663,7 +676,7 @@
       },
       {
         "channel": "commit",
-        "version": "d7d4de07c29d9c945800be05c63d78a0c2072d1b"
+        "version": "58023ba52273b05deb36ec1d395df18ba29b3bde"
       }
     ]
   },
@@ -1303,7 +1316,7 @@
       },
       {
         "channel": "commit",
-        "version": "c97efd28ca59d306f63fb2bad247af96b1063130"
+        "version": "fc9cc5038e05edceec3d0f605415540ac76163e9"
       }
     ]
   },
@@ -1372,7 +1385,7 @@
       },
       {
         "channel": "commit",
-        "version": "35e029530f256bb6302a3cae650d7eaef5514a36"
+        "version": "20ddfc95a1f452204b58b18e81373d0b3e18f5fb"
       }
     ]
   },
@@ -1545,7 +1558,7 @@
       },
       {
         "channel": "commit",
-        "version": "3078358ac6deab75109606f72ad85049703184ad"
+        "version": "975c8c4e22f73fb60996f6bcc2cf1a6f6af70928"
       }
     ]
   },
@@ -1618,7 +1631,7 @@
       },
       {
         "channel": "commit",
-        "version": "1b4ac98de7db6f6828b1b255ad3d4e5e7373666e"
+        "version": "0c3764516228aad4b9c08d62cf4787bcc10147e2"
       }
     ]
   },
@@ -1652,7 +1665,7 @@
       },
       {
         "channel": "commit",
-        "version": "8cf7a0b4c956aad5a8b98efde8ea6b7cde173902"
+        "version": "8111104a2120e14ef068b9cfbda91965473ab345"
       }
     ]
   },
@@ -1782,7 +1795,7 @@
       },
       {
         "channel": "commit",
-        "version": "f860efaa90b89f38739c50a7bd1e15c244907242"
+        "version": "4ad111cc074f4540e4ccf99a2c05911723c861e6"
       },
       {
         "channel": "2",
@@ -2288,7 +2301,7 @@
       },
       {
         "channel": "commit",
-        "version": "d6005499c262604596e93330f962ad0587b1eca2"
+        "version": "3276df05a758f8081adb6a910abf8de627ebda46"
       }
     ]
   },
@@ -2695,7 +2708,7 @@
       },
       {
         "channel": "commit",
-        "version": "1606c09a2feb5f19e5adaa4bb6694788e7a982b4"
+        "version": "027a9abeba1ee97cff27c9002e71af0d4fc13607"
       }
     ]
   },
@@ -3492,7 +3505,7 @@
       },
       {
         "channel": "commit",
-        "version": "521bafc203c80eefd25df8888d21635e3a3dff23"
+        "version": "77e3975236fcb47f431e3793846746103d259d81"
       }
     ]
   },
@@ -3685,7 +3698,7 @@
       },
       {
         "channel": "commit",
-        "version": "bea21177f27e9889e2d39e1c50720651671a2516"
+        "version": "cf5c294df4eb02c28a40ae214e306999e0dd1a13"
       }
     ]
   },
@@ -3885,7 +3898,177 @@
       },
       {
         "channel": "commit",
-        "version": "0472119fe61a50e56382ccdd42fb8324c1f0ab44"
+        "version": "16c8152229c6d11ed3647ba01c4bcd70d11b7f11"
+      }
+    ]
+  },
+  {
+    "package": "netcat",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.234"
+      },
+      {
+        "channel": "commit",
+        "version": "3dd21269220dd746eaf4e64a17b7257eba47c2c2"
+      }
+    ]
+  },
+  {
+    "package": "nettle",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.10.2"
+      },
+      {
+        "channel": "commit",
+        "version": "fa7c55ec84650f7cb10bc619a15c71ba07ff5505"
+      }
+    ]
+  },
+  {
+    "package": "nftables",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.1.5"
+      },
+      {
+        "channel": "commit",
+        "version": "4b21874787c45450ba6b3d01d14d5bb17968cfeb"
+      }
+    ]
+  },
+  {
+    "package": "nghttp2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.68.0"
+      },
+      {
+        "channel": "commit",
+        "version": "ebf4b7eaee9eaecfd01c087b140fb77b3f545549"
+      }
+    ]
+  },
+  {
+    "package": "ninja",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.13.1"
+      },
+      {
+        "channel": "commit",
+        "version": "931d990d9721562c3d9bedac45415d944c37e75f"
+      }
+    ]
+  },
+  {
+    "package": "niri",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "25.08"
+      },
+      {
+        "channel": "commit",
+        "version": "a2ca2b3c866bc781b12c334a9f949b3db6d7c943"
+      }
+    ]
+  },
+  {
+    "package": "noto-cjk",
+    "versions": [
+      {
+        "channel": "commit",
+        "version": "f8d157532fbfaeda587e826d4cd5b21a49186f7c"
+      }
+    ]
+  },
+  {
+    "package": "notofonts",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025.11.01"
+      },
+      {
+        "channel": "commit",
+        "version": "3a91113ade20d87cc799f7c93f39cb16e7db20f2"
+      }
+    ]
+  },
+  {
+    "package": "npth",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8"
+      },
+      {
+        "channel": "commit",
+        "version": "59987e37a587ea7c4d6485ac9069c2bd199ff9a4"
+      }
+    ]
+  },
+  {
+    "package": "nspr",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.38"
+      }
+    ]
+  },
+  {
+    "package": "nss",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.117"
+      },
+      {
+        "channel": "commit",
+        "version": "3ca2c1c98134dc86874d83088c9720570ac2e50e"
+      }
+    ]
+  },
+  {
+    "package": "nushell",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.108.0"
+      },
+      {
+        "channel": "commit",
+        "version": "f1265c5828d8a12863fefb98479c133255fed5bf"
+      }
+    ]
+  },
+  {
+    "package": "nv-codec-headers",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "13.0.19.0"
+      },
+      {
+        "channel": "commit",
+        "version": "876af32a202d0de83bd1d36fe74ee0f7fcf86b0d"
+      }
+    ]
+  },
+  {
+    "package": "nvidia",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "580.105.08"
       }
     ]
   },
@@ -3899,6 +4082,45 @@
       {
         "channel": "commit",
         "version": "0288fadac3ac62d453409dfc83e9c4ab617d2472"
+      }
+    ]
+  },
+  {
+    "package": "oniguruma",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.9.10"
+      },
+      {
+        "channel": "commit",
+        "version": "f95747b462de672b6f8dbdeb478245ddf061ca53"
+      }
+    ]
+  },
+  {
+    "package": "openjpeg",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.5.4"
+      },
+      {
+        "channel": "commit",
+        "version": "1ad9bec2c12ee445ce23e660f5e4fe870b9d5e09"
+      }
+    ]
+  },
+  {
+    "package": "openldap",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.6.10"
+      },
+      {
+        "channel": "commit",
+        "version": "34813d9cba02a74216a784636a8d5f0f986d73c7"
       }
     ]
   },
@@ -3929,11 +4151,128 @@
     ]
   },
   {
+    "package": "opus",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.2"
+      },
+      {
+        "channel": "commit",
+        "version": "71056d73fb39dad9b27b641a2683baed09dd4ecc"
+      }
+    ]
+  },
+  {
+    "package": "ostree",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025.6"
+      },
+      {
+        "channel": "commit",
+        "version": "88e4f3356a7435ad8c9cce489359b9785bdf5672"
+      }
+    ]
+  },
+  {
+    "package": "p11-kit",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.25.10"
+      },
+      {
+        "channel": "commit",
+        "version": "90dba4ded391c6232a78ee14db0da76efda7b1c3"
+      }
+    ]
+  },
+  {
+    "package": "packaging",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "25.0"
+      },
+      {
+        "channel": "commit",
+        "version": "8f13a4309aa620bf643cd508304f783b456e8c49"
+      }
+    ]
+  },
+  {
+    "package": "pango",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.57.0"
+      },
+      {
+        "channel": "commit",
+        "version": "0f27f82b162c3d03dea064fad63004ec9cf876b4"
+      }
+    ]
+  },
+  {
+    "package": "pastel",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.11.0"
+      },
+      {
+        "channel": "commit",
+        "version": "9b4642682f23daa99c981f1c45da9cc12c936cc1"
+      }
+    ]
+  },
+  {
     "package": "patch",
     "versions": [
       {
         "channel": "release",
         "version": "2.8"
+      }
+    ]
+  },
+  {
+    "package": "patchelf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.18.0"
+      },
+      {
+        "channel": "commit",
+        "version": "b49de1b3384e7928bf0df9a889fe5a4e7b3fbddf"
+      }
+    ]
+  },
+  {
+    "package": "pciutils",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.14.0"
+      },
+      {
+        "channel": "commit",
+        "version": "3ec74c71c01878f92e751f15bb8febe720c3ab40"
+      }
+    ]
+  },
+  {
+    "package": "pcre2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "10.47"
+      },
+      {
+        "channel": "commit",
+        "version": "dfd0096a1a13b8178d5f522debe1905615b60f4c"
       }
     ]
   },
@@ -3955,6 +4294,101 @@
     ]
   },
   {
+    "package": "picom",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "12.5"
+      },
+      {
+        "channel": "commit",
+        "version": "be577470d9a725d44c397429f66f606ae1f22436"
+      }
+    ]
+  },
+  {
+    "package": "pigz",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.8"
+      },
+      {
+        "channel": "commit",
+        "version": "fe4894f57739e3039a2ffc2a2a360d35e19bacbe"
+      }
+    ]
+  },
+  {
+    "package": "pinentry",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.2"
+      },
+      {
+        "channel": "commit",
+        "version": "954b3da04ac95ffb23ce9eac34ff99633cffdb47"
+      }
+    ]
+  },
+  {
+    "package": "pipewire",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.9"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.4.9"
+      },
+      {
+        "channel": "commit",
+        "version": "1f3bc6eff5a827c157ce1446fb86dc5e66d0f729"
+      }
+    ]
+  },
+  {
+    "package": "pixman",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.46.4"
+      },
+      {
+        "channel": "commit",
+        "version": "2a6ff728954e994af8dd9111154506f3264474b9"
+      }
+    ]
+  },
+  {
+    "package": "pkgconf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.5.1"
+      },
+      {
+        "channel": "commit",
+        "version": "a1e09753bc4353fdd21957f6c1fd55d7e53662e4"
+      }
+    ]
+  },
+  {
+    "package": "polkit",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "126"
+      },
+      {
+        "channel": "commit",
+        "version": "247952425829e41a47e83b2e433b9703713739f5"
+      }
+    ]
+  },
+  {
     "package": "popt",
     "versions": [
       {
@@ -3962,12 +4396,73 @@
         "version": "1.19"
       },
       {
-        "channel": "unstable",
-        "version": "1.19-rc1"
+        "channel": "commit",
+        "version": "f45bfaf0fe59984c25a6745d20d573303e4a6045"
+      }
+    ]
+  },
+  {
+    "package": "procps-ng",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.0.5"
       },
       {
         "channel": "commit",
-        "version": "f45bfaf0fe59984c25a6745d20d573303e4a6045"
+        "version": "334375688b6e3a5be48d712951565450109dd3b9"
+      }
+    ]
+  },
+  {
+    "package": "psmisc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "23.7"
+      },
+      {
+        "channel": "commit",
+        "version": "f3b51bdc90b6b5cb610528cce3d8262a932d50f0"
+      }
+    ]
+  },
+  {
+    "package": "pugixml",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.15"
+      },
+      {
+        "channel": "commit",
+        "version": "61c944895e071872370219cadade8423dc6e04dc"
+      }
+    ]
+  },
+  {
+    "package": "pulseaudio",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "17.0"
+      },
+      {
+        "channel": "commit",
+        "version": "be2efb69b97ee49ba81094d49a1b8d7be0c588c2"
+      }
+    ]
+  },
+  {
+    "package": "pyparsing",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.2.5"
+      },
+      {
+        "channel": "commit",
+        "version": "2563a4ccd3bba5a7b8dec760e6a9a7adc06695b4"
       }
     ]
   },
@@ -3984,7 +4479,89 @@
       },
       {
         "channel": "commit",
-        "version": "227f4abacdd89bb3816c172a7f6fdaa2024dbada"
+        "version": "95f6e1275b1c9de550d978cb2b4351cc4ed24fe4"
+      }
+    ]
+  },
+  {
+    "package": "pyyaml",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.0.3"
+      },
+      {
+        "channel": "commit",
+        "version": "d51d8a138f7230834fc6e95635ff09ebd329185f"
+      }
+    ]
+  },
+  {
+    "package": "qemu",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "10.1.2"
+      },
+      {
+        "channel": "commit",
+        "version": "917ac07f9aef579b9538a81d45f45850aba42906"
+      }
+    ]
+  },
+  {
+    "package": "qt",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.10.0"
+      },
+      {
+        "channel": "5",
+        "version": "5.15.18"
+      },
+      {
+        "channel": "commit",
+        "version": "8fbafa104895268c25a92c043636d99e7f02ade9"
+      }
+    ]
+  },
+  {
+    "package": "quickshell",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "fc704e6b5d445899a1565955268c91942a4f263f"
+      }
+    ]
+  },
+  {
+    "package": "ratpoison",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.9"
+      },
+      {
+        "channel": "commit",
+        "version": "db94d4971d8dcae736cf5246ef7d0454aa345ac0"
+      }
+    ]
+  },
+  {
+    "package": "re2",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025-11-05"
+      },
+      {
+        "channel": "commit",
+        "version": "e7aec5985072c1dbe735add802653ef4b36c231a"
       }
     ]
   },
@@ -4002,6 +4579,19 @@
     ]
   },
   {
+    "package": "rhash",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.6"
+      },
+      {
+        "channel": "commit",
+        "version": "76204cf4decf373d5bec3f54ce626230d1f1d570"
+      }
+    ]
+  },
+  {
     "package": "rip",
     "versions": [
       {
@@ -4011,6 +4601,62 @@
       {
         "channel": "commit",
         "version": "8c012e10390c14ce22809db3907039d4f7baa9e6"
+      }
+    ]
+  },
+  {
+    "package": "ripgrep",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "15.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "57c190d56eedac90c061a238b63dbfed434fee50"
+      }
+    ]
+  },
+  {
+    "package": "rmpc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.9.0"
+      },
+      {
+        "channel": "commit",
+        "version": "63cc3b8ca287b642b3c95db6ea4ab1bb7f3f0574"
+      }
+    ]
+  },
+  {
+    "package": "rsync",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.4.1"
+      },
+      {
+        "channel": "commit",
+        "version": "797e17fc4a6f15e3b1756538a9f812b63942686f"
+      }
+    ]
+  },
+  {
+    "package": "rust",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.91.0"
+      },
+      {
+        "channel": "nightly",
+        "version": "2025-11-05"
+      },
+      {
+        "channel": "commit",
+        "version": "401ae55427522984e4a89c37cff6562a4ddcf6b7"
       }
     ]
   },
@@ -4028,11 +4674,215 @@
     ]
   },
   {
+    "package": "scdoc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.11.3"
+      },
+      {
+        "channel": "commit",
+        "version": "9124ecb7ec4c667dea96b1d1eda942629caaec54"
+      }
+    ]
+  },
+  {
+    "package": "sdbus-cpp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "126ac9ffbee0f8a80baf92debe6fcb075a00a2ca"
+      }
+    ]
+  },
+  {
+    "package": "sdl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.2.26"
+      },
+      {
+        "channel": "commit",
+        "version": "c94da8977d49c71c074037201e18edc97b1a8f7f"
+      }
+    ]
+  },
+  {
+    "package": "sdl2-compat",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.32.58"
+      },
+      {
+        "channel": "commit",
+        "version": "da86b665aeb8b2b468c6a56df7c92be175974ee1"
+      }
+    ]
+  },
+  {
+    "package": "seatd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.9.1"
+      },
+      {
+        "channel": "commit",
+        "version": "900e359f99818df434389eb3a39ee767f1d84f2c"
+      }
+    ]
+  },
+  {
     "package": "sed",
     "versions": [
       {
         "channel": "release",
         "version": "4.9"
+      }
+    ]
+  },
+  {
+    "package": "senpai",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.4.1"
+      },
+      {
+        "channel": "commit",
+        "version": "fa9130aafc109809a6d8ce2eadf08e0ce995f498"
+      }
+    ]
+  },
+  {
+    "package": "setconf",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.7.7"
+      },
+      {
+        "channel": "commit",
+        "version": "e77f567307cdd89792b405570201f42a9b763650"
+      }
+    ]
+  },
+  {
+    "package": "setuptools",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "80.9.0"
+      },
+      {
+        "channel": "commit",
+        "version": "d198e86f57231e83de87975c5c82bc40c196da79"
+      }
+    ]
+  },
+  {
+    "package": "setxkbmap",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.3.4"
+      },
+      {
+        "channel": "commit",
+        "version": "8fe146750e70e83908c76f057492d9d9bf059287"
+      }
+    ]
+  },
+  {
+    "package": "sgml-common",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.6.3"
+      }
+    ]
+  },
+  {
+    "package": "shaderc",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025.4"
+      },
+      {
+        "channel": "commit",
+        "version": "73743588fe9c39f2f1c780a087d94afac691a189"
+      }
+    ]
+  },
+  {
+    "package": "shadow",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.18.0"
+      },
+      {
+        "channel": "commit",
+        "version": "90467efb07e69aca52e912f065e31b13ec396d8e"
+      }
+    ]
+  },
+  {
+    "package": "shared-mime-info",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.4"
+      },
+      {
+        "channel": "commit",
+        "version": "381dba8e91427336b993e976ab1c785e6ece78f5"
+      }
+    ]
+  },
+  {
+    "package": "shellcheck",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.11.0"
+      },
+      {
+        "channel": "commit",
+        "version": "eac8efff9c41bf90416b53a72209903aa9213bdb"
+      }
+    ]
+  },
+  {
+    "package": "slop",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "7.7"
+      },
+      {
+        "channel": "commit",
+        "version": "03800becac94936d2608011e393386d4fac4de01"
+      }
+    ]
+  },
+  {
+    "package": "slurp",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.5.0"
+      },
+      {
+        "channel": "commit",
+        "version": "414760a341c34d08b598555561a3630133d1a81c"
       }
     ]
   },
@@ -4050,6 +4900,209 @@
     ]
   },
   {
+    "package": "socat",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.0.3"
+      },
+      {
+        "channel": "unstable",
+        "version": "2.0.0-b9"
+      },
+      {
+        "channel": "commit",
+        "version": "78cc5ae1a57470b1978c14ff8b65729f1bb6a719"
+      }
+    ]
+  },
+  {
+    "package": "sowm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.6"
+      },
+      {
+        "channel": "commit",
+        "version": "f4cb48d7afeda195a73ff2bfdd3f85a016d53cec"
+      }
+    ]
+  },
+  {
+    "package": "speex",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "05895229896dc942d453446eba6f9f5ddcf95422"
+      }
+    ]
+  },
+  {
+    "package": "spirv-tools",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2025.4"
+      },
+      {
+        "channel": "sdk",
+        "version": "1.4.328.1"
+      },
+      {
+        "channel": "commit",
+        "version": "3039293356a99e4b4e849c154e63994ce4e8804f"
+      }
+    ]
+  },
+  {
+    "package": "sqlite",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.51.0"
+      },
+      {
+        "channel": "commit",
+        "version": "366e0ed80c326e5d206042ea39f8d7e135fad85a"
+      }
+    ]
+  },
+  {
+    "package": "squashfs-tools",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.7.3"
+      },
+      {
+        "channel": "commit",
+        "version": "a143ab5534cc9ad4aededf1116fe37bcb1c8674d"
+      }
+    ]
+  },
+  {
+    "package": "st",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.9.3"
+      },
+      {
+        "channel": "commit",
+        "version": "6e970474743d57a5d8b054c41fd3bff2bc895742"
+      }
+    ]
+  },
+  {
+    "package": "startup-notification",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.12"
+      },
+      {
+        "channel": "commit",
+        "version": "64eb585315cfb1fb4fe68c8f705956e9fed46545"
+      }
+    ]
+  },
+  {
+    "package": "strace",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.17"
+      },
+      {
+        "channel": "commit",
+        "version": "96d7f8380d38994b7c488f40d587ed0351e6d079"
+      }
+    ]
+  },
+  {
+    "package": "sudo",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.9.17p2"
+      },
+      {
+        "channel": "commit",
+        "version": "c5fc321e6d71ccea65b5f8c119b209c2b0125e2a"
+      }
+    ]
+  },
+  {
+    "package": "sudo-rs",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.2.9"
+      },
+      {
+        "channel": "commit",
+        "version": "b5bbd74021609c4e2352cea6eb19a352fe4e9bde"
+      }
+    ]
+  },
+  {
+    "package": "swappy",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.0"
+      },
+      {
+        "channel": "commit",
+        "version": "c25040258fb9dde3dd7313e419a514436741cfe5"
+      }
+    ]
+  },
+  {
+    "package": "sxhkd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.6.3"
+      },
+      {
+        "channel": "commit",
+        "version": "2cc7aca40f38cd47fbeea1f37fe310ef34386435"
+      }
+    ]
+  },
+  {
+    "package": "sxwm",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.7"
+      },
+      {
+        "channel": "commit",
+        "version": "6cf96157da0af2facf1625ae778e76fc60bddede"
+      }
+    ]
+  },
+  {
+    "package": "sysklogd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.7.2"
+      },
+      {
+        "channel": "commit",
+        "version": "c1c3f253a8963c6e9e41fafcf9b888f3f5a34906"
+      }
+    ]
+  },
+  {
     "package": "systemd",
     "versions": [
       {
@@ -4058,7 +5111,20 @@
       },
       {
         "channel": "commit",
-        "version": "fe753735e31e61a563399f535a0f7eb5c009287c"
+        "version": "fea7f5d68b5a6272ce8989e872a57b42121b5205"
+      }
+    ]
+  },
+  {
+    "package": "sysvinit",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.15"
+      },
+      {
+        "channel": "commit",
+        "version": "2da36cf51d4816438d5f944ec5e5d2f56f49e292"
       }
     ]
   },
@@ -4072,11 +5138,54 @@
     ]
   },
   {
+    "package": "tcpdump",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.99.5"
+      },
+      {
+        "channel": "commit",
+        "version": "d991fd25538a8f1c1cac811ba514c420be3d69f4"
+      }
+    ]
+  },
+  {
+    "package": "tealdeer",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.0"
+      },
+      {
+        "channel": "commit",
+        "version": "e1213158e45679680540eaec32648ca19d704393"
+      }
+    ]
+  },
+  {
     "package": "texinfo",
     "versions": [
       {
         "channel": "release",
         "version": "7.2"
+      }
+    ]
+  },
+  {
+    "package": "tidy",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.8.0"
+      },
+      {
+        "channel": "next",
+        "version": "5.9.14-next"
+      },
+      {
+        "channel": "commit",
+        "version": "d08ddc2860aa95ba8e301343a30837f157977cba"
       }
     ]
   },
@@ -4103,6 +5212,28 @@
       {
         "channel": "commit",
         "version": "815f7ecffbf5e7f6daecb3ce6e550bdb32b0d887"
+      }
+    ]
+  },
+  {
+    "package": "tomlplusplus",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "3.4.0"
+      },
+      {
+        "channel": "commit",
+        "version": "e7aaccca3fa3dbde9818ab8313250f3da4976e37"
+      }
+    ]
+  },
+  {
+    "package": "traceroute",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.6"
       }
     ]
   },
@@ -4146,6 +5277,19 @@
       {
         "channel": "commit",
         "version": "308f8f5788c91e7d099279f046cdbc3662956dcd"
+      }
+    ]
+  },
+  {
+    "package": "typst",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.14.0"
+      },
+      {
+        "channel": "commit",
+        "version": "16de17a1b3c9b14646b468e54639f7829c24de60"
       }
     ]
   },
@@ -4626,7 +5770,7 @@
       },
       {
         "channel": "commit",
-        "version": "6eac6171bc269b5e6cccd56e1d3c966ba50ca2a9"
+        "version": "005f8fc73ce672fbc152de91cb2f9a81e35e5e5f"
       }
     ]
   },
@@ -4691,7 +5835,7 @@
       },
       {
         "channel": "commit",
-        "version": "3fefa8ad137c4de50c3e427f81bca4d5e22a0f86"
+        "version": "63a0e52bd567a14a4041c1f28bf973e8d7c42d4a"
       }
     ]
   },
@@ -5055,7 +6199,7 @@
       },
       {
         "channel": "commit",
-        "version": "afc44022d0b736b2b3e87b52490bd35c53c53632"
+        "version": "7af6d81f35aea8832023daa30ada10e6673a0529"
       }
     ]
   },

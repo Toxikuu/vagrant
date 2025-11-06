@@ -1,0 +1,3 @@
+release	5.8.0
+next	5.9.14-next
+commit	d08ddc2860aa95ba8e301343a30837f157977cba

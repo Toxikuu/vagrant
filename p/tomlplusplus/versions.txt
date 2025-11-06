@@ -1,0 +1,2 @@
+release	3.4.0
+commit	e7aaccca3fa3dbde9818ab8313250f3da4976e37

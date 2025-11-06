@@ -1,0 +1,2 @@
+release	10.47
+commit	dfd0096a1a13b8178d5f522debe1905615b60f4c
