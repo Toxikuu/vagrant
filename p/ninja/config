@@ -1,0 +1,8 @@
+upstream = "ninja-build/ninja"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | grep -F . | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "git://git.gnupg.org/npth.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,8 @@
+upstream = "notofonts/notofonts.github.io"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,noto-monthly-release-,,' | fsl | vsort"
+
+[[channels]]
+name = "commit"

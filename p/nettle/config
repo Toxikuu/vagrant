@@ -1,0 +1,8 @@
+upstream = "https://git.lysator.liu.se/nettle/nettle.git"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^nettle_,,' -e 's,_release.*,,' | fsl | vfs | vsort"
+
+[[channels]]
+name = "commit"

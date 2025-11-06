@@ -1,0 +1,8 @@
+upstream = "nushell/nushell"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g' | vsort"
+
+[[channels]]
+name = "commit"

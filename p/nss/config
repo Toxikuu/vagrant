@@ -1,0 +1,8 @@
+upstream = "nss-dev/nss"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,_rtm$,,' -e 's,_,.,g' | fsl | fdate | vfs | grep -vE 'base|tmp' | vsort"
+
+[[channels]]
+name = "commit"

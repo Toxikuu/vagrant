@@ -1,0 +1,5 @@
+upstream = "notofonts/noto-cjk"
+
+# versioning scheme is incredibly strange
+[[channels]]
+name = "commit"

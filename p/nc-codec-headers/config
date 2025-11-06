@@ -1,0 +1,8 @@
+upstream = "ffmpeg/nv-codec-headers"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^n,,' | vsort"
+
+[[channels]]
+name = "commit"

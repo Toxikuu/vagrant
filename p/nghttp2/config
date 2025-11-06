@@ -1,0 +1,7 @@
+upstream = "nghttp2/nghttp2"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
