@@ -1,35 +1,45 @@
-# Vagrant
+<h1 align="center">Vagrant</h1>
 
-## Version Aggregator and Tracker
-Vagrant aggregates and tracks the release, unstable, and commit versions for a
-collection of packages. Though designed with Linux From Scratch maintenance in
-mind, Vagrant is generic enough to be applicable to most tasks requiring version
-fetching.
+<h2 align="center">Version Aggregator and Tracker</h2>
+
+Vagrant aggregates and tracks arbitrarily many versions for a collection of
+packages. Though designed with Linux From Scratch maintenance in mind, Vagrant
+is adaptable to most tasks requiring version fetching.
 
 Feature set:
 - Arbitrary version channels
+- Caching
 - Multiple APIs
 - Single and bulk requests
 
+
+## Using the APIs
+Two APIs are provided for convenience. Choose whichever works better for your
+use case.
+
+> ![WARNING]
+> API stability is not currently guaranteed.
+
 ### Plaintext API
 The plaintext API is accessible through a file hierarchy. Individual version
-channels are stored in files under `./p/$package/channels/$channel`.
+channels are stored in files under `./p/$package/channels/$channel`. This API
+was designed to be used easily from a shell with standard utilities.
 
 #### Examples
 To check the release version channel of ffmpeg:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ffmpeg/channels/release
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/ffmpeg/channels/release
 ```
 
 To check the sdk version channel of glslang:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/glslang/channels/sdk
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/glslang/channels/sdk
 ```
 
 To retrieve the release, unstable, and commit version channels of bc, saving
 them to variables, in a single request:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/bc/versions.txt > _
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/bc/versions.txt > _
 release=$(grep release _ | cut -f2)
 unstable=$(grep unstable _ | cut -f2)
 commit=$(grep commit _ | cut -f2)
@@ -39,7 +49,7 @@ rm _
 To retrieve all version channels for all packages, then parse out acl's release
 and inih's commit:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL.txt > _
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/ALL.txt > _
 acl_release=$(grep acl _ | grep release | cut -f3)
 inih_commit=$(grep 'inih\scommit' _ | cut -f3)
 rm _
@@ -47,22 +57,23 @@ rm _
 
 To count the number of tracked release versions:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL.txt |
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/ALL.txt |
     grep '\srelease\s' |
     wc -l
 ```
+
 
 ### JSON API
 
 #### Examples
 To retrieve a JSON object of all version channels of btop:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/btop/versions.json
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/btop/versions.json
 ```
 
 To retrieve all versions and parse out lz4's release:
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p/ALL.json |
+curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/ALL.json |
     jq -r '
     .[] |
     select(.package == "lz4") |
@@ -71,6 +82,47 @@ curl -fsSL https://raw.githubusercontent.com/Toxikuu/vagrant/refs/heads/master/p
     .version
     '
 ```
+
+
+## Running
+Vagrant must be run from its source directory. This is by design as Vagrant is
+intended to be run in a controlled/contained environment, and doing so reduces
+complexity.
+
+Generally, you'd want to execute the following commands:
+```bash
+make run
+./commit.sh
+```
+
+> [!TIP]
+> You may want to reset the runcount:
+> ```bash
+> printf 0 > runcount
+> ```
+
+
+### Dependencies
+#### Required
+- GCC libraries
+- Glibc
+
+#### Buildtime
+- Cargo
+- Make
+
+#### Runtime
+- Bash
+- Coreutils
+- Curl
+- Git
+
+#### Development
+In addition to the required, buildtime, and runtime dependencies, you'll want
+the following:
+- Rustup
+- Typos
+
 
 ## Roadmap
 
