@@ -17,7 +17,7 @@ Feature set:
 Two APIs are provided for convenience. Choose whichever works better for your
 use case.
 
-> ![WARNING]
+> [!WARNING]
 > API stability is not currently guaranteed.
 
 ### Plaintext API
