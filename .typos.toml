@@ -1,0 +1,10 @@
+[default]
+binary = false
+check-filename = true
+check-file = true
+unicode = true
+locale = "en"
+extend-ignore-re = [
+    "archver",
+    "fnd"
+]
