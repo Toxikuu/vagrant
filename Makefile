@@ -1,29 +1,30 @@
 all: build
 
-run: build
-	target/release/vagrant | tee vagrant.log
-
 build:
 	cargo build --release
+
+check: lint test
 
 clean:
 	cargo clean
 
-purge: clean
-	rm -f .vagrant-cache
-
-lint:
-	cargo clippy
-
-test:
-	cargo test --no-fail-fast --future-incompat-report --all-features --locked
-
-check: lint test
+fmt: format
 
 format:
 	rustup component add --toolchain nightly-x86_64-unknown-linux-gnu rustfmt
 	cargo +nightly fmt
 
-fmt: format
+lint:
+	cargo clippy
+	typos
 
-.PHONY: all build check clean fmt format lint run test
+purge: clean
+	rm -f .vagrant-cache
+
+run: build
+	target/release/vagrant | tee vagrant.log
+
+test:
+	cargo test --no-fail-fast --future-incompat-report --all-features --locked
+
+.PHONY: all build check clean fmt format lint purge run test
