@@ -19,7 +19,7 @@ lint:
 	typos
 
 purge: clean
-	rm -f .vagrant-cache
+	rm -rf .vagrant-cache
 
 run: build
 	target/release/vagrant | tee vagrant.log
