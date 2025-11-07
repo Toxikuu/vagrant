@@ -1,3 +1,2 @@
 release	1.2.14
-unstable	1.2.14
 commit	99e50c916f4ada069ac32636b52c389711b858c4

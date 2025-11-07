@@ -1,3 +1,2 @@
 release	0.16.1
-unstable	0.16.1
 commit	c2b75f293cec74532cc0115c81231ff37da812b0

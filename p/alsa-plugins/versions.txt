@@ -1,3 +1,2 @@
 release	1.2.12
-unstable	1.2.12
 commit	52574cb5ccbb8b546df2759e4b341a20332269b6

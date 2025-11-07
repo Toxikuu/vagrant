@@ -33,10 +33,6 @@
         "version": "0.16.1"
       },
       {
-        "channel": "unstable",
-        "version": "0.16.1"
-      },
-      {
         "channel": "commit",
         "version": "c2b75f293cec74532cc0115c81231ff37da812b0"
       }
@@ -47,10 +43,6 @@
     "versions": [
       {
         "channel": "release",
-        "version": "1.2.14"
-      },
-      {
-        "channel": "unstable",
         "version": "1.2.14"
       },
       {
@@ -67,10 +59,6 @@
         "version": "1.2.12"
       },
       {
-        "channel": "unstable",
-        "version": "1.2.12"
-      },
-      {
         "channel": "commit",
         "version": "52574cb5ccbb8b546df2759e4b341a20332269b6"
       }
@@ -84,10 +72,6 @@
         "version": "1.2.14"
       },
       {
-        "channel": "unstable",
-        "version": "1.2.14"
-      },
-      {
         "channel": "commit",
         "version": "99e50c916f4ada069ac32636b52c389711b858c4"
       }
@@ -98,10 +82,6 @@
     "versions": [
       {
         "channel": "release",
-        "version": "1.2.14"
-      },
-      {
-        "channel": "unstable",
         "version": "1.2.14"
       },
       {
@@ -1593,10 +1573,6 @@
     "versions": [
       {
         "channel": "release",
-        "version": "9.0.3"
-      },
-      {
-        "channel": "unstable",
         "version": "9.0.3"
       },
       {

@@ -4,10 +4,6 @@
     "version": "0.16.1"
   },
   {
-    "channel": "unstable",
-    "version": "0.16.1"
-  },
-  {
     "channel": "commit",
     "version": "c2b75f293cec74532cc0115c81231ff37da812b0"
   }
