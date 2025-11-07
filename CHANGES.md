@@ -7,6 +7,37 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 1.4.0 - 2025-11-06 23:02:37 -0600
+
+### Features
+
+ - **[!]** Rework release script
+ - Improve commit script error handling
+ - **[!]** Allow top-level upstream elision
+ - **[!]** Require channels be explicitly specified
+
+### Fixes
+
+ - Fallback to elided upstreams
+ - Avoid command interactivity
+ - Fix and rename libexpat and libfuse
+ - Elide upstreams where reasonable
+ - Empty string style tweak
+ - Explicitly specify channels
+ - Make release script push bump commit
+
+### Chores
+
+ - Run tests in release mode
+ - Test packages in test make target
+
+### Docs
+
+ - Tweak conventional commits spec
+ - Tweak changelog header
+ - Manually denote breaking changes
+
+
 ## 1.3.0 - 2025-11-06
 
 ### Features
