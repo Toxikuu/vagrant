@@ -153,35 +153,8 @@ impl Default for PackageConfig {
     fn default() -> Self {
         Self {
             upstream: String::new(),
-            chance: 1.,
-            channels: {
-                vec![
-                    PackageChannel {
-                        name: "release".into(),
-                        enabled: true,
-                        upstream: None,
-                        // the default value of fetch is filled out later as it depends on upstream
-                        fetch: String::new(),
-                        expected: Some(String::from(r"^[0-9]+(\.[0-9]+)*$")),
-                    },
-                    PackageChannel {
-                        name: "unstable".into(),
-                        enabled: true,
-                        upstream: None,
-                        // the default value of fetch is filled out later as it depends on upstream
-                        fetch: String::new(),
-                        expected: Some(String::from(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$")),
-                    },
-                    PackageChannel {
-                        name: "commit".into(),
-                        enabled: true,
-                        upstream: None,
-                        // the default value of fetch is filled out later as it depends on upstream
-                        fetch: String::new(),
-                        expected: Some(String::from(r"^[0-9a-f]{40}$")),
-                    },
-                ]
-            },
+            chance: 1.0,
+            channels: vec![],
         }
     }
 }
