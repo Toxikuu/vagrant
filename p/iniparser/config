@@ -1,0 +1,7 @@
+upstream = "https://gitlab.com/iniparser/iniparser.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

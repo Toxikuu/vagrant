@@ -1,0 +1,7 @@
+upstream = "nayuki/QR-Code-generator"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

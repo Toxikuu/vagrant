@@ -1,0 +1,11 @@
+upstream = "git://g.blicky.net/ncdu.git/"
+
+[[channels]]
+name = "release" # Zig version (stable)
+
+[[channels]]
+name = "1" # C version (LTS)
+fetch = '''defgitrelease | grep '^1\.''''
+
+[[channels]]
+name = "commit"

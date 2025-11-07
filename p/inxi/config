@@ -1,0 +1,7 @@
+upstream = "https://codeberg.org/smxi/inxi"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

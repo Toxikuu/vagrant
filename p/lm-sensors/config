@@ -1,0 +1,8 @@
+upstream = "hramrach/lm-sensors"
+
+[[channels]]
+name = "release"
+fetch = "gr | tolower | vtrim -e 's,-,.,g'"
+
+[[channels]]
+name = "commit"

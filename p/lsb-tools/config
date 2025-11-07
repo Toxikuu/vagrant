@@ -1,0 +1,7 @@
+upstream = "lfs-book/lsb-tools"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

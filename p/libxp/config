@@ -1,0 +1,9 @@
+upstream = "https://gitlab.freedesktop.org/xorg/lib/libxp.git"
+chance = 0.22 # last commit dated 2022-09-12
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g ' | fsl | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "obsproject/obs-studio"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

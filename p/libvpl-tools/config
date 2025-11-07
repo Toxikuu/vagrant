@@ -1,0 +1,7 @@
+upstream = "intel/libvpl-tools"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

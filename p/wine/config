@@ -1,0 +1,12 @@
+upstream = "wine-mirror/wine"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim | grep -F . | vsort | vfs"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | grep -F . | vsort"
+
+[[channels]]
+name = "commit"

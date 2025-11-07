@@ -1,0 +1,13 @@
+# upstream says the project is not actively maintained, but still receives
+# occasional updates
+chance = 0.55
+
+[[channels]]
+name = "release"
+upstream = "https://hg.sr.ht/~scoopta/wofi/tags"
+fetch = "cr | v3grep -o | uniq | vsort"
+
+[[channels]]
+name = "commit"
+upstream = "https://hg.sr.ht/~scoopta/wofi/rev/default"
+fetch = "cr | commitgrep -o"

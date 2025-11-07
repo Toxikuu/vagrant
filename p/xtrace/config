@@ -1,0 +1,4 @@
+upstream = "yuq/xtrace"
+
+[[channels]]
+name = "commit"

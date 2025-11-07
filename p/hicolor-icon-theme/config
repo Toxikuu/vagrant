@@ -1,0 +1,7 @@
+upstream = "https://gitlab.freedesktop.org/xdg/default-icon-theme.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

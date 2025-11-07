@@ -1,0 +1,5 @@
+# TODO: nvchecker candidate
+upstream = "https://archlinux.org/packages/extra/x86_64/unrar/json"
+
+[[channels]]
+name = "release"

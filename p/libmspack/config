@@ -1,0 +1,7 @@
+upstream = "kyz/libmspack"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,9 @@
+upstream = "https://gitlab.freedesktop.org/xorg/app/xeyes.git"
+chance = 0.89
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,_,.,g ' | fsl | vsort"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "libsndfile/libsamplerate"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

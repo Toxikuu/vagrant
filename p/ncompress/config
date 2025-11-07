@@ -1,0 +1,8 @@
+upstream = "vapier/ncompress"
+
+[[channels]]
+name = "release"
+fetch = "defgitrelease | grep -vF old"
+
+[[channels]]
+name = "commit"

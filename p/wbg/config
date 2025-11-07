@@ -1,0 +1,7 @@
+upstream = "https://codeberg.org/dnkl/wbg.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
