@@ -1,5 +1,3 @@
-upstream = "tmux/tmux"
-
 [[channels]]
 name = "release"
 expected = '''^[0-9]+\.[0-9]+[a-z]?$'''

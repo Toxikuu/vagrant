@@ -1,4 +1,3 @@
-upstream = "ffmpeg/ffmpeg"
 
 [[channels]]
 name = "release"

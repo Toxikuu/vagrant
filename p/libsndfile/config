@@ -1,4 +1,3 @@
-upstream = "libsndfile/libsndfile"
 
 [[channels]]
 name = "release"

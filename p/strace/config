@@ -1,5 +1,3 @@
-upstream = "strace/strace"
-
 [[channels]]
 name = "release"
 

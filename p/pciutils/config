@@ -1,4 +1,3 @@
-upstream = "pciutils/pciutils"
 chance = 0.88
 
 [[channels]]

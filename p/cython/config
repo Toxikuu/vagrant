@@ -1,4 +1,3 @@
-upstream = "cython/cython"
 
 [[channels]]
 name = "release"

@@ -1,4 +1,3 @@
-upstream = "rhash/rhash"
 chance = 0.88
 
 [[channels]]

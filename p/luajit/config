@@ -1,4 +1,3 @@
-upstream = "luajit/luajit"
 
 [[channels]]
 name = "commit"

@@ -1,4 +1,3 @@
-upstream = "pulseaudio/pulseaudio"
 
 [[channels]]
 name = "release"

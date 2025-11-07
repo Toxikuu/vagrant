@@ -1,4 +1,3 @@
-upstream = "libexif/libexif"
 
 [[channels]]
 name = "release"

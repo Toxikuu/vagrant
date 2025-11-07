@@ -1,4 +1,3 @@
-upstream = "flatpak/flatpak"
 
 [[channels]]
 name = "release"

@@ -1,4 +1,3 @@
-upstream = "file/file"
 
 [[channels]]
 name = "release"

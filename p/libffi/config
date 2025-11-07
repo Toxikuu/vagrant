@@ -1,4 +1,3 @@
-upstream = "libffi/libffi"
 chance = 0.93
 
 [[channels]]

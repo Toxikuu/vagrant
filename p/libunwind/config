@@ -1,4 +1,3 @@
-upstream = "libunwind/libunwind"
 
 [[channels]]
 name = "release"

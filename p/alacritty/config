@@ -1,4 +1,3 @@
-upstream = "alacritty/alacritty"
 
 [[channels]]
 name = "release"

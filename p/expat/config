@@ -1,4 +1,3 @@
-upstream = "libexpat/libexpat"
 
 [[channels]]
 name = "release"

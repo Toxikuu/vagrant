@@ -1,4 +1,3 @@
-upstream = "gnutls/gnutls"
 
 [[channels]]
 name = "release"

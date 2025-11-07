@@ -1,4 +1,3 @@
-upstream = "neovim/neovim"
 
 [[channels]]
 name = "release"

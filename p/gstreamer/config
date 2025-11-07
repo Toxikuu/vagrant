@@ -1,4 +1,3 @@
-upstream = "gstreamer/gstreamer"
 
 [[channels]]
 name = "release"

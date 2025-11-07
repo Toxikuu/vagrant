@@ -1,5 +1,3 @@
-upstream = "typst/typst"
-
 [[channels]]
 name = "release"
 fetch = "gr | fdash | vtrim | vsort"

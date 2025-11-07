@@ -1,4 +1,3 @@
-upstream = "libass/libass"
 
 [[channels]]
 name = "release"

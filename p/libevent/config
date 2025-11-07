@@ -1,4 +1,3 @@
-upstream = "libevent/libevent"
 chance = 0.44 # last commit dated 2025-02-03
 
 [[channels]]

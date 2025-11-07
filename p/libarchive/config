@@ -1,4 +1,3 @@
-upstream = "libarchive/libarchive"
 
 [[channels]]
 name = "release"

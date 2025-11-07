@@ -1,4 +1,3 @@
-upstream = "jemalloc/jemalloc"
 chance = 0.1
 
 [[channels]]

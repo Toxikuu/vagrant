@@ -1,4 +1,3 @@
-upstream = "libfuse/libfuse"
 
 [[channels]]
 name = "release"

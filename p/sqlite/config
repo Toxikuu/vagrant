@@ -1,4 +1,3 @@
-upstream = "sqlite/sqlite"
 
 [[channels]]
 name = "release"

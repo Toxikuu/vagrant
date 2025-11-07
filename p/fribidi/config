@@ -1,4 +1,3 @@
-upstream = "fribidi/fribidi"
 chance = 0.42
 
 [[channels]]

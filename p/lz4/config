@@ -1,4 +1,3 @@
-upstream = "lz4/lz4"
 
 [[channels]]
 name = "release"
