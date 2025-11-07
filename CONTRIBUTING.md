@@ -73,18 +73,16 @@ an issue, and signing off:
 
 ### Commit Types
 - auto:     automatic commits made by vagrant
-- ci:       changes to the ci files and scripts
 - chore:    changes to auxiliary files
 - docs:     changes to any documentation
 - feat:     a new feature or package
 - fix:      a bugfix
-- revert:   revert something
 
 ### Scopes
 Scopes include but are not limited to:
 - (p):      packages
 - (lib):    the shell library
 - (sh):     other shell stuff
-- (src):    the codebase
+- (aux):    auxiliary files
 
 <!-- TODO: Add some more information -->
