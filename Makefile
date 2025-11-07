@@ -25,7 +25,7 @@ run: build
 	target/release/vagrant | tee vagrant.log
 
 test: build
-	cargo test --no-fail-fast --future-incompat-report --all-features --locked
+	cargo test --no-fail-fast --future-incompat-report --all-features --locked --release
 	target/release/vagrant -pg | tee vagrant.log
 	! grep -E 'ERROR|WARN' vagrant.log
 
