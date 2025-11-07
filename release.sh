@@ -239,3 +239,4 @@ git commit -m "auto(bump): $new_tag" -m "$changelog_entry"
 
 git tag "$new_tag"
 git push origin "$new_tag"
+git push
