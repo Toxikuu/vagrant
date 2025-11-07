@@ -1,13 +1,13 @@
 upstream = "https://gitlab.freedesktop.org/cairo/cairo.git"
-chance = 0.55
+chance = 0.74
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | fsl | vfem | vsort"
+fetch = "gr | vtrim -e 's,^SNAPSHOT_,,' -e 's,_,.,g' | fsl | vfem | vsort"
 
 [[channels]]
 name = "unstable"
-fetch = "gr | vtrim | fsl | vsort"
+fetch = "gr | vtrim -e 's,^SNAPSHOT_,,' -e 's,_,.,g' | fsl | vsort"
 
 [[channels]]
 name = "commit"
