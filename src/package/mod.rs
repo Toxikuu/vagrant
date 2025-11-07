@@ -234,6 +234,10 @@ impl Package {
     // }
 
     pub fn set_defaults(&mut self) {
+        if self.config.upstream.is_empty() {
+            self.config.upstream = format!("{n}/{n}", n = self.name);
+        }
+
         if let Some(c) = self.config.channels.iter_mut().find(|c| c.name == "release")
         && c.enabled {
             if c.fetch.is_empty() {
