@@ -64,62 +64,57 @@ fi
 features=""
 fixes=""
 chores=""
-ci=""
 docs=""
-revert=""
 while IFS= read -r change; do
     if echo "$change" | grep -q "feat.*:"; then
         msg="$(echo "$change" | cut -d: -f2- | sed 's,^\s,,')"
-        features+="${msg^}$nl"
+        case "$change" in
+            !!* ) features+="**[!!]** ${msg^}$nl" ;;
+            !* ) features+="**[!]** ${msg^}$nl" ;;
+            * ) features+="${msg^}$nl" ;;
+        esac
         continue
     fi
 
     if echo "$change" | grep -q "fix.*:"; then
         msg="$(echo "$change" | cut -d: -f2- | sed 's,^\s,,')"
-        fixes+="${msg^}$nl"
-        echo "${fixes:?}"
+        case "$change" in
+            !!* ) fixes+="**[!!]** ${msg^}$nl" ;;
+            !* ) fixes+="**[!]** ${msg^}$nl" ;;
+            * ) fixes+="${msg^}$nl" ;;
+        esac
         continue
     fi
 
     if echo "$change" | grep -q "chore.*:"; then
         msg="$(echo "$change" | cut -d: -f2- | sed 's,^\s,,')"
-        chores+="${msg^}$nl"
+        case "$change" in
+            !!* ) chores+="**[!!]** ${msg^}$nl" ;;
+            !* ) chores+="**[!]** ${msg^}$nl" ;;
+            * ) chores+="${msg^}$nl" ;;
+        esac
         continue
     fi
 
-    if echo "$change" | grep -q "ci.*:"; then
+    if echo "$change" | grep -q "doc.*:"; then
         msg="$(echo "$change" | cut -d: -f2- | sed 's,^\s,,')"
-        cis+="${msg^}$nl"
-        continue
-    fi
-
-    if echo "$change" | grep -q "docs.*:"; then
-        msg="$(echo "$change" | cut -d: -f2- | sed 's,^\s,,')"
-        docs+="${msg^}$nl"
-        continue
-    fi
-
-    if echo "$change" | grep -q "revert.*:"; then
-        msg="$(echo "$change" | cut -d: -f2- | sed 's,^\s,,')"
-        reverts+="${msg^}$nl"
+        case "$change" in
+            !!* ) docs+="**[!!]** ${msg^}$nl" ;;
+            !* ) docs+="**[!]** ${msg^}$nl" ;;
+            * ) docs+="${msg^}$nl" ;;
+        esac
         continue
     fi
 done <<< "$changes"
 
 # Assemble the changelog entry
-changelog_entry="$nl## $new_tag - $(date +%Y-%m-%d)$nl$nl"
+changelog_entry="$nl## $new_tag - $(date +"%Y-%m-%d %H:%M:%S %z")$nl$nl"
 
 if [ -n "${features-}" ]; then
     changelog_entry+="### Features$nl$nl"
 
     while IFS= read -r entry; do
-        if [ -z "$entry" ]; then continue; fi
-
-        if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=' - **[!!]** '"${entry#!!}$nl"
-        elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=' - **[!]** '"${entry#!}$nl"
-        else
+        if [ -n "$entry" ]; then
             changelog_entry+=" - $entry$nl"
         fi
     done <<< "$features"
@@ -131,13 +126,7 @@ if [ -n "${fixes-}" ]; then
     changelog_entry+="### Fixes$nl$nl"
 
     while IFS= read -r entry; do
-        if [ -z "$entry" ]; then continue; fi
-
-        if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=' - **[!!]** '"${entry#!!}$nl"
-        elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=' - **[!]** '"${entry#!}$nl"
-        else
+        if [ -n "$entry" ]; then
             changelog_entry+=" - $entry$nl"
         fi
     done <<< "$fixes"
@@ -149,13 +138,7 @@ if [ -n "${chores-}" ]; then
     changelog_entry+="### Chores$nl$nl"
 
     while IFS= read -r entry; do
-        if [ -z "$entry" ]; then continue; fi
-
-        if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=' - **[!!]** '"${entry#!!}$nl"
-        elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=' - **[!]** '"${entry#!}$nl"
-        else
+        if [ -n "$entry" ]; then
             changelog_entry+=" - $entry$nl"
         fi
     done <<< "$chores"
@@ -167,53 +150,10 @@ if [ -n "${docs-}" ]; then
     changelog_entry+="### Docs$nl$nl"
 
     while IFS= read -r entry; do
-        if [ -z "$entry" ]; then continue; fi
-
-        if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=' - **[!!]** '"${entry#!!}$nl"
-        elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=' - **[!]** '"${entry#!}$nl"
-        else
+        if [ -n "$entry" ]; then
             changelog_entry+=" - $entry$nl"
         fi
     done <<< "$docs"
-
-    changelog_entry+="$nl"
-    echo "${changelog_entry:?}"
-fi
-
-if [ -n "${ci-}" ]; then
-    changelog_entry+="### CI$nl$nl"
-
-    while IFS= read -r entry; do
-        if [ -z "$entry" ]; then continue; fi
-
-        if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=' - **[!!]** '"${entry#!!}$nl"
-        elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=' - **[!]** '"${entry#!}$nl"
-        else
-            changelog_entry+=" - $entry$nl"
-        fi
-    done <<< "$ci"
-
-    changelog_entry+="$nl"
-fi
-
-if [ -n "${reverts-}" ]; then
-    changelog_entry+="### Reverts$nl$nl"
-
-    while IFS= read -r entry; do
-        if [ -z "$entry" ]; then continue; fi
-
-        if echo "$entry" | grep -q '^!!'; then
-            changelog_entry+=' - **[!!]** '"${entry#!!}$nl"
-        elif echo "$entry" | grep -q '^!'; then
-            changelog_entry+=' - **[!]** '"${entry#!}$nl"
-        else
-            changelog_entry+=" - $entry$nl"
-        fi
-    done <<< "$reverts"
 
     changelog_entry+="$nl"
 fi
@@ -223,7 +163,7 @@ first_entry_lineno=$(grep '^## ' -n CHANGES.md | head -n1 | cut -d: -f1)
 first_entry_lineno=$((first_entry_lineno - 1))
 
 header_temp=$(mktemp)
-head -$((first_entry_lineno - 1)) CHANGES.md > "$header_temp"
+head -n$((first_entry_lineno - 1)) CHANGES.md > "$header_temp"
 
 old_temp=$(mktemp)
 tail +$first_entry_lineno CHANGES.md > "$old_temp"
