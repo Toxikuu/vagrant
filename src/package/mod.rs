@@ -22,6 +22,7 @@ use crate::utils::float::defloat;
 use crate::utils::shortform::{get_shortform, get_longform};
 use crate::utils::ver::Version;
 use crate::SHLIB_PATH;
+use crate::VAGRANT_CACHE;
 use crate::VAGRANT_ROOT;
 
 #[derive(Debug, Clone, Hash, Eq, PartialEq)]
@@ -89,6 +90,10 @@ impl PackageChannel {
             bail!("Invalid Unicode in {}", VAGRANT_ROOT.display());
         };
 
+        let Some(vagrant_cache) = VAGRANT_CACHE.to_str() else {
+            bail!("Invalid Unicode in {}", VAGRANT_CACHE.display());
+        };
+
         let Some(shlib_path) = SHLIB_PATH.to_str() else {
             bail!("Invalid Unicode in {}", SHLIB_PATH.display());
         };
@@ -97,6 +102,7 @@ impl PackageChannel {
             ("GIT_TERMINAL_PROMPT", "false"),
             ("PACKAGE_ROOT", &package_root),
             ("VAGRANT_ROOT", vagrant_root),
+            ("VAGRANT_CACHE", vagrant_cache),
             ("SHLIB_PATH", shlib_path),
             ("CHANNEL", &self.name),
         ]);

@@ -24,6 +24,10 @@ static VAGRANT_ROOT: LazyLock<PathBuf> = LazyLock::new(|| {
     env::current_dir().expect("Couldn't get working directory")
 });
 
+static VAGRANT_CACHE: LazyLock<PathBuf> = LazyLock::new(|| {
+    VAGRANT_ROOT.join(".vagrant-cache")
+});
+
 static SHLIB_PATH: LazyLock<PathBuf> = LazyLock::new(|| {
     VAGRANT_ROOT.join("sh/lib.env")
 });
@@ -57,7 +61,7 @@ fn main() -> color_eyre::Result<()> {
         bulk::write_all(&map)?;
         increment_runcount()?;
         debug!("Incremented runcount");
-        fs::write(".vagrant-cache/elapsed", &elapsed)?;
+        fs::write(VAGRANT_CACHE.join("elapsed"), &elapsed)?;
     }
 
     info!("Finished in {elapsed}");
@@ -89,7 +93,7 @@ fn increment_runcount() -> Result<()> {
 }
 
 fn clean_cache() -> Result<()> {
-    let cache_path = Path::new(".vagrant-cache");
+    let cache_path = &*VAGRANT_CACHE;
     if let Ok(m) = cache_path.metadata() {
         #[allow(clippy::cast_sign_loss)]
         let mtime = Duration::from_secs(m.mtime() as u64);
