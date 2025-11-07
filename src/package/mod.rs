@@ -2,6 +2,7 @@
 
 pub mod bulk;
 
+use std::collections::HashMap;
 use std::fmt::Write;
 use std::fmt::Debug;
 use std::fs;
@@ -20,6 +21,8 @@ use crate::utils::cmd::cmd;
 use crate::utils::float::defloat;
 use crate::utils::shortform::{get_shortform, get_longform};
 use crate::utils::ver::Version;
+use crate::SHLIB_PATH;
+use crate::VAGRANT_ROOT;
 
 #[derive(Debug, Clone, Hash, Eq, PartialEq)]
 pub struct Package {
@@ -78,6 +81,29 @@ impl Default for PackageChannel {
 }
 
 impl PackageChannel {
+
+    pub fn cmd(&self, package: &Package, command: &[&str]) -> Result<String> {
+        let package_root = Package::dir(&package.name);
+
+        let Some(vagrant_root) = VAGRANT_ROOT.to_str() else {
+            bail!("Invalid Unicode in {}", VAGRANT_ROOT.display());
+        };
+
+        let Some(shlib_path) = SHLIB_PATH.to_str() else {
+            bail!("Invalid Unicode in {}", SHLIB_PATH.display());
+        };
+
+        let env = HashMap::from([
+            ("GIT_TERMINAL_PROMPT", "false"),
+            ("PACKAGE_ROOT", &package_root),
+            ("VAGRANT_ROOT", vagrant_root),
+            ("SHLIB_PATH", shlib_path),
+            ("CHANNEL", &self.name),
+        ]);
+
+        cmd(command, env, &package_root)
+    }
+
     pub fn fetch(&self, package: &Package) -> Result<String> {
         let name = format!("name={}", package.name);
         let upstream = format!("upstream={}", get_longform(
@@ -85,7 +111,7 @@ impl PackageChannel {
         ));
 
         let shortform = format!("shortform={}", get_shortform(&upstream));
-        let fetch = format!(". sh/lib.env && {}", self.fetch);
+        let fetch = format!(". {} && {}", SHLIB_PATH.display(), self.fetch);
 
         let command = [
             "env",
@@ -97,7 +123,7 @@ impl PackageChannel {
             &fetch,
         ];
 
-        let ver = match cmd(&command) {
+        let ver = match self.cmd(package, &command) {
             | Err(e) => bail!("Failed to fetch version: {e}"),
             | Ok(v) => v,
         };
@@ -213,16 +239,22 @@ impl UpstreamType {
 }
 
 impl Package {
-    pub fn from_name(name: String) -> Result<Self> {
-        let config_path = Path::new("p").join(&name).join("config");
+    pub fn from_name<S: Into<String>>(name: S) -> Result<Self> {
+        let name = name.into();
+        let config_path = Path::new(Self::dir(&name).as_str()).join("config");
 
-        let raw = std::fs::read_to_string(config_path)?;
+        let raw = fs::read_to_string(config_path)?;
         let config: PackageConfig = toml::from_str(&raw)?;
 
         let mut package = Self { name, config };
         package.set_defaults();
 
         Ok(package)
+    }
+
+    /// Retrieve the directory for a package
+    pub fn dir<S: AsRef<str>>(name: S) -> String {
+        format!("{}/p/{}", VAGRANT_ROOT.display(), name.as_ref())
     }
 
     pub fn get_channel(&self, name: &str) -> Option<&PackageChannel> {

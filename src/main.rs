@@ -2,9 +2,10 @@ use color_eyre::config::HookBuilder;
 use color_eyre::eyre::WrapErr;
 use tracing::{debug, info};
 use std::os::unix::fs::MetadataExt;
+use std::sync::LazyLock;
 use std::time::{Duration, Instant, SystemTime, UNIX_EPOCH};
 use std::{env, fs};
-use std::path::Path;
+use std::path::{Path, PathBuf};
 
 use color_eyre::Result;
 use tracing_subscriber::fmt::time;
@@ -19,6 +20,14 @@ mod args;
 /// Timeout for .vagrant-cache
 const CACHE_TIMEOUT: Duration = Duration::from_secs(3600); // 1 hr
 
+static VAGRANT_ROOT: LazyLock<PathBuf> = LazyLock::new(|| {
+    env::current_dir().expect("Couldn't get working directory")
+});
+
+static SHLIB_PATH: LazyLock<PathBuf> = LazyLock::new(|| {
+    VAGRANT_ROOT.join("sh/lib.env")
+});
+
 fn main() -> color_eyre::Result<()> {
     clean_cache()?;
     let start_timestamp = Instant::now();
@@ -30,6 +39,8 @@ fn main() -> color_eyre::Result<()> {
         .install()?;
 
     log();
+
+    debug!("Determined Vagrant root to be {}", VAGRANT_ROOT.display());
 
     let packages = if ARGS.packages.is_empty() {
         bulk::find_all()?

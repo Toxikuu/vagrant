@@ -1,5 +1,6 @@
 // utils/sh.rs
 
+use std::collections::HashMap;
 use std::process::{Command, Stdio};
 
 use color_eyre::eyre::Context;
@@ -21,12 +22,13 @@ enum CmdError {
 
 /// # Lowish level function to execute a command and return stdout
 #[allow(clippy::similar_names)]
-pub fn cmd(cmd: &[&str]) -> Result<String> {
+pub fn cmd(cmd: &[&str], env: HashMap<&str, &str>, cwd: &str) -> Result<String> {
     trace!("Evaluating command: {}", cmd.join(" "));
 
     let (arg0, args) = cmd.split_first().expect("command should not be empty");
     let child = Command::new(arg0).args(args)
-        .env("GIT_TERMINAL_PROMPT", "false")
+        .envs(env)
+        .current_dir(cwd)
         .stdin(Stdio::null())
         .stdout(Stdio::piped())
         .stderr(Stdio::piped())
