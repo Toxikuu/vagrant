@@ -24,7 +24,9 @@ purge: clean
 run: build
 	target/release/vagrant | tee vagrant.log
 
-test:
+test: build
 	cargo test --no-fail-fast --future-incompat-report --all-features --locked
+	target/release/vagrant -pg | tee vagrant.log
+	! grep -E 'ERROR|WARN' vagrant.log
 
 .PHONY: all build check clean fmt format lint purge run test
