@@ -1,3 +1,3 @@
 release	1.25.4
 unstable	1.25.4
-commit	8111104a2120e14ef068b9cfbda91965473ab345
+commit	ad3ccd92e4c2ddfc1499a5e038eb0aa0012c0dda
