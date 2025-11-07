@@ -2,11 +2,7 @@ upstream = "tytso/e2fsprogs"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | fsl | grep -Ev 'bpo|deb|-[0-9]' | vfs | vsort"
-
-[[channels]]
-name = "unstable"
-fetch = "gr | vtrim | fsl | grep -Ev 'bpo|deb|-[0-9]' | vsort"
+fetch = "gr | vtrim -e 's,_,.,g' | fl | fdash | vsort"
 
 [[channels]]
 name = "commit"
