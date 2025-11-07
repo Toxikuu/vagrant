@@ -1,0 +1,8 @@
+upstream = "dabeaz/ply"
+
+[[channels]]
+name = "release"
+fetch = "script"
+
+[[channels]]
+name = "commit"
