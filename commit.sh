@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 
-set -u
+argv0="$0"
+set -eu
+
+die() {
+    printf "%s: %s\n" "$argv0" "$1"
+    exit "${2:-1}"
+}
 
 git add runcount
 git commit -m "auto(aux): update internal data"
@@ -18,7 +24,7 @@ other_versions_updates=$(echo "$versions_updates" | grep -Evc 'channels/(release
 versions_updated=$(echo "$versions_updates" | wc -l)
 vagrant_version=$(git describe --tags || echo "???")
 
-cd .vagrant-cache
+cd .vagrant-cache || die "Couldn't access .vagrant-cache"
 desc="
 [Vagrant v$vagrant_version - $(date +"%Y-%m-%d %H:%M:%S %z")]
 Run #$(<../runcount) took $(<elapsed)
@@ -34,6 +40,7 @@ Run #$(<../runcount) took $(<elapsed)
     - Commit    $commit_versions_updates
     - Other     $other_versions_updates
 "
+# shellcheck disable=2103
 cd ..
 
 echo "$desc"
