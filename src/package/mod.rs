@@ -190,7 +190,7 @@ impl UpstreamType {
         match self {
             Self::Arch               => String::from("archver"),
             Self::Curl               => String::from("ca | vsort"),
-            Self::Empty              => String::with_capacity(0),
+            Self::Empty              => String::new(),
             Self::Git | Self::GitHub => String::from("defgitrelease"),
         }
     }
@@ -199,14 +199,14 @@ impl UpstreamType {
         match self {
             Self::Arch               => String::from("archver"),
             Self::Curl               => String::from("ca | vsort"),
-            Self::Empty              => String::with_capacity(0),
+            Self::Empty              => String::new(),
             Self::Git | Self::GitHub => String::from("defgitunstable"),
         }
     }
 
     fn default_fetch_commit(&self) -> String {
         match self {
-            Self::Arch | Self::Curl | Self::Empty => String::with_capacity(0),
+            Self::Arch | Self::Curl | Self::Empty => String::new(),
             Self::Git  | Self::GitHub             => String::from("githead"),
         }
     }
