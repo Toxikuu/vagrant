@@ -1,3 +1,2 @@
 release	1.47.3
-unstable	1.47.3
 commit	13dfdf2410648c361dfd49b28d7dbeac8a580532

@@ -1,2 +1,2 @@
-release	5.7.0
-commit	6e4e6be9696de5cdcfb9626e7a3f2bd0cf5780e5
+release	5.8.0
+commit	b74f3cc98ae8204a2b0c6acb11e2c4bf6947e6e6
