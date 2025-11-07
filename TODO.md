@@ -21,8 +21,16 @@
     - [x] Overhaul the codebase and API
 - [x] Test release.sh
 - [x] Fix chance skipping
-- [ ] Fix changelog formatting for breaking changes
+- [x] Fix changelog formatting for breaking changes
 - [x] Define `defgitrelease`, `defgitunstable`, `defgitcommit`
 - [x] Use mtime for cache
 - [x] Move transient data files to .vagrant-cache
 - [x] Better display for fetched versions
+- [x] Support calling scripts in the fetch command
+- [ ] Consider supporting nvchecker
+- [ ] Figure out package categorization
+    - Ideally categorize only as needed by conflict
+    - Ideally categorize using directories, so py/build, for instance
+    - Would require reworking code to detect packages by looking for their config
+    - Probably add an `org` field to `Package` in the form "org/name"
+- [ ] Support chances as the channel level
