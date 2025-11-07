@@ -9,13 +9,13 @@ Minor breaking changes are prefixed with [!]. Major ones are prefixed with [!!].
 
 ### Features
 
- - Make vtrim case insensitive
+ - **[!]** Make vtrim case insensitive
 
 ### Fixes
 
  - More vtrim fallout
  - Fix vtrim fallout
- - Use defgitrelease in ghr fallback
+ - **[!]** Use defgitrelease in ghr fallback
  - Tweak release script
  - Use fnd
 
