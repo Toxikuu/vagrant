@@ -1,0 +1,10 @@
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^fuse[-_]?,,' -e 's,_,.,g' | fl | vfs | vsort"
+
+[[channels]]
+name = "2"
+fetch = '''gr | vtrim -e 's,^fuse[-_]?,,' -e 's,_,.,g' | fl | grep '^2\.' | vfs | vsort'''
+
+[[channels]]
+name = "commit"

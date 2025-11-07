@@ -1,4 +1,3 @@
-
 [[channels]]
 name = "release"
 fetch = "gr | tolower | vtrim -e 's,^r_,,' -e 's,_,.,g' | fsl | grep -F . | vsort"
