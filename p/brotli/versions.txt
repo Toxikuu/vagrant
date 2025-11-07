@@ -1,3 +1,3 @@
 release	1.2.0
 unstable	1.2.0
-commit	595a634fd7b107e6ee7288a069a971a1fcc9b66b
+commit	8a9ab54e2eb9ef16e6129c7a90123230c09d279e

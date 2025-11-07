@@ -1,0 +1,2 @@
+release	0.23.2
+commit	4a4c2ce187bd8ee5b96398f9f87a89b07feca564

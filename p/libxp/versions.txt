@@ -1,0 +1,2 @@
+release	1.0.4
+commit	3822576fc3f36125fffa5b866bb96586883970bc

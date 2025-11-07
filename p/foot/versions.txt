@@ -1,0 +1,2 @@
+release	1.25.0
+commit	28131e9dc9a4b8b46e39c2e7ccac2b00f073dd45

@@ -1,0 +1,2 @@
+release	0.12
+commit	813340a04f3ff807cf6dbec698586745f41e8762

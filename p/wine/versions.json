@@ -1,0 +1,14 @@
+[
+  {
+    "channel": "release",
+    "version": "10.18"
+  },
+  {
+    "channel": "unstable",
+    "version": "10.18"
+  },
+  {
+    "channel": "commit",
+    "version": "b448a8ba7b619c082f639f1b61987bf5c0f322fd"
+  }
+]

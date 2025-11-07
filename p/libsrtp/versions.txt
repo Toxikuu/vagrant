@@ -1,0 +1,2 @@
+release	2.7.0
+commit	163cb8ada1f0e7f0e3184f615d082f2ab40e6784

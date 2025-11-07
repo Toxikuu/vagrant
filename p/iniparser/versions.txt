@@ -1,0 +1,2 @@
+release	4.2.6
+commit	4bef811283e0ec1658c60e09950bd5a1ddc92e4b

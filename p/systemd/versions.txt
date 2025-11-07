@@ -1,2 +1,2 @@
-release	258.1
-commit	c3e80f8f2bbd2b79350684f52638cedec00eb8ad
+release	258.2
+commit	057fe0a6ca884f987535d4e784bd18676d667761
