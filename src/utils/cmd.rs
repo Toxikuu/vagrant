@@ -26,6 +26,8 @@ pub fn cmd(cmd: &[&str]) -> Result<String> {
 
     let (arg0, args) = cmd.split_first().expect("command should not be empty");
     let child = Command::new(arg0).args(args)
+        .env("GIT_TERMINAL_PROMPT", "false")
+        .stdin(Stdio::null())
         .stdout(Stdio::piped())
         .stderr(Stdio::piped())
         .spawn().wrap_err("Failed to spawn command")?;
