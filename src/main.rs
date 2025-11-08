@@ -32,6 +32,10 @@ static SHLIB_PATH: LazyLock<PathBuf> = LazyLock::new(|| {
     VAGRANT_ROOT.join("sh/lib.env")
 });
 
+static NO_CACHE: LazyLock<bool> = LazyLock::new(|| {
+    ARGS.no_cache
+});
+
 fn main() -> color_eyre::Result<()> {
     clean_cache()?;
     let start_timestamp = Instant::now();
