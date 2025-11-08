@@ -21,6 +21,7 @@ use crate::utils::cmd::cmd;
 use crate::utils::float::defloat;
 use crate::utils::shortform::{get_shortform, get_longform};
 use crate::utils::ver::Version;
+use crate::NO_CACHE;
 use crate::SHLIB_PATH;
 use crate::VAGRANT_CACHE;
 use crate::VAGRANT_ROOT;
@@ -98,36 +99,30 @@ impl PackageChannel {
             bail!("Invalid Unicode in {}", SHLIB_PATH.display());
         };
 
+        let no_cache = NO_CACHE.to_string();
+
+        let upstream = get_longform(self.upstream.as_ref().unwrap_or(&package.config.upstream));
+        let shortform = get_shortform(&upstream);
+
         let env = HashMap::from([
             ("GIT_TERMINAL_PROMPT", "false"),
             ("PACKAGE_ROOT", &package_root),
             ("VAGRANT_ROOT", vagrant_root),
             ("VAGRANT_CACHE", vagrant_cache),
             ("SHLIB_PATH", shlib_path),
-            ("CHANNEL", &self.name),
+            ("NO_CACHE", &no_cache),
+            ("channel", &self.name),
+            ("name", &package.name),
+            ("upstream", &upstream),
+            ("shortform", &shortform),
         ]);
 
         cmd(command, env, &package_root)
     }
 
     pub fn fetch(&self, package: &Package) -> Result<String> {
-        let name = format!("name={}", package.name);
-        let upstream = format!("upstream={}", get_longform(
-            self.upstream.as_ref().unwrap_or(&package.config.upstream)
-        ));
-
-        let shortform = format!("shortform={}", get_shortform(&upstream));
         let fetch = format!(". {} && {}", SHLIB_PATH.display(), self.fetch);
-
-        let command = [
-            "env",
-            &name,
-            &upstream,
-            &shortform,
-            "bash",
-            "-c",
-            &fetch,
-        ];
+        let command = [ "bash", "-c", &fetch ];
 
         let ver = match self.cmd(package, &command) {
             | Err(e) => bail!("Failed to fetch version: {e}"),
