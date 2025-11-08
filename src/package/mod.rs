@@ -215,26 +215,27 @@ impl UpstreamType {
 
     fn default_fetch_release(&self) -> String {
         match self {
-            Self::Arch               => String::from("archver"),
-            Self::Curl               => String::from("ca | vsort"),
-            Self::Empty              => String::new(),
-            Self::Git | Self::GitHub => String::from("defgitrelease"),
+            Self::Arch                  => String::from("archver"),
+            Self::Curl                  => String::from("defcurlrelease"),
+            Self::Empty                 => String::new(),
+            Self::Git | Self::GitHub    => String::from("defgitrelease"),
         }
     }
 
     fn default_fetch_unstable(&self) -> String {
         match self {
-            Self::Arch               => String::from("archver"),
-            Self::Curl               => String::from("ca | vsort"),
-            Self::Empty              => String::new(),
-            Self::Git | Self::GitHub => String::from("defgitunstable"),
+            Self::Arch                  => String::from("archver"),
+            Self::Curl                  => String::from("defcurlunstable"),
+            Self::Empty                 => String::new(),
+            Self::Git | Self::GitHub    => String::from("defgitunstable"),
         }
     }
 
     fn default_fetch_commit(&self) -> String {
         match self {
-            Self::Arch | Self::Curl | Self::Empty => String::new(),
-            Self::Git  | Self::GitHub             => String::from("githead"),
+            Self::Arch | Self::Empty    => String::new(),
+            Self::Curl                  => String::from("defcurlcommit"),
+            Self::Git  | Self::GitHub   => String::from("githead"),
         }
     }
 }
