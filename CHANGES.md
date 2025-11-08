@@ -7,6 +7,21 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.0.1 - 2025-11-08 13:22:41 -0600
+
+### Fixes
+
+ - Satisfy clippy lints
+ - Fix gdb fetch
+ - Cleanup todo comments
+
+### Chores
+
+ - Update dependencies
+ - Remove todo comment
+ - Formatting
+
+
 ## 2.0.0 - 2025-11-08 04:38:29 -0600
 
 ### Features
