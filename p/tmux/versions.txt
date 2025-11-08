@@ -1,2 +1,2 @@
-release	3.5
+release	3.5a
 commit	33cfe8b8096fbfd2c13998b8baa5c8e43177d5e0
