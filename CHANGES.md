@@ -7,6 +7,46 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.0.0 - 2025-11-08 04:38:29 -0600
+
+### Features
+
+ - Use default curl fetches
+ - **[!!]** Overhaul shell library
+ - Add no_cache flag
+ - Add ply package
+ - **[!]** Prefer dash for cache type delimiter
+ - Add script
+ - Consider cwd for cmd
+ - Add several packages
+ - Add commitgrep
+
+### Fixes
+
+ - Repair several packages
+ - **[!]** Make vtrim a little more conservative
+ - Rework env setup for fetch command
+ - Add no_cache argument
+ - Export variables in maintainer utilities
+ - Don't exit on failure in commit script
+ - Add chance for lmdb
+ - Fix expected for inxi
+ - Recursively remove vagrant cache in purge target
+ - **[!]** Use absolute path for vagrant cache
+ - **[!]** Rename ffdate to fdatel
+
+### Chores
+
+ - Add some todo comments
+ - Silence some makefile output
+ - Strip ansi formatting from logs
+
+### Docs
+
+ - Note versort dependency
+ - Update todos
+
+
 ## 1.4.0 - 2025-11-06 23:02:37 -0600
 
 ### Features
