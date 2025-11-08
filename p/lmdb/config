@@ -1,4 +1,5 @@
 upstream = "https://git.openldap.org/openldap/openldap.git"
+chance = 0.77
 
 [[channels]]
 name = "release"
