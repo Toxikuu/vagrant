@@ -16,4 +16,8 @@ pub struct Args {
     /// Ensure every package is checked
     #[arg(short, long)]
     pub guarantee: bool,
+
+    /// Do not use the cache
+    #[arg(short = 'c', long)]
+    pub no_cache: bool,
 }
