@@ -18,8 +18,8 @@ impl Version {
 
     pub fn trim(&mut self, package: &Package) {
         let ver = match self.raw.lines().filter(|l| !l.is_empty()).next_back() {
-            | None => unreachable!("No output"),
-            | Some(v) => v.to_lowercase(),
+            None => unreachable!("No output"),
+            Some(v) => v.to_lowercase(),
         };
 
         let ver = ver.trim_start_matches('v');

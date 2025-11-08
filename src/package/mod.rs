@@ -2,29 +2,29 @@
 
 pub mod bulk;
 
+use color_eyre::Result;
+use color_eyre::eyre::bail;
+use rand::random_range;
+use regex::Regex;
+use serde::{Deserialize, Serialize};
 use std::collections::HashMap;
-use std::fmt::Write;
 use std::fmt::Debug;
+use std::fmt::Write;
 use std::fs;
 use std::hash::Hash;
 use std::path::{Path, PathBuf};
 use std::str::FromStr;
-use rand::random_range;
-use regex::Regex;
-use serde::{Deserialize, Serialize};
-use color_eyre::Result;
-use color_eyre::eyre::bail;
-use tracing::{debug, info, error};
+use tracing::{debug, error, info};
 
-use crate::args::ARGS;
-use crate::utils::cmd::cmd;
-use crate::utils::float::defloat;
-use crate::utils::shortform::{get_shortform, get_longform};
-use crate::utils::ver::Version;
 use crate::NO_CACHE;
 use crate::SHLIB_PATH;
 use crate::VAGRANT_CACHE;
 use crate::VAGRANT_ROOT;
+use crate::args::ARGS;
+use crate::utils::cmd::cmd;
+use crate::utils::float::defloat;
+use crate::utils::shortform::{get_longform, get_shortform};
+use crate::utils::ver::Version;
 
 #[derive(Debug, Clone, Hash, Eq, PartialEq)]
 pub struct Package {
@@ -83,7 +83,6 @@ impl Default for PackageChannel {
 }
 
 impl PackageChannel {
-
     pub fn cmd(&self, package: &Package, command: &[&str]) -> Result<String> {
         let package_root = Package::dir(&package.name);
 
@@ -122,11 +121,11 @@ impl PackageChannel {
 
     pub fn fetch(&self, package: &Package) -> Result<String> {
         let fetch = format!(". {} && {}", SHLIB_PATH.display(), self.fetch);
-        let command = [ "bash", "-c", &fetch ];
+        let command = ["bash", "-c", &fetch];
 
         let ver = match self.cmd(package, &command) {
-            | Err(e) => bail!("Failed to fetch version: {e}"),
-            | Ok(v) => v,
+            Err(e) => bail!("Failed to fetch version: {e}"),
+            Ok(v) => v,
         };
 
         let mut version = Version::new(ver);
@@ -162,9 +161,9 @@ impl Hash for PackageConfig {
 
 impl PartialEq for PackageConfig {
     fn eq(&self, other: &Self) -> bool {
-        self.upstream == other.upstream &&
-        (self.chance - other.chance).abs() < 0.01 &&
-        self.channels == other.channels
+        self.upstream == other.upstream
+            && (self.chance - other.chance).abs() < 0.01
+            && self.channels == other.channels
     }
 }
 
@@ -215,27 +214,27 @@ impl UpstreamType {
 
     fn default_fetch_release(&self) -> String {
         match self {
-            Self::Arch                  => String::from("archver"),
-            Self::Curl                  => String::from("defcurlrelease"),
-            Self::Empty                 => String::new(),
-            Self::Git | Self::GitHub    => String::from("defgitrelease"),
+            Self::Arch => String::from("archver"),
+            Self::Curl => String::from("defcurlrelease"),
+            Self::Empty => String::new(),
+            Self::Git | Self::GitHub => String::from("defgitrelease"),
         }
     }
 
     fn default_fetch_unstable(&self) -> String {
         match self {
-            Self::Arch                  => String::from("archver"),
-            Self::Curl                  => String::from("defcurlunstable"),
-            Self::Empty                 => String::new(),
-            Self::Git | Self::GitHub    => String::from("defgitunstable"),
+            Self::Arch => String::from("archver"),
+            Self::Curl => String::from("defcurlunstable"),
+            Self::Empty => String::new(),
+            Self::Git | Self::GitHub => String::from("defgitunstable"),
         }
     }
 
     fn default_fetch_commit(&self) -> String {
         match self {
-            Self::Arch | Self::Empty    => String::new(),
-            Self::Curl                  => String::from("defcurlcommit"),
-            Self::Git  | Self::GitHub   => String::from("githead"),
+            Self::Arch | Self::Empty => String::new(),
+            Self::Curl => String::from("defcurlcommit"),
+            Self::Git | Self::GitHub => String::from("githead"),
         }
     }
 }
@@ -272,8 +271,13 @@ impl Package {
             self.config.upstream = format!("{n}/{n}", n = self.name);
         }
 
-        if let Some(c) = self.config.channels.iter_mut().find(|c| c.name == "release")
-        && c.enabled {
+        if let Some(c) = self
+            .config
+            .channels
+            .iter_mut()
+            .find(|c| c.name == "release")
+            && c.enabled
+        {
             if c.fetch.is_empty() {
                 let upstream = &c.upstream.as_ref().unwrap_or(&self.config.upstream);
                 let upstream_type = UpstreamType::from_str(upstream);
@@ -285,8 +289,13 @@ impl Package {
             }
         }
 
-        if let Some(c) = self.config.channels.iter_mut().find(|c| c.name == "unstable")
-        && c.enabled {
+        if let Some(c) = self
+            .config
+            .channels
+            .iter_mut()
+            .find(|c| c.name == "unstable")
+            && c.enabled
+        {
             if c.fetch.is_empty() {
                 let upstream = &c.upstream.as_ref().unwrap_or(&self.config.upstream);
                 let upstream_type = UpstreamType::from_str(upstream);
@@ -294,17 +303,22 @@ impl Package {
             }
 
             if c.expected.is_none() {
-                c.expected = Some(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$".into());
+                c.expected =
+                    Some(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$".into());
             }
         }
 
         if let Some(c) = self.config.channels.iter_mut().find(|c| c.name == "commit")
-        && c.enabled {
+            && c.enabled
+        {
             if c.fetch.is_empty() {
                 let upstream = &c.upstream.as_ref().unwrap_or(&self.config.upstream);
                 let upstream_type = UpstreamType::from_str(upstream);
 
-                if matches!(upstream_type, UpstreamType::Curl | UpstreamType::Arch | UpstreamType::Empty) {
+                if matches!(
+                    upstream_type,
+                    UpstreamType::Curl | UpstreamType::Arch | UpstreamType::Empty
+                ) {
                     c.enabled = false;
                 } else {
                     c.fetch = upstream_type.default_fetch_commit();
@@ -319,13 +333,23 @@ impl Package {
 
     pub fn has_fallback_versions(&self) -> bool {
         let path = Path::new("p").join(&self.name).join("versions.json");
-        if !path.exists() { return false }
+        if !path.exists() {
+            return false;
+        }
 
-        let Ok(version_channels_str) = fs::read_to_string(path) else {return false};
-        let Ok(version_channels) = serde_json::from_str::<Vec<VersionChannel>>(&version_channels_str) else { return false };
+        let Ok(version_channels_str) = fs::read_to_string(path) else {
+            return false;
+        };
+        let Ok(version_channels) =
+            serde_json::from_str::<Vec<VersionChannel>>(&version_channels_str)
+        else {
+            return false;
+        };
 
         for channel in &version_channels {
-            if self.get_channel(&channel.channel).is_none() { return false }
+            if self.get_channel(&channel.channel).is_none() {
+                return false;
+            }
         }
 
         true
@@ -346,24 +370,27 @@ impl Package {
         let should_guarantee = ARGS.guarantee || !self.has_fallback_versions();
 
         if self.config.chance < 1.0
-        && !should_guarantee
-        && random_range(0.0..=1.0) > self.config.chance
-        { bail!("Tails!") }
+            && !should_guarantee
+            && random_range(0.0..=1.0) > self.config.chance
+        {
+            bail!("Tails!")
+        }
 
         let mut version_channels = vec![];
         for channel in &self.config.channels {
             if channel.enabled {
-                version_channels.push(
-                    VersionChannel {
-                        channel: channel.name.clone(),
-                        version: channel.fetch(self)?,
-                    }
-                );
+                version_channels.push(VersionChannel {
+                    channel: channel.name.clone(),
+                    version: channel.fetch(self)?,
+                });
             }
         }
 
         info!("{}", self.format_fetched(&version_channels));
-        debug!("Versions as JSON: {}", serde_json::to_string_pretty(&version_channels)?);
+        debug!(
+            "Versions as JSON: {}",
+            serde_json::to_string_pretty(&version_channels)?
+        );
 
         Ok(version_channels)
     }
@@ -375,7 +402,10 @@ impl Package {
     /// Write version data for all version channels for all APIs
     pub fn write_versions(&self, version_channels: Vec<VersionChannel>) -> Result<()> {
         let path = self.get_package_path();
-        fs::write(path.join("versions.json"), serde_json::to_string_pretty(&version_channels)?)?;
+        fs::write(
+            path.join("versions.json"),
+            serde_json::to_string_pretty(&version_channels)?,
+        )?;
 
         let channels_dir = path.join("channels");
 

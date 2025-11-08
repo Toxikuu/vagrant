@@ -1,8 +1,8 @@
 // utils/shortform.rs
 
 pub fn get_shortform(maybe_short: &str) -> String {
-    if ! maybe_short.contains("github.com") {
-        return maybe_short.to_string()
+    if !maybe_short.contains("github.com") {
+        return maybe_short.to_string();
     }
 
     let parts = maybe_short.split('/').collect::<Vec<_>>();

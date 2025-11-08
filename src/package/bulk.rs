@@ -1,16 +1,16 @@
 // package/bulk.rs
 
-use crate::package::PackageVersions;
 use crate::VAGRANT_CACHE;
+use crate::package::PackageVersions;
 
 use super::{Package, VersionChannel};
-use std::{env, fs};
-use std::path::Path;
-use color_eyre::eyre::{Context, ContextCompat, Error};
 use color_eyre::Result;
+use color_eyre::eyre::{Context, ContextCompat, Error};
 use indexmap::IndexMap;
-use tracing::{debug, error};
 use rayon::prelude::*;
+use std::path::Path;
+use std::{env, fs};
+use tracing::{debug, error};
 
 pub fn find_all() -> Result<Vec<Package>> {
     let search_path = Path::new("p");
@@ -19,21 +19,22 @@ pub fn find_all() -> Result<Vec<Package>> {
     for entry in search_path.read_dir()?.flatten() {
         let path = entry.path();
         if path.is_dir() {
-            let file_name = path.file_name()
+            let file_name = path
+                .file_name()
                 .wrap_err_with(|| format!("Invalid filename in {}", path.display()))?
                 .to_string_lossy()
                 .to_string();
 
-            packages.push(Package::from_name(file_name.clone())
-                .wrap_err_with(|| format!("Failed to form package '{file_name}'"))?);
+            packages.push(
+                Package::from_name(file_name.clone())
+                    .wrap_err_with(|| format!("Failed to form package '{file_name}'"))?,
+            );
         }
     }
 
     packages.sort();
     Ok(packages)
 }
-
-
 
 pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionChannel>>> {
     let threads = env::var("RAYON_NUM_THREADS")
@@ -46,32 +47,43 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionCh
         .build()
         .expect("Failed to create thread pool");
 
-    let res = pool.install(|| {
-        packages.par_iter()
-            .map(|package| {
-                let mut skipped = 0;
-                let mut failed = 0;
+    let res = pool
+        .install(|| {
+            packages
+                .par_iter()
+                .map(|package| {
+                    let mut skipped = 0;
+                    let mut failed = 0;
 
-                let versions = match package.fetch() {
-                    Ok(v) => v,
-                    Err(e) if e.to_string().contains("Tails!") => {
-                        skipped = 1;
-                        debug!("Skipped fetching versions for package '{}'", package.name);
-                        package.read_versions()
-                            .wrap_err_with(|| format!("Failed to read old versions for skipped package '{}'", package.name))?
-                    },
-                    Err(e) => {
-                        failed = 1;
-                        error!("Failed to fetch versions for {}: {e}", package.name);
-                        package.read_versions()
-                            .wrap_err_with(|| format!("Failed to read old versions for failed package '{}'", package.name))?
-                    }
-                };
+                    let versions = match package.fetch() {
+                        Ok(v) => v,
+                        Err(e) if e.to_string().contains("Tails!") => {
+                            skipped = 1;
+                            debug!("Skipped fetching versions for package '{}'", package.name);
+                            package.read_versions().wrap_err_with(|| {
+                                format!(
+                                    "Failed to read old versions for skipped package '{}'",
+                                    package.name
+                                )
+                            })?
+                        }
+                        Err(e) => {
+                            failed = 1;
+                            error!("Failed to fetch versions for {}: {e}", package.name);
+                            package.read_versions().wrap_err_with(|| {
+                                format!(
+                                    "Failed to read old versions for failed package '{}'",
+                                    package.name
+                                )
+                            })?
+                        }
+                    };
 
-                Ok::<_, Error>((package.clone(), versions, skipped, failed))
-            })
-        .collect::<Result<Vec<_>, _>>()
-    }).wrap_err("Failed to bulk fetch versions")?;
+                    Ok::<_, Error>((package.clone(), versions, skipped, failed))
+                })
+                .collect::<Result<Vec<_>, _>>()
+        })
+        .wrap_err("Failed to bulk fetch versions")?;
 
     let mut map = IndexMap::new();
     let mut skipped_count = 0;
@@ -87,7 +99,10 @@ pub fn fetch_all(packages: &[Package]) -> Result<IndexMap<Package, Vec<VersionCh
     fs::write(VAGRANT_CACHE.join("total"), total.to_string())?;
     fs::write(VAGRANT_CACHE.join("failed"), failed_count.to_string())?;
     fs::write(VAGRANT_CACHE.join("skipped"), skipped_count.to_string())?;
-    fs::write(VAGRANT_CACHE.join("checked"), (total - failed_count - skipped_count ).to_string())?;
+    fs::write(
+        VAGRANT_CACHE.join("checked"),
+        (total - failed_count - skipped_count).to_string(),
+    )?;
     map.sort_keys();
 
     Ok(map)
@@ -98,7 +113,10 @@ pub fn write_all(map: &IndexMap<Package, Vec<VersionChannel>>) -> Result<()> {
 
     for (k, v) in map {
         k.write_versions(v.clone())?;
-        all_vec.push(PackageVersions { package: k.name.clone(), versions: v.clone() });
+        all_vec.push(PackageVersions {
+            package: k.name.clone(),
+            versions: v.clone(),
+        });
     }
 
     let path = Path::new("p");

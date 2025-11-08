@@ -1,40 +1,33 @@
 use color_eyre::config::HookBuilder;
 use color_eyre::eyre::WrapErr;
-use tracing::{debug, info};
 use std::os::unix::fs::MetadataExt;
+use std::path::{Path, PathBuf};
 use std::sync::LazyLock;
 use std::time::{Duration, Instant, SystemTime, UNIX_EPOCH};
 use std::{env, fs};
-use std::path::{Path, PathBuf};
+use tracing::{debug, info};
 
-use color_eyre::Result;
-use tracing_subscriber::fmt::time;
-use tracing_subscriber::EnvFilter;
 use self::args::ARGS;
-use self::package::{bulk, Package};
+use self::package::{Package, bulk};
+use color_eyre::Result;
+use tracing_subscriber::EnvFilter;
+use tracing_subscriber::fmt::time;
 
-mod utils;
-mod package;
 mod args;
+mod package;
+mod utils;
 
 /// Timeout for .vagrant-cache
 const CACHE_TIMEOUT: Duration = Duration::from_secs(3600); // 1 hr
 
-static VAGRANT_ROOT: LazyLock<PathBuf> = LazyLock::new(|| {
-    env::current_dir().expect("Couldn't get working directory")
-});
+static VAGRANT_ROOT: LazyLock<PathBuf> =
+    LazyLock::new(|| env::current_dir().expect("Couldn't get working directory"));
 
-static VAGRANT_CACHE: LazyLock<PathBuf> = LazyLock::new(|| {
-    VAGRANT_ROOT.join(".vagrant-cache")
-});
+static VAGRANT_CACHE: LazyLock<PathBuf> = LazyLock::new(|| VAGRANT_ROOT.join(".vagrant-cache"));
 
-static SHLIB_PATH: LazyLock<PathBuf> = LazyLock::new(|| {
-    VAGRANT_ROOT.join("sh/lib.env")
-});
+static SHLIB_PATH: LazyLock<PathBuf> = LazyLock::new(|| VAGRANT_ROOT.join("sh/lib.env"));
 
-static NO_CACHE: LazyLock<bool> = LazyLock::new(|| {
-    ARGS.no_cache
-});
+static NO_CACHE: LazyLock<bool> = LazyLock::new(|| ARGS.no_cache);
 
 fn main() -> color_eyre::Result<()> {
     clean_cache()?;
@@ -53,7 +46,10 @@ fn main() -> color_eyre::Result<()> {
     let packages = if ARGS.packages.is_empty() {
         bulk::find_all()?
     } else {
-        ARGS.packages.iter().map(|s| Package::from_name(s.clone())).collect::<Result<Vec<_>>>()?
+        ARGS.packages
+            .iter()
+            .map(|s| Package::from_name(s.clone()))
+            .collect::<Result<Vec<_>>>()?
     };
 
     debug!("Detected packages: {packages:#?}");
@@ -89,9 +85,11 @@ fn log() {
 
 fn increment_runcount() -> Result<()> {
     let path = Path::new("runcount");
-    let runcount = fs::read_to_string(path).ok()
+    let runcount = fs::read_to_string(path)
+        .ok()
         .and_then(|s| s.trim().parse::<u64>().ok())
-        .unwrap_or(0u64) + 1;
+        .unwrap_or(0u64)
+        + 1;
     fs::write(path, runcount.to_string())?;
     Ok(())
 }
@@ -101,19 +99,17 @@ fn clean_cache() -> Result<()> {
     if let Ok(m) = cache_path.metadata() {
         #[allow(clippy::cast_sign_loss)]
         let mtime = Duration::from_secs(m.mtime() as u64);
-        let now = SystemTime::now().duration_since(UNIX_EPOCH)
+        let now = SystemTime::now()
+            .duration_since(UNIX_EPOCH)
             .wrap_err("Time travel detected")?;
 
         if now - mtime > CACHE_TIMEOUT {
             debug!("Removing cache");
-            fs::remove_dir_all(cache_path)
-                .wrap_err("Failed to remove cache")?;
-            fs::create_dir(cache_path)
-                .wrap_err("Failed to create cache")?;
+            fs::remove_dir_all(cache_path).wrap_err("Failed to remove cache")?;
+            fs::create_dir(cache_path).wrap_err("Failed to create cache")?;
         }
     } else {
-        fs::create_dir(cache_path)
-            .wrap_err("Failed to create cache")?;
+        fs::create_dir(cache_path).wrap_err("Failed to create cache")?;
     }
 
     Ok(())
