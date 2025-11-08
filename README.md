@@ -116,6 +116,7 @@ make run
 - Coreutils
 - Curl
 - Git
+- [Versort](https://github.com/tox-wtf/versort)
 
 #### Development
 In addition to the required, buildtime, and runtime dependencies, you'll want
