@@ -1,3 +1,2 @@
 release	2.6.4
 commit	bf254c75b1e0d2641ebbd7fc85fb183f36a62ea7
-unstable	2.6.4

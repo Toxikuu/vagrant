@@ -1,2 +1,2 @@
 release	5.3
-unstable	5.3-rc2
+unstable	5.3

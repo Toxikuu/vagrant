@@ -4,6 +4,10 @@
     "version": "255.17"
   },
   {
+    "channel": "unstable",
+    "version": "257-pre"
+  },
+  {
     "channel": "commit",
     "version": "39c31cd9b2cdfccdb73cb9a21df5ac731b23a650"
   }

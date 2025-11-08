@@ -1,3 +1,2 @@
 release	019
-unstable	019
 commit	d0c76b601b4b3ab9b2ab2647d604a8e3cce6d666

@@ -230,7 +230,7 @@
       },
       {
         "channel": "commit",
-        "version": "b978183db977453a493ff72d26073e35b4707c09"
+        "version": "aaf91e629e478996ffbd3dcbf32ad2532b357065"
       }
     ]
   },
@@ -256,7 +256,7 @@
       },
       {
         "channel": "unstable",
-        "version": "5.3-rc2"
+        "version": "5.3"
       }
     ]
   },
@@ -472,7 +472,7 @@
       },
       {
         "channel": "commit",
-        "version": "8285eba8426e3c75ed81d6a8c5cd6ec685430d47"
+        "version": "07d2aaf22ef8225575b9557640806bc895067905"
       },
       {
         "channel": "unstable",
@@ -626,7 +626,7 @@
       },
       {
         "channel": "commit",
-        "version": "1a8390f768ae516ac7e3276902ef915dc0d62d0b"
+        "version": "d90e073cdda849122f8419bb857615f32ba78637"
       }
     ]
   },
@@ -638,12 +638,8 @@
         "version": "9.8"
       },
       {
-        "channel": "release",
-        "version": "9.8"
-      },
-      {
         "channel": "commit",
-        "version": "58944b541e53136dc946b4416e8d3d92a7b1be23"
+        "version": "9abf15047744f6d678d3f4360f4f8fadb7304145"
       }
     ]
   },
@@ -807,7 +803,7 @@
       },
       {
         "channel": "commit",
-        "version": "ba9f3823ae825c341ea30f45b46d942b4ce5b8d9"
+        "version": "4c91b779207f0fc40b91994a54177797c2d089f7"
       }
     ]
   },
@@ -969,7 +965,7 @@
     "versions": [
       {
         "channel": "release",
-        "version": "1.1.2"
+        "version": "1.1.2.1"
       },
       {
         "channel": "commit",
@@ -1048,6 +1044,10 @@
       {
         "channel": "release",
         "version": "255.17"
+      },
+      {
+        "channel": "unstable",
+        "version": "257-pre"
       },
       {
         "channel": "commit",
@@ -1147,15 +1147,15 @@
     "versions": [
       {
         "channel": "release",
-        "version": "7.1.2"
-      },
-      {
-        "channel": "unstable",
         "version": "8.0"
       },
       {
+        "channel": "unstable",
+        "version": "8.1-dev"
+      },
+      {
         "channel": "commit",
-        "version": "d80f8f36513ebff05c537adbe756e36036f80074"
+        "version": "36e5576a44b36698614e95956c5cb6b213c29ef3"
       }
     ]
   },
@@ -1230,10 +1230,6 @@
       {
         "channel": "commit",
         "version": "bf254c75b1e0d2641ebbd7fc85fb183f36a62ea7"
-      },
-      {
-        "channel": "unstable",
-        "version": "2.6.4"
       }
     ]
   },
@@ -1259,7 +1255,7 @@
       },
       {
         "channel": "commit",
-        "version": "282f3c3d75bdb011158c881f2f2de21625a025b6"
+        "version": "55d0c704b51480b3d595144a8c26f9c1628bf86e"
       }
     ]
   },
@@ -1319,7 +1315,7 @@
       },
       {
         "channel": "commit",
-        "version": "28131e9dc9a4b8b46e39c2e7ccac2b00f073dd45"
+        "version": "1fce0e69f5ec2c24d518917c0538a4d762b8a1e4"
       }
     ]
   },
@@ -1336,7 +1332,7 @@
       },
       {
         "channel": "commit",
-        "version": "d9f6bf9ad62367498befa14e2c07f4b4d54678fe"
+        "version": "9b5238d42c1296c63a5eb8bc513a54100a0d463a"
       }
     ]
   },
@@ -1379,7 +1375,7 @@
       },
       {
         "channel": "commit",
-        "version": "4d563c6dfaf854260314cb5cdc9df577ec512805"
+        "version": "991c36453c5ebd6546f1821fd6089392599ca4bf"
       }
     ]
   },
@@ -1405,7 +1401,7 @@
       },
       {
         "channel": "commit",
-        "version": "cbded1ce012d6444d4ff8adbad047cf04220fe1b"
+        "version": "e753fa38bb612a3bebe0fc596a44a104bbd2739b"
       }
     ]
   },
@@ -1608,7 +1604,7 @@
       },
       {
         "channel": "commit",
-        "version": "b5c046e58b216ee27fbdc1e3826a6d26868bfd86"
+        "version": "b58249a96fce25cce5d440b265b58fead80d1377"
       }
     ]
   },
@@ -1681,7 +1677,7 @@
       },
       {
         "channel": "commit",
-        "version": "7995751d3ae20f82cbd6ef2a893c35bb92f8d2e6"
+        "version": "47a63a331daa96de55562fbe0fa0201757c7d155"
       }
     ]
   },
@@ -1733,7 +1729,7 @@
       },
       {
         "channel": "commit",
-        "version": "4f9f76a73dbd765cdf09a9e4506bc381593c83c4"
+        "version": "9fcf213d304c008db9de9f6fdd87e96d60f9dab7"
       }
     ]
   },
@@ -1786,10 +1782,6 @@
     "versions": [
       {
         "channel": "release",
-        "version": "1.27.2"
-      },
-      {
-        "channel": "unstable",
         "version": "1.27.2"
       },
       {
@@ -1941,7 +1933,7 @@
     "versions": [
       {
         "channel": "release",
-        "version": "3.3.39-1"
+        "version": "3.3.39.1"
       },
       {
         "channel": "commit",
@@ -2542,7 +2534,7 @@
       },
       {
         "channel": "commit",
-        "version": "80a23068e0ad03a290b5332c71108770eb1b355a"
+        "version": "3d3887a1356e5da0f6ea5a84f85f827f29162c87"
       }
     ]
   },
@@ -3091,6 +3083,10 @@
         "version": "1.0.29"
       },
       {
+        "channel": "unstable",
+        "version": "1.0.29"
+      },
+      {
         "channel": "commit",
         "version": "912869b48163078103bd3b121abd68e5cde062f3"
       }
@@ -3131,7 +3127,7 @@
       },
       {
         "channel": "commit",
-        "version": "3eb038aa13bdd785808286c0a4995bd7a1ef07e9"
+        "version": "161f3b51e282cd6d2bc146b2755f14dab73ca014"
       }
     ]
   },
@@ -3248,7 +3244,7 @@
       },
       {
         "channel": "commit",
-        "version": "a0d4be4593be5f69e8484acc52f9adc8b5da4410"
+        "version": "93ee2ac73c32dcb567259fb83c564a424cd9fef7"
       }
     ]
   },
@@ -3361,7 +3357,7 @@
     "versions": [
       {
         "channel": "release",
-        "version": "1.5.4"
+        "version": "2.0.7"
       },
       {
         "channel": "commit",
@@ -3417,7 +3413,7 @@
       },
       {
         "channel": "commit",
-        "version": "3049d310694fd70f1269bf48a1200aa4259e79b1"
+        "version": "1fb2a8f823c52b858e9e3c34548eb90ad31c6d43"
       }
     ]
   },
@@ -3702,8 +3698,12 @@
         "version": "6.17.7"
       },
       {
-        "channel": "unstable",
+        "channel": "mainline",
         "version": "6.18-rc4"
+      },
+      {
+        "channel": "next",
+        "version": "20251107"
       },
       {
         "channel": "commit",
@@ -3745,8 +3745,12 @@
         "version": "21.1.5"
       },
       {
+        "channel": "unstable",
+        "version": "21.1.5"
+      },
+      {
         "channel": "commit",
-        "version": "baf41d214349cfa5192ac2295b2ef9db6a68038a"
+        "version": "af456dfa111bbfc54950fd56a95a446488add406"
       }
     ]
   },
@@ -3816,7 +3820,7 @@
     "versions": [
       {
         "channel": "commit",
-        "version": "a5b1c4d98eeb97a950774ae032f51f820dfbfc4c"
+        "version": "68354f444728ef99bb51bb4d86e8f1b40853a898"
       }
     ]
   },
@@ -4109,7 +4113,7 @@
       },
       {
         "channel": "commit",
-        "version": "3c35ff4985d260a55870dbb6c3f04abce71f96f1"
+        "version": "7fd1ba9239251a6fd5c89518a6496afff8d65f1b"
       }
     ]
   },
@@ -4135,7 +4139,7 @@
       },
       {
         "channel": "commit",
-        "version": "713fd1ffc82344f58a4ef94506a62c8e32704a2f"
+        "version": "f4f7d18c06449a1859a62a10e7e24ca644032dff"
       }
     ]
   },
@@ -4204,7 +4208,7 @@
       },
       {
         "channel": "commit",
-        "version": "af5ac171bde3ae7f961a23e9464309cee7ef9c13"
+        "version": "466b2ac1929ab120642e2cc91fbf1699d6ee1f9c"
       }
     ]
   },
@@ -4213,7 +4217,7 @@
     "versions": [
       {
         "channel": "release",
-        "version": "1.234"
+        "version": "1.234.1"
       },
       {
         "channel": "commit",
@@ -4378,7 +4382,7 @@
       },
       {
         "channel": "commit",
-        "version": "e2ffab88fe2c2fe28f8adf7494f0fccfe2fc5221"
+        "version": "232a84dc88ab25a44f590b10d3a14fa4689098d7"
       }
     ]
   },
@@ -4478,7 +4482,7 @@
       },
       {
         "channel": "commit",
-        "version": "984b064fe2a23733733262f88d2e1b2a1a501662"
+        "version": "d12813314452173b1709f7fdbae74add84c0056f"
       }
     ]
   },
@@ -4521,7 +4525,7 @@
       },
       {
         "channel": "commit",
-        "version": "970a8a2f1dd7a0b50e4619772dd1acd4ccacb681"
+        "version": "7f097e0fbf31f0e1b679f863646b3746646ab2a0"
       }
     ]
   },
@@ -4651,7 +4655,7 @@
       },
       {
         "channel": "commit",
-        "version": "859b78b1a8287681e524286f4e989b01816433ba"
+        "version": "e89128203ffb2dfab52ecaafaddefe3fd67e1ad3"
       }
     ]
   },
@@ -4772,7 +4776,7 @@
       },
       {
         "channel": "commit",
-        "version": "f45bfaf0fe59984c25a6745d20d573303e4a6045"
+        "version": "63f096798125e96a0125faa477350f61901f3570"
       }
     ]
   },
@@ -4798,7 +4802,7 @@
       },
       {
         "channel": "commit",
-        "version": "c5c12ae8ce819e5a1db4098bf41f2f1fb2989563"
+        "version": "7e8cf628e80d6c8beec6919d71a683b5d8835aed"
       }
     ]
   },
@@ -4876,11 +4880,11 @@
       },
       {
         "channel": "unstable",
-        "version": "3.15.0a1"
+        "version": "3.14.0"
       },
       {
         "channel": "commit",
-        "version": "d13ee0ae186f4704f3b6016dd52f7727b81f9194"
+        "version": "cd0b3e5d12ed57d41878a89aac581375d021e25a"
       }
     ]
   },
@@ -4936,7 +4940,7 @@
       },
       {
         "channel": "commit",
-        "version": "dfa8edf45c8adc312b685da74618352ac2b1d889"
+        "version": "f7fae96e674daa3589591fa2ae65c2abbaf77f07"
       }
     ]
   },
@@ -4971,7 +4975,7 @@
     "versions": [
       {
         "channel": "release",
-        "version": "2025-11-05"
+        "version": "2025.11.05"
       },
       {
         "channel": "commit",
@@ -4988,7 +4992,7 @@
       },
       {
         "channel": "unstable",
-        "version": "8.3-rc2"
+        "version": "8.3"
       }
     ]
   },
@@ -5101,11 +5105,11 @@
       },
       {
         "channel": "nightly",
-        "version": "2025-11-07"
+        "version": "2025-11-08"
       },
       {
         "channel": "commit",
-        "version": "843f8ce2ebc01d35a30484eadc8a84cdc6130844"
+        "version": "4e0baae06da3c29210ba3620db5b01bcb5aba38a"
       }
     ]
   },
@@ -5157,7 +5161,7 @@
       },
       {
         "channel": "commit",
-        "version": "1fb663b429c3c56de2e8e1c1bb99aac8bdf659f2"
+        "version": "6a01d6e7d30d83ae76f567d359754749bb1c5d72"
       }
     ]
   },
@@ -5357,7 +5361,7 @@
       },
       {
         "channel": "unstable",
-        "version": "2.0.0-b9"
+        "version": "1.8.0.3"
       },
       {
         "channel": "commit",
@@ -5430,7 +5434,7 @@
       },
       {
         "channel": "commit",
-        "version": "3147969219079d0b30dee5fb708b6acac76ff14f"
+        "version": "02e51727923da21bd654ddf0ec8c006f751d86c9"
       }
     ]
   },
@@ -5560,7 +5564,7 @@
       },
       {
         "channel": "commit",
-        "version": "61fffbfa580bb7452f5930ddc26d8e89ea302661"
+        "version": "f8293452b65551c75534a35af8e6202a45837299"
       }
     ]
   },
@@ -5669,7 +5673,7 @@
     "versions": [
       {
         "channel": "release",
-        "version": "3.5a"
+        "version": "3.5"
       },
       {
         "channel": "commit",
@@ -5791,10 +5795,6 @@
     "versions": [
       {
         "channel": "release",
-        "version": "019"
-      },
-      {
-        "channel": "unstable",
         "version": "019"
       },
       {
@@ -6826,7 +6826,7 @@
       },
       {
         "channel": "commit",
-        "version": "8636a9bac3bed99984c1e297453660468ecf504b"
+        "version": "5767fb4ab108dddb07fc839a3b0f4d323a7c4bea"
       }
     ]
   },

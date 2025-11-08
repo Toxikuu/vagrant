@@ -1,3 +1,2 @@
 release	1.27.2
-unstable	1.27.2
 commit	31dfbb49d730a87567149bbfffb148fec6a97dd1

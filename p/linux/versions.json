@@ -4,8 +4,12 @@
     "version": "6.17.7"
   },
   {
-    "channel": "unstable",
+    "channel": "mainline",
     "version": "6.18-rc4"
+  },
+  {
+    "channel": "next",
+    "version": "20251107"
   },
   {
     "channel": "commit",

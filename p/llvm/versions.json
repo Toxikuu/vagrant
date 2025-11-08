@@ -4,7 +4,11 @@
     "version": "21.1.5"
   },
   {
+    "channel": "unstable",
+    "version": "21.1.5"
+  },
+  {
     "channel": "commit",
-    "version": "baf41d214349cfa5192ac2295b2ef9db6a68038a"
+    "version": "af456dfa111bbfc54950fd56a95a446488add406"
   }
 ]

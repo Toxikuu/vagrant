@@ -1,3 +1,4 @@
 release	6.17.7
-unstable	6.18-rc4
+mainline	6.18-rc4
+next	20251107
 commit	e811c33b1f137be26a20444b79db8cbc1fca1c89
