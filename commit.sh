@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 argv0="$0"
-set -eu
+set -u
 
 die() {
     printf "%s: %s\n" "$argv0" "$1"
