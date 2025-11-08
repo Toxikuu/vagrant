@@ -17,10 +17,7 @@ impl Version {
     }
 
     pub fn trim(&mut self, package: &Package) {
-        let ver = match self.raw.lines().filter(|l| !l.is_empty()).next_back() {
-            None => unreachable!("No output"),
-            Some(v) => v.to_lowercase(),
-        };
+        let ver = self.raw.lines().filter(|l| !l.is_empty()).next_back().map_or_else(|| unreachable!("No output"), str::to_lowercase);
 
         let ver = ver.trim_start_matches('v');
         let ver = ver.trim_start_matches(&package.name);
