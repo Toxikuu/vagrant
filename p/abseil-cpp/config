@@ -2,8 +2,7 @@ upstream = "abseil/abseil-cpp"
 
 [[channels]]
 name = "unstable"
-# TODO: see if i can fix vsort here
-fetch = "gr | sort -V"
+fetch = "gr | vsort"
 expected = '''^[0-9]{8}\.(rc[0-9]+|[0-9]+)$'''
 
 [[channels]]

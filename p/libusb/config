@@ -1,7 +1,10 @@
-
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | fl | v3grep | vsort"
+fetch = "gr | vtrim | vrep | vsort | vfs"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | vrep | vsort"
 
 [[channels]]
 name = "commit"

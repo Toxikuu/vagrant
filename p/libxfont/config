@@ -2,7 +2,7 @@ upstream = "https://gitlab.freedesktop.org/xorg/lib/libxfont.git"
 
 [[channels]]
 name = "release"
-fetch = "gr | tolower | vtrim -e 's,_,.,g' | fsl | vsort"
+fetch = "gr | vtrim -e 's,2-,,' | fsl | vsort"
 
 [[channels]]
 name = "commit"

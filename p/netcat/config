@@ -2,7 +2,7 @@ upstream = "https://salsa.debian.org/debian/netcat-openbsd.git"
 
 [[channels]]
 name = "release"
-fetch = "defgitrelease | fl"
+fetch = "defgitrelease | fl | sed 's,-,.,g'"
 
 [[channels]]
 name = "commit"

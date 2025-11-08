@@ -2,7 +2,11 @@ upstream = "llvm/llvm-project"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim -e 's,^llvmorg-,,' | fl | vsort"
+fetch = "gr | vtrim -e 's,^org-,,' | vsort | vfs"
+
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim -e 's,^org-,,' | vsort"
 
 [[channels]]
 name = "commit"

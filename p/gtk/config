@@ -2,11 +2,11 @@ upstream = "gnome/gtk"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vfem | vsort"
+fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint)' | vfem | vsort"
 
 [[channels]]
 name = "unstable"
-fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint|^0_0$)' | vsort"
+fetch = "gr | vtrim | fsl | grep -Ev '(merge|branchpoint)' | vsort"
 
 [[channels]]
 name = "commit"

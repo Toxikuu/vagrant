@@ -2,6 +2,7 @@ upstream = "gnome/gsettings-desktop-schemas"
 
 [[channels]]
 name = "release"
+fetch = "gr | vtrim | vsort | vfs"
 
 [[channels]]
 name = "commit"

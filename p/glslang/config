@@ -2,7 +2,7 @@ upstream = "khronosgroup/glslang"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim -re 's,^(vulkan(-sdk|)|sdk)-,,' | fsl | v3grepl | vsort"
+fetch = "gr | vtrim -re 's,^(vulkan(-sdk|)|sdk)-,,' | fsl | vrepl | vsort"
 
 [[channels]]
 name = "sdk"

@@ -2,7 +2,7 @@ upstream = "https://gitlab.gnome.org/GNOME/libxml2.git/"
 
 [[channels]]
 name = "release"
-fetch = "gr | tolower | vtrim -e 's,^lib_?xml_?,,' -e 's,_,.,g' | fl | grep -v '^6.0$' | vsort"
+fetch = "gr | fcve | sed -e 's,^v,,' | fl | vsort"
 
 [[channels]]
 name = "commit"

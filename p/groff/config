@@ -3,3 +3,4 @@ chance = 0.34
 
 [[channels]]
 name = "release"
+fetch = "ca | fdash | vsort"

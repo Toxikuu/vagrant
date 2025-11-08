@@ -2,12 +2,12 @@ upstream = "gnome/glib"
 
 [[channels]]
 name = "release"
-fetch = "gr | v3grep | vtrim | vfem | vsort"
+fetch = "gr | vrep -3 | vtrim | vfem | vsort"
 expected = '''^[0-9]+\.[0-9]*[02468]\.[0-9]+$'''
 
 [[channels]]
 name = "unstable"
-fetch = "gr | v3grep | vtrim | vsort"
+fetch = "gr | vrep -3 | vtrim | vsort"
 
 [[channels]]
 name = "commit"

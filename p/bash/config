@@ -2,7 +2,7 @@ upstream = "http://mirror.rit.edu/gnu/bash/?C=M;O=D"
 
 [[channels]]
 name = "release"
-fetch = '''cr | grep $name | cut -d\" -f8 | grep -Ev 'diff|patches|doc|<' | vtrim -re 's,.tar.gz(|.sig)$,,' | fsl | vsort | vfs'''
+fetch = "ca | fl | vsort"
 
 [[channels]]
 name = "unstable"

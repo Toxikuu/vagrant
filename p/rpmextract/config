@@ -2,7 +2,7 @@ upstream = "https://gitlab.archlinux.org/archlinux/packaging/packages/rpmextract
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim -e 's,-.*,,' | uniq | vsort"
+fetch = "gr | vtrim -e 's,-.*,,' | vsort"
 
 [[channels]]
 name = "commit"

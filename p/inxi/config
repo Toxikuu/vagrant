@@ -2,7 +2,8 @@ upstream = "https://codeberg.org/smxi/inxi"
 
 [[channels]]
 name = "release"
-expected = '''^[0-9]+\.[0-9]+\.[0-9]+-[0-9]+$'''
+fetch = "gr | vtrim -e 's,-,.,g'"
+expected = '''^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$'''
 
 [[channels]]
 name = "commit"

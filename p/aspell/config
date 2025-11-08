@@ -2,5 +2,4 @@ upstream = "http://mirror.rit.edu/gnu/aspell/?C=M&O=D"
 
 [[channels]]
 name = "release"
-# BUG: vsort mishandles comparing versions with 3 and 4 parts
-fetch = '''cr | v3grep | cut -d\" -f8 | vtrim -e 's,\.tar.*,,' | uniq | sort -V'''
+fetch = '''ca | vsort'''

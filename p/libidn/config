@@ -2,7 +2,7 @@ upstream = "https://gitlab.com/libidn/libidn2.git"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim -e 's,^libidn2-,,' | vsort"
+fetch = "gr | vtrim -e 's,^2-,,' | vsort"
 
 [[channels]]
 name = "commit"

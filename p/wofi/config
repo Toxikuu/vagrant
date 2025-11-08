@@ -5,7 +5,7 @@ chance = 0.55
 [[channels]]
 name = "release"
 upstream = "https://hg.sr.ht/~scoopta/wofi/tags"
-fetch = "cr | v3grep -o | uniq | vsort"
+fetch = "cr | vrepo -3 | vsort"
 
 [[channels]]
 name = "commit"

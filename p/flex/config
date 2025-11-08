@@ -3,10 +3,7 @@ chance = 0.5
 
 [[channels]]
 name = "release"
+fetch = "gr | vtrim -e s,-,.,g | vsort"
 
 [[channels]]
 name = "commit"
-
-[[channels]]
-name = "unstable"
-fetch = "gr | vtrim -e 's,-,.,g' | vsort"

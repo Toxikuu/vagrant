@@ -2,4 +2,4 @@ upstream = "https://www.mercurial-scm.org/release/"
 
 [[channels]]
 name = "release"
-fetch = '''cr | v3grep | cut -d\" -f2 | vtrim -e 's,\.tar.*,,' | uniq | vsort'''
+fetch = "cr | vrepo -3 | vsort"

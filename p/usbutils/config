@@ -2,11 +2,6 @@ upstream = "gregkh/usbutils"
 
 [[channels]]
 name = "release"
-fetch = "gr | grep -v post_ | vsort"
-
-[[channels]]
-name = "unstable"
-fetch = "gr | grep -v post_ | vsort"
 
 [[channels]]
 name = "commit"

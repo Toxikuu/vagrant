@@ -7,4 +7,7 @@ chance = 0.77
 name = "release"
 
 [[channels]]
+name = "unstable"
+
+[[channels]]
 name = "commit"

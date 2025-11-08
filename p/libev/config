@@ -3,4 +3,4 @@ chance = 0.23 # last release dated 2020-03-18
 
 [[channels]]
 name = "release"
-fetch = "ca | vtrim | uniq | vsort"
+fetch = "cr | vrepo -p $name- | vtrim | vsort"
