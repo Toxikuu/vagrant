@@ -4,10 +4,9 @@ upstream = "python/cpython"
 name = "release"
 fetch = "gr | vtrim | fsl | vsort | fl"
 
-# TODO: Add -s flag for short release kinds like a for alpha
-# [[channels]]
-# name = "unstable"
-# fetch = "gr | vtrim | fsl | vsort"
+[[channels]]
+name = "unstable"
+fetch = "gr | vtrim | fsl | vsort"
 
 [[channels]]
 name = "commit"

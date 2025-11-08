@@ -2,4 +2,4 @@ upstream = "bminor/binutils-gdb"
 
 [[channels]]
 name = "release"
-fetch = ''' gr | tolower | vtrim -e 's,_,.,g' | fl | vfs | vsort | grep '\.' '''
+fetch = "gr | vtrim | fl | fdate | vsort"

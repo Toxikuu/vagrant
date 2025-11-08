@@ -5,7 +5,8 @@ name = "release"
 fetch = '''gr | vtrim -e 's,^glib-,,' | vfs | grep -v '\.9[0-9]$' | vsort'''
 
 [[channels]]
-name = "commit"
+name = "unstable"
+fetch = "gr | vtrim -e 's,^glib-,,' | vsort"
 
-# TODO: Add unstable once I make vsort properly sort prerelease versions with
-# fewer parts
+[[channels]]
+name = "commit"

@@ -1,8 +1,5 @@
 chance = 0.77
 
-# FIXME: vsort should account for 255.17 being more current than 255-alpha, and
-# also add unstable channel
-
 [[channels]]
 name = "release"
 
