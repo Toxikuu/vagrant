@@ -21,9 +21,15 @@ lint:
 purge: clean
 	rm -rf .vagrant-cache
 
+softrun: build
+	@target/release/vagrant -p | tee vagrant.log
+	@sed -i 's,\x1b\[[0-9;]*m,,g' vagrant.log
+
 run: build
 	@target/release/vagrant | tee vagrant.log
 	@sed -i 's,\x1b\[[0-9;]*m,,g' vagrant.log
+	@./commit.sh
+	@git push
 
 test: build
 	@cargo test --no-fail-fast --future-incompat-report --all-features --locked --release
