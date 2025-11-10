@@ -5,14 +5,14 @@
   },
   {
     "channel": "mainline",
-    "version": "6.18-rc4"
+    "version": "6.18-rc5"
   },
   {
     "channel": "next",
-    "version": "20251107"
+    "version": "20251110"
   },
   {
     "channel": "commit",
-    "version": "7bb4d6512545a792a6cd8d6c8be5718920b9b11a"
+    "version": "e9a6fb0bcdd7609be6969112f3fbfcce3b1d4a7c"
   }
 ]

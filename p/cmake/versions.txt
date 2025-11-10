@@ -1,3 +1,3 @@
 release	4.1.2
-unstable	4.2.0-rc2
-commit	d90e073cdda849122f8419bb857615f32ba78637
+unstable	4.2.0-rc3
+commit	38ba84cf2eb1267ad7d7dc3bffe7d4828a59e27d

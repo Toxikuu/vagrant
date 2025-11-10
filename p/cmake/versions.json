@@ -5,10 +5,10 @@
   },
   {
     "channel": "unstable",
-    "version": "4.2.0-rc2"
+    "version": "4.2.0-rc3"
   },
   {
     "channel": "commit",
-    "version": "d90e073cdda849122f8419bb857615f32ba78637"
+    "version": "38ba84cf2eb1267ad7d7dc3bffe7d4828a59e27d"
   }
 ]

@@ -1,2 +1,2 @@
 release	1.26.11
-commit	52912be1ff3cb0cc8673a4d3f21ec53022bccccd
+commit	6c21511f9d24dcbb46679535042cfdf956574a04
