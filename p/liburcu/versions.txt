@@ -1,2 +1,2 @@
-release	0.15.4
+release	0.15.5
 commit	91b6c67ef0478f7193485a02e4d5064413aa3029

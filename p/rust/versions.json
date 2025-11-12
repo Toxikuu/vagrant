@@ -1,14 +1,14 @@
 [
   {
     "channel": "release",
-    "version": "1.91.0"
+    "version": "1.91.1"
   },
   {
     "channel": "nightly",
-    "version": "2025-11-10"
+    "version": "2025-11-11"
   },
   {
     "channel": "commit",
-    "version": "a7b3715826827677ca8769eb88dc8052f43e734b"
+    "version": "11339a0ef5ed586bb7ea4f85a9b7287880caac3a"
   }
 ]

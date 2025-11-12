@@ -1,2 +1,2 @@
 release	2.2.5
-commit	20083c8efc259255c77ed5fd57f8d58110b3b2fb
+commit	780838b040ccdd4c1fc68debfdeeaab8e6b51742

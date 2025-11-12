@@ -1,2 +1,2 @@
 release	25.2.6
-commit	0216f09e45280e040bef410bb5d49f67bccd4bcd
+commit	5af8abbf8ba10e6ff56b258c2928d1ed56d9c940

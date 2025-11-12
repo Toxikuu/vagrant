@@ -1,10 +1,10 @@
 [
   {
     "channel": "release",
-    "version": "2025.10.22"
+    "version": "2025.11.12"
   },
   {
     "channel": "commit",
-    "version": "ade8c2b36ff300edef87d48fd1ba835ac35c5b63"
+    "version": "5977782142ca7e41240f07202cc9b8dcc087b401"
   }
 ]
