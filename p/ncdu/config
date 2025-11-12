@@ -1,4 +1,4 @@
-upstream = "git://g.blicky.net/ncdu.git/"
+upstream = "https://g.blicky.net/ncdu.git/"
 
 [[channels]]
 name = "release" # Zig version (stable)

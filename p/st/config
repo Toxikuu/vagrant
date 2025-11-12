@@ -1,4 +1,4 @@
-upstream = "git://git.suckless.org/st"
+upstream = "https://git.suckless.org/st"
 
 [[channels]]
 name = "release"

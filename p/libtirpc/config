@@ -1,8 +1,4 @@
-upstream = "git://linux-nfs.org/~steved/libtirpc.git"
+upstream = "https://archlinux.org/packages/core/x86_64/libtirpc/json"
 
 [[channels]]
 name = "release"
-fetch = "gr | vtrim -e 's,-,.,g' | vfs | vsort"
-
-[[channels]]
-name = "commit"

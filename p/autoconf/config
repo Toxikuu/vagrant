@@ -1,5 +1,9 @@
-upstream = "http://mirror.rit.edu/gnu/autoconf/?C=M&O=D"
-chance = 0.7
+upstream = "autotools-mirror/autoconf"
+chance = 0.93
 
 [[channels]]
 name = "release"
+fetch = "defgitrelease | fl"
+
+[[channels]]
+name = "commit"

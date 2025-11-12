@@ -1,4 +1,4 @@
-upstream = "git://git.savannah.gnu.org/libtool.git"
+upstream = "autotools-mirror/libtool"
 
 [[channels]]
 name = "release"
