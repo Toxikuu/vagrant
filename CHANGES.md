@@ -7,6 +7,25 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.1.0 - 2025-11-11 19:46:03 -0600
+
+### Features
+
+ - **[!]** Remove git dependency via curl and witchcraft
+
+### Fixes
+
+ - Relocate upstreams broken by using curl instead of git
+
+### Chores
+
+ - Add softrun and tweak run make targets
+
+### Docs
+
+ - Add license
+
+
 ## 2.0.1 - 2025-11-08 13:22:41 -0600
 
 ### Fixes
