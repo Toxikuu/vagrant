@@ -1,2 +1,2 @@
 release	10.2.4
-commit	7efcb063cdcdbfcae917faf2209fc35ba2eb6490
+commit	b6671a7757a3a42202bcc3ed3e100eb91547bb4e

@@ -1,3 +1,3 @@
-unstable	1.39.1
-release	1.39.1
-commit	1af53e3774f068183ffd0c7193eb061a2b65a531
+unstable	1.39.2
+release	1.39.2
+commit	626c4bedb751ce0b7f03262ca97ddda9a076ae1c
