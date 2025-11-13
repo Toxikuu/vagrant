@@ -1,3 +1,3 @@
 release	2.51.2
-unstable	2.52.0-rc1
-commit	4badef0c3503dc29059d678abba7fac0f042bc84
+unstable	2.52.0-rc2
+commit	99bd5a5c9f74abfe81196d96b8467d0d1d4723c5

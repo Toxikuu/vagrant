@@ -1,2 +1,2 @@
 release	0.66.1
-commit	ead534a1be2cdd777b614d3e7eacce0ab4414151
+commit	535b610a6b0858364cfb12cee8b5ae7132883ea0
