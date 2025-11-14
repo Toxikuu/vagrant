@@ -178,7 +178,7 @@ feh	release	3.11.2
 feh	commit	00daaacddcce9bc9dc603a0f601ff3bd091e8c04
 ffmpeg	release	8.0
 ffmpeg	unstable	8.1-dev
-ffmpeg	commit	62184be5486ec06d6976c20931b30738c8e83fd8
+ffmpeg	commit	b4780374238a15ea42cd27fda53224e3e92335a3
 fftw	release	3.3.10
 fftw	unstable	3.3.10
 fftw	commit	7947c101a5b724fe8b9784218388b46d7e247132
@@ -217,7 +217,7 @@ fzf	commit	3f499f055ee04fa9a3f0691b00c1088da2bab475
 gawk	release	5.3.2
 gcc	release	15.2.0
 gcc	unstable	16
-gcc	commit	9ab4d759125b0c7f040c6709d26175d89823ee02
+gcc	commit	a892a2dac6b9c304553e2c2b4f2bd17a2526478d
 gdb	release	16.3
 gdbm	release	1.26
 gdk-pixbuf	release	2.44.4
@@ -245,7 +245,7 @@ glib-networking	unstable	2.80.1
 glib-networking	commit	d9f2e67e755516027ab00066dcadf82b4f2ac88e
 glibc	release	2.42
 glibc	unstable	2.42.9000
-glibc	commit	c6908c4e241962a74aa9dc23056d332036b4879a
+glibc	commit	91fb9914d867320d65a2abe284fb623d91ae5efb
 glm	release	1.0.2
 glm	commit	a583c59e1616a628b18195869767ea4d6faca5f4
 glslang	release	16.0.0
@@ -262,11 +262,11 @@ gnutls	unstable	3.8.10
 gnutls	commit	8f986284b715d90e139dbf0df7692ae1813c2848
 go	release	1.25.4
 go	unstable	1.25.4
-go	commit	17a02b910697800032aa686548992a554e8e9d82
+go	commit	704f841eab87462d4eefac07345c96f71fb6e964
 gperf	release	3.3
 gpgme	release	2.0.1
 gpgme	unstable	2.0.1
-gpgme	commit	964bc14ccfba84b050c20dc5035414438b10bd74
+gpgme	commit	5d38f0c562f3a54151f79d1d4902ac9e8a8019dd
 gpu-screen-recorder	release	5.8.1
 gpu-screen-recorder	commit	e99605fec279410fdafbeafddb9ae0fe90845d00
 graphviz	release	14.0.2
@@ -281,7 +281,7 @@ gstreamer	release	1.27.2
 gstreamer	commit	cc835f6a4598388e1890b1c58fda780d1a39925f
 gtk	release	4.20.2
 gtk	unstable	4.21.1
-gtk	commit	7a25e5ef06e6f4708f5d5df783a66c20e83f7a0c
+gtk	commit	2ae56e4bcb345b88843e4d1910246774b3303e93
 gtk	2	2.24.33
 gtk	3	3.24.51
 gumbo-parser	release	0.13.2
@@ -338,7 +338,7 @@ ksh	commit	0f6866b6bebc26d003acb6f467d0694a8aea5177
 lame	release	3.100
 less	release	685
 less	unstable	686
-less	commit	c021dbb5f24fd05d1abef5baddae16f0199bc58b
+less	commit	16879fd41d29477c364b327c35776d154d2130c1
 lfstage	commit	d2bcde008e1cc1633ed1a40a1cccaa079f083e99
 libaio	release	0.3.113
 libaio	commit	b8eadc9f89e8f7ab0338eacda9f98a6caea76883
@@ -444,7 +444,7 @@ libretls	release	3.8.1
 libretls	commit	198349012002f8d30013eb23c7d6df6a3c9cc65a
 librsvg	release	2.61.3
 librsvg	unstable	2.61.3
-librsvg	commit	65d2189af6d7bd30529a25dc7f8b3c2490d5db61
+librsvg	commit	eb0f6633a737abb0efbeb2d558f5d7af29574dad
 libsamplerate	release	0.2.2
 libsamplerate	commit	2ccde9568cca73c7b32c97fefca2e418c16ae5e3
 libseccomp	release	2.6.0
@@ -583,7 +583,7 @@ little-cms	release	2.17
 little-cms	commit	8888d842a7556a0aac093808f10d49c4141c354a
 llvm	release	21.1.5
 llvm	unstable	21.1.5
-llvm	commit	79cd1b7a25cdbf42c7234999ae9bc51db30af1f0
+llvm	commit	4fe79a761e98351bf8641ea3055058f6fb2ed9a4
 lm-sensors	release	3.6.2
 lm-sensors	commit	c297368a0e4b0442fca06bae58a0bd3386629af0
 lmdb	release	0.9.33
@@ -615,7 +615,7 @@ mbedtls	release	4.0.0
 mbedtls	commit	3a0868b8ffda6824a58fc5c8c11621096005a17c
 mercurial	release	7.1.1
 mesa	release	25.2.7
-mesa	commit	65fcdf4c81d4309257a4ca6471332a7d56e68729
+mesa	commit	aeaf1cbc2b370e9a31ab7245710307384329d52b
 mesa-demos	release	9.0.0
 mesa-demos	commit	eb6a96d3c6ad34f5f98103fd7b007f969a0e5749
 meson	release	1.9.1
@@ -650,7 +650,7 @@ ncurses	unstable	6.5.20251101
 neofetch	release	7.1.0
 neofetch	commit	ccd5d9f52609bbdcd5d8fa78c4fdb0f12954125f
 neovim	release	0.11.5
-neovim	commit	31d5730995dd0026295ec87d7b118dd80c739d88
+neovim	commit	d017f3c9a0b745e0c57feb8c92dcc852948f7301
 netcat	release	1.234.1
 netcat	commit	3dd21269220dd746eaf4e64a17b7257eba47c2c2
 nettle	release	3.10.2
@@ -696,7 +696,7 @@ openssl	release	3.6.0
 openssl	commit	105c5807ce34144b123dbaf939301fa13a6918bc
 openttd	release	14.1
 openttd	unstable	15.0-beta3
-openttd	commit	dbe329733c801752372c7acd6e41b902b843a2cf
+openttd	commit	76621050817a15103bfc8c9ba1462870b89f3bb2
 opus	release	1.5.2
 opus	commit	285ef69edd68a3799e6759d8f2d455e3bcffcbb9
 ostree	release	2025.7
@@ -797,9 +797,9 @@ scdoc	commit	70de0e5e5d3bc40134ee65c35f1631656199f4be
 sdbus-cpp	release	2.1.0
 sdbus-cpp	commit	91f0d3fca74f51a0ca45ae9ed9b4f4d817d04fa4
 sdl	release	3.2.26
-sdl	commit	4cc9153df2a4eff176a9fd3d1040d1c984497265
+sdl	commit	a01d6f109dee9126f5ac283dab7b0b8c3d08fc8d
 sdl2-compat	release	2.32.58
-sdl2-compat	commit	ad36a64257570582be29d1aceec4fbb427b48e34
+sdl2-compat	commit	bb946a5a7da3b39998656fc20cce006b10712b58
 seatd	release	0.9.1
 seatd	commit	900e359f99818df434389eb3a39ee767f1d84f2c
 sed	release	4.9
@@ -859,7 +859,7 @@ sxwm	commit	6cf96157da0af2facf1625ae778e76fc60bddede
 sysklogd	release	2.7.2
 sysklogd	commit	c1c3f253a8963c6e9e41fafcf9b888f3f5a34906
 systemd	release	258.2
-systemd	commit	a0d1dc662a7e47b0caa81088ddae6389fabeeb20
+systemd	commit	98ae19d9fe5cbdaefae600c5b906cacd1a48c57a
 sysvinit	release	3.15
 sysvinit	commit	2da36cf51d4816438d5f944ec5e5d2f56f49e292
 tar	release	1.35
