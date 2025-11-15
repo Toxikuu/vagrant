@@ -1,2 +1,2 @@
-release	2.2.1
-commit	9ca74802cd114ec976ac954381b1f29d4f9593a1
+release	2.2.3
+commit	b513d06a0ea78f57d02c762d9eb41a32d8876cf9

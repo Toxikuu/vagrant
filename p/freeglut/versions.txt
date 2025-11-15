@@ -1,3 +1,3 @@
 release	3.6.0
 unstable	3.8.0-rc1
-commit	c8f0c903f2393fe0b425756beef559a1d39bf3ec
+commit	3927f8b9f3fb8ebf48a3260620d3d9c89da2f347

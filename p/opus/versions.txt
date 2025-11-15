@@ -1,2 +1,2 @@
 release	1.5.2
-commit	285ef69edd68a3799e6759d8f2d455e3bcffcbb9
+commit	bfc2dafa26cd9cd6e041f8d25c310d14fa0f8cb3
