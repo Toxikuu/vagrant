@@ -7,6 +7,17 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.2.0 - 2025-11-17 17:55:06 -0600
+
+### Features
+
+ - Call make in release script
+ - **[!]** Consistent git behavior
+ - Call make in release script
+ - **[!]** Consistent git behavior in scripts
+ - **[!]** Publish logs
+
+
 ## 2.1.1 - 2025-11-17 17:41:28 -0600
 
 ### Features
