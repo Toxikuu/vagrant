@@ -14,8 +14,8 @@ die() {
 
 # Checks
 [[ -z "$(git status -s)" ]] || die "Uncommitted changes"
-cargo clippy || die "Clippy failed"
-cargo build --release || die "Build failed"
+make check || die "Failed checks"
+make || die "Build failed"
 
 # Get old semver
 old_tag=$(git describe --tags --abbrev=0 @^)
@@ -52,7 +52,7 @@ if [[ "$old_sum" == "$new_sum" ]]; then
 fi
 
 old_sum=$(sha256sum Cargo.lock)
-cargo build --release
+make
 new_sum=$(sha256sum Cargo.lock)
 
 if [[ "$old_sum" == "$new_sum" ]]; then
