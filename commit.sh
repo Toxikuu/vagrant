@@ -8,7 +8,7 @@ die() {
     exit "${2:-1}"
 }
 
-git add runcount
+git add runcount vagrant.log
 git commit -m "auto(aux): update internal data"
 
 git add p/ALL.* p/*/versions.* p/*/channels/*
