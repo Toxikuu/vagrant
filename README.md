@@ -89,10 +89,14 @@ Vagrant must be run from its source directory. This is by design as Vagrant is
 intended to be run in a controlled/contained environment, and doing so reduces
 complexity.
 
-Generally, you'd want to execute the following commands:
+To test that all packages work, execute the following command:
+```bash
+make test
+```
+
+To update the database, execute the following command:
 ```bash
 make run
-./commit.sh
 ```
 
 > [!TIP]
