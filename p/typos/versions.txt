@@ -1,3 +1,3 @@
 unstable	1.39.2
 release	1.39.2
-commit	626c4bedb751ce0b7f03262ca97ddda9a076ae1c
+commit	9f99fb8dfe87b8a3441863fb2e5d5da88a2aa9a2
