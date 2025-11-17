@@ -7,6 +7,22 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.1.1 - 2025-11-17 17:41:28 -0600
+
+### Features
+
+ - Add steam
+
+### Chores
+
+ - Fmt
+ - Update dependencies
+
+### Docs
+
+ - Update readme
+
+
 ## 2.1.0 - 2025-11-11 19:46:03 -0600
 
 ### Features
