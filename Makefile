@@ -29,12 +29,14 @@ run: build
 	@target/release/vagrant | tee vagrant.log
 	@sed -i 's,\x1b\[[0-9;]*m,,g' vagrant.log
 	@./commit.sh
-	@git push
 
 test: build
 	@cargo test --no-fail-fast --future-incompat-report --all-features --locked --release
 	@target/release/vagrant -pg | tee vagrant.log
 	@sed -i 's,\x1b\[[0-9;]*m,,g' vagrant.log
 	@! grep -E 'ERROR|WARN' vagrant.log
+
+release: clean
+	@./release.sh
 
 .PHONY: all build check clean fmt format lint purge run test

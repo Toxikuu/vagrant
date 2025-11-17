@@ -45,3 +45,4 @@ cd ..
 
 echo "$desc"
 git commit -m "auto(p): update versions" -m "$desc"
+git push
