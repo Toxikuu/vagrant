@@ -7,6 +7,21 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.3.0 - 2025-11-17 18:12:33 -0600
+
+### Features
+
+ - **[!]** Tweak log gitignore handling
+
+### Chores
+
+ - **[!]** Rework log tracking once more
+
+### Docs
+
+ - Fix changelog
+
+
 ## 2.2.0 - 2025-11-17 17:55:06 -0600
 
 ### Features
