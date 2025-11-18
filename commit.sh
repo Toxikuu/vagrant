@@ -9,7 +9,7 @@ die() {
 }
 
 git add runcount
-git add -f vagrant.log # override gitignore
+git update-index --no-skip-worktree vagrant.log && git add vagrant.log
 git commit -m "auto(aux): update internal data"
 
 git add p/ALL.* p/*/versions.* p/*/channels/*
@@ -47,3 +47,4 @@ cd ..
 echo "$desc"
 git commit -m "auto(p): update versions" -m "$desc"
 git push
+git update-index --skip-worktree vagrant.log
