@@ -11,10 +11,8 @@
 
 ### Features
 
- - Call make in release script
  - **[!]** Consistent git behavior
  - Call make in release script
- - **[!]** Consistent git behavior in scripts
  - **[!]** Publish logs
 
 
