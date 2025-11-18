@@ -245,7 +245,7 @@ glib-networking	unstable	2.80.1
 glib-networking	commit	d9f2e67e755516027ab00066dcadf82b4f2ac88e
 glibc	release	2.42
 glibc	unstable	2.42.9000
-glibc	commit	4f18501498e8fe7eca8d4adaeabb108ae62972cd
+glibc	commit	efc8642051e6c4fe5165e8986c1338ba2c180de6
 glm	release	1.0.2
 glm	commit	a583c59e1616a628b18195869767ea4d6faca5f4
 glslang	release	16.0.0
@@ -844,6 +844,7 @@ st	release	0.9.3
 st	commit	6e970474743d57a5d8b054c41fd3bff2bc895742
 startup-notification	release	0.12
 startup-notification	commit	64eb585315cfb1fb4fe68c8f705956e9fed46545
+steam	release	1.0.0.85
 strace	release	6.17
 strace	commit	4ebe1e9129338748a3d590a95324420721adc216
 sudo	release	1.9.17p2
