@@ -1,3 +1,3 @@
-release	4.1.3
-unstable	4.2.0-rc4
-commit	a0081ac0cbb60066aa5048126787ac8ca8d15369
+release	4.2.0
+unstable	4.2.0
+commit	171d1a628fa4c090690c09dff69a38fec342f083
