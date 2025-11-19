@@ -7,6 +7,27 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.4.0 - 2025-11-19 15:33:59 -0600
+
+### Features
+
+ - Tweak config for libtree
+
+### Fixes
+
+ - **[!]** Pass url to private github api helper
+ - **[!]** Write to files with curl directly
+ - Increase curl timeout to 128 seconds
+
+### Chores
+
+ - Set log level to info in envrc
+
+### Docs
+
+ - Update todos
+
+
 ## 2.3.0 - 2025-11-17 18:12:33 -0600
 
 ### Features
