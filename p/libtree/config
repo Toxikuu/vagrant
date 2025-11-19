@@ -15,11 +15,11 @@ chance = 0.1
 [[channels]]
 name = "release"
 enabled = true # Whether to fetch, defaults to true
-fetch = "ghr"
+fetch = "defgitrelease"
 
 [[channels]]
 name = "unstable"
-fetch = "gr | vtrim | vsort"
+fetch = "defgitunstable"
 
 [[channels]]
 name = "commit"
