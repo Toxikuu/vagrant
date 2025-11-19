@@ -33,7 +33,7 @@ autoconf-archive	release	2024.10.16
 automake	release	1.18.1
 avahi	release	0.8
 avahi	unstable	0.9-rc2
-avahi	commit	6612cfb8cdce09154269efae224ba9fe1bb89b62
+avahi	commit	07a3f45cb4ec960d3ab2a5b876b2492d51d424c9
 awww	release	0.11.2
 awww	commit	40c5e59c178451a172aac7a14725196a1e9e0e99
 bash	release	5.3
@@ -245,7 +245,7 @@ glib-networking	unstable	2.80.1
 glib-networking	commit	d9f2e67e755516027ab00066dcadf82b4f2ac88e
 glibc	release	2.42
 glibc	unstable	2.42.9000
-glibc	commit	40a751b0044114488e841f0223e630596c527c53
+glibc	commit	92186652d8653993ca51e97b895baf7edc745794
 glm	release	1.0.2
 glm	commit	a583c59e1616a628b18195869767ea4d6faca5f4
 glslang	release	16.0.0
@@ -583,7 +583,7 @@ little-cms	release	2.17
 little-cms	commit	4e1eab489d6352fd6488456b1cbfef6f4128f1e8
 llvm	release	21.1.6
 llvm	unstable	21.1.6
-llvm	commit	d2c7c6064259320def7a74e111079725958697d4
+llvm	commit	1233c4bf230bcc40f86b8684e4cc1e4d368a8b79
 lm-sensors	release	3.6.2
 lm-sensors	commit	c297368a0e4b0442fca06bae58a0bd3386629af0
 lmdb	release	0.9.33
