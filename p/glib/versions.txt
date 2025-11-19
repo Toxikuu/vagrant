@@ -1,3 +1,3 @@
-release	2.86.1
+release	2.86.2
 unstable	2.87.0
 commit	a0631ca294cf47eef728d976ce93f6c24cd502f5
