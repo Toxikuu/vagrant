@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Consider renaming to vat to avoid confusion with hashicorp's vagrant
 - [x] Add upstream as a field for release, unstable, and commit. If defined, the
   regular upstream field should fill out release, unstable, and commit's
   upstreams. This is just a clearer way to override upstreams.
@@ -34,3 +35,4 @@
     - Would require reworking code to detect packages by looking for their config
     - Probably add an `org` field to `Package` in the form "org/name"
 - [ ] Support chances as the channel level
+- [x] Ensure curl doesn't write incomplete files
