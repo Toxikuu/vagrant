@@ -7,6 +7,19 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.4.1 - 2025-11-21 12:31:22 -0600
+
+### Fixes
+
+ - Tweak aur branch for archver
+ - Use aur for ratpoison
+
+### Chores
+
+ - Don't depend on clean for release target
+ - Update dependencies
+
+
 ## 2.4.0 - 2025-11-19 15:33:59 -0600
 
 ### Features
