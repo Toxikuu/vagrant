@@ -36,7 +36,7 @@ test: build
 	@sed -i 's,\x1b\[[0-9;]*m,,g' vagrant.log
 	@! grep -E 'ERROR|WARN' vagrant.log
 
-release: clean
+release:
 	@./release.sh
 
 .PHONY: all build check clean fmt format lint purge run test
