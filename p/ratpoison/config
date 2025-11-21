@@ -1,7 +1,12 @@
-upstream = "https://git.savannah.nongnu.org/git/ratpoison.git"
+# upstream = "https://git.savannah.nongnu.org/git/ratpoison.git"
+#
+# [[channels]]
+# name = "release"
+#
+# [[channels]]
+# name = "commit"
+
+upstream = "https://aur.archlinux.org/rpc/v5/info/ratpoison"
 
 [[channels]]
 name = "release"
-
-[[channels]]
-name = "commit"
