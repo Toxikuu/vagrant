@@ -1,3 +1,3 @@
-release	8.0
+release	8.0.1
 unstable	8.1-dev
-commit	0ae8df5f2ceea82337a2456ef16f930faf160189
+commit	43abd1ced9424d7f9ff340d1fe01b3a43411b849

@@ -1,2 +1,2 @@
-release	0.80
-commit	a130b1e947ff0d5998e13e3af946c27d056543b9
+release	0.81
+commit	2e254f51bd82c28f8a2132d58a960fb6b0887f79

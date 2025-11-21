@@ -1,4 +1,4 @@
-unstable	26.24
+unstable	26.25
 release	25.u36
 21	21.0.10.u3
 17	17.0.18.u3

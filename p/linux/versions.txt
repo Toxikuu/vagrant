@@ -1,4 +1,4 @@
 release	6.17.8
 mainline	6.18-rc6
-next	20251119
-commit	23cb64fb76257309e396ea4cec8396d4a1dbae68
+next	20251121
+commit	fd95357fd8c6778ac7dea6c57a19b8b182b6e91f
