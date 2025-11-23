@@ -46,7 +46,7 @@ commit=$(grep commit _ | cut -f2)
 rm _
 ```
 
-To retrieve all version channels for all packagesm, display them, and then parse
+To retrieve all version channels for all packages, display them, and then parse
 out acl's release and inih's commit:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/ALL.txt > _
