@@ -46,10 +46,14 @@ commit=$(grep commit _ | cut -f2)
 rm _
 ```
 
-To retrieve all version channels for all packages, then parse out acl's release
-and inih's commit:
+To retrieve all version channels for all packagesm, display them, and then parse
+out acl's release and inih's commit:
 ```sh
 curl -fsSL https://raw.githubusercontent.com/tox-wtf/vagrant/refs/heads/master/p/ALL.txt > _
+
+# display versions prettily
+tabs 32,+12 && cat _ && tabs -8
+
 acl_release=$(grep acl _ | grep release | cut -f3)
 inih_commit=$(grep 'inih\scommit' _ | cut -f3)
 rm _
