@@ -1,2 +1,2 @@
-release	12.6.0
-commit	71b86101677110cb0c090c1d56c78652bcc307c5
+release	12.7.0
+commit	12ebdcaa46f2dc055e7c9a0ec97ef021bec8ed32

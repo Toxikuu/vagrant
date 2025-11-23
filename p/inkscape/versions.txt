@@ -1,0 +1,2 @@
+release	1.4.2
+commit	f3aff4101bd7398ae819e4ef98661a051a29665e
