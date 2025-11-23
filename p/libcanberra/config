@@ -1,4 +1,6 @@
 upstream = "https://0pointer.de/lennart/projects/libcanberra/"
+chance = 0.09 # last release dated 2012-09-25
 
 [[channels]]
 name = "release"
+fetch = "defcurlrelease" # TODO: Figure out why this is necessary

@@ -1,4 +1,4 @@
-upstream = "https://https.git.savannah.gnu.org/git/attr.git"
+upstream = "https://git.savannah.gnu.org/git/attr.git/"
 chance = 0.25
 
 [[channels]]

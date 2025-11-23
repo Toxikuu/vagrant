@@ -2,3 +2,4 @@ upstream = "https://potrace.sourceforge.net/"
 
 [[channels]]
 name = "release"
+fetch = "defcurlrelease"
