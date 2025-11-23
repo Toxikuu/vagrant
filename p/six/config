@@ -1,0 +1,7 @@
+upstream = "benjaminp/six"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,6 @@
+[[channels]]
+name = "release"
+fetch = "gr | sed 's,-,.,' | vsort"
+
+[[channels]]
+name = "commit"

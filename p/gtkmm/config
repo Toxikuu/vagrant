@@ -1,0 +1,11 @@
+upstream = "gnome/gtkmm"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "3"
+fetch = '''defgitrelease | grep '^3\.' | grep -v '\.[89][0-9]\+\.''''
+
+[[channels]]
+name = "commit"

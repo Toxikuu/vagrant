@@ -1,0 +1,4 @@
+upstream = "https://0pointer.de/lennart/projects/libcanberra/"
+
+[[channels]]
+name = "release"
