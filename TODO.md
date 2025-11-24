@@ -1,5 +1,6 @@
 # TODO
 
+- [ ] Make ERROR and WARN logs less ugly
 - [ ] Consider renaming to vat to avoid confusion with hashicorp's vagrant
 - [x] Add upstream as a field for release, unstable, and commit. If defined, the
   regular upstream field should fill out release, unstable, and commit's
@@ -15,7 +16,7 @@
   in a while. These might then be manually confirmed.
 - [x] Implement parallelization
 - [x] Add GitHub issue templates
-- [ ] Mirror to vagrant.tox.wtf
+- [ ] Mirror to vat.tox.wtf
 - [x] Add changelog
 - [x] Add caching for `gr`
 - [x] Add version channels
@@ -34,5 +35,5 @@
     - Ideally categorize using directories, so py/build, for instance
     - Would require reworking code to detect packages by looking for their config
     - Probably add an `org` field to `Package` in the form "org/name"
-- [ ] Support chances as the channel level
+- [ ] Support chances at the channel level
 - [x] Ensure curl doesn't write incomplete files
