@@ -7,6 +7,30 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.4.2 - 2025-11-23 23:01:03 -0600
+
+### Features
+
+ - Replace curl variable with function
+ - Increase connection timeout to 16 seconds
+ - Add several packages
+
+### Fixes
+
+ - Tweak a few packages
+
+### Chores
+
+ - Use a threshold for test failures
+ - Update dependencies
+
+### Docs
+
+ - Update todos
+ - Fix typo in readme
+ - Update readme
+
+
 ## 2.4.1 - 2025-11-21 12:31:22 -0600
 
 ### Fixes
