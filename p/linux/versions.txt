@@ -1,4 +1,4 @@
 release	6.17.8
-mainline	6.18-rc6
+mainline	6.18-rc7
 next	20251121
 commit	ac3fd01e4c1efce8f2c054cdeb2ddd2fc0fb150d
