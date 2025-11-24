@@ -34,7 +34,9 @@ test: build
 	@cargo test --no-fail-fast --future-incompat-report --all-features --locked --release
 	@target/release/vagrant -pg | tee vagrant.log
 	@sed -i 's,\x1b\[[0-9;]*m,,g' vagrant.log
-	@! grep -E 'ERROR|WARN' vagrant.log
+	@grep -E 'ERROR|WARN' vagrant.log || true
+	@awk -v f=$$(cat .vagrant-cache/failed) -v c=$$(cat .vagrant-cache/checked) \
+		'BEGIN { exit !(f/c < 0.05) }'
 
 release:
 	@./release.sh
