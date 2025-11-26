@@ -1,6 +1,7 @@
 // utils/ver.rs
 
 use crate::package::Package;
+use crate::utils::str::basename;
 
 #[derive(Debug, Default)]
 pub struct Version {
@@ -24,8 +25,10 @@ impl Version {
             .next_back()
             .map_or_else(|| unreachable!("No output"), str::to_lowercase);
 
+        let name = basename(&package.name);
+
         let ver = ver.trim_start_matches('v');
-        let ver = ver.trim_start_matches(&package.name);
+        let ver = ver.trim_start_matches(name);
         let ver = ver.trim_start_matches('-');
         let ver = ver.trim_start_matches('_');
 

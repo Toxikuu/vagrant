@@ -16,6 +16,7 @@ use std::path::{Path, PathBuf};
 use std::str::FromStr;
 use tracing::{debug, error, info};
 
+use crate::utils::str::basename;
 use crate::NO_CACHE;
 use crate::SHLIB_PATH;
 use crate::VAGRANT_CACHE;
@@ -111,7 +112,7 @@ impl PackageChannel {
             ("SHLIB_PATH", shlib_path),
             ("NO_CACHE", &no_cache),
             ("channel", &self.name),
-            ("name", &package.name),
+            ("name", basename(&package.name)),
             ("upstream", &upstream),
             ("shortform", &shortform),
         ]);
@@ -237,7 +238,7 @@ impl Package {
 
     pub fn set_defaults(&mut self) {
         if self.config.upstream.is_empty() {
-            self.config.upstream = format!("{n}/{n}", n = self.name);
+            self.config.upstream = format!("{n}/{n}", n = basename(&self.name));
         }
 
         for channel in &mut self.config.channels {
