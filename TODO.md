@@ -30,10 +30,10 @@
 - [x] Better display for fetched versions
 - [x] Support calling scripts in the fetch command
 - [ ] Consider supporting nvchecker
-- [ ] Figure out package categorization
+- [x] Figure out package categorization
     - Ideally categorize only as needed by conflict
     - Ideally categorize using directories, so py/build, for instance
     - Would require reworking code to detect packages by looking for their config
-    - Probably add an `org` field to `Package` in the form "org/name"
+    - ~~Probably add an `org` field to `Package` in the form "org/name"~~
 - [ ] Support chances at the channel level
 - [x] Ensure curl doesn't write incomplete files
