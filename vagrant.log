@@ -1,1219 +1,1706 @@
-   0.043923377s  INFO vagrant::package:389: Fetched versions for file
-        - release: 5.46
-
-   0.045108077s  INFO vagrant::package:389: Fetched versions for lfstage
-        - commit: d2bcde008e1cc1633ed1a40a1cccaa079f083e99
-
-   0.051712196s  INFO vagrant::package:389: Fetched versions for binutils
-        - release: 2.45.1
-
-   0.057573252s  INFO vagrant::package:389: Fetched versions for aspell
-        - release: 0.60.8.1
-
-   0.058186066s  INFO vagrant::package:389: Fetched versions for gsl
-        - release: 2.8
-
-   0.062147725s  INFO vagrant::package:389: Fetched versions for libunistring
-        - release: 1.4.1
-
-   0.076206478s  INFO vagrant::package:389: Fetched versions for ani-cli
-        - release: 4.10
-        - commit: c8aa791982cd4c5d72234c590a2834cfa5a712e6
-
-   0.076206488s  INFO vagrant::package:389: Fetched versions for sdl2-compat
-        - release: 2.32.58
-        - commit: b5bd4c585f6e1a650b438cb8c843346560786896
-
-   0.077908713s  INFO vagrant::package:389: Fetched versions for automake
+   0.051550579s  INFO vagrant::package:389: Fetched versions for automake
         - release: 1.18.1
 
-   0.083104495s  INFO vagrant::package:389: Fetched versions for aquamarine
-        - release: 0.10.0
-        - commit: a20a0e67a33b6848378a91b871b89588d3a12573
+   0.058694181s  INFO vagrant::package:389: Fetched versions for gdb
+        - release: 16.3
 
-   0.083423489s  INFO vagrant::package:389: Fetched versions for eglexternalplatform
-        - release: 1.2.1
-        - commit: cf9f10589775c1b4d90f1df6f417f8cf1bed7ec6
+   0.068294270s  INFO vagrant::package:389: Fetched versions for lxml
+        - release: 6.0.2
+        - commit: 89c1495c6dca402c2a30478f9a76fd8d5a04a37b
 
-   0.084473803s  INFO vagrant::package:389: Fetched versions for libqalculate
-        - release: 5.8.2
-        - commit: 4b6e5bfc78646aadc6caf1a10464832c94ff0f3a
+   0.071009214s  INFO vagrant::package:389: Fetched versions for tcpdump
+        - release: 4.99.5
+        - commit: 70140f5412312e34c454e71a5c45e7ab0c1a0cd5
 
-   0.088455961s  INFO vagrant::package:389: Fetched versions for libexif
-        - release: 0.6.25
-        - commit: 3e7a99128f91be279f463b9814d8deb8c6c6c9ef
+   0.072570075s  INFO vagrant::package:389: Fetched versions for efivar
+        - release: 39
+        - commit: 68daa04654acbe1bbaa17ebfc23c371b39e69c6b
 
-   0.089844103s  INFO vagrant::package:389: Fetched versions for 7zip
+   0.072853740s  INFO vagrant::package:389: Fetched versions for 7zip
         - release: 25.01
         - commit: 5e96a8279489832924056b1fa82f29d5837c9469
 
-   0.089844368s  INFO vagrant::package:389: Fetched versions for inxi
-        - release: 3.3.39.1
-        - commit: c37b4018019e3c138ee0c3bcdb917a3953481411
+   0.073088461s  INFO vagrant::package:389: Fetched versions for sdl2-compat
+        - release: 2.32.58
+        - commit: b5bd4c585f6e1a650b438cb8c843346560786896
 
-   0.091188685s  INFO vagrant::package:389: Fetched versions for npth
-        - release: 1.8
-        - commit: 59987e37a587ea7c4d6485ac9069c2bd199ff9a4
-
-   0.092206270s  INFO vagrant::package:389: Fetched versions for libjxl
-        - release: 0.11.1
-        - commit: 53042ec537712e0df08709524f4df097d42174bc
-
-   0.097104964s  INFO vagrant::package:389: Fetched versions for double-conversion
-        - release: 3.3.1
-        - commit: adc7c2450f99e0ca673238276c93e7896afa7b29
-
-   0.102627662s  INFO vagrant::package:389: Fetched versions for libxpresent
-        - release: 1.0.2
-        - commit: 4d92149372461bf575e8a09b1064a2884c38c3aa
-
-   0.102625775s  INFO vagrant::package:389: Fetched versions for eza
-        - release: 0.23.4
-        - commit: 12a0cb04a25141e0a022d43f8f8fd089485bf697
-
-   0.102893723s  INFO vagrant::package:389: Fetched versions for egl-gbm
-        - release: 1.1.2.1
-        - commit: b24587d4871a630d05e9e26da94c95e6ce4324f2
-
-   0.104176700s  INFO vagrant::package:389: Fetched versions for cssselect
-        - release: 1.3.0
-        - commit: 3756d24b4c5f9619ce8a12e376b11a6e554a1bc6
-
-   0.105316515s  INFO vagrant::package:389: Fetched versions for libnftnl
-        - release: 1.3.0
-        - commit: 5a54b99859fd52d8c7e866b57f6d8fac3e20a78f
-
-   0.109262643s  INFO vagrant::package:389: Fetched versions for hicolor-icon-theme
-        - release: 0.18
-        - commit: 4dc168322b8b0bc06c521e9e90d66a4fa09816d4
-
-   0.110233224s  INFO vagrant::package:389: Fetched versions for ddcutil
-        - release: 2.2.3
-        - commit: 27b535ec32fd86eabd84f36ac50bd5c9ed8f9e76
-
-   0.121278331s  INFO vagrant::package:389: Fetched versions for fdk-aac
-        - release: 2.0.3
-        - commit: d8e6b1a3aa606c450241632b64b703f21ea31ce3
-
-   0.122429276s  INFO vagrant::package:389: Fetched versions for libunwind
-        - release: 1.8.3
-        - commit: 812a5305ff097c864d2786b577d2ca0bda76827f
-
-   0.124353457s  INFO vagrant::package:389: Fetched versions for at-spi2-core
-        - release: 2.58.2
-        - commit: fc73ed3516e7bab1e0beb843cacd0c2f76ebd499
-
-   0.130621664s  INFO vagrant::package:389: Fetched versions for boost
-        - release: 1.89.0
-        - commit: 2f34f0c0970e32ab6a5f5edc9270612cfeed131e
-
-   0.131504489s  INFO vagrant::package:389: Fetched versions for cuda
-        - release: 13.0.2
-
-   0.133150159s  INFO vagrant::package:389: Fetched versions for gsettings-desktop-schemas
+   0.073752076s  INFO vagrant::package:389: Fetched versions for gsettings-desktop-schemas
         - release: 49.1
         - commit: 165f8b58221409a017b9d5a575c40d24336be75c
 
-   0.133380594s  INFO vagrant::package:389: Fetched versions for flac
-        - release: 1.5.0
-        - commit: 9547dbc2ddfca06a70ea937dbb605bbe78ea5f90
+   0.074818245s  INFO vagrant::package:389: Fetched versions for shaderc
+        - release: 2025.4
+        - commit: 64623490690d2655a176a00dbed48e5061982277
 
-   0.135882121s  INFO vagrant::package:389: Fetched versions for fontconfig
+   0.074841064s  INFO vagrant::package:389: Fetched versions for dunst
+        - release: 1.13.0
+        - commit: e2593d337de639d5015806ad6f68261c74a2873a
+
+   0.077740371s  INFO vagrant::package:389: Fetched versions for p11-kit
+        - release: 0.25.10
+        - commit: 90dba4ded391c6232a78ee14db0da76efda7b1c3
+
+   0.082784978s  INFO vagrant::package:389: Fetched versions for eza
+        - release: 0.23.4
+        - commit: 12a0cb04a25141e0a022d43f8f8fd089485bf697
+
+   0.083446017s  INFO vagrant::package:389: Fetched versions for npth
+        - release: 1.8
+        - commit: 59987e37a587ea7c4d6485ac9069c2bd199ff9a4
+
+   0.083759672s  INFO vagrant::package:389: Fetched versions for wget2
+        - release: 2.2.0
+        - commit: 18165409bbd255a3a3df855e2bbba7cd300a1677
+
+   0.084643017s  INFO vagrant::package:389: Fetched versions for ell
+        - release: 0.81
+        - commit: 2e254f51bd82c28f8a2132d58a960fb6b0887f79
+
+   0.090652756s  INFO vagrant::package:389: Fetched versions for libxpresent
+        - release: 1.0.2
+        - commit: 4d92149372461bf575e8a09b1064a2884c38c3aa
+
+   0.091756344s  INFO vagrant::package:389: Fetched versions for nushell
+        - release: 0.108.0
+        - commit: 6ee1109c4162c8ecf38e083ef0d219678afc30d1
+
+   0.095755213s  INFO vagrant::package:389: Fetched versions for double-conversion
+        - release: 3.3.1
+        - commit: adc7c2450f99e0ca673238276c93e7896afa7b29
+
+   0.096771494s  INFO vagrant::package:389: Fetched versions for libyaml
+        - release: 0.2.5
+        - commit: 840b65c40675e2d06bf40405ad3f12dec7f35923
+
+   0.100112188s  INFO vagrant::package:389: Fetched versions for man-pages
+        - release: 6.16
+        - commit: 582fce4c02b32ecfc75351c3494cbf4f307f5b6b
+
+   0.100240109s  INFO vagrant::package:389: Fetched versions for xev
+        - release: 1.2.6
+        - commit: 61c956d8265e9607c48791a325c6eebd86c31366
+
+   0.102599903s  INFO vagrant::package:389: Fetched versions for gdbm
+        - release: 1.26
+
+   0.103751922s  INFO vagrant::package:389: Fetched versions for poppler
+        - release: 25.11.0
+        - commit: e2a03b6e39986d061b4eb663023d570d0b64e02c
+
+   0.110603612s  INFO vagrant::package:389: Fetched versions for speex
+        - release: 1.2.1
+        - commit: 05895229896dc942d453446eba6f9f5ddcf95422
+
+   0.111939894s  INFO vagrant::package:389: Fetched versions for glew
+        - release: 2.2.0
+        - commit: ba71151c6af7435127c54b890808fec2a4aad41f
+
+   0.121959474s  INFO vagrant::package:389: Fetched versions for little-cms
+        - release: 2.17
+        - commit: 4e1eab489d6352fd6488456b1cbfef6f4128f1e8
+
+   0.122742661s  INFO vagrant::package:389: Fetched versions for gsl
+        - release: 2.8
+
+   0.122958344s  INFO vagrant::package:389: Fetched versions for nspr
+        - release: 4.38.2
+
+   0.126209100s  INFO vagrant::package:389: Fetched versions for lynx
+        - release: 2.9.2
+
+   0.126547338s  INFO vagrant::package:389: Fetched versions for eglexternalplatform
+        - release: 1.2.1
+        - commit: cf9f10589775c1b4d90f1df6f417f8cf1bed7ec6
+
+   0.127807351s  INFO vagrant::package:389: Fetched versions for fontconfig
         - release: 2.17.1
         - unstable: 2.17.1
         - commit: 9dd619626a10d26c47997b0549d340524013de0a
 
-   0.137052163s  INFO vagrant::package:389: Fetched versions for nspr
-        - release: 4.38.2
+   0.130412560s  INFO vagrant::package:389: Fetched versions for ogg
+        - release: 1.3.6
+        - commit: 0288fadac3ac62d453409dfc83e9c4ab617d2472
 
-   0.138522586s  INFO vagrant::package:389: Fetched versions for seatd
-        - release: 0.9.1
-        - commit: 900e359f99818df434389eb3a39ee767f1d84f2c
+   0.130695072s  INFO vagrant::package:389: Fetched versions for libxv
+        - release: 1.0.13
+        - commit: d709b8efab4e28b3ad324ca30acdb81a527f69a4
 
-   0.141071248s  INFO vagrant::package:389: Fetched versions for c-ares
-        - release: 1.34.5
-        - unstable: 1.34.5
-        - commit: 1d1b3d4a808dff9359cacb4539ac1b775876dcb6
+   0.131103186s  INFO vagrant::package:389: Fetched versions for xcb-util-cursor
+        - release: 0.1.6
+        - commit: 7b0fa99aa13084a9bf7be4180066f6a74b0adef1
 
-   0.142943699s  INFO vagrant::package:389: Fetched versions for bash-completion
-        - release: 2.17.0
-        - unstable: 2.17.0
-        - commit: acc800f023ab446775c4ab1db7c77db3d2fdc739
+   0.143844847s  INFO vagrant::package:389: Fetched versions for wheel
+        - release: 0.46.1
+        - commit: be9f45b4ee1210b2a815d2eefea56b71efd99d63
 
-   0.143558191s  INFO vagrant::package:389: Fetched versions for elfutils
-        - release: 0.194
-        - commit: a3146e978d2e0f33b9c8106ff288745d31d5f243
+   0.146398107s  INFO vagrant::package:389: Fetched versions for shadow
+        - release: 4.18.0
+        - commit: e7ccd3df6845c184d155a2dd573f52d239c94337
 
-   0.149201417s  INFO vagrant::package:389: Fetched versions for aria2
-        - release: 1.37.0
-        - commit: b4fd7cb1ca03e38ad9d7ab9308b8200cb1d41c25
-
-   0.149810713s  INFO vagrant::package:389: Fetched versions for dejagnu
-        - release: 1.6.3
-
-   0.154067745s  INFO vagrant::package:389: Fetched versions for gstreamer
-        - release: 1.27.2
-        - commit: 0ad8521c950081ce182f41283ee2c102332afbad
-
-   0.162406423s  INFO vagrant::package:389: Fetched versions for appstream
-        - release: 1.1.1
-        - commit: 15e1305ce0a419d83b189f2b472b3658d23de1da
-
-   0.165902046s  INFO vagrant::package:389: Fetched versions for libksba
-        - release: 1.6.7
-        - commit: 8c552d02bb9039007f0d9e6198d48d0d985d7ad3
-
-   0.177970722s  INFO vagrant::package:389: Fetched versions for awww
-        - release: 0.11.2
-        - commit: dd5dce09d5dac8fbfd0e88b54ac46c9e2156fd4b
-
-   0.178180774s  INFO vagrant::package:389: Fetched versions for groff
-        - release: 1.23.0
-
-   0.178217104s  INFO vagrant::package:389: Fetched versions for egl-wayland
-        - release: 1.1.20
-        - commit: ad099c694aa2a8f4d68e19dec6ca16092f2081d9
-
-   0.179984266s  INFO vagrant::package:389: Fetched versions for fastfetch
-        - release: 2.55.1
-        - commit: 1c2c6644d593594327e069ba480af5077f590043
-
-   0.182971630s  INFO vagrant::package:389: Fetched versions for libaom
-        - release: 3.13.1
-        - unstable: 3.13.1
-        - commit: 00f0b9689e09863e54cff53405e93634aa2b1cec
-
-   0.183276989s  INFO vagrant::package:389: Fetched versions for iputils
-        - release: 20250605
-        - commit: 1c4e790b17d351c7e84f14c3d0d6735183319de4
-
-   0.183866690s  INFO vagrant::package:389: Fetched versions for htop
-        - release: 3.4.1
-        - commit: 8a87d3e6617059613ee2515579656853eeee0889
-
-   0.195905549s  INFO vagrant::package:389: Fetched versions for libexpat
-        - release: 2.7.3
-        - commit: 869958a7d518ff8877970c54c5ea631bf804ef10
-
-   0.196616238s  INFO vagrant::package:389: Fetched versions for libnl
-        - release: 3.11.0
-        - commit: ffefc0e7ed32a884bf1d5f8a7ceb341cc4ed3f2a
-
-   0.200801297s  INFO vagrant::package:389: Fetched versions for doxygen
-        - release: 1.15.0
-        - commit: e9c6bde148a2ae5d47bc0d0f388b26933f30adcc
-
-   0.203540156s  INFO vagrant::package:389: Fetched versions for cachecontrol
-        - release: 0.14.4
-        - commit: 00d940052734d98a3448adf4f6726346b6c2722b
-
-   0.206938446s  INFO vagrant::package:389: Fetched versions for liburcu
-        - release: 0.15.5
-        - commit: 91b6c67ef0478f7193485a02e4d5064413aa3029
-
-   0.216784676s  INFO vagrant::package:389: Fetched versions for senpai
-        - release: 0.4.1
-        - commit: 7128ad8f57aff44acaa12f6d8d0a39d4e91f73ff
-
-   0.219255672s  INFO vagrant::package:389: Fetched versions for bottom
-        - release: 0.11.4
-        - commit: 1aaea6d71bac8fb468a743126825a6d81b25a4b8
-
-   0.220675399s  INFO vagrant::package:389: Fetched versions for feh
-        - release: 3.11.2
-        - commit: 00daaacddcce9bc9dc603a0f601ff3bd091e8c04
-
-   0.223472179s  INFO vagrant::package:389: Fetched versions for cups
-        - release: 2.4.14
-        - commit: 214db20fed36c07abd26f0b677bb2464e8724136
-
-   0.224511970s  INFO vagrant::package:389: Fetched versions for librsvg
-        - release: 2.61.3
-        - unstable: 2.61.3
-        - commit: eb0f6633a737abb0efbeb2d558f5d7af29574dad
-
-   0.226612599s  INFO vagrant::package:389: Fetched versions for foot
-        - release: 1.25.0
-        - commit: fc9625678fc7e295e7a7e03a5d47db21d4be3010
-
-   0.226686753s  INFO vagrant::package:389: Fetched versions for ell
-        - release: 0.81
-        - commit: 2e254f51bd82c28f8a2132d58a960fb6b0887f79
-
-   0.226990901s  INFO vagrant::package:389: Fetched versions for libxrandr
+   0.155817810s  INFO vagrant::package:389: Fetched versions for libxrandr
         - release: 1.5.4
         - commit: 242fae8378b213f8e477bde1c4be2fb654201b3d
 
-   0.229117572s  INFO vagrant::package:389: Fetched versions for abseil-cpp
+   0.160312776s  INFO vagrant::package:389: Fetched versions for tealdeer
+        - release: 1.8.1
+        - commit: b3cd7b1c216656ea3416a86104363589157477dc
+
+   0.161393992s  INFO vagrant::package:389: Fetched versions for nv-codec-headers
+        - release: 13.0.19.0
+        - commit: 876af32a202d0de83bd1d36fe74ee0f7fcf86b0d
+
+   0.161794216s  INFO vagrant::package:389: Fetched versions for seatd
+        - release: 0.9.1
+        - commit: 900e359f99818df434389eb3a39ee767f1d84f2c
+
+   0.164018421s  INFO vagrant::package:389: Fetched versions for fastfetch
+        - release: 2.55.1
+        - commit: 09362b236c6891b90e13c2915a0a1586f291b402
+
+   0.164020793s  INFO vagrant::package:389: Fetched versions for dust
+        - release: 1.2.3
+        - commit: 62bf1e14de73b14bdf5c691be29e6dcc4de352aa
+
+   0.164278615s  INFO vagrant::package:389: Fetched versions for xeyes
+        - release: 1.3.1
+        - commit: 7dc4f720f57471d2eccefd87cdca54494cf75eb5
+
+   0.169347560s  INFO vagrant::package:389: Fetched versions for avahi
+        - release: 0.8
+        - unstable: 0.9-rc2
+        - commit: 905028bdf6510033d57aeb119df15b7915ba8b16
+
+   0.176942265s  INFO vagrant::package:389: Fetched versions for libzip
+        - release: 1.11.4
+        - commit: e16526dbb751dc31129b32ba667ce6aed5c42f97
+
+   0.176942236s  INFO vagrant::package:389: Fetched versions for packaging
+        - release: 25.0
+        - commit: f61a88bac669ab6344a77c97ee5679fe701981b6
+
+   0.178535026s  INFO vagrant::package:389: Fetched versions for egl-gbm
+        - release: 1.1.2.1
+        - commit: a73cbcec5e3911ea6b075df63f6f4e559392926c
+
+   0.186030323s  INFO vagrant::package:389: Fetched versions for doxygen
+        - release: 1.15.0
+        - commit: 77c43d61a29dcda40b6b7b9498805dc813a8a093
+
+   0.186220999s  INFO vagrant::package:389: Fetched versions for markupsafe
+        - release: 3.0.3
+        - commit: b2e4d9c7687be25695fffbe93a37622302b24fb1
+
+   0.186286775s  INFO vagrant::package:389: Fetched versions for abseil-cpp
         - unstable: 20250814.1
         - release: 20250814.1
         - commit: b9baf19a19821c22725f6fa7eedc107e47c33e5f
 
-   0.232491484s  INFO vagrant::package:389: Fetched versions for man-pages
-        - release: 6.16
-        - commit: e26592fe3f701bf68eba35dcd99258d3d61d030d
-
-   0.242617255s  INFO vagrant::package:389: Fetched versions for iana-etc
-        - release: 20251120
-
-   0.246455489s  INFO vagrant::package:389: Fetched versions for flatpak
-        - release: 1.17.0
-        - commit: 40640819d4f9bac101b233555ff91e81cacce5f9
-
-   0.247092776s  INFO vagrant::package:389: Fetched versions for egl-x11
-        - release: 1.0.3
-        - commit: d808ba433b4deb443f5d91062a6cf9c27f0272b3
-
-   0.248946206s  INFO vagrant::package:389: Fetched versions for nss
-        - release: 3.118.1
-        - commit: 28cc2eb89479695ce2b2cb0933dccaae85887697
-
-   0.251391814s  INFO vagrant::package:389: Fetched versions for cyrus-sasl
-        - release: 2.1.28
-        - commit: ac0c278817a082c625c496ec812318c019e0b96f
-
-   0.254503429s  INFO vagrant::package:389: Fetched versions for gtk
-        - release: 4.20.3
-        - unstable: 4.21.3
-        - commit: 69ca8dfeba923a6f7a2ad0386aa65f6d85231dcc
-        - 2: 2.24.33
-        - 3: 3.24.51
-
-   0.262091173s  INFO vagrant::package:389: Fetched versions for bdwgc
-        - release: 8.2.10
-        - commit: a8bd4189437eb08bce0f9bba1750d6c7a2d89a7d
-
-   0.265964365s  INFO vagrant::package:389: Fetched versions for libnsl
-        - release: 2.0.1
-        - commit: d6438ee1c45ef8161342b0e8e2c76a6184dbb0c5
-
-   0.266190161s  INFO vagrant::package:389: Fetched versions for fcft
-        - release: 3.3.2
-        - commit: a78682f28e67ff31177aa218224501b28a0d4c79
-
-   0.267373500s  INFO vagrant::package:389: Fetched versions for dtc
-        - release: 1.7.2
-        - commit: 7f3184a6c550bb8fb59e93c9901d75dced889dcf
-
-   0.270012577s  INFO vagrant::package:389: Fetched versions for bc
-        - release: 7.0.3
-        - unstable: 7.1.0
-        - commit: 8a9b0fc7866792c437342039b5f2ae5ee432b79c
-
-   0.276048860s  INFO vagrant::package:389: Fetched versions for desktop-file-utils
-        - release: 0.28
-        - unstable: 0.28
-        - commit: 673ec76e881b8dd7f710b846ae0418c09e6f5439
-
-   0.280488551s  INFO vagrant::package:389: Fetched versions for brotli
-        - release: 1.2.0
-        - unstable: 1.2.0
-        - commit: 5fa73e23bee34f84148719576a7a434f0fc43dc8
-
-   0.281295371s  INFO vagrant::package:389: Fetched versions for libliftoff
-        - release: 0.5.0
-        - commit: 9114b1e4dc8646b8f6512518567477926922905e
-
-   0.287154017s  INFO vagrant::package:389: Fetched versions for libarchive
-        - release: 3.8.3
-        - commit: 8ef2084104887af3401d91b36eab2496767c81a8
-
-   0.288674432s  INFO vagrant::package:389: Fetched versions for bash
-        - release: 5.3
-        - unstable: 5.3
-
-   0.288940568s  INFO vagrant::package:389: Fetched versions for libffi
-        - release: 3.5.2
-        - commit: 3276df05a758f8081adb6a910abf8de627ebda46
-
-   0.307819271s  INFO vagrant::package:389: Fetched versions for libsamplerate
-        - release: 0.2.2
-        - commit: 2ccde9568cca73c7b32c97fefca2e418c16ae5e3
-
-   0.307834488s  INFO vagrant::package:389: Fetched versions for hwdata
-        - release: 0.401
-        - commit: 84014f0025c0a95060acc4cd5c47432f517b3411
-
-   0.308882683s  INFO vagrant::package:389: Fetched versions for flex
-        - release: 2.6.4
-        - commit: bf254c75b1e0d2641ebbd7fc85fb183f36a62ea7
-
-   0.317278620s  INFO vagrant::package:389: Fetched versions for libxres
-        - release: 1.2.3
-        - commit: 30c789e5065f7af7d6a03c09e3ceb073ed810bdd
-
-   0.320438147s  INFO vagrant::package:389: Fetched versions for imagemagick
-        - release: 7.1.2.8
-        - commit: f46647c0303824b005575ce8edebd018178fbfd9
-
-   0.324143117s  INFO vagrant::package:389: Fetched versions for little-cms
-        - release: 2.17
-        - commit: 4e1eab489d6352fd6488456b1cbfef6f4128f1e8
-
-   0.324774493s  INFO vagrant::package:389: Fetched versions for floorp
-        - release: 12.7.0
-        - commit: 12ebdcaa46f2dc055e7c9a0ec97ef021bec8ed32
-
-   0.324799350s  INFO vagrant::package:389: Fetched versions for numpy
-        - release: 2.3.5
-        - commit: 4a24fc4eb8681e69f2910f0bfc1e929be0453ad0
-
-   0.331152767s  INFO vagrant::package:389: Fetched versions for alacritty
-        - release: 0.16.1
-        - commit: 52031ea91980cee1ee0ec087d214e98b2b1de4bc
-
-   0.342030606s  INFO vagrant::package:389: Fetched versions for libxcrypt
-        - release: 4.5.2
-        - commit: d6faad7de2bdbff18da4c5379e97871ec3839e7f
-
-   0.353215049s  INFO vagrant::package:389: Fetched versions for freeglut
-        - release: 3.8.0
-        - unstable: 3.8.0
-        - commit: b69a1e5be367b0d7d40df0156910f787d5073cc1
-
-   0.354638313s  INFO vagrant::package:389: Fetched versions for curl
-        - release: 8.17.0
-        - unstable: 8.17.0
-        - commit: 2b57d415e5a0d0afceeb90c54b45a1644a4f8a40
-
-   0.356814568s  INFO vagrant::package:389: Fetched versions for libcap
-        - release: 2.77
-        - commit: 542d7d86ecd2129dd5fe7e5b31ba307304f5b319
-
-   0.358170741s  INFO vagrant::package:389: Fetched versions for caddy
-        - release: 2.10.2
-        - commit: 67a9e0657e60df8c78510065e8977d86ee17d01c
-        - unstable: 2.10.2
-
-   0.359027424s  INFO vagrant::package:389: Fetched versions for lxml
-        - release: 6.0.2
-        - commit: 89c1495c6dca402c2a30478f9a76fd8d5a04a37b
-
-   0.359458987s  INFO vagrant::package:389: Fetched versions for libpcap
-        - release: 1.10.5
-        - commit: 90543f385deaa8268520110f3b839fbf2fb64748
-
-   0.359568771s  INFO vagrant::package:389: Fetched versions for libusb
-        - release: 1.0.29
-        - unstable: 1.0.29
-        - commit: 9ceaa526fe728c11e408dcb7a9164d3c1d61ed9e
-
-   0.362366776s  INFO vagrant::package:389: Fetched versions for dunst
-        - release: 1.13.0
-        - commit: e2593d337de639d5015806ad6f68261c74a2873a
-
-   0.362820332s  INFO vagrant::package:389: Fetched versions for markupsafe
-        - release: 3.0.3
-        - commit: b2e4d9c7687be25695fffbe93a37622302b24fb1
-
-   0.365710138s  INFO vagrant::package:389: Fetched versions for dhcpcd
-        - release: 10.3.0
-        - commit: 9c48f4c7dd893228ad1493ea5347c28ced2a4190
-
-   0.375678912s  INFO vagrant::package:389: Fetched versions for bind-utils
-        - release: 9.21.15
-        - unstable: 9.21.15
-
-   0.375803726s  INFO vagrant::package:389: Fetched versions for libass
-        - release: 0.17.4
-        - commit: e60dddb7db62cc009175843bdb0b0dfedceebedb
-
-   0.376771913s  INFO vagrant::package:389: Fetched versions for liblinear
-        - release: 249
-        - commit: dbb92699c33b37d0217d8d8b34d72c1ff4176437
-
-   0.379796482s  INFO vagrant::package:389: Fetched versions for elogind
+   0.187002209s  INFO vagrant::package:389: Fetched versions for elogind
         - release: 255.17
         - unstable: 257-pre
         - commit: c09b9caece0459ec56b234a87583e1bfac3c3271
 
-   0.389237316s  INFO vagrant::package:389: Fetched versions for i3
-        - release: 4.24
-        - commit: b1e99d8ff0f5bd78625dfc740bd07e22b6904b36
-
-   0.393031965s  INFO vagrant::package:389: Fetched versions for libseccomp
-        - release: 2.6.0
-        - commit: 2bc718995e782a8473ba9db8509a398ef69b2edc
-
-   0.394136731s  INFO vagrant::package:389: Fetched versions for libxscrnsaver
-        - release: 1.2.5
-        - commit: 60c957ba8a727d01b376da0142aef7e18aa86fe1
-
-   0.394163394s  INFO vagrant::package:389: Fetched versions for ffmpeg
-        - release: 8.0.1
-        - unstable: 8.1-dev
-        - commit: 0486ad61ceb71b7a45976e6e45a4d2a2813aef75
-
-   0.394929474s  INFO vagrant::package:389: Fetched versions for gtkmm
-        - release: 4.21.0
-        - 3: 3.24.10
-        - commit: c71e35260bbf89f2a5b4fa42199ec44c0010751e
-
-   0.396529143s  INFO vagrant::package:389: Fetched versions for cython
-        - release: 3.2.1
-        - unstable: 3.2.1
-        - commit: f469670422339c74ae09d59b57baf6288e5debb9
-
-   0.396861489s  INFO vagrant::package:389: Fetched versions for autoconf
-        - release: 2.72
-        - commit: 8ac9edd1a71fe24ed94d70f1669e4fd6a81fa585
-
-   0.405985470s  INFO vagrant::package:389: Fetched versions for flit
-        - release: 3.12.0
-        - commit: 6671051ac2c270b474a23c568a944ca9d5f27ec0
-
-   0.414054438s  INFO vagrant::package:389: Fetched versions for alsa-lib
-        - release: 1.2.14
-        - commit: ebfc29110c3785a2656f2543e369ee1f41a34b5a
-
-   0.416037293s  INFO vagrant::package:389: Fetched versions for libfuse
-        - release: 3.17.4
-        - 2: 2.9.9
-        - commit: 1e19235c546ae3ea002b3b1f5b7e877a5687803e
-
-   0.422216820s  INFO vagrant::package:389: Fetched versions for libxcursor
-        - release: 1.2.3
-        - commit: 2197ca8cbb743d2fcc43c155396a724cad8f26f3
-
-   0.430511998s  INFO vagrant::package:389: Fetched versions for lynx
-        - release: 2.9.2
-
-   0.432274692s  INFO vagrant::package:389: Fetched versions for libdatachannel
-        - release: 0.24.0
-        - commit: 8c31097ea78f051e857d0aa1b2f6efb26cd12b7e
-
-   0.438438991s  INFO vagrant::package:389: Fetched versions for libpciaccess
-        - release: 0.18.1
-        - commit: 191dfe0707e2a93c08e4b3e99454b6146c5bfca2
-
-   0.438880493s  INFO vagrant::package:389: Fetched versions for libsoup
-        - release: 3.6.5
-        - commit: cc1d4389ffd1b70f7eaee3cecfa66664aff2a5ef
-
-   0.440017073s  INFO vagrant::package:389: Fetched versions for autoconf-archive
-        - release: 2024.10.16
-
-   0.443174081s  INFO vagrant::package:389: Fetched versions for nushell
-        - release: 0.108.0
-        - commit: 45ed7f2285c2281ed58e8ad5706cba53165263b4
-
-   0.451010622s  INFO vagrant::package:389: Fetched versions for fmt
-        - release: 12.1.0
-        - commit: 790b9389ae99c4ddebdd2736a8602eca1fec684e
-
-   0.454951568s  INFO vagrant::package:389: Fetched versions for libutempter
-        - release: 1.2.3
-        - commit: 4caa8ab94ff8b207228fa723a89214bf5e929321
-
-   0.458669209s  INFO vagrant::package:389: Fetched versions for mbedtls
-        - release: 4.0.0
-        - commit: caaa93884c9aefb1bb416a64ea26c1a0eef29140
-
-   0.460250336s  INFO vagrant::package:389: Fetched versions for dust
-        - release: 1.2.3
-        - commit: 62bf1e14de73b14bdf5c691be29e6dcc4de352aa
-
-   0.463621842s  INFO vagrant::package:389: Fetched versions for libxshmfence
+   0.187241882s  INFO vagrant::package:389: Fetched versions for libxshmfence
         - release: 1.3.3
         - commit: 2c3d85cf655f4c9a605f0353cc742f186af52835
 
-   0.463841423s  INFO vagrant::package:389: Fetched versions for libxv
-        - release: 1.0.13
-        - commit: d709b8efab4e28b3ad324ca30acdb81a527f69a4
+   0.202844967s  INFO vagrant::package:389: Fetched versions for libxvmc
+        - release: 1.0.14
+        - commit: a819142dc8b8efd29aa90e5cfbcd8cd892e51033
 
-   0.464603353s  INFO vagrant::package:389: Fetched versions for libvpl
-        - release: 2.15.0
-        - commit: 3591aa94dfbdf4566cd19f3e976ae5b769ab4fa2
+   0.203697246s  INFO vagrant::package:389: Fetched versions for which
+        - release: 2.23
 
-   0.474642924s  INFO vagrant::package:389: Fetched versions for inih
-        - release: 62
-        - unstable: 62
-        - commit: 8e06f6b77b5d4471bdc6d85ada81b67d37354a5c
+   0.209034336s  INFO vagrant::package:389: Fetched versions for nvidia
+        - release: 580.105.08
 
-   0.478216516s  INFO vagrant::package:389: Fetched versions for gumbo-parser
-        - release: 0.13.2
-        - commit: 6dddad6503480afc1a1379187aa114415ac7e640
+   0.211147573s  INFO vagrant::package:389: Fetched versions for openjpeg
+        - release: 2.5.4
+        - commit: 1ad9bec2c12ee445ce23e660f5e4fe870b9d5e09
 
-   0.481264837s  INFO vagrant::package:389: Fetched versions for freetype
+   0.211328488s  INFO vagrant::package:389: Fetched versions for gstreamer
+        - release: 1.27.2
+        - commit: 447a410d06b4476c074352e2a6d7e9bcd7ddfa8b
+
+   0.214119988s  INFO vagrant::package:389: Fetched versions for foot
+        - release: 1.25.0
+        - commit: fc9625678fc7e295e7a7e03a5d47db21d4be3010
+
+   0.225443311s  INFO vagrant::package:389: Fetched versions for xcb-util-errors
+        - release: 1.0.1
+        - commit: d5435b07a895a55c5093a6415c09496de258391c
+
+   0.226192991s  INFO vagrant::package:389: Fetched versions for elfutils
+        - release: 0.194
+        - commit: 4a5cf8be906d5991e7527e69e3f2ceaa74811301
+
+   0.226662432s  INFO vagrant::package:389: Fetched versions for lz4
+        - release: 131
+        - commit: 3c08d0d8cb55515d315e024d5bd679a1ffb30e70
+
+   0.229977514s  INFO vagrant::package:389: Fetched versions for shared-mime-info
+        - release: 2.4
+        - commit: 381dba8e91427336b993e976ab1c785e6ece78f5
+
+   0.230165637s  INFO vagrant::package:389: Fetched versions for nss
+        - release: 3.118.1
+        - commit: 28cc2eb89479695ce2b2cb0933dccaae85887697
+
+   0.239787951s  INFO vagrant::package:389: Fetched versions for xf86-input-evdev
+        - release: 2.11.0
+        - commit: 0b5b97bc6bad9d0dc1ae9d5de966882a86f1e55a
+
+   0.241243430s  INFO vagrant::package:389: Fetched versions for e2fsprogs
+        - release: 1.47.3
+        - commit: 0b2752ce6276b383a5254cd766204f81f41b6631
+
+   0.242600497s  INFO vagrant::package:389: Fetched versions for awww
+        - release: 0.11.2
+        - commit: 05f0e470281b5ad45e3bf11c4314ea64befee25c
+
+   0.249894440s  INFO vagrant::package:389: Fetched versions for gdk-pixbuf
+        - release: 2.44.4
+        - unstable: 2.44.4
+        - commit: 7bfb948a3f10e3d7aaecf0bbb9aa5a0934acf5b4
+
+   0.252620019s  INFO vagrant::package:389: Fetched versions for fcft
+        - release: 3.3.2
+        - commit: a78682f28e67ff31177aa218224501b28a0d4c79
+
+   0.254683175s  INFO vagrant::package:389: Fetched versions for libxres
+        - release: 1.2.3
+        - commit: 30c789e5065f7af7d6a03c09e3ceb073ed810bdd
+
+   0.256272725s  INFO vagrant::package:389: Fetched versions for spirv-tools
+        - release: 2025.4
+        - sdk: 1.4.328.1
+        - commit: 971a7b6e8d7740035bbff089bbbf9f42951ecfd5
+
+   0.256726957s  INFO vagrant::package:389: Fetched versions for glib
+        - release: 2.86.2
+        - unstable: 2.87.0
+        - commit: 82d1b394267b951fd50452a6358c27a9e4b76d27
+
+   0.270708920s  INFO vagrant::package:389: Fetched versions for limine
+        - release: 10.3.2
+        - commit: 60fa408439bb0c7a83fe84476c337a5a2a04a6fb
+
+   0.271120704s  INFO vagrant::package:389: Fetched versions for obs-studio
+        - release: 32.0.2
+        - commit: d97e5ad820abcccf826faf897df4c7f511857cd4
+
+   0.271213534s  INFO vagrant::package:389: Fetched versions for mbedtls
+        - release: 4.0.0
+        - commit: caaa93884c9aefb1bb416a64ea26c1a0eef29140
+
+   0.271541848s  INFO vagrant::package:389: Fetched versions for libxslt
+        - release: 1.1.44
+        - commit: bd558135ce9b4202fd66d3bb1154ca711a268328
+
+   0.272524923s  INFO vagrant::package:389: Fetched versions for egl-wayland
+        - release: 1.1.20
+        - commit: ad099c694aa2a8f4d68e19dec6ca16092f2081d9
+
+   0.275317350s  INFO vagrant::package:389: Fetched versions for alacritty
+        - release: 0.16.1
+        - commit: 52031ea91980cee1ee0ec087d214e98b2b1de4bc
+
+   0.277144715s  INFO vagrant::package:389: Fetched versions for libxxf86dga
+        - release: 1.1.6
+        - commit: 6a9b590992e7d94a63d935bfe44402712f77dc0f
+
+   0.278598902s  INFO vagrant::package:389: Fetched versions for tidy
+        - release: 5.8.0
+        - next: 5.9.14-next
+        - commit: d08ddc2860aa95ba8e301343a30837f157977cba
+
+   0.279328394s  INFO vagrant::package:389: Fetched versions for pango
+        - release: 1.57.0
+        - commit: 2fb8d7782ec0e166aeeb961402db8afae521d574
+
+   0.281214942s  INFO vagrant::package:389: Fetched versions for gettext
+        - release: 0.26
+
+   0.281637201s  INFO vagrant::package:389: Fetched versions for entr
+        - release: 5.7
+        - commit: 3f36ded679774eee271b11024757cecefabb5e00
+
+   0.281732808s  INFO vagrant::package:389: Fetched versions for llvm
+        - release: 21.1.6
+        - unstable: 21.1.6
+        - commit: 5d38cddc3b00b428f848fdeddc8334c4560db36a
+
+   0.295856779s  INFO vagrant::package:389: Fetched versions for dtc
+        - release: 1.7.2
+        - commit: 7f3184a6c550bb8fb59e93c9901d75dced889dcf
+
+   0.307878304s  INFO vagrant::package:389: Fetched versions for whois
+        - release: 5.6.5
+        - commit: 64c3426493e145e1fad33a37247e924b0539e4dd
+
+   0.307895148s  INFO vagrant::package:389: Fetched versions for openldap
+        - release: 2.6.10
+        - commit: ff0f9d94ac31deaa942869292605a1e40818e3ee
+
+   0.308733317s  INFO vagrant::package:389: Fetched versions for maim
+        - release: 5.8.1
+        - commit: 2c799f33746e908a966404302321add1d6a2ffcf
+
+   0.309909319s  INFO vagrant::package:389: Fetched versions for numpy
+        - release: 2.3.5
+        - commit: 2c2a0d3e905a2b97543988a2d90794cfa49ad583
+
+   0.310570453s  INFO vagrant::package:389: Fetched versions for mercurial
+        - release: 7.1.2
+
+   0.311895555s  INFO vagrant::package:389: Fetched versions for xcb-util-image
+        - release: 0.4.1
+        - commit: 5ce46a7f14b88f6c69cdb5cba4cc106fbfd69402
+
+   0.315165397s  INFO vagrant::package:389: Fetched versions for ani-cli
+        - release: 4.10
+        - commit: c8aa791982cd4c5d72234c590a2834cfa5a712e6
+
+   0.321000365s  INFO vagrant::package:389: Fetched versions for xf86-input-libinput
+        - release: 1.5.0
+        - commit: ac862672e4d04e78f2b647af9d3d14544454e4b9
+
+   0.331339855s  INFO vagrant::package:389: Fetched versions for libxscrnsaver
+        - release: 1.2.5
+        - commit: 60c957ba8a727d01b376da0142aef7e18aa86fe1
+
+   0.332935116s  INFO vagrant::package:389: Fetched versions for sqlite
+        - release: 3.51.0
+        - commit: 059b8d9c04a805c7236912443afa510b6ebbd40e
+
+   0.333086971s  INFO vagrant::package:389: Fetched versions for egl-x11
+        - release: 1.0.3
+        - commit: d808ba433b4deb443f5d91062a6cf9c27f0272b3
+
+   0.336945330s  INFO vagrant::package:389: Fetched versions for shellcheck
+        - release: 0.11.0
+        - commit: da190f1a8a204b7bb3ba7fcccfb2b6ffe52461e2
+
+   0.341097864s  INFO vagrant::package:389: Fetched versions for freeglut
+        - release: 3.8.0
+        - unstable: 3.8.0
+        - commit: b69a1e5be367b0d7d40df0156910f787d5073cc1
+
+   0.349938224s  INFO vagrant::package:389: Fetched versions for lm-sensors
+        - release: 3.6.2
+        - commit: c297368a0e4b0442fca06bae58a0bd3386629af0
+
+   0.353087326s  INFO vagrant::package:389: Fetched versions for strace
+        - release: 6.17
+        - commit: 69149c1883d67bcafcdee1d10b5c6ebbc51ff812
+
+   0.353428134s  INFO vagrant::package:389: Fetched versions for fdk-aac
+        - release: 2.0.3
+        - commit: d8e6b1a3aa606c450241632b64b703f21ea31ce3
+
+   0.357908951s  INFO vagrant::package:389: Fetched versions for giflib
+        - release: 5.2.2
+        - commit: 8bed392c280ad2c237e8bf1beca6f8f68f893e87
+
+   0.361217652s  INFO vagrant::package:389: Fetched versions for bash
+        - release: 5.3
+        - unstable: 5.3
+
+   0.368435270s  INFO vagrant::package:389: Fetched versions for libxxf86vm
+        - release: 1.1.6
+        - commit: 63134ba6acf046099fc112e08942ff6549f2286a
+
+   0.368732001s  INFO vagrant::package:389: Fetched versions for pastel
+        - release: 0.11.0
+        - commit: b60e89932629b2d162e1ff9f3976a5a0ef1e5db9
+
+   0.372389564s  INFO vagrant::package:389: Fetched versions for alsa-lib
+        - release: 1.2.14
+        - commit: ebfc29110c3785a2656f2543e369ee1f41a34b5a
+
+   0.374155745s  INFO vagrant::package:389: Fetched versions for tinyxxd
+        - release: 1.3.7
+        - commit: 2a872e538bdda2c56d3c01d13fb408768c9f335b
+
+   0.379683314s  INFO vagrant::package:389: Fetched versions for sxhkd
+        - release: 0.6.3
+        - commit: 2cc7aca40f38cd47fbeea1f37fe310ef34386435
+
+   0.380184940s  INFO vagrant::package:389: Fetched versions for libxt
+        - release: 1.3.1
+        - commit: 170a4edb3189810810ffbf2543bfb8ab96e1898c
+
+   0.382650142s  INFO vagrant::package:389: Fetched versions for sed
+        - release: 4.9
+
+   0.382858357s  INFO vagrant::package:389: Fetched versions for xh
+        - release: 0.25.0
+        - commit: ec96ae461f34e7d3adc8060e6aa6cff9cceef3c5
+
+   0.400776434s  INFO vagrant::package:389: Fetched versions for mako
+        - release: 1.3.10
+        - commit: 91232d80e4914fd82b42628bb2e2b061abb3dcfc
+
+   0.401429789s  INFO vagrant::package:389: Fetched versions for openssh
+        - release: 10.2p1
+        - commit: 0fb1f3c9955d78fb0959842202b9ecfc36e37486
+
+   0.402706577s  INFO vagrant::package:389: Fetched versions for xcb-util-keysyms
+        - release: 0.4.1
+        - commit: 72e9fc14ba16f9e1830d2f35919862abc53abcf3
+
+   0.404646697s  INFO vagrant::package:389: Fetched versions for lmdb
+        - release: 0.9.33
+
+   0.405303700s  INFO vagrant::package:389: Fetched versions for appstream
+        - release: 1.1.1
+        - commit: 15e1305ce0a419d83b189f2b472b3658d23de1da
+
+   0.405667575s  INFO vagrant::package:389: Fetched versions for glib-networking
+        - release: 2.80.1
+        - unstable: 2.80.1
+        - commit: d9f2e67e755516027ab00066dcadf82b4f2ac88e
+
+   0.409715852s  INFO vagrant::package:389: Fetched versions for mesa
+        - release: 25.3.0
+        - commit: 3aa4be52f3abd2cf40d99ab3f7aa014991e90313
+
+   0.409822350s  INFO vagrant::package:389: Fetched versions for patch
+        - release: 2.8
+
+   0.413775686s  INFO vagrant::package:389: Fetched versions for mupdf
+        - release: 1.26.11
+        - commit: 5b5961cbb35653664a8ea206d26c7cfa898f5ac9
+
+   0.414585978s  INFO vagrant::package:389: Fetched versions for popt
+        - release: 1.19
+        - commit: 63f096798125e96a0125faa477350f61901f3570
+
+   0.419766718s  INFO vagrant::package:389: Fetched versions for mkfontscale
+        - release: 1.2.3
+        - commit: 9c9c8834dc4ce17d0e878a28d36ff5e736bddb9b
+
+   0.425939515s  INFO vagrant::package:389: Fetched versions for wlroots
+        - release: 0.19.2
+        - commit: abf80b529e48823e21215a6ccc4653e2c2a4a565
+
+   0.432221675s  INFO vagrant::package:389: Fetched versions for six
+        - release: 1.17.0
+        - commit: e9da069f35bb9add9b17ecb405b474981227fcb8
+
+   0.439067836s  INFO vagrant::package:389: Fetched versions for squashfs-tools
+        - release: 4.7.4
+        - commit: 53e5a67aac42e0bc9ad4a249156d7d549ce7436c
+
+   0.441678567s  INFO vagrant::package:389: Fetched versions for feh
+        - release: 3.11.2
+        - commit: 00daaacddcce9bc9dc603a0f601ff3bd091e8c04
+
+   0.450732629s  INFO vagrant::package:389: Fetched versions for gnupg
+        - release: 2.4.8
+        - unstable: 2.5.14
+        - commit: 32a3e5f83bbb8c6f21fcc11d28330e136fbe1785
+
+   0.455449443s  INFO vagrant::package:389: Fetched versions for alsa-plugins
+        - release: 1.2.12
+        - commit: 52574cb5ccbb8b546df2759e4b341a20332269b6
+
+   0.458075129s  INFO vagrant::package:389: Fetched versions for wine
+        - release: 10.19
+        - unstable: 10.19
+        - commit: f41f67806b9d630e7fbb0e31e3a166e84212dc9b
+
+   0.459484240s  INFO vagrant::package:389: Fetched versions for senpai
+        - release: 0.4.1
+        - commit: 7128ad8f57aff44acaa12f6d8d0a39d4e91f73ff
+
+   0.467865228s  INFO vagrant::package:389: Fetched versions for sudo
+        - release: 1.9.17p2
+        - commit: 02ff3afc1b71f602b62ce0be5efc35892d95910a
+
+   0.468964972s  INFO vagrant::package:389: Fetched versions for libxtst
+        - release: 1.2.5
+        - commit: abf3ff74b97c4231d2324d66318bfa1d22e44913
+
+   0.469100749s  INFO vagrant::package:389: Fetched versions for sxwm
+        - release: 1.7
+        - commit: 587059c2ee76a82709693659689577f2772b6b2a
+
+   0.470272415s  INFO vagrant::package:389: Fetched versions for girara
+        - release: 0.4.5
+        - commit: e32e36c655b49d4187c580ee60e814191d180e77
+
+   0.474908688s  INFO vagrant::package:389: Fetched versions for gtk
+        - release: 4.20.3
+        - unstable: 4.21.3
+        - commit: ef42ce4e4d9580d83b0498d3865df9b81f9ac6ac
+        - 2: 2.24.33
+        - 3: 3.24.51
+
+   0.475292014s  INFO vagrant::package:389: Fetched versions for potrace
+        - release: 1.16
+
+   0.479064878s  INFO vagrant::package:389: Fetched versions for tllist
+        - release: 1.1.0
+        - commit: 05b463da2ee4a81903126756689282f99f88cc30
+
+   0.485836712s  INFO vagrant::package:389: Fetched versions for linux
+        - release: 6.17.9
+        - mainline: 6.18-rc7
+        - next: 20251125
+        - commit: 30f09200cc4aefbd8385b01e41bde2e4565a6f0e
+
+   0.486063290s  INFO vagrant::package:389: Fetched versions for openssl
+        - release: 3.6.0
+        - commit: 5b761751b6c5f725ebb71eebcbbfdc96853eb427
+
+   0.487784807s  INFO vagrant::package:389: Fetched versions for freetype
         - release: 2.14.1
         - unstable: 2.14.1
         - commit: 6d4977d66033e7841219bdc2b686a97552091ade
 
-   0.486345427s  INFO vagrant::package:389: Fetched versions for llvm
-        - release: 21.1.6
-        - unstable: 21.1.6
-        - commit: 3dcdb4c7658fb955d61fde5bd5232bdeadfc7eeb
-
-   0.487067756s  INFO vagrant::package:389: Fetched versions for entr
-        - release: 5.7
-        - commit: 3f36ded679774eee271b11024757cecefabb5e00
-
-   0.487112376s  INFO vagrant::package:389: Fetched versions for libslirp
-        - release: 4.9.1
-        - commit: 027a9abeba1ee97cff27c9002e71af0d4fc13607
-
-   0.487974486s  INFO vagrant::package:389: Fetched versions for jansson
-        - release: 2.14.1
-        - commit: 154f8919fb0d3778282b797789ad985e3d99fdc8
-
-   0.493742980s  INFO vagrant::package:389: Fetched versions for cairo
-        - release: 1.18.4
-        - unstable: 1.18.4
-        - commit: 04656d7450e229622546fd2b11496aa58c44181d
-
-   0.495511669s  INFO vagrant::package:389: Fetched versions for libbsd
-        - release: 0.12.2
-        - commit: 22fddb16f8430d64b82a1ea08602be5e61ac203b
-
-   0.500836537s  INFO vagrant::package:389: Fetched versions for libassuan
-        - release: 3.0.2
-        - commit: 563252ade0684fb197c095da2d6272dfc763a852
-
-   0.500956834s  INFO vagrant::package:389: Fetched versions for mercurial
-        - release: 7.1.2
-
-   0.503065692s  INFO vagrant::package:389: Fetched versions for libgcrypt
-        - release: 1.11.2
-        - commit: 670646bbf185587c7de039430d71a38b7f0f8597
-
-   0.505055490s  INFO vagrant::package:389: Fetched versions for lz4
-        - release: 131
-        - commit: 3c08d0d8cb55515d315e024d5bd679a1ffb30e70
-
-   0.505285123s  INFO vagrant::package:389: Fetched versions for setconf
-        - release: 0.7.7
-        - commit: e77f567307cdd89792b405570201f42a9b763650
-
-   0.509524628s  INFO vagrant::package:389: Fetched versions for libx11
-        - release: 1.8.12
-        - commit: 369c6a806554429798b531cbf4267d8c8fcf6ed1
-
-   0.512087080s  INFO vagrant::package:389: Fetched versions for libxcvt
-        - release: 0.1.3
-        - commit: 40de74eb5d7c402f82fe1f61beea515d17bcdd2a
-
-   0.512685283s  INFO vagrant::package:389: Fetched versions for alsa-plugins
-        - release: 1.2.12
-        - commit: 52574cb5ccbb8b546df2759e4b341a20332269b6
-
-   0.516326519s  INFO vagrant::package:389: Fetched versions for gzip
-        - release: 1.14
-
-   0.524836451s  INFO vagrant::package:389: Fetched versions for libspng
-        - release: 0.7.4
-        - commit: adc94393dbeddf9e027d1b2dfff7c1bab975224e
-
-   0.529387775s  INFO vagrant::package:389: Fetched versions for fftw
-        - release: 3.3.10
-        - unstable: 3.3.10
-        - commit: 7947c101a5b724fe8b9784218388b46d7e247132
-
-   0.536626827s  INFO vagrant::package:389: Fetched versions for libvpx
-        - release: 1.15.2
-        - commit: 9a7674e1a83d1261a49776c8794b87c9bccc85d7
-
-   0.541923158s  INFO vagrant::package:389: Fetched versions for libxslt
-        - release: 1.1.43
-        - commit: 30b7ffe7d3599e95eb325d858c397b02ae5131c8
-
-   0.543920881s  INFO vagrant::package:389: Fetched versions for libpipeline
-        - release: 1.5.8
-        - commit: 08844b33bd0c77c7567caf1641f3aa48045f3e3b
-
-   0.546004071s  INFO vagrant::package:389: Fetched versions for m4
-        - release: 1.4.20
-
-   0.547385503s  INFO vagrant::package:389: Fetched versions for dbus
-        - release: 1.16.2
-        - unstable: 1.16.2
-        - commit: 1bcf396c7872f317778f3ff5645af1630738d43f
-
-   0.550655967s  INFO vagrant::package:389: Fetched versions for libuv
-        - release: 1.51.0
-        - commit: f6e19be74388ff9dfa8583da226d605a7eb4e022
-
-   0.551502168s  INFO vagrant::package:389: Fetched versions for iniparser
-        - release: 4.2.6
-        - commit: 4bef811283e0ec1658c60e09950bd5a1ddc92e4b
-
-   0.554355457s  INFO vagrant::package:389: Fetched versions for bspwm
-        - release: 0.9.12
-        - commit: c5cf7d3943f9a34a5cb2bab36bf473fd77e7d4f6
-
-   0.557587965s  INFO vagrant::package:389: Fetched versions for nv-codec-headers
-        - release: 13.0.19.0
-        - commit: 876af32a202d0de83bd1d36fe74ee0f7fcf86b0d
-
-   0.559865244s  INFO vagrant::package:389: Fetched versions for lm-sensors
-        - release: 3.6.2
-        - commit: c297368a0e4b0442fca06bae58a0bd3386629af0
-
-   0.563136901s  INFO vagrant::package:389: Fetched versions for libxvmc
-        - release: 1.0.14
-        - commit: a819142dc8b8efd29aa90e5cfbcd8cd892e51033
-
-   0.566003729s  INFO vagrant::package:389: Fetched versions for jaq
-        - release: 2.3.0
-        - commit: 43c41e219ddc69a92a070369e3858e4265aae547
-
-   0.572030948s  INFO vagrant::package:389: Fetched versions for e2fsprogs
-        - release: 1.47.3
-        - commit: 0b2752ce6276b383a5254cd766204f81f41b6631
-
-   0.572294614s  INFO vagrant::package:389: Fetched versions for font-util
-        - release: 1.4.1
-        - unstable: 1.4.1
-        - commit: 7af30077fc459e7fe3415ffa803583d7465a8a99
-
-   0.577885580s  INFO vagrant::package:389: Fetched versions for libsm
-        - release: 1.2.6
-        - commit: 5f6da959a34bcefc425b6e37462553acf44369a3
-
-   0.579221407s  INFO vagrant::package:389: Fetched versions for libvpl-tools
-        - release: 1.4.0
-        - commit: 70efc4e7be548c25dac9aa461d84ae68d198bd53
-
-   0.582668237s  INFO vagrant::package:389: Fetched versions for lsb-tools
-        - release: 0.12
-        - commit: 813340a04f3ff807cf6dbec698586745f41e8762
-
-   0.584943520s  INFO vagrant::package:389: Fetched versions for mesa
-        - release: 25.3.0
-        - commit: 4e16a5b68bbec9351a524e369176a3e62c7e72f5
-
-   0.585023293s  INFO vagrant::package:389: Fetched versions for cargo-c
-        - release: 0.10.18
-        - commit: 5fb145df3ea61f1ba4a7785d3524be8b37c64ce3
-
-   0.585614231s  INFO vagrant::package:389: Fetched versions for nvidia
-        - release: 580.105.08
-
-   0.591998199s  INFO vagrant::package:389: Fetched versions for libplacebo
-        - release: 7.351.0
-        - commit: 2e5a392b7f1e4c25d5a3f931e253d71ab566757f
-
-   0.604353014s  INFO vagrant::package:389: Fetched versions for libva
-        - release: 2.22.0
-        - commit: 161f3b51e282cd6d2bc146b2755f14dab73ca014
-
-   0.606437507s  INFO vagrant::package:389: Fetched versions for libxdamage
-        - release: 1.1.6
-        - commit: 1319ae5cfbde5b75e23383baa5e00cc23513448c
-
-   0.607453763s  INFO vagrant::package:389: Fetched versions for wget2
-        - release: 2.2.0
-        - commit: 18165409bbd255a3a3df855e2bbba7cd300a1677
-
-   0.608677878s  INFO vagrant::package:389: Fetched versions for alsa-ucm-conf
-        - release: 1.2.14
-        - commit: 6ec48318d8b3afdc87f9fdd0ed9c6d9788868793
-
-   0.609935707s  INFO vagrant::package:389: Fetched versions for maim
-        - release: 5.8.1
-        - commit: 2c799f33746e908a966404302321add1d6a2ffcf
-
-   0.610019330s  INFO vagrant::package:389: Fetched versions for libsrtp
-        - release: 2.7.0
-        - commit: 163cb8ada1f0e7f0e3184f615d082f2ab40e6784
-
-   0.613172213s  INFO vagrant::package:389: Fetched versions for libxau
-        - release: 1.0.12
-        - commit: 962b015d498b1f186aea8e3b0b46fb9791831552
-
-   0.613561085s  INFO vagrant::package:389: Fetched versions for libyaml
-        - release: 0.2.5
-        - commit: 840b65c40675e2d06bf40405ad3f12dec7f35923
-
-   0.617648524s  INFO vagrant::package:389: Fetched versions for libwebp
-        - release: 1.6.0
-        - commit: a3dddea9b5d0d445c24c756a406713686abf1257
-
-   0.620272167s  INFO vagrant::package:389: Fetched versions for libmspack
-        - release: 1.11
-        - commit: 305907723a4e7ab2018e58040059ffb5e77db837
-
-   0.624942809s  INFO vagrant::package:389: Fetched versions for libxaw
-        - release: 1.0.16
-        - commit: 12e81cd8ade629256488782a2e7ae0322d84da53
-
-   0.628011526s  INFO vagrant::package:389: Fetched versions for btop
-        - release: 1.4.5
-        - commit: b446e214c2fb92e8c7861ed85b9bed57b3dbd507
-
-   0.633886747s  INFO vagrant::package:389: Fetched versions for limine
-        - release: 10.3.2
-        - commit: 60fa408439bb0c7a83fe84476c337a5a2a04a6fb
-
-   0.635648006s  INFO vagrant::package:389: Fetched versions for libxxf86dga
-        - release: 1.1.6
-        - commit: 6a9b590992e7d94a63d935bfe44402712f77dc0f
-
-   0.638535049s  INFO vagrant::package:389: Fetched versions for inkscape
-        - release: 1.4.2
-        - commit: f3aff4101bd7398ae819e4ef98661a051a29665e
-
-   0.641905095s  INFO vagrant::package:389: Fetched versions for xev
-        - release: 1.2.6
-        - commit: 61c956d8265e9607c48791a325c6eebd86c31366
-
-   0.642423488s  INFO vagrant::package:389: Fetched versions for setuptools
-        - release: 80.9.0
-        - commit: d198e86f57231e83de87975c5c82bc40c196da79
-
-   0.651198855s  INFO vagrant::package:389: Fetched versions for libxt
-        - release: 1.3.1
-        - commit: 170a4edb3189810810ffbf2543bfb8ab96e1898c
-
-   0.652801753s  INFO vagrant::package:389: Fetched versions for libpng
-        - release: 1.6.51
-        - commit: 62954d33fe729566e9d17b78ddaf013896a1f3c5
-
-   0.661221425s  INFO vagrant::package:389: Fetched versions for lsof
-        - release: 4.99.5
-        - commit: e018502b23e342cd6094c1c38dd88800d1476c18
-
-   0.662744643s  INFO vagrant::package:389: Fetched versions for dconf
-        - release: 0.49.0
-        - unstable: 0.49.0
-        - commit: 1f3a995aed4f64b356972cf0b7100ca5ccfeb4ba
-
-   0.664624022s  INFO vagrant::package:389: Fetched versions for mesa-demos
+   0.488834083s  INFO vagrant::package:389: Fetched versions for mesa-demos
         - release: 9.0.0
-        - commit: eb6a96d3c6ad34f5f98103fd7b007f969a0e5749
+        - commit: cba8da1f87b264d0906ba3f4320db0368916decd
 
-   0.670896935s  INFO vagrant::package:389: Fetched versions for libsndfile
-        - release: 1.2.2
-        - commit: d9a35ea0d5c64c19dd635ae578e0028df8f66d6a
+   0.491989081s  INFO vagrant::package:389: Fetched versions for xinit
+        - release: 1.4.4
+        - commit: e039b40052b66839d3df51cf3f129a399f2ada0f
 
-   0.671192355s  INFO vagrant::package:389: Fetched versions for libtasn1
-        - release: 4.20.0
-        - commit: a3d48c2d9845e54e099769242366d47c09c8464e
+   0.494704591s  INFO vagrant::package:389: Fetched versions for aquamarine
+        - release: 0.10.0
+        - commit: a20a0e67a33b6848378a91b871b89588d3a12573
 
-   0.672569697s  INFO vagrant::package:389: Fetched versions for alsa-utils
-        - release: 1.2.14
-        - commit: 241fd2aecc702360682734c31055a18bc4ad63da
+   0.496512768s  INFO vagrant::package:389: Fetched versions for wpa_supplicant
+        - release: 2.11
+        - commit: 2c0ff0cc59de95667690ae5389327d92b01e7e01
 
-   0.674364042s  INFO vagrant::package:389: Fetched versions for jasper
-        - release: 4.2.8
-        - commit: 7576bf0e4d5b25fac4bf0a8607aa451eb3ccb4a7
-
-   0.679996605s  INFO vagrant::package:389: Fetched versions for obs-studio
-        - release: 32.0.2
-        - commit: d97e5ad820abcccf826faf897df4c7f511857cd4
-
-   0.682838051s  INFO vagrant::package:389: Fetched versions for libpsl
-        - release: 0.21.5
-        - commit: b87753fbe660316716569b64502b094085738949
-
-   0.691213015s  INFO vagrant::package:389: Fetched versions for libxcb
-        - release: 1.17.0
-        - commit: 93ee2ac73c32dcb567259fb83c564a424cd9fef7
-
-   0.694155906s  INFO vagrant::package:389: Fetched versions for libzip
-        - release: 1.11.4
-        - commit: e16526dbb751dc31129b32ba667ce6aed5c42f97
-
-   0.701307035s  INFO vagrant::package:389: Fetched versions for wheel
-        - release: 0.46.1
-        - commit: be9f45b4ee1210b2a815d2eefea56b71efd99d63
-
-   0.704725337s  INFO vagrant::package:389: Fetched versions for libxdmcp
-        - release: 1.1.5
-        - commit: 8f3408f3936bacd08f76d5ee22cbc86e6b627287
-
-   0.705317862s  INFO vagrant::package:389: Fetched versions for xcb-util-cursor
-        - release: 0.1.6
-        - commit: 7b0fa99aa13084a9bf7be4180066f6a74b0adef1
-
-   0.704829415s  INFO vagrant::package:389: Fetched versions for libssh2
-        - release: 1.11.1
-        - commit: b098a3c434e94eb46e85c487e744264d98c298ce
-
-   0.707648906s  INFO vagrant::package:389: Fetched versions for btrfs-progs
-        - release: 6.17.1
-        - commit: b13e49ab95f754dd3ea06045f547f6f6e864c576
-
-   0.714883310s  INFO vagrant::package:389: Fetched versions for luajit
-        - commit: e17ee83326f73d2bbfce5750ae8dc592a3b63c27
-
-   0.722759286s  INFO vagrant::package:389: Fetched versions for libxtst
-        - release: 1.2.5
-        - commit: abf3ff74b97c4231d2324d66318bfa1d22e44913
-
-   0.725027147s  INFO vagrant::package:389: Fetched versions for cava
-        - release: 0.10.6
-        - commit: 4875dcb20aec5db0c1fed8148201275d1f411028
-
-   0.726134670s  INFO vagrant::package:389: Fetched versions for libxxf86vm
-        - release: 1.1.6
-        - commit: 63134ba6acf046099fc112e08942ff6549f2286a
-
-   0.726654958s  INFO vagrant::package:389: Fetched versions for lua
-        - release: 5.4.8
-        - commit: 4cf498210e6a60637a7abb06d32460ec21efdbdc
-
-   0.727930742s  INFO vagrant::package:389: Fetched versions for xeyes
-        - release: 1.3.1
-        - commit: 7dc4f720f57471d2eccefd87cdca54494cf75eb5
-
-   0.728585109s  INFO vagrant::package:389: Fetched versions for linux-pam
-        - release: 1.7.1
-        - commit: c4a53492e1b7aebcf7a65a778d9e3a78f196d117
-
-   0.734521545s  INFO vagrant::package:389: Fetched versions for libidn
-        - release: 2.3.8
-        - commit: 0d4cf4af37414c4f0710289a8b79c385b974c273
-        - 1: 1.43
-
-   0.736449301s  INFO vagrant::package:389: Fetched versions for meson
-        - release: 1.9.1
-        - commit: 02bbe3eaa4f667293c72401e634e56e9ffbc33c3
-
-   0.737490639s  INFO vagrant::package:389: Fetched versions for libinput
-        - release: 1.29.2
-        - commit: c2f9ffe17e7fd0e92eb103cd4bbf2f26edbee9c3
-
-   0.738684334s  INFO vagrant::package:389: Fetched versions for jinja
-        - release: 3.1.6
-        - commit: 5ef70112a1ff19c05324ff889dd30405b1002044
-
-   0.739840180s  INFO vagrant::package:389: Fetched versions for setxkbmap
-        - release: 1.3.4
-        - commit: 8fe146750e70e83908c76f057492d9d9bf059287
-
-   0.741787146s  INFO vagrant::package:389: Fetched versions for cbindgen
-        - release: 0.29.2
-        - unstable: 0.29.2
-        - commit: ac824ecebc64c1b45720e324b4676eedcc2b177f
-
-   0.743742263s  INFO vagrant::package:389: Fetched versions for fribidi
-        - release: 1.0.16
-        - commit: b28f43bd3e8e31a5967830f721bab218c1aa114c
-
-   0.747064265s  INFO vagrant::package:389: Fetched versions for jbig2dec
-        - release: 0.20
-        - commit: d915733ec69260c1fd2c458b06835cb57bb85ac7
-
-   0.756047753s  INFO vagrant::package:389: Fetched versions for make
-        - release: 4.4.1
-
-   0.759496917s  INFO vagrant::package:389: Fetched versions for mupdf
-        - release: 1.26.11
-        - commit: 5b5961cbb35653664a8ea206d26c7cfa898f5ac9
-
-   0.762857829s  INFO vagrant::package:389: Fetched versions for chrony
-        - release: 4.8
-        - unstable: 4.8
-        - commit: 73f6657dfdb18dd06b0aea4ad8455e6767a16384
-
-   0.767184491s  INFO vagrant::package:389: Fetched versions for xcb-util-errors
-        - release: 1.0.1
-        - commit: d5435b07a895a55c5093a6415c09496de258391c
-
-   0.770801581s  INFO vagrant::package:389: Fetched versions for which
-        - release: 2.23
-
-   0.777079202s  INFO vagrant::package:389: Fetched versions for ogg
-        - release: 1.3.6
-        - commit: 0288fadac3ac62d453409dfc83e9c4ab617d2472
-
-   0.779622698s  INFO vagrant::package:389: Fetched versions for libxext
-        - release: 1.3.6
-        - commit: 5ce2a6127889834082147dbcdd47731b7986961b
-
-   0.780219082s  INFO vagrant::package:389: Fetched versions for libtiff
-        - release: 4.7.1
-        - commit: 9923b128f448270d34a88357ba9b10e108a3eafb
-
-   0.782569684s  INFO vagrant::package:389: Fetched versions for nettle
-        - release: 3.10.2
-        - commit: 5b154a4fed41d7f414092fded171ea7325365162
-
-   0.785504648s  INFO vagrant::package:389: Fetched versions for libxcomposite
-        - release: 0.4.6
-        - commit: f796f0a862849765ac5b6b5e861ea548b421b8f0
-
-   0.790498422s  INFO vagrant::package:389: Fetched versions for linux
-        - release: 6.17.9
-        - mainline: 6.18-rc7
-        - next: 20251124
-        - commit: ac3fd01e4c1efce8f2c054cdeb2ddd2fc0fb150d
-
-   0.797446809s  INFO vagrant::package:389: Fetched versions for sgml-common
-        - release: 0.6.3
-
-   0.802689116s  INFO vagrant::package:389: Fetched versions for xrdb
-        - release: 1.2.2
-        - commit: 20fc79a257ecaba0df3af8485dbf64fd73003a73
-
-   0.806050380s  INFO vagrant::package:389: Fetched versions for libxi
-        - release: 1.8.2
-        - commit: 3c2d5aedd7708c75710b39268631762de904c304
-
-   0.807288982s  INFO vagrant::package:389: Fetched versions for mako
-        - release: 1.3.10
-        - commit: 91232d80e4914fd82b42628bb2e2b061abb3dcfc
-
-   0.812223114s  INFO vagrant::package:389: Fetched versions for fzf
-        - release: 0.67.0
-        - commit: 1d5e87f5e48d5c720d040bd738db5c8785fbe225
-
-   0.812938269s  INFO vagrant::package:389: Fetched versions for xdg-dbus-proxy
-        - release: 0.1.6
-        - commit: 0e13c10b5c227c4a98941327920ef07a2e9af64c
-
-   0.814988039s  INFO vagrant::package:389: Fetched versions for niri
-        - release: 25.08
-        - commit: 45b45ac29d654c0e6759ab996c69dfde40053536
-
-   0.818074042s  INFO vagrant::package:389: Fetched versions for ydotool
-        - release: 1.0.4
-        - commit: b0c5da3cc1fcfcf3a20fa0c184f721d386945b6a
-
-   0.818454712s  INFO vagrant::package:389: Fetched versions for libtirpc
-        - release: 1.3.7
-
-   0.824452935s  INFO vagrant::package:389: Fetched versions for mkfontscale
-        - release: 1.2.3
-        - commit: 9c9c8834dc4ce17d0e878a28d36ff5e736bddb9b
-
-   0.825375028s  INFO vagrant::package:389: Fetched versions for xf86-input-evdev
-        - release: 2.11.0
-        - commit: 0b5b97bc6bad9d0dc1ae9d5de966882a86f1e55a
-
-   0.829634021s  INFO vagrant::package:389: Fetched versions for json-c
-        - release: 0.18
-        - commit: 243ed1a51c7b1735c235abda65c057adee9e9fb4
-
-   0.833417107s  INFO vagrant::package:389: Fetched versions for ncurses
-        - release: 6.5
-        - unstable: 6.5.20251123
-
-   0.835804742s  INFO vagrant::package:389: Fetched versions for cli11
-        - release: 2.6.1
-        - commit: 9b939ae82148a2c57f626f840e07a461f33a016b
-
-   0.837118854s  INFO vagrant::package:389: Fetched versions for ninja
-        - release: 1.13.2
-        - commit: 231db65ccf5427b16ff85b3a390a663f3c8a479f
-
-   0.837545539s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal-wlr
-        - release: 0.8.0
-        - commit: 0ab4f6f7908db671fa87013914830e5385536c7c
-
-   0.838843149s  INFO vagrant::package:389: Fetched versions for nghttp2
-        - release: 1.68.0
-        - commit: 05d77b6d30d578cc215de0ad0e8e83bbef6197a6
-
-   0.842537770s  INFO vagrant::package:389: Fetched versions for libjpeg-turbo
-        - release: 3.1.2
-        - commit: 0b742742c873025e2a127918d4969238ace7ae5b
-
-   0.852529519s  INFO vagrant::package:389: Fetched versions for xtrans
-        - release: 1.6.0
-        - commit: cf05ba4a10c90da2c63805a5375e983b174e28b0
-
-   0.854786964s  INFO vagrant::package:389: Fetched versions for nftables
-        - release: 1.1.5
-        - commit: 32c994f84904e9854d527217ececf0b97d89410d
-
-   0.857922402s  INFO vagrant::package:389: Fetched versions for xcb-util-image
-        - release: 0.4.1
-        - commit: 5ce46a7f14b88f6c69cdb5cba4cc106fbfd69402
-
-   0.860789847s  INFO vagrant::package:389: Fetched versions for nasm
-        - release: 3.01
-        - commit: f4f7d18c06449a1859a62a10e7e24ca644032dff
-
-   0.868631476s  INFO vagrant::package:389: Fetched versions for libxfixes
-        - release: 6.0.2
-        - commit: 70d5b0e37f8a759f3dbc218f22954347ceed094a
-
-   0.870837903s  INFO vagrant::package:389: Fetched versions for shaderc
-        - release: 2025.4
-        - commit: 64623490690d2655a176a00dbed48e5061982277
-
-   0.871435502s  INFO vagrant::package:389: Fetched versions for gawk
-        - release: 5.3.2
-
-   0.874862511s  INFO vagrant::package:389: Fetched versions for openjpeg
-        - release: 2.5.4
-        - commit: 1ad9bec2c12ee445ce23e660f5e4fe870b9d5e09
-
-   0.875029882s  INFO vagrant::package:389: Fetched versions for xwayland
-        - release: 24.1.9
-        - commit: a5047d4a6576630d0e15b8f145a44ff6ebe55369
-
-   0.875348711s  INFO vagrant::package:389: Fetched versions for whois
-        - release: 5.6.5
-        - commit: 64c3426493e145e1fad33a37247e924b0539e4dd
-
-   0.885452547s  INFO vagrant::package:389: Fetched versions for cmake
-        - release: 4.2.0
-        - unstable: 4.2.0
-        - commit: efed08ac1a195802e93cc21524a197a2c29b6922
-
-   0.893155854s  INFO vagrant::package:389: Fetched versions for man-db
-        - release: 2.13.1
-        - commit: 2b38f74972ab09985b0f7a6716a08c657ff716d8
-
-   0.896922277s  INFO vagrant::package:389: Fetched versions for libxinerama
-        - release: 1.1.5
-        - commit: cc22c2f60c3862482562955116d5455263b443dc
-
-   0.898513218s  INFO vagrant::package:389: Fetched versions for xvidcore
-        - release: 1.3.7
-
-   0.899346376s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal
-        - release: 1.20.3
-        - commit: 3dde1a47e474513d3a732720b03e9d624a178dee
-
-   0.901837933s  INFO vagrant::package:389: Fetched versions for xset
-        - release: 1.2.5
-        - commit: 3fadaad29df656b69a64c463dd68dc35d09274b3
-
-   0.903845474s  INFO vagrant::package:389: Fetched versions for nlohmann-json
-        - release: 3.12.0
-        - commit: a0e9fb1e638cfbb5b8b556b7c51eaa81977bad48
-
-   0.911495900s  INFO vagrant::package:389: Fetched versions for xf86-input-libinput
-        - release: 1.5.0
-        - commit: ac862672e4d04e78f2b647af9d3d14544454e4b9
-
-   0.906069141s  INFO vagrant::package:389: Fetched versions for libtool
-        - release: 2.6.0
-        - commit: c4abf359f849187fa7f505a0a34f15f2bd66db24
-
-   0.910297403s  INFO vagrant::package:389: Fetched versions for yt-dlp
-        - release: 2025.11.12
-        - commit: 12d411722a3d7a0382d1d230a904ecd4e20298b6
-
-   0.914619041s  INFO vagrant::package:389: Fetched versions for xxhash
-        - release: 0.8.3
-        - commit: 136cc1f8fe4d5ea62a7c16c8424d4fa5158f6d68
-
-   0.919961897s  INFO vagrant::package:389: Fetched versions for json-glib
-        - release: 1.10.8
-        - commit: 65ffd51a364ea21d92705cfb8446bcab5904f2a7
-
-   0.922801288s  INFO vagrant::package:389: Fetched versions for mpc
-        - release: 1.3.1
-        - commit: b955d70803e83e53258059943cadecf948e2a8f3
-
-   0.923733054s  INFO vagrant::package:389: Fetched versions for xcb-util-renderutil
+   0.496561499s  INFO vagrant::package:389: Fetched versions for xcb-util-renderutil
         - release: 0.3.10
         - commit: fb1c2524b9ac4e70930aa4dd94dde827e2a7c13f
 
-   0.939096780s  INFO vagrant::package:389: Fetched versions for xcb-util-keysyms
-        - release: 0.4.1
-        - commit: 72e9fc14ba16f9e1830d2f35919862abc53abcf3
+   0.502061772s  INFO vagrant::package:389: Fetched versions for man-db
+        - release: 2.13.1
+        - commit: 2b38f74972ab09985b0f7a6716a08c657ff716d8
 
-   0.940526513s  INFO vagrant::package:389: Fetched versions for neovim
-        - release: 0.11.5
-        - commit: 01a9765035372830fa97b87f93c6aca72bd99494
+   0.512833612s  INFO vagrant::package:389: Fetched versions for st
+        - release: 0.9.3
+        - commit: 6e970474743d57a5d8b054c41fd3bff2bc895742
 
-   0.941949742s  INFO vagrant::package:389: Fetched versions for xkeyboard-config
-        - release: 2.46
-        - commit: 8aa73d2c9a5a7391538c932e265f89c416b53138
+   0.513170896s  INFO vagrant::package:389: Fetched versions for mpc
+        - release: 1.3.1
+        - commit: b955d70803e83e53258059943cadecf948e2a8f3
 
-   0.944347034s  INFO vagrant::package:389: Fetched versions for libxfont
-        - release: 2.0.7
-        - commit: 2c2e44c94ef17ecd5003a173237b57b315e28d93
+   0.515046848s  INFO vagrant::package:389: Fetched versions for lsb-tools
+        - release: 0.12
+        - commit: 813340a04f3ff807cf6dbec698586745f41e8762
 
-   0.944719888s  INFO vagrant::package:389: Fetched versions for libjuice
-        - release: 1.7.0
-        - commit: 5948a4162d37bc213d6051b67ee2876ccc5a99a6
+   0.526440462s  INFO vagrant::package:389: Fetched versions for slop
+        - release: 7.7
+        - commit: 03800becac94936d2608011e393386d4fac4de01
 
-   0.945835044s  INFO vagrant::package:389: Fetched versions for openldap
-        - release: 2.6.10
-        - commit: 1bc7cd0e2aa7a5545df109cb046b4b76fdde591b
+   0.528437656s  INFO vagrant::package:389: Fetched versions for patchelf
+        - release: 0.18.0
+        - commit: d0f70eea5397606c486857e0a105e53ec123904a
 
-   0.947062612s  INFO vagrant::package:389: Fetched versions for xdg-user-dirs
-        - release: 0.19
-        - commit: 52e0e422d918062bae5feb39b7af038e9b1e5c0e
+   0.531966393s  INFO vagrant::package:389: Fetched versions for perl
+        - release: 5.42.0
+        - unstable: 5.43.5
+        - commit: e09fa77f7ca00069448b1680645ea044291772fc
 
-   0.948631423s  INFO vagrant::package:389: Fetched versions for xtrace
-        - commit: ced509f9760c532e0297fed6cfa07389e2be082a
+   0.535845473s  INFO vagrant::package:389: Fetched versions for alsa-ucm-conf
+        - release: 1.2.14
+        - commit: 6ec48318d8b3afdc87f9fdd0ed9c6d9788868793
 
-   0.965349826s  INFO vagrant::package:389: Fetched versions for noise-suppression-for-voice
-        - release: 1.10
-        - commit: 9c4e5c28d8950e2cef837d8a0abd36c2fd9b5c2d
+   0.541065575s  INFO vagrant::package:389: Fetched versions for x264
+        - commit: 0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee
 
-   0.972635595s  INFO vagrant::package:389: Fetched versions for libxkbcommon
-        - release: 1.13.0
-        - commit: 99e9b0fc558fb838a04c568bea033c52ffbe704b
+   0.541653374s  INFO vagrant::package:389: Fetched versions for nasm
+        - release: 3.01
+        - commit: f4f7d18c06449a1859a62a10e7e24ca644032dff
 
-   0.973879724s  INFO vagrant::package:389: Fetched versions for xz
-        - release: 5.8.1
-        - unstable: 5.8.1
-        - commit: 8bb516887c1912106a72db96216cab46954e6190
+   0.546565102s  INFO vagrant::package:389: Fetched versions for winetricks
+        - release: 20250102
+        - commit: 533f41704766765cfb3706fb2aa197acbb05df32
 
-   0.977343156s  INFO vagrant::package:389: Fetched versions for xdg-utils
-        - release: 1.2.1
-        - commit: 73ca30c05b31f9309d94da3f239f4ce4a8efe210
+   0.547849809s  INFO vagrant::package:389: Fetched versions for setconf
+        - release: 0.7.7
+        - commit: e77f567307cdd89792b405570201f42a9b763650
 
-   0.979689617s  INFO vagrant::package:389: Fetched versions for coreutils
-        - release: 9.9
-        - commit: b1ccb268b12f66eae6c09d833d68dd9ed40ad7b7
+   0.560976192s  INFO vagrant::package:389: Fetched versions for xcb-util-wm
+        - release: 0.4.2
+        - commit: 53d99b9b942c8248e1f63299069c6a2bedb92b41
 
-   0.981390582s  INFO vagrant::package:389: Fetched versions for ncdu
+   0.562562264s  INFO vagrant::package:389: Fetched versions for sudo-rs
+        - release: 0.2.10
+        - commit: 2ec1ac7270e314ad662d0c60f7cd59638350d127
+
+   0.567770605s  INFO vagrant::package:389: Fetched versions for sysklogd
+        - release: 2.7.2
+        - commit: c1c3f253a8963c6e9e41fafcf9b888f3f5a34906
+
+   0.570197503s  INFO vagrant::package:389: Fetched versions for tmux
+        - release: 3.5a
+        - commit: f949f9a23a76de3fd8762382a33dcaefa39b607b
+
+   0.572621516s  INFO vagrant::package:389: Fetched versions for fribidi
+        - release: 1.0.16
+        - commit: b28f43bd3e8e31a5967830f721bab218c1aa114c
+
+   0.578075031s  INFO vagrant::package:389: Fetched versions for xinput
+        - release: 1.6.4
+        - commit: f0ae723318e48546a19f7be5d086dfb01fc25a4c
+
+   0.580716813s  INFO vagrant::package:389: Fetched versions for ffmpeg
+        - release: 8.0.1
+        - unstable: 8.1-dev
+        - commit: 81362b319ea7244d8d17110adfa59f10c7e78268
+
+   0.581208988s  INFO vagrant::package:389: Fetched versions for meson
+        - release: 1.9.1
+        - commit: 23657a4bec8b931b7534a102cc487fc075cc00cd
+
+   0.582669230s  INFO vagrant::package:389: Fetched versions for bash-completion
+        - release: 2.17.0
+        - unstable: 2.17.0
+        - commit: acc800f023ab446775c4ab1db7c77db3d2fdc739
+
+   0.592927957s  INFO vagrant::package:389: Fetched versions for linux-pam
+        - release: 1.7.1
+        - commit: c4a53492e1b7aebcf7a65a778d9e3a78f196d117
+
+   0.593171205s  INFO vagrant::package:389: Fetched versions for picom
+        - release: 12.5
+        - commit: be577470d9a725d44c397429f66f606ae1f22436
+
+   0.594852676s  INFO vagrant::package:389: Fetched versions for lsof
+        - release: 4.99.5
+        - commit: e018502b23e342cd6094c1c38dd88800d1476c18
+
+   0.595539281s  INFO vagrant::package:389: Fetched versions for prismlauncher
+        - release: 9.4
+        - commit: f77871a58013cb32dc53eff18d791fc3231110e1
+
+   0.595841700s  INFO vagrant::package:389: Fetched versions for x265
+        - release: 4.1
+        - commit: 9e551a994f970a24f0e49bcebe3d43ef08448b01
+
+   0.601477777s  INFO vagrant::package:389: Fetched versions for glibc
+        - release: 2.42
+        - unstable: 2.42.9000
+        - commit: 6a29bbcf5abc2043b6ccec55f903e28569a38822
+
+   0.603358644s  INFO vagrant::package:389: Fetched versions for bubblewrap
+        - release: 0.11.0
+        - commit: d6180f25b164c708b8b0a0d86d6a9642f30cd9a9
+
+   0.622746326s  INFO vagrant::package:389: Fetched versions for startup-notification
+        - release: 0.12
+        - commit: 64eb585315cfb1fb4fe68c8f705956e9fed46545
+
+   0.625876760s  INFO vagrant::package:389: Fetched versions for pciutils
+        - release: 3.14.0
+        - commit: 3ec74c71c01878f92e751f15bb8febe720c3ab40
+
+   0.625907453s  INFO vagrant::package:389: Fetched versions for mpd
+        - release: 0.24.6
+        - commit: cc1308a1f548353b467a39a2930bc9d1aaf2e862
+
+   0.630183661s  INFO vagrant::package:389: Fetched versions for tomlplusplus
+        - release: 3.4.0
+        - commit: e7aaccca3fa3dbde9818ab8313250f3da4976e37
+
+   0.630533715s  INFO vagrant::package:389: Fetched versions for openttd
+        - release: 14.1
+        - unstable: 15.0-beta3
+        - commit: f1937222d38189a18c3a7d1e7ce17115f1ce1914
+
+   0.630574115s  INFO vagrant::package:389: Fetched versions for wireplumber
+        - release: 0.5.12
+        - commit: 84e4752f1a851d50b157b361dfb7d2e54641b8eb
+
+   0.632437080s  INFO vagrant::package:389: Fetched versions for sgml-common
+        - release: 0.6.3
+
+   0.637898197s  INFO vagrant::package:389: Fetched versions for slurp
+        - release: 1.5.0
+        - commit: 414760a341c34d08b598555561a3630133d1a81c
+
+   0.638239172s  INFO vagrant::package:389: Fetched versions for gnutls
+        - release: 3.8.11
+        - unstable: 3.8.11
+        - commit: 955f7a7fc223642d1ede6d55f094961cb97bfa68
+
+   0.640961794s  INFO vagrant::package:389: Fetched versions for alsa-utils
+        - release: 1.2.14
+        - commit: 241fd2aecc702360682734c31055a18bc4ad63da
+
+   0.648444529s  INFO vagrant::package:389: Fetched versions for pipewire
+        - release: 1.4.9
+        - unstable: 1.4.9
+        - commit: 1408dd52452880b375b818c63a39a696826c8e93
+
+   0.650870542s  INFO vagrant::package:389: Fetched versions for xcb-util-xrm
+        - release: 1.3
+        - commit: a17de570ab18bfd8b7b9bf23af9e0bb2249d02c9
+
+   0.652022219s  INFO vagrant::package:389: Fetched versions for steam
+        - release: 1.0.0.85
+
+   0.653703444s  INFO vagrant::package:389: Fetched versions for git
+        - release: 2.52.0
+        - unstable: 2.52.0
+        - commit: 6ab38b7e9cc7adafc304f3204616a4debd49c6e9
+
+   0.656453736s  INFO vagrant::package:389: Fetched versions for pigz
+        - release: 2.8
+        - commit: fe4894f57739e3039a2ffc2a2a360d35e19bacbe
+
+   0.658933639s  INFO vagrant::package:389: Fetched versions for fzf
+        - release: 0.67.0
+        - commit: 1d5e87f5e48d5c720d040bd738db5c8785fbe225
+
+   0.663816368s  INFO vagrant::package:389: Fetched versions for traceroute
+        - release: 2.1.6
+
+   0.669923102s  INFO vagrant::package:389: Fetched versions for systemd
+        - release: 258.2
+        - commit: 2ba910ab06e5970e9e2dc6d28a8d38a4adcd4a16
+
+   0.670295409s  INFO vagrant::package:389: Fetched versions for gtkmm
+        - release: 4.21.0
+        - 3: 3.24.10
+        - commit: c71e35260bbf89f2a5b4fa42199ec44c0010751e
+
+   0.672490713s  INFO vagrant::package:389: Fetched versions for setxkbmap
+        - release: 1.3.4
+        - commit: 8fe146750e70e83908c76f057492d9d9bf059287
+
+   0.674869571s  INFO vagrant::package:389: Fetched versions for swappy
+        - release: 1.8.0
+        - commit: c25040258fb9dde3dd7313e419a514436741cfe5
+
+   0.676873502s  INFO vagrant::package:389: Fetched versions for xauth
+        - release: 1.1.4
+        - commit: 1cb1d8e0284870a03970a0a45d1c8cfe7ec6a696
+
+   0.682316886s  INFO vagrant::package:389: Fetched versions for file
+        - release: 5.46
+
+   0.682646862s  INFO vagrant::package:389: Fetched versions for xkbcomp
+        - release: 1.4.7
+        - commit: ccea045e41f1a7e02b640d8a205d08ed4e1cadf4
+
+   0.684905355s  INFO vagrant::package:389: Fetched versions for lua
+        - release: 5.4.8
+        - commit: 4cf498210e6a60637a7abb06d32460ec21efdbdc
+
+   0.685803153s  INFO vagrant::package:389: Fetched versions for setuptools
+        - release: 80.9.0
+        - commit: d198e86f57231e83de87975c5c82bc40c196da79
+
+   0.689841234s  INFO vagrant::package:389: Fetched versions for procps-ng
+        - release: 4.0.5
+        - commit: db4a4c561d40f8c78df9cb1fe6f5dcc2a0155c55
+
+   0.692020407s  INFO vagrant::package:389: Fetched versions for duktape
+        - release: 2.7.0
+        - commit: 50af773b1b32067170786c2b7c661705ec7425d4
+
+   0.694024159s  INFO vagrant::package:389: Fetched versions for mpdecimal
+        - release: 4.0.1
+
+   0.695993808s  INFO vagrant::package:389: Fetched versions for opus
+        - release: 1.5.2
+        - commit: 6f00d6d4b29b9a022d12585f6439d56784aeae61
+
+   0.702326522s  INFO vagrant::package:389: Fetched versions for glm
+        - release: 1.0.2
+        - commit: a583c59e1616a628b18195869767ea4d6faca5f4
+
+   0.702978710s  INFO vagrant::package:389: Fetched versions for luajit
+        - commit: e17ee83326f73d2bbfce5750ae8dc592a3b63c27
+
+   0.710678022s  INFO vagrant::package:389: Fetched versions for ncdu
         - release: 2.9.2
         - 1: 1.22
         - commit: d213ae3bb9c727dda1b48aac0f058ae5201d2a72
 
-   0.982313114s  INFO vagrant::package:389: Fetched versions for glew
-        - release: 2.2.0
-        - commit: ba71151c6af7435127c54b890808fec2a4aad41f
+   0.722795452s  INFO vagrant::package:389: Fetched versions for binutils
+        - release: 2.45.1
 
-   0.987052415s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal-gtk
-        - release: 1.15.3
-        - commit: 7fe3fd1708a70a6049a2ec66d99d88136bccd4e0
+   0.727192686s  INFO vagrant::package:389: Fetched versions for findutils
+        - release: 4.10.0
 
-   0.984688839s  INFO vagrant::package:389: Fetched versions for shadow
-        - release: 4.18.0
-        - commit: e7ccd3df6845c184d155a2dd573f52d239c94337
+   0.727929430s  INFO vagrant::package:389: Fetched versions for nettle
+        - release: 3.10.2
+        - commit: 5b154a4fed41d7f414092fded171ea7325365162
 
-   0.992774473s  INFO vagrant::package:389: Fetched versions for mpd
-        - release: 0.24.6
-        - commit: cc1308a1f548353b467a39a2930bc9d1aaf2e862
+   0.733037203s  INFO vagrant::package:389: Fetched versions for tree
+        - release: 2.2.1
+        - commit: d501b58ff9cbfd64272c8cbcad0bda36a3fada06
 
-   0.993393134s  INFO vagrant::package:389: Fetched versions for noto-cjk
-        - commit: f8d157532fbfaeda587e826d4cd5b21a49186f7c
+   0.733186531s  INFO vagrant::package:389: Fetched versions for pixman
+        - release: 0.46.4
+        - commit: f824cac6478971c0f71e4dfe8a60ebf70224076a
 
-   0.995519496s  INFO vagrant::package:389: Fetched versions for jsoncpp
-        - release: 1.9.6
-        - commit: b511d9e64956db998b74909df112ac8c8f41d6ff
+   0.737526128s  INFO vagrant::package:389: Fetched versions for xbitmaps
+        - release: 1.1.3
+        - commit: 35307f27a4554f47534fe235be12128157888a7b
 
-   0.998838881s  INFO vagrant::package:389: Fetched versions for zathura
+   0.737690257s  INFO vagrant::package:389: Fetched versions for pcre2
+        - release: 10.47
+        - commit: d96f13979984e9bad1a0f70a879ea0d9dac386bf
+
+   0.738397929s  INFO vagrant::package:389: Fetched versions for bc
+        - release: 7.0.3
+        - unstable: 7.1.0
+        - commit: 8a9b0fc7866792c437342039b5f2ae5ee432b79c
+
+   0.744289412s  INFO vagrant::package:389: Fetched versions for xclip
+        - release: 0.13
+        - commit: 2c3b811002b35d3be7f39cc1145dd06bdb32e31c
+
+   0.746674233s  INFO vagrant::package:389: Fetched versions for wl-clipboard
+        - release: 2.2.1
+        - commit: e8082035dafe0241739d7f7d16f7ecfd2ce06172
+
+   0.757378502s  INFO vagrant::package:389: Fetched versions for xkeyboard-config
+        - release: 2.46
+        - commit: 8aa73d2c9a5a7391538c932e265f89c416b53138
+
+   0.757820103s  INFO vagrant::package:389: Fetched versions for libjxl
+        - release: 0.11.1
+        - commit: 53042ec537712e0df08709524f4df097d42174bc
+
+   0.759603302s  INFO vagrant::package:389: Fetched versions for pinentry
+        - release: 1.3.2
+        - commit: 954b3da04ac95ffb23ce9eac34ff99633cffdb47
+
+   0.761121309s  INFO vagrant::package:389: Fetched versions for sysvinit
+        - release: 3.15
+        - commit: 2da36cf51d4816438d5f944ec5e5d2f56f49e292
+
+   0.764364758s  INFO vagrant::package:389: Fetched versions for gumbo-parser
+        - release: 0.13.2
+        - commit: 6dddad6503480afc1a1379187aa114415ac7e640
+
+   0.765189802s  INFO vagrant::package:389: Fetched versions for glad
+        - release: 2.0.8
+        - commit: 27bed1181560211b55e39a9b132fef8c5846aae5
+
+   0.768617358s  INFO vagrant::package:389: Fetched versions for ncurses
+        - release: 6.5
+        - unstable: 6.5.20251123
+
+   0.771500844s  INFO vagrant::package:389: Fetched versions for ostree
+        - release: 2025.7
+        - commit: c6f0b5b2bc26b22fbceee0dc28a0f31349c28d41
+
+   0.779788332s  INFO vagrant::package:389: Fetched versions for snowball
+        - release: 3.0.1
+        - commit: 8f22b43ad2f2fbd27ea33344780d94d2c463dcfd
+
+   0.779953489s  INFO vagrant::package:389: Fetched versions for ncompress
+        - release: 5.0
+        - commit: c576364d691df490ec1841d028c7bece2b523c58
+
+   0.785133351s  INFO vagrant::package:389: Fetched versions for fftw
+        - release: 3.3.10
+        - unstable: 3.3.10
+        - commit: 7947c101a5b724fe8b9784218388b46d7e247132
+
+   0.789472698s  INFO vagrant::package:389: Fetched versions for go
+        - release: 1.25.4
+        - unstable: 1.25.4
+        - commit: 272df5f6ba94018dac2b7d384e92115b795fe241
+
+   0.798017603s  INFO vagrant::package:389: Fetched versions for gcc
+        - release: 15.2.0
+        - unstable: 16
+        - commit: 3c62023d05e9112ac51678fef42b2ba6e582f383
+
+   0.801608512s  INFO vagrant::package:389: Fetched versions for usbutils
+        - release: 019
+        - commit: d0c76b601b4b3ab9b2ab2647d604a8e3cce6d666
+
+   0.808465578s  INFO vagrant::package:389: Fetched versions for mpfr
+        - release: 4.2.2
+        - commit: 1731fdcfc3fb2a24b3e108820424f1e4cc67fea3
+
+   0.810869409s  INFO vagrant::package:389: Fetched versions for nftables
+        - release: 1.1.5
+        - commit: 8b7a533f8f8b276bfa71dcb306d6857e54015234
+
+   0.812565979s  INFO vagrant::package:389: Fetched versions for bdwgc
+        - release: 8.2.10
+        - commit: a8bd4189437eb08bce0f9bba1750d6c7a2d89a7d
+
+   0.813002788s  INFO vagrant::package:389: Fetched versions for psmisc
+        - release: 23.7
+        - commit: f3b51bdc90b6b5cb610528cce3d8262a932d50f0
+
+   0.815592327s  INFO vagrant::package:389: Fetched versions for xrdb
+        - release: 1.2.2
+        - commit: 20fc79a257ecaba0df3af8485dbf64fd73003a73
+
+   0.822730986s  INFO vagrant::package:389: Fetched versions for ratpoison
+        - release: 1.4.9
+
+   0.823555151s  INFO vagrant::package:389: Fetched versions for ydotool
+        - release: 1.0.4
+        - commit: b0c5da3cc1fcfcf3a20fa0c184f721d386945b6a
+
+   0.824209664s  INFO vagrant::package:389: Fetched versions for boost
+        - release: 1.89.0
+        - commit: 6487fd29e34e1921473cac59665c67629f0cbead
+
+   0.826541883s  INFO vagrant::package:389: Fetched versions for libksba
+        - release: 1.6.7
+        - commit: 8c552d02bb9039007f0d9e6198d48d0d985d7ad3
+
+   0.831905858s  INFO vagrant::package:389: Fetched versions for gperf
+        - release: 3.3
+
+   0.846499969s  INFO vagrant::package:389: Fetched versions for xdg-dbus-proxy
+        - release: 0.1.6
+        - commit: 0e13c10b5c227c4a98941327920ef07a2e9af64c
+
+   0.846656417s  INFO vagrant::package:389: Fetched versions for hicolor-icon-theme
+        - release: 0.18
+        - commit: 4dc168322b8b0bc06c521e9e90d66a4fa09816d4
+
+   0.849855202s  INFO vagrant::package:389: Fetched versions for glslang
+        - release: 16.0.0
+        - sdk: 1.4.328.1
+        - commit: 7a47e2531cb334982b2a2dd8513dca0a3de4373d
+
+   0.850216129s  INFO vagrant::package:389: Fetched versions for tuun
+        - release: 5.9.0
+        - commit: 722b8ba79ad0f3e1872bd2c1733c3fd1aa613b75
+
+   0.851311442s  INFO vagrant::package:389: Fetched versions for flatpak
+        - release: 1.17.0
+        - commit: 846b82bf8500c28ad10aa4c03480d7b420ad3ce4
+
+   0.852633375s  INFO vagrant::package:389: Fetched versions for xcb-proto
+        - release: 1.17.0
+        - commit: 2ec66abb885801f9d5944ef7b830c24401592b49
+
+   0.853216153s  INFO vagrant::package:389: Fetched versions for gpgme
+        - release: 2.0.1
+        - unstable: 2.0.1
+        - commit: 94fa3c2b25a1979bb838c7d9f9f74375072f4efe
+
+   0.855561940s  INFO vagrant::package:389: Fetched versions for pkgconf
+        - release: 2.5.1
+        - commit: a1e09753bc4353fdd21957f6c1fd55d7e53662e4
+
+   0.862853026s  INFO vagrant::package:389: Fetched versions for mpg123
+        - release: 1.33.3
+
+   0.863066049s  INFO vagrant::package:389: Fetched versions for neovim
+        - release: 0.11.5
+        - commit: 0a0c349b6fee01a8365e13e5a9dc194fcad4fd0a
+
+   0.865304462s  INFO vagrant::package:389: Fetched versions for bottom
+        - release: 0.11.4
+        - commit: 1aaea6d71bac8fb468a743126825a6d81b25a4b8
+
+   0.868313936s  INFO vagrant::package:389: Fetched versions for brotli
+        - release: 1.2.0
+        - unstable: 1.2.0
+        - commit: 5fa73e23bee34f84148719576a7a434f0fc43dc8
+
+   0.869690775s  INFO vagrant::package:389: Fetched versions for glaze
+        - release: 6.1.0
+        - commit: 356ace6c0ce0abeddb3689b955548eed70770a40
+
+   0.870827907s  INFO vagrant::package:389: Fetched versions for xkill
+        - release: 1.0.6
+        - commit: b803eb22bca91094a476dc630b610e34e3b517f9
+
+   0.871685979s  INFO vagrant::package:389: Fetched versions for netcat
+        - release: 1.234.1
+        - commit: 37b4f2cf889e4e18eadbe2c7eb57dc0eda3fc580
+
+   0.880807582s  INFO vagrant::package:389: Fetched versions for bind-utils
+        - release: 9.21.15
+        - unstable: 9.21.15
+
+   0.885864997s  INFO vagrant::package:389: Fetched versions for lfstage
+        - commit: d2bcde008e1cc1633ed1a40a1cccaa079f083e99
+
+   0.887967589s  INFO vagrant::package:389: Fetched versions for aria2
+        - release: 1.37.0
+        - commit: b4fd7cb1ca03e38ad9d7ab9308b8200cb1d41c25
+
+   0.893812487s  INFO vagrant::package:389: Fetched versions for mpv
+        - release: 0.40.0
+        - commit: 57d9d4eb42be3d1b80e7895b79e7ac9e417f5e28
+
+   0.895265914s  INFO vagrant::package:389: Fetched versions for nghttp2
+        - release: 1.68.0
+        - commit: 18f2edf50a0a7df8b882211cf6a6ad463e23acdf
+
+   0.895966932s  INFO vagrant::package:389: Fetched versions for xset
+        - release: 1.2.5
+        - commit: 3fadaad29df656b69a64c463dd68dc35d09274b3
+
+   0.897132895s  INFO vagrant::package:389: Fetched versions for pulseaudio
+        - release: 17.0
+        - commit: be2efb69b97ee49ba81094d49a1b8d7be0c588c2
+
+   0.901204560s  INFO vagrant::package:389: Fetched versions for rpmextract
+        - release: 1.0
+
+   0.907332949s  INFO vagrant::package:389: Fetched versions for re2
+        - release: 2025.11.05
+        - commit: e7aec5985072c1dbe735add802653ef4b36c231a
+
+   0.909265585s  INFO vagrant::package:389: Fetched versions for libliftoff
+        - release: 0.5.0
+        - commit: 9114b1e4dc8646b8f6512518567477926922905e
+
+   0.909361327s  INFO vagrant::package:389: Fetched versions for yt-dlp
+        - release: 2025.11.12
+        - commit: 12d411722a3d7a0382d1d230a904ecd4e20298b6
+
+   0.909619246s  INFO vagrant::package:389: Fetched versions for xmodmap
+        - release: 1.0.11
+        - commit: 0761a37a6111f22e2552f9f2245bddbb6d3db2bf
+
+   0.913958181s  INFO vagrant::package:389: Fetched versions for htop
+        - release: 3.4.1
+        - commit: 8a87d3e6617059613ee2515579656853eeee0889
+
+   0.918217157s  INFO vagrant::package:389: Fetched versions for pugixml
+        - release: 1.15
+        - commit: 61c944895e071872370219cadade8423dc6e04dc
+
+   0.925942974s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal-wlr
+        - release: 0.8.0
+        - commit: 0ab4f6f7908db671fa87013914830e5385536c7c
+
+   0.930659444s  INFO vagrant::package:389: Fetched versions for graphviz
+        - release: 14.0.4
+        - commit: 5da2000ddfae6f42bff7322d3d785a0bd997c5b1
+
+   0.934929899s  INFO vagrant::package:389: Fetched versions for flit
+        - release: 3.12.0
+        - commit: 6671051ac2c270b474a23c568a944ca9d5f27ec0
+
+   0.937790979s  INFO vagrant::package:389: Fetched versions for aspell
+        - release: 0.60.8.1
+
+   0.937791007s  INFO vagrant::package:389: Fetched versions for xtrace
+        - commit: ced509f9760c532e0297fed6cfa07389e2be082a
+
+   0.939183784s  INFO vagrant::package:389: Fetched versions for uthash
+        - release: 2.3.0
+        - commit: af6e637f19c102167fb914b9ebcc171389270b48
+
+   0.941139860s  INFO vagrant::package:389: Fetched versions for gpu-screen-recorder
+        - release: 5.9.3
+        - commit: 716dc0b7369e7de672e3b03adaaeed0f744c5a72
+
+   0.942812357s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal
+        - release: 1.20.3
+        - commit: 3dde1a47e474513d3a732720b03e9d624a178dee
+
+   0.954865619s  INFO vagrant::package:389: Fetched versions for ply
+        - release: 3.11
+        - commit: 5c4dc94d4c6d059ec127ee1493c735963a5d2645
+
+   0.956899632s  INFO vagrant::package:389: Fetched versions for xdg-utils
+        - release: 1.2.1
+        - commit: 73ca30c05b31f9309d94da3f239f4ce4a8efe210
+
+   0.958594858s  INFO vagrant::package:389: Fetched versions for zathura-pdf-mupdf
+        - release: 0.4.6
+        - commit: b6ea6540846e68e76e5527f5d67c48a016d8958f
+
+   0.959841060s  INFO vagrant::package:389: Fetched versions for socat
+        - release: 1.8.0.3
+        - unstable: 2.0.0-b9
+        - commit: 78cc5ae1a57470b1978c14ff8b65729f1bb6a719
+
+   0.966036332s  INFO vagrant::package:389: Fetched versions for niri
+        - release: 25.08
+        - commit: 54c7fdcd1adcfade596aca1070062f3f0fb5d4d0
+
+   0.966054559s  INFO vagrant::package:389: Fetched versions for xtrans
+        - release: 1.6.0
+        - commit: cf05ba4a10c90da2c63805a5375e983b174e28b0
+
+   0.966456482s  INFO vagrant::package:389: Fetched versions for xcb-util
+        - release: 0.4.1
+        - commit: bdba930aaac6ee6f271133674b40f1a9d895c6d4
+
+   0.972848756s  INFO vagrant::package:389: Fetched versions for typos
+        - unstable: 1.39.2
+        - release: 1.39.2
+        - commit: a1a16c7b7c25d1c27cc750525aada8b9ae68b716
+
+   0.980605895s  INFO vagrant::package:389: Fetched versions for rsync
+        - release: 3.4.1
+        - commit: 797e17fc4a6f15e3b1756538a9f812b63942686f
+
+   0.982749407s  INFO vagrant::package:389: Fetched versions for rip
+        - release: 0.4.1
+        - commit: c2f352c339749e38f42cf586795ec5a0a5d7e57e
+
+   0.987651551s  INFO vagrant::package:389: Fetched versions for xorgproto
+        - release: 2024.1
+        - commit: f973f7db89571f61e96cb0a55f416d3e67a75663
+
+   0.989366168s  INFO vagrant::package:389: Fetched versions for xorg-server
+        - release: 21.1.21
+        - commit: a5047d4a6576630d0e15b8f145a44ff6ebe55369
+
+   0.993255067s  INFO vagrant::package:389: Fetched versions for zathura
         - release: 0.5.14
         - commit: 25ac140c922c6a1fde02a63426155a9e3e6df798
 
-   0.999910663s  INFO vagrant::package:389: Fetched versions for xcb-util-wm
-        - release: 0.4.2
-        - commit: 53d99b9b942c8248e1f63299069c6a2bedb92b41
+   0.994677088s  INFO vagrant::package:389: Fetched versions for ninja
+        - release: 1.13.2
+        - commit: 231db65ccf5427b16ff85b3a390a663f3c8a479f
 
-   1.000481081s  INFO vagrant::package:389: Fetched versions for xh
-        - release: 0.25.0
-        - commit: 2e81a57c723a6468917ebbb02e442269ec757464
+   1.006232006s  INFO vagrant::package:389: Fetched versions for hwdata
+        - release: 0.401
+        - commit: 84014f0025c0a95060acc4cd5c47432f517b3411
 
-   1.007410538s  INFO vagrant::package:389: Fetched versions for xsetroot
+   1.006640918s  INFO vagrant::package:389: Fetched versions for readline
+        - release: 8.3
+        - unstable: 8.3
+
+   1.008064758s  INFO vagrant::package:389: Fetched versions for xvidcore
+        - release: 1.3.7
+
+   1.008396934s  INFO vagrant::package:389: Fetched versions for inxi
+        - release: 3.3.40.1
+        - commit: 20451ca41fe61723250bb0d8f2ba2ec708719b90
+
+   1.013458793s  INFO vagrant::package:389: Fetched versions for xrandr
+        - release: 1.5.3
+        - commit: 5ea32007758bac1db51841c782a921096155cde4
+
+   1.015105949s  INFO vagrant::package:389: Fetched versions for mtdev
+        - release: 1.1.7
+        - commit: 9035c2225494b80b02e985fc7ee77880e0bd6993
+
+   1.022331860s  INFO vagrant::package:389: Fetched versions for zlib
+        - release: 1.3.1
+        - commit: 5a82f71ed1dfc0bec044d9702463dbdf84ea3b71
+
+   1.022575494s  INFO vagrant::package:389: Fetched versions for xsetroot
         - release: 1.1.3
         - commit: 8f935c417ec798451131baf5190b0721d90a8218
 
-   1.008935726s  INFO vagrant::package:389: Fetched versions for wine
-        - release: 10.19
-        - unstable: 10.19
-        - commit: 8bbc65df51c7c62c9b62a7b92bfd288ba51a2d8f
+   1.022658657s  INFO vagrant::package:389: Fetched versions for pyparsing
+        - release: 3.2.5
+        - commit: 9c9fc6e85f25f95a0bd888e7fd4bc74666d78cd7
 
-   1.020604941s  INFO vagrant::package:389: Fetched versions for openssh
-        - release: 10.2p1
-        - commit: 643222df689c95efff9e9506b76de458f69dd9c7
+   1.024370736s  INFO vagrant::package:389: Fetched versions for xprop
+        - release: 1.2.8
+        - commit: 55a51e08787035786abc27b170beb0faacb6cd47
 
-   1.021774893s  INFO vagrant::package:389: Fetched versions for libxmu
-        - release: 1.2.1
-        - commit: bd64e44c0f76e7d01543060501bbd39561062996
+   1.027649808s  INFO vagrant::package:389: Fetched versions for liblinear
+        - release: 249
+        - commit: dbb92699c33b37d0217d8d8b34d72c1ff4176437
 
-   1.023444344s  INFO vagrant::package:389: Fetched versions for jdk
+   1.032557619s  INFO vagrant::package:389: Fetched versions for xdg-user-dirs
+        - release: 0.19
+        - commit: 52e0e422d918062bae5feb39b7af038e9b1e5c0e
+
+   1.034059506s  INFO vagrant::package:389: Fetched versions for jinja
+        - release: 3.1.6
+        - commit: 5ef70112a1ff19c05324ff889dd30405b1002044
+
+   1.037818024s  INFO vagrant::package:389: Fetched versions for util-linux
+        - release: 2.41.2
+        - commit: 21bf9f6d442e42dc62ca7905770f2429a7eb0cb9
+
+   1.038539278s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal-gtk
+        - release: 1.15.3
+        - commit: 7fe3fd1708a70a6049a2ec66d99d88136bccd4e0
+
+   1.040353568s  INFO vagrant::package:389: Fetched versions for tz
+        - release: 2025b
+
+   1.040361478s  INFO vagrant::package:389: Fetched versions for rmpc
+        - release: 0.10.0
+        - commit: 3a0f82b0c3298ec8bfb8bceb06a2fbb4c51143dd
+
+   1.043225717s  INFO vagrant::package:389: Fetched versions for floorp
+        - release: 12.7.0
+        - commit: 12ebdcaa46f2dc055e7c9a0ec97ef021bec8ed32
+
+   1.045172405s  INFO vagrant::package:389: Fetched versions for xdotool
+        - release: 3.20211022.1
+        - commit: 63a0e52bd567a14a4041c1f28bf973e8d7c42d4a
+
+   1.047585400s  INFO vagrant::package:389: Fetched versions for pyyaml
+        - release: 6.0.3
+        - commit: d51d8a138f7230834fc6e95635ff09ebd329185f
+
+   1.048547209s  INFO vagrant::package:389: Fetched versions for bzip2
+        - release: 1.0.8
+        - commit: 66c46b8c9436613fd81bc5d03f63a61933a4dcc3
+
+   1.049617467s  INFO vagrant::package:389: Fetched versions for at-spi2-core
+        - release: 2.58.2
+        - commit: 9ace8dc0f0b5aac85d2486da89ccd63a496a92ab
+
+   1.049926929s  INFO vagrant::package:389: Fetched versions for nlohmann-json
+        - release: 3.12.0
+        - commit: a0e9fb1e638cfbb5b8b556b7c51eaa81977bad48
+
+   1.058218257s  INFO vagrant::package:389: Fetched versions for libaom
+        - release: 3.13.1
+        - unstable: 3.13.1
+        - commit: 6ba8df878082f401d317f129886174a34ada08f7
+
+   1.074118868s  INFO vagrant::package:389: Fetched versions for libunistring
+        - release: 1.4.1
+
+   1.074528387s  INFO vagrant::package:389: Fetched versions for typst
+        - release: 0.14.0
+        - commit: 4117371ca2d1c2d48b383151db9794175065c758
+
+   1.079055655s  INFO vagrant::package:389: Fetched versions for polkit
+        - release: 126
+        - commit: 242610da73be078960052cd727c38bc20e35b8da
+
+   1.084507986s  INFO vagrant::package:389: Fetched versions for ripgrep
+        - release: 15.1.0
+        - commit: 57c190d56eedac90c061a238b63dbfed434fee50
+
+   1.088658742s  INFO vagrant::package:389: Fetched versions for unrar
+        - release: 7.2.2
+
+   1.090265564s  INFO vagrant::package:389: Fetched versions for rubberband
+        - release: 4.0.0
+        - commit: e4296ac80b1170018a110bc326fd0d45a0eb27d6
+
+   1.090946533s  INFO vagrant::package:389: Fetched versions for noise-suppression-for-voice
+        - release: 1.10
+        - commit: 9c4e5c28d8950e2cef837d8a0abd36c2fd9b5c2d
+
+   1.097244442s  INFO vagrant::package:389: Fetched versions for rhash
+        - release: 1.4.6
+        - commit: b76c6a3312422c09817c2cef40442b2f2d9d4689
+
+   1.098716201s  INFO vagrant::package:389: Fetched versions for muon
+        - release: 0.5.0
+        - commit: d1e42d116e088ce378a1634b763c30962a59f5a1
+
+   1.099650644s  INFO vagrant::package:389: Fetched versions for kbd
+        - release: 2.9.0
+        - commit: c5473634bbb653f0b61bd237d0e4bdfc9cfe3650
+
+   1.103619117s  INFO vagrant::package:389: Fetched versions for iputils
+        - release: 20250605
+        - commit: d546847a8cca6834e3c9382b876488b1428209c4
+
+   1.110374567s  INFO vagrant::package:389: Fetched versions for qemu
+        - release: 10.1.2
+        - commit: 9ef49528b5286f078061b52ac41e0ca19fa10e36
+
+   1.117081111s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal-hyprland
+        - release: 1.3.11
+        - commit: 4b8801228ff958d028f588f0c2b911dbf32297f9
+
+   1.120574269s  INFO vagrant::package:389: Fetched versions for pyserial
+        - release: 3.5
+        - commit: 5fe2f9c568a91aa21aff129bc7cbf85fcfe8bad8
+
+   1.121457694s  INFO vagrant::package:389: Fetched versions for noto-cjk
+        - commit: f8d157532fbfaeda587e826d4cd5b21a49186f7c
+
+   1.132314058s  INFO vagrant::package:389: Fetched versions for xxhash
+        - release: 0.8.3
+        - commit: 984ebb4fea2ea548a8eebd3c187638a7d0cf382c
+
+   1.132611275s  INFO vagrant::package:389: Fetched versions for wbg
+        - release: 1.3.0
+        - commit: bc00df2244a0d8f88d4051f505ef9aebb51447ca
+
+   1.133523866s  INFO vagrant::package:389: Fetched versions for wayfire
+        - release: 0.10.0
+        - commit: fcdc7b420b8245bde8481fca644793721ccb29af
+
+   1.136277878s  INFO vagrant::package:389: Fetched versions for libmnl
+        - release: 1.0.5
+        - commit: 54dea548d796653534645c6e3c8577eaf7d77411
+
+   1.138812418s  INFO vagrant::package:389: Fetched versions for xdpyinfo
+        - release: 1.4.0
+        - commit: 7fe49a22498b9438a15d5d9fdef55d5d832b1672
+
+   1.140539940s  INFO vagrant::package:389: Fetched versions for ufw
+        - release: 0.36.2
+        - commit: bdb71dc636c918421d50cac647353b2be08202a0
+
+   1.141706208s  INFO vagrant::package:389: Fetched versions for zlib-ng
+        - release: 2.2.5
+        - commit: fe179585e7c25234c2c224116ccfed8b0a78dbd9
+
+   1.142521900s  INFO vagrant::package:389: Fetched versions for util-macros
+        - release: 1.20.2
+        - commit: a9d71e3fd8e6758b70be31c586921bbbcd2a8449
+
+   1.147306814s  INFO vagrant::package:389: Fetched versions for xwayland
+        - release: 24.1.9
+        - commit: a5047d4a6576630d0e15b8f145a44ff6ebe55369
+
+   1.154738425s  INFO vagrant::package:389: Fetched versions for rofi
+        - release: 2.0.0
+        - commit: ea148cbb467b6b7b5811e3c1cf0e3c6cff8c937e
+
+   1.161855289s  INFO vagrant::package:389: Fetched versions for json-c
+        - release: 0.18
+        - commit: 243ed1a51c7b1735c235abda65c057adee9e9fb4
+
+   1.167249639s  INFO vagrant::package:389: Fetched versions for i3
+        - release: 4.24
+        - commit: b1e99d8ff0f5bd78625dfc740bd07e22b6904b36
+
+   1.169109946s  INFO vagrant::package:389: Fetched versions for fmt
+        - release: 12.1.0
+        - commit: 790b9389ae99c4ddebdd2736a8602eca1fec684e
+
+   1.169623074s  INFO vagrant::package:389: Fetched versions for jasper
+        - release: 4.2.8
+        - commit: 7576bf0e4d5b25fac4bf0a8607aa451eb3ccb4a7
+
+   1.171551532s  INFO vagrant::package:389: Fetched versions for json-glib
+        - release: 1.10.8
+        - commit: 65ffd51a364ea21d92705cfb8446bcab5904f2a7
+
+   1.171773829s  INFO vagrant::package:389: Fetched versions for libunwind
+        - release: 1.8.3
+        - commit: 812a5305ff097c864d2786b577d2ca0bda76827f
+
+   1.175055973s  INFO vagrant::package:389: Fetched versions for libarchive
+        - release: 3.8.3
+        - commit: 8ef2084104887af3401d91b36eab2496767c81a8
+
+   1.193082399s  INFO vagrant::package:389: Fetched versions for iana-etc
+        - release: 20251120
+
+   1.199629975s  INFO vagrant::package:389: Fetched versions for vala
+        - release: 0.56.18
+        - commit: d680994c54dd34b8bd3bd808f0023be19ea647da
+
+   1.201593652s  INFO vagrant::package:389: Fetched versions for kmod
+        - release: 34.2
+        - commit: a403590f6e9f25216480abdb7e038257d706f17f
+
+   1.211846224s  INFO vagrant::package:389: Fetched versions for c-ares
+        - release: 1.34.5
+        - unstable: 1.34.5
+        - commit: 1d1b3d4a808dff9359cacb4539ac1b775876dcb6
+
+   1.212259527s  INFO vagrant::package:389: Fetched versions for notofonts
+        - release: 2025.11.01
+        - commit: 6e1e8d81d8ae031ac2fb28779a8e45c3628dd580
+
+   1.216352768s  INFO vagrant::package:389: Fetched versions for python
+        - release: 3.14.0
+        - unstable: 3.15.0a2
+        - commit: 33efd7178e269cbd04233856261fd0aabbf35447
+
+   1.217654883s  INFO vagrant::package:389: Fetched versions for wayfire-plugins-extra
+        - release: 0.10.0
+        - commit: 54da4e261a77bb3ec5ed4a7ceef0978311d6cfff
+
+   1.221098067s  INFO vagrant::package:389: Fetched versions for qr-code-generator
+        - release: 1.8.0
+        - commit: 2c9044de6b049ca25cb3cd1649ed7e27aa055138
+
+   1.221311357s  INFO vagrant::package:389: Fetched versions for ksh
+        - release: 1.0.10
+        - commit: 0f6866b6bebc26d003acb6f467d0694a8aea5177
+
+   1.227425721s  INFO vagrant::package:389: Fetched versions for wayland
+        - release: 1.24.0
+        - commit: d81525a235e48cc5de3e4005a16ddb1fbdfd9d7c
+
+   1.235601484s  INFO vagrant::package:389: Fetched versions for zstd
+        - release: 1.5.7
+        - commit: d462f691ba6a53bd17de492656af7878c73288c8
+
+   1.235659910s  INFO vagrant::package:389: Fetched versions for jaq
+        - release: 2.3.0
+        - commit: 43c41e219ddc69a92a070369e3858e4265aae547
+
+   1.239746906s  INFO vagrant::package:389: Fetched versions for btop
+        - release: 1.4.5
+        - commit: b446e214c2fb92e8c7861ed85b9bed57b3dbd507
+
+   1.240654598s  INFO vagrant::package:389: Fetched versions for libqalculate
+        - release: 5.8.2
+        - commit: 271954597a9d0ae1f5f969fec05f43bf393939f7
+
+   1.241292907s  INFO vagrant::package:389: Fetched versions for libmspack
+        - release: 1.11
+        - commit: 305907723a4e7ab2018e58040059ffb5e77db837
+
+   1.245094459s  INFO vagrant::package:389: Fetched versions for rust
+        - release: 1.91.1
+        - nightly: 2025-11-26
+        - commit: 80d8f292d82d735f83417221dd63b0dd2bbb8dd2
+
+   1.248290526s  INFO vagrant::package:389: Fetched versions for libxcrypt
+        - release: 4.5.2
+        - commit: d6faad7de2bdbff18da4c5379e97871ec3839e7f
+
+   1.258355599s  INFO vagrant::package:389: Fetched versions for font-util
+        - release: 1.4.1
+        - unstable: 1.4.1
+        - commit: 7af30077fc459e7fe3415ffa803583d7465a8a99
+
+   1.261215575s  INFO vagrant::package:389: Fetched versions for cssselect
+        - release: 1.3.0
+        - commit: 3756d24b4c5f9619ce8a12e376b11a6e554a1bc6
+
+   1.261215606s  INFO vagrant::package:389: Fetched versions for websocketpp
+        - release: 0.8.2
+        - commit: 4dfe1be74e684acca19ac1cf96cce0df9eac2a2d
+
+   1.264228677s  INFO vagrant::package:389: Fetched versions for liburcu
+        - release: 0.15.5
+        - commit: 91b6c67ef0478f7193485a02e4d5064413aa3029
+
+   1.271274156s  INFO vagrant::package:389: Fetched versions for wayland-protocols
+        - release: 1.46
+        - commit: 6141e1154303dadd5c3e480bc4a16e26f1dcb2af
+
+   1.271774649s  INFO vagrant::package:389: Fetched versions for samurai
+        - release: 1.2
+        - commit: 737f702fed670acb25e5e70b4b802690df7a4a8b
+
+   1.275663661s  INFO vagrant::package:389: Fetched versions for libass
+        - release: 0.17.4
+        - commit: e60dddb7db62cc009175843bdb0b0dfedceebedb
+
+   1.280827546s  INFO vagrant::package:389: Fetched versions for autoconf
+        - release: 2.72
+        - commit: 8ac9edd1a71fe24ed94d70f1669e4fd6a81fa585
+
+   1.281192502s  INFO vagrant::package:389: Fetched versions for lame
+        - release: 3.100
+
+   1.296010099s  INFO vagrant::package:389: Fetched versions for imagemagick
+        - release: 7.1.2.8
+        - commit: f46647c0303824b005575ce8edebd018178fbfd9
+
+   1.296113205s  INFO vagrant::package:389: Fetched versions for jbig2dec
+        - release: 0.20
+        - commit: d915733ec69260c1fd2c458b06835cb57bb85ac7
+
+   1.300549205s  INFO vagrant::package:389: Fetched versions for libxi
+        - release: 1.8.2
+        - commit: 3c2d5aedd7708c75710b39268631762de904c304
+
+   1.303159435s  INFO vagrant::package:389: Fetched versions for btrfs-progs
+        - release: 6.17.1
+        - commit: 745e510b6c82829b9345699db323b9a615a9f539
+
+   1.303645412s  INFO vagrant::package:389: Fetched versions for scour
+        - release: 0.38.2
+        - commit: 0609c596766ec98e4e2092b49bd03b802702ba1a
+
+   1.316218114s  INFO vagrant::package:389: Fetched versions for vorbis
+        - release: 1.3.7
+        - commit: 851cce991da34adf5e1f3132588683758a6369ec
+
+   1.316502648s  INFO vagrant::package:389: Fetched versions for cuda
+        - release: 13.0.2
+
+   1.333604586s  INFO vagrant::package:389: Fetched versions for xz
+        - release: 5.8.1
+        - unstable: 5.8.1
+        - commit: 8bb516887c1912106a72db96216cab46954e6190
+
+   1.334015324s  INFO vagrant::package:389: Fetched versions for ddcutil
+        - release: 2.2.3
+        - commit: 27b535ec32fd86eabd84f36ac50bd5c9ed8f9e76
+
+   1.334238846s  INFO vagrant::package:389: Fetched versions for scdoc
+        - release: 1.11.4
+        - commit: 70de0e5e5d3bc40134ee65c35f1631656199f4be
+
+   1.339298512s  INFO vagrant::package:389: Fetched versions for wev
+        - release: 1.1.0
+        - commit: b09b664dd2d1b11dd68e03f8c0363ac0ef76f1e0
+
+   1.339477043s  INFO vagrant::package:389: Fetched versions for cachecontrol
+        - release: 0.14.4
+        - commit: 00d940052734d98a3448adf4f6726346b6c2722b
+
+   1.343453166s  INFO vagrant::package:389: Fetched versions for libnftnl
+        - release: 1.3.0
+        - commit: 5a54b99859fd52d8c7e866b57f6d8fac3e20a78f
+
+   1.344096245s  INFO vagrant::package:389: Fetched versions for libevdev
+        - release: 1.13.5
+        - commit: f3a9c2038d54c95abedc58df2ff16738da355289
+
+   1.348329055s  INFO vagrant::package:389: Fetched versions for libpciaccess
+        - release: 0.18.1
+        - commit: 191dfe0707e2a93c08e4b3e99454b6146c5bfca2
+
+   1.350863821s  INFO vagrant::package:389: Fetched versions for qt
+        - release: 6.10.1
+        - 5: 5.15.18
+        - commit: 56c2d82d7b40362f2676ee372f608eac8f9747f7
+
+   1.354716426s  INFO vagrant::package:389: Fetched versions for libxcursor
+        - release: 1.2.3
+        - commit: 2197ca8cbb743d2fcc43c155396a724cad8f26f3
+
+   1.360233503s  INFO vagrant::package:389: Fetched versions for catgirl
+        - release: 2.2a
+        - unstable: 2.2a
+        - commit: 38dc6a301914efd34f9a57cf75e4d0dae8a529fc
+
+   1.373777733s  INFO vagrant::package:389: Fetched versions for libgpg-error
+        - release: 1.56
+        - commit: a902201d2d7883da027a9a628319411421b73eda
+
+   1.387279471s  INFO vagrant::package:389: Fetched versions for bspwm
+        - release: 0.9.12
+        - commit: c5cf7d3943f9a34a5cb2bab36bf473fd77e7d4f6
+
+   1.390188267s  INFO vagrant::package:389: Fetched versions for libassuan
+        - release: 3.0.2
+        - commit: 563252ade0684fb197c095da2d6272dfc763a852
+
+   1.390188284s  INFO vagrant::package:389: Fetched versions for libxml2
+        - release: 2.15.1
+        - commit: 22f9d730898d2dfcc03a484e65e1f8fc3675225f
+
+   1.391624266s  INFO vagrant::package:389: Fetched versions for less
+        - release: 685
+        - unstable: 687
+        - commit: 7c5f3101970ec2f9ba9c32bca519ff86cfb8d7af
+
+   1.393556193s  INFO vagrant::package:389: Fetched versions for vulkan-headers
+        - release: 1.4.334
+        - sdk: 1.4.328.1
+        - commit: 65586d13fb197279942581ba9c2eb2c6b664487c
+
+   1.394813916s  INFO vagrant::package:389: Fetched versions for attr
+        - release: 2.5.2
+        - commit: 4d4a562d7b73dcea8bd4b2d40b8c030d5065111b
+
+   1.396615726s  INFO vagrant::package:389: Fetched versions for desktop-file-utils
+        - release: 0.28
+        - unstable: 0.28
+        - commit: 673ec76e881b8dd7f710b846ae0418c09e6f5439
+
+   1.397006650s  INFO vagrant::package:389: Fetched versions for sdbus-cpp
+        - release: 2.2.1
+        - commit: 28b78822cfc5fbec4bd9906168493e9985f586ed
+
+   1.397835534s  INFO vagrant::package:389: Fetched versions for librsvg
+        - release: 2.61.3
+        - unstable: 2.61.3
+        - commit: c429633ee4654f3b60a7b1154122589bec9b006e
+
+   1.401998173s  INFO vagrant::package:389: Fetched versions for libxinerama
+        - release: 1.1.5
+        - commit: cc22c2f60c3862482562955116d5455263b443dc
+
+   1.404877736s  INFO vagrant::package:389: Fetched versions for libpng
+        - release: 1.6.51
+        - commit: 62954d33fe729566e9d17b78ddaf013896a1f3c5
+
+   1.405514900s  INFO vagrant::package:389: Fetched versions for jansson
+        - release: 2.14.1
+        - commit: 154f8919fb0d3778282b797789ad985e3d99fdc8
+
+   1.410807334s  INFO vagrant::package:389: Fetched versions for libusb
+        - release: 1.0.29
+        - unstable: 1.0.29
+        - commit: 9ceaa526fe728c11e408dcb7a9164d3c1d61ed9e
+
+   1.415299178s  INFO vagrant::package:389: Fetched versions for cups
+        - release: 2.4.14
+        - commit: 214db20fed36c07abd26f0b677bb2464e8724136
+
+   1.421039150s  INFO vagrant::package:389: Fetched versions for iniparser
+        - release: 4.2.6
+        - commit: 4bef811283e0ec1658c60e09950bd5a1ddc92e4b
+
+   1.427380961s  INFO vagrant::package:389: Fetched versions for libxkbcommon
+        - release: 1.13.0
+        - commit: 99e9b0fc558fb838a04c568bea033c52ffbe704b
+
+   1.427948730s  INFO vagrant::package:389: Fetched versions for libplacebo
+        - release: 7.351.0
+        - commit: 2e5a392b7f1e4c25d5a3f931e253d71ab566757f
+
+   1.429533539s  INFO vagrant::package:389: Fetched versions for libexif
+        - release: 0.6.25
+        - commit: 3729e461f98a2d79a017b7a6a5cfcb6398acdbff
+
+   1.440710665s  INFO vagrant::package:389: Fetched versions for libsoup
+        - release: 3.6.5
+        - commit: cc1d4389ffd1b70f7eaee3cecfa66664aff2a5ef
+
+   1.440806895s  INFO vagrant::package:389: Fetched versions for libnl
+        - release: 3.11.0
+        - commit: ffefc0e7ed32a884bf1d5f8a7ceb341cc4ed3f2a
+
+   1.443399390s  INFO vagrant::package:389: Fetched versions for vulkan-loader
+        - release: 1.4.334
+        - sdk: 1.4.328.1
+        - commit: 5f6d4be882cb015228c994f81098220dada056b7
+
+   1.445425845s  INFO vagrant::package:389: Fetched versions for dejagnu
+        - release: 1.6.3
+
+   1.448337454s  INFO vagrant::package:389: Fetched versions for libffi
+        - release: 3.5.2
+        - commit: 3276df05a758f8081adb6a910abf8de627ebda46
+
+   1.448799480s  INFO vagrant::package:389: Fetched versions for quickshell
+        - release: 0.2.1
+        - commit: e9bad67619ee9937a1bbecfc6ad3b4231d2ecdc3
+
+   1.449570615s  INFO vagrant::package:389: Fetched versions for wf-config
+        - release: 0.10.0
+        - commit: 3597fcdccac71015cbfd20656c43caec30f10240
+
+   1.453931835s  INFO vagrant::package:389: Fetched versions for inih
+        - release: 62
+        - unstable: 62
+        - commit: 8e06f6b77b5d4471bdc6d85ada81b67d37354a5c
+
+   1.456976838s  INFO vagrant::package:389: Fetched versions for libxcvt
+        - release: 0.1.3
+        - commit: 40de74eb5d7c402f82fe1f61beea515d17bcdd2a
+
+   1.461372445s  INFO vagrant::package:389: Fetched versions for libpipeline
+        - release: 1.5.8
+        - commit: 08844b33bd0c77c7567caf1641f3aa48045f3e3b
+
+   1.469257826s  INFO vagrant::package:389: Fetched versions for libexpat
+        - release: 2.7.3
+        - commit: 1804ea062be5d14c511582281d1eca1146a61fdc
+
+   1.474869103s  INFO vagrant::package:389: Fetched versions for cava
+        - release: 0.10.6
+        - commit: 4875dcb20aec5db0c1fed8148201275d1f411028
+
+   1.477563645s  INFO vagrant::package:389: Fetched versions for libid3tag
+        - release: 0.16.3
+        - commit: 3d3887a1356e5da0f6ea5a84f85f827f29162c87
+
+   1.484123906s  INFO vagrant::package:389: Fetched versions for jdk
         - unstable: 26.25
         - release: 25.u36
         - 21: 21.0.10.u3
@@ -1221,757 +1708,301 @@
         - 11: 11.0.30.u2
         - 8: 8.482.u02
 
-   1.029242522s  INFO vagrant::package:389: Fetched versions for ncompress
-        - release: 5.0
-        - commit: c576364d691df490ec1841d028c7bece2b523c58
+   1.487133573s  INFO vagrant::package:389: Fetched versions for libxdmcp
+        - release: 1.1.5
+        - commit: 8f3408f3936bacd08f76d5ee22cbc86e6b627287
 
-   1.029405241s  INFO vagrant::package:389: Fetched versions for libgpg-error
-        - release: 1.56
-        - commit: a902201d2d7883da027a9a628319411421b73eda
+   1.488301804s  INFO vagrant::package:389: Fetched versions for libcap
+        - release: 2.77
+        - commit: 542d7d86ecd2129dd5fe7e5b31ba307304f5b319
 
-   1.029503643s  INFO vagrant::package:389: Fetched versions for xdg-desktop-portal-hyprland
-        - release: 1.3.11
-        - commit: 4b8801228ff958d028f588f0c2b911dbf32297f9
+   1.491050435s  INFO vagrant::package:389: Fetched versions for caddy
+        - release: 2.10.2
+        - commit: 67a9e0657e60df8c78510065e8977d86ee17d01c
+        - unstable: 2.10.2
 
-   1.030191892s  INFO vagrant::package:389: Fetched versions for xkill
-        - release: 1.0.6
-        - commit: b803eb22bca91094a476dc630b610e34e3b517f9
+   1.495252869s  INFO vagrant::package:389: Fetched versions for libxmu
+        - release: 1.2.1
+        - commit: bd64e44c0f76e7d01543060501bbd39561062996
 
-   1.033061196s  INFO vagrant::package:389: Fetched versions for libxft
-        - release: 2.3.9
-        - commit: 69edd320e23b00d9aef240ce9b50f7bf482a12ef
+   1.495715677s  INFO vagrant::package:389: Fetched versions for dhcpcd
+        - release: 10.3.0
+        - commit: 9c48f4c7dd893228ad1493ea5347c28ced2a4190
 
-   1.045559126s  INFO vagrant::package:389: Fetched versions for xmodmap
-        - release: 1.0.11
-        - commit: 0761a37a6111f22e2552f9f2245bddbb6d3db2bf
+   1.496301388s  INFO vagrant::package:389: Fetched versions for libpsl
+        - release: 0.21.5
+        - commit: b87753fbe660316716569b64502b094085738949
 
-   1.046448698s  INFO vagrant::package:389: Fetched versions for netcat
-        - release: 1.234.1
-        - commit: 37b4f2cf889e4e18eadbe2c7eb57dc0eda3fc580
-
-   1.047188568s  INFO vagrant::package:389: Fetched versions for mpdecimal
-        - release: 4.0.1
-
-   1.047277629s  INFO vagrant::package:389: Fetched versions for tar
-        - release: 1.35
-
-   1.050351055s  INFO vagrant::package:389: Fetched versions for libxml2
-        - release: 2.15.1
-        - commit: 22f9d730898d2dfcc03a484e65e1f8fc3675225f
-
-   1.060830465s  INFO vagrant::package:389: Fetched versions for xdotool
-        - release: 3.20211022.1
-        - commit: 63a0e52bd567a14a4041c1f28bf973e8d7c42d4a
-
-   1.065540952s  INFO vagrant::package:389: Fetched versions for libxkbfile
-        - release: 1.1.3
-        - commit: cb177c4d0e6d24dd868d28d4c35f3af007e7023e
-
-   1.072387222s  INFO vagrant::package:389: Fetched versions for libmd
-        - release: 1.1.0
-        - commit: d5b8e853989a73f8fff9dc4e00dccd0b691b84f9
-
-   1.079995667s  INFO vagrant::package:389: Fetched versions for zathura-pdf-mupdf
-        - release: 0.4.6
-        - commit: b6ea6540846e68e76e5527f5d67c48a016d8958f
-
-   1.084766905s  INFO vagrant::package:389: Fetched versions for kbd
-        - release: 2.9.0
-        - commit: c5473634bbb653f0b61bd237d0e4bdfc9cfe3650
-
-   1.092955345s  INFO vagrant::package:389: Fetched versions for xdpyinfo
-        - release: 1.4.0
-        - commit: 7fe49a22498b9438a15d5d9fdef55d5d832b1672
-
-   1.094527094s  INFO vagrant::package:389: Fetched versions for shared-mime-info
-        - release: 2.4
-        - commit: 381dba8e91427336b993e976ab1c785e6ece78f5
-
-   1.099049372s  INFO vagrant::package:389: Fetched versions for winetricks
-        - release: 20250102
-        - commit: 533f41704766765cfb3706fb2aa197acbb05df32
-
-   1.104294994s  INFO vagrant::package:389: Fetched versions for gdb
-        - release: 16.3
-
-   1.105508454s  INFO vagrant::package:389: Fetched versions for poppler
-        - release: 25.11.0
-        - commit: 5f9b4545fa390ebdc913506bd58fa35408e17473
-
-   1.108488302s  INFO vagrant::package:389: Fetched versions for xclip
-        - release: 0.13
-        - commit: 2c3b811002b35d3be7f39cc1145dd06bdb32e31c
-
-   1.110865785s  INFO vagrant::package:389: Fetched versions for notofonts
-        - release: 2025.11.01
-        - commit: 6e1e8d81d8ae031ac2fb28779a8e45c3628dd580
-
-   1.112746462s  INFO vagrant::package:389: Fetched versions for openssl
-        - release: 3.6.0
-        - commit: 069181d7f39beaae22bfa67bcba3c5fe93acafd4
-
-   1.113193797s  INFO vagrant::package:389: Fetched versions for mpfr
-        - release: 4.2.2
-        - commit: e872c39f612575efbcb1f5d0da11da9d768d5756
-
-   1.117653475s  INFO vagrant::package:389: Fetched versions for xinit
-        - release: 1.4.4
-        - commit: e039b40052b66839d3df51cf3f129a399f2ada0f
-
-   1.117665902s  INFO vagrant::package:389: Fetched versions for glib
-        - release: 2.86.2
-        - unstable: 2.87.0
-        - commit: 1d40d3bd8615ba17c1872638770156b9f5ab56cf
-
-   1.131607243s  INFO vagrant::package:389: Fetched versions for gnupg
-        - release: 2.4.8
-        - unstable: 2.5.14
-        - commit: 493276a202b231280b4fafa19b61dde8bc1fe69b
-
-   1.133999207s  INFO vagrant::package:389: Fetched versions for xorgproto
-        - release: 2024.1
-        - commit: f973f7db89571f61e96cb0a55f416d3e67a75663
-
-   1.138085961s  INFO vagrant::package:389: Fetched versions for libdrm
-        - release: 2.4.129
-        - commit: a8e5e10a873f67f557dc70e5407af4553f35edd9
-
-   1.138431348s  INFO vagrant::package:389: Fetched versions for libxmlb
+   1.499569791s  INFO vagrant::package:389: Fetched versions for libxmlb
         - release: 0.3.24
         - commit: e92e0caf5072b3fe5db1eeb9454f145b1ab095c6
 
-   1.141686758s  INFO vagrant::package:389: Fetched versions for libdisplay-info
-        - release: 0.3.0
-        - commit: 788c056e24eaf412832889afd46aaa41bec94e6a
+   1.503599395s  INFO vagrant::package:389: Fetched versions for libinput
+        - release: 1.30.0
+        - commit: 11b97edcdc369177f8567d79614ea699281f813a
 
-   1.142219089s  INFO vagrant::package:389: Fetched versions for xorg-server
-        - release: 21.1.20
-        - commit: a5047d4a6576630d0e15b8f145a44ff6ebe55369
+   1.506920371s  INFO vagrant::package:389: Fetched versions for libxkbfile
+        - release: 1.1.3
+        - commit: cb177c4d0e6d24dd868d28d4c35f3af007e7023e
 
-   1.146404137s  INFO vagrant::package:389: Fetched versions for zlib-ng
-        - release: 2.2.5
-        - commit: fe179585e7c25234c2c224116ccfed8b0a78dbd9
+   1.507365171s  INFO vagrant::package:389: Fetched versions for sdl
+        - release: 3.2.26
+        - commit: 1edb8506397812cbef66e9f7be0085443fc044c2
 
-   1.155382860s  INFO vagrant::package:389: Fetched versions for tcpdump
-        - release: 4.99.5
-        - commit: 70140f5412312e34c454e71a5c45e7ab0c1a0cd5
+   1.509915998s  INFO vagrant::package:389: Fetched versions for libsamplerate
+        - release: 0.2.2
+        - commit: 2ccde9568cca73c7b32c97fefca2e418c16ae5e3
 
-   1.158774069s  INFO vagrant::package:389: Fetched versions for potrace
-        - release: 1.16
+   1.511206791s  INFO vagrant::package:389: Fetched versions for libxfixes
+        - release: 6.0.2
+        - commit: 70d5b0e37f8a759f3dbc218f22954347ceed094a
 
-   1.160540111s  INFO vagrant::package:389: Fetched versions for mpg123
-        - release: 1.33.3
-
-   1.163112522s  INFO vagrant::package:389: Fetched versions for kmod
-        - release: 34.2
-        - commit: a403590f6e9f25216480abdb7e038257d706f17f
-
-   1.168195011s  INFO vagrant::package:389: Fetched versions for gdbm
-        - release: 1.26
-
-   1.172651065s  INFO vagrant::package:389: Fetched versions for sxhkd
-        - release: 0.6.3
-        - commit: 2cc7aca40f38cd47fbeea1f37fe310ef34386435
-
-   1.174019183s  INFO vagrant::package:389: Fetched versions for strace
-        - release: 6.17
-        - commit: 69149c1883d67bcafcdee1d10b5c6ebbc51ff812
-
-   1.179447859s  INFO vagrant::package:389: Fetched versions for graphviz
-        - release: 14.0.4
-        - commit: b40494e9b1aaa10330faad2d5dc3de6c6cdc1022
-
-   1.179447809s  INFO vagrant::package:389: Fetched versions for libdecor
+   1.513540797s  INFO vagrant::package:389: Fetched versions for libdecor
         - release: 0.2.4
         - commit: 700aa1e6fb5dddc085d94dddf480e74b84c0ad88
 
-   1.182566397s  INFO vagrant::package:389: Fetched versions for six
-        - release: 1.17.0
-        - commit: e9da069f35bb9add9b17ecb405b474981227fcb8
+   1.520385183s  INFO vagrant::package:389: Fetched versions for libutempter
+        - release: 1.2.3
+        - commit: 4caa8ab94ff8b207228fa723a89214bf5e929321
 
-   1.187129966s  INFO vagrant::package:389: Fetched versions for gpgme
+   1.523011866s  INFO vagrant::package:389: Fetched versions for libxext
+        - release: 1.3.6
+        - commit: 5ce2a6127889834082147dbcdd47731b7986961b
+
+   1.526561470s  INFO vagrant::package:389: Fetched versions for libtasn1
+        - release: 4.20.0
+        - commit: a3d48c2d9845e54e099769242366d47c09c8464e
+
+   1.527368375s  INFO vagrant::package:389: Fetched versions for libdrm
+        - release: 2.4.129
+        - commit: a8e5e10a873f67f557dc70e5407af4553f35edd9
+
+   1.529160283s  INFO vagrant::package:389: Fetched versions for inkscape
+        - release: 1.4.2
+        - commit: 9de76e7caeae4007900b5f7f1c1d22424f19d85c
+
+   1.532433071s  INFO vagrant::package:389: Fetched versions for libnsl
         - release: 2.0.1
-        - unstable: 2.0.1
-        - commit: 94fa3c2b25a1979bb838c7d9f9f74375072f4efe
+        - commit: d6438ee1c45ef8161342b0e8e2c76a6184dbb0c5
 
-   1.196412353s  INFO vagrant::package:389: Fetched versions for wireplumber
-        - release: 0.5.12
-        - commit: f196d10e87266de8e06bcebdd8e0d973e08b07a5
+   1.539733170s  INFO vagrant::package:389: Fetched versions for libvpl
+        - release: 2.15.0
+        - commit: 3591aa94dfbdf4566cd19f3e976ae5b769ab4fa2
 
-   1.199513563s  INFO vagrant::package:389: Fetched versions for zstd
-        - release: 1.5.7
-        - commit: d462f691ba6a53bd17de492656af7878c73288c8
+   1.546335453s  INFO vagrant::package:389: Fetched versions for libfontenc
+        - release: 1.1.8
+        - commit: dcdbcce903ee49200040c0da092b45253c20c6df
 
-   1.205619101s  INFO vagrant::package:389: Fetched versions for glm
-        - release: 1.0.2
-        - commit: a583c59e1616a628b18195869767ea4d6faca5f4
-
-   1.207382101s  INFO vagrant::package:389: Fetched versions for gpu-screen-recorder
-        - release: 5.9.2
-        - commit: 059e3dbbc00d3375103f6660b4c64d2a5840ca61
-
-   1.210385029s  INFO vagrant::package:389: Fetched versions for giflib
-        - release: 5.2.2
-        - commit: 8bed392c280ad2c237e8bf1beca6f8f68f893e87
-
-   1.221914758s  INFO vagrant::package:389: Fetched versions for shellcheck
-        - release: 0.11.0
-        - commit: eac8efff9c41bf90416b53a72209903aa9213bdb
-
-   1.226275276s  INFO vagrant::package:389: Fetched versions for xprop
-        - release: 1.2.8
-        - commit: 55a51e08787035786abc27b170beb0faacb6cd47
-
-   1.227958590s  INFO vagrant::package:389: Fetched versions for mpv
-        - release: 0.40.0
-        - commit: 8469605191c1fb3c9ebf84617a4b2e2bada357fa
-
-   1.231548000s  INFO vagrant::package:389: Fetched versions for gettext
-        - release: 0.26
-
-   1.234488549s  INFO vagrant::package:389: Fetched versions for ratpoison
-        - release: 1.4.9
-
-   1.235295879s  INFO vagrant::package:389: Fetched versions for libepoxy
-        - release: 1.5.10
-        - commit: 167802b7db5b753798d2208f393e3ab45201dd5f
-
-   1.237635167s  INFO vagrant::package:389: Fetched versions for xinput
-        - release: 1.6.4
-        - commit: f0ae723318e48546a19f7be5d086dfb01fc25a4c
-
-   1.240911895s  INFO vagrant::package:389: Fetched versions for libglvnd
-        - release: 1.7.0
-        - commit: 606f6627cf481ee6dcb32387edc010c502cdf38b
-
-   1.243044724s  INFO vagrant::package:389: Fetched versions for libtree
-        - release: 3.1.1
-        - unstable: 3.1.1
-        - commit: 95d8992968a18ae957fef723f103b416d0843398
-
-   1.255307269s  INFO vagrant::package:389: Fetched versions for sxwm
-        - release: 1.7
-        - commit: 587059c2ee76a82709693659689577f2772b6b2a
-
-   1.258214550s  INFO vagrant::package:389: Fetched versions for sysklogd
-        - release: 2.7.2
-        - commit: c1c3f253a8963c6e9e41fafcf9b888f3f5a34906
-
-   1.255991280s  INFO vagrant::package:389: Fetched versions for tealdeer
-        - release: 1.8.1
-        - commit: b3cd7b1c216656ea3416a86104363589157477dc
-
-   1.255562202s  INFO vagrant::package:389: Fetched versions for ksh
-        - release: 1.0.10
-        - commit: 0f6866b6bebc26d003acb6f467d0694a8aea5177
-
-   1.261621756s  INFO vagrant::package:389: Fetched versions for slop
-        - release: 7.7
-        - commit: 03800becac94936d2608011e393386d4fac4de01
-
-   1.264497706s  INFO vagrant::package:389: Fetched versions for wl-clipboard
-        - release: 2.2.1
-        - commit: e8082035dafe0241739d7f7d16f7ecfd2ce06172
-
-   1.266641528s  INFO vagrant::package:389: Fetched versions for rpmextract
-        - release: 1.0
-
-   1.269278215s  INFO vagrant::package:389: Fetched versions for usbutils
-        - release: 019
-        - commit: d0c76b601b4b3ab9b2ab2647d604a8e3cce6d666
-
-   1.273196062s  INFO vagrant::package:389: Fetched versions for glib-networking
-        - release: 2.80.1
-        - unstable: 2.80.1
-        - commit: d9f2e67e755516027ab00066dcadf82b4f2ac88e
-
-   1.282305416s  INFO vagrant::package:389: Fetched versions for sudo
-        - release: 1.9.17p2
-        - commit: 02ff3afc1b71f602b62ce0be5efc35892d95910a
-
-   1.284849687s  INFO vagrant::package:389: Fetched versions for prismlauncher
-        - release: 9.4
-        - commit: f77871a58013cb32dc53eff18d791fc3231110e1
-
-   1.288842848s  INFO vagrant::package:389: Fetched versions for openttd
-        - release: 14.1
-        - unstable: 15.0-beta3
-        - commit: 07177467b370b0b474f012bb529514f7f0b3b153
-
-   1.303504100s  INFO vagrant::package:389: Fetched versions for go
-        - release: 1.25.4
-        - unstable: 1.25.4
-        - commit: 7fbd141de506e331ef3f5910b505ece91a012e4a
-
-   1.303693004s  INFO vagrant::package:389: Fetched versions for xrandr
-        - release: 1.5.3
-        - commit: 5ea32007758bac1db51841c782a921096155cde4
-
-   1.306778620s  INFO vagrant::package:389: Fetched versions for girara
-        - release: 0.4.5
-        - commit: e32e36c655b49d4187c580ee60e814191d180e77
-
-   1.306804778s  INFO vagrant::package:389: Fetched versions for p11-kit
-        - release: 0.25.10
-        - commit: 90dba4ded391c6232a78ee14db0da76efda7b1c3
-
-   1.308329658s  INFO vagrant::package:389: Fetched versions for gnutls
-        - release: 3.8.11
-        - unstable: 3.8.11
-        - commit: 8cf72345d9ec78282d8528558971ed981c6f1df8
-
-   1.308780419s  INFO vagrant::package:389: Fetched versions for lame
-        - release: 3.100
-
-   1.317447481s  INFO vagrant::package:389: Fetched versions for sudo-rs
-        - release: 0.2.10
-        - commit: 7cced18658357c8d2c01b375089fb56f4ac6d9c8
-
-   1.318318362s  INFO vagrant::package:389: Fetched versions for squashfs-tools
-        - release: 4.7.4
-        - commit: 53e5a67aac42e0bc9ad4a249156d7d549ce7436c
-
-   1.323753499s  INFO vagrant::package:389: Fetched versions for re2
-        - release: 2025.11.05
-        - commit: e7aec5985072c1dbe735add802653ef4b36c231a
-
-   1.325202297s  INFO vagrant::package:389: Fetched versions for gdk-pixbuf
-        - release: 2.44.4
-        - unstable: 2.44.4
-        - commit: 7bfb948a3f10e3d7aaecf0bbb9aa5a0934acf5b4
-
-   1.328266337s  INFO vagrant::package:389: Fetched versions for mtdev
-        - release: 1.1.7
-        - commit: 9035c2225494b80b02e985fc7ee77880e0bd6993
-
-   1.330348084s  INFO vagrant::package:389: Fetched versions for git
-        - release: 2.52.0
-        - unstable: 2.52.0
-        - commit: debbc87557487aa9a8ed8a35367d17f8b4081c76
-
-   1.344229143s  INFO vagrant::package:389: Fetched versions for grep
-        - release: 3.12
-
-   1.346803312s  INFO vagrant::package:389: Fetched versions for glslang
-        - release: 16.0.0
-        - sdk: 1.4.328.1
-        - commit: 6cfcfaf1985a765c1691f12d413a2fd2945e918f
-
-   1.347373215s  INFO vagrant::package:389: Fetched versions for uthash
-        - release: 2.3.0
-        - commit: af6e637f19c102167fb914b9ebcc171389270b48
-
-   1.348264457s  INFO vagrant::package:389: Fetched versions for xkbcomp
-        - release: 1.4.7
-        - commit: ccea045e41f1a7e02b640d8a205d08ed4e1cadf4
-
-   1.355619279s  INFO vagrant::package:389: Fetched versions for swappy
-        - release: 1.8.0
-        - commit: c25040258fb9dde3dd7313e419a514436741cfe5
-
-   1.356642693s  INFO vagrant::package:389: Fetched versions for slurp
-        - release: 1.5.0
-        - commit: 414760a341c34d08b598555561a3630133d1a81c
-
-   1.357892646s  INFO vagrant::package:389: Fetched versions for sowm
-        - release: 1.6
-        - commit: f4cb48d7afeda195a73ff2bfdd3f85a016d53cec
-
-   1.361909012s  INFO vagrant::package:389: Fetched versions for rsync
-        - release: 3.4.1
-        - commit: 797e17fc4a6f15e3b1756538a9f812b63942686f
-
-   1.368418816s  INFO vagrant::package:389: Fetched versions for sqlite
-        - release: 3.51.0
-        - commit: 94b621a15a0a5c74af6f10eb8268f9e17d4286a8
-
-   1.368418790s  INFO vagrant::package:389: Fetched versions for systemd
-        - release: 258.2
-        - commit: 3a5d9ee980afdd1fad4e8c6b789a6270fce713fc
-
-   1.377572154s  INFO vagrant::package:389: Fetched versions for procps-ng
-        - release: 4.0.5
-        - commit: db4a4c561d40f8c78df9cb1fe6f5dcc2a0155c55
-
-   1.378405841s  INFO vagrant::package:389: Fetched versions for opus
-        - release: 1.5.2
-        - commit: 6f00d6d4b29b9a022d12585f6439d56784aeae61
-
-   1.379041281s  INFO vagrant::package:389: Fetched versions for packaging
-        - release: 25.0
-        - commit: 4b015117d76b6e4f86e8d58bbfd02e5ed2da3238
-
-   1.379086766s  INFO vagrant::package:389: Fetched versions for wlroots
-        - release: 0.19.2
-        - commit: 9b9d7d845db1917644045a52a4047bbb15ff68b4
-
-   1.390052942s  INFO vagrant::package:389: Fetched versions for spirv-tools
-        - release: 2025.4
-        - sdk: 1.4.328.1
-        - commit: 262bdab48146c937467f826699a40da0fdfc0f1a
-
-   1.394458101s  INFO vagrant::package:389: Fetched versions for tidy
-        - release: 5.8.0
-        - next: 5.9.14-next
-        - commit: d08ddc2860aa95ba8e301343a30837f157977cba
-
-   1.399531913s  INFO vagrant::package:389: Fetched versions for rip
-        - release: 0.4.1
-        - commit: c2f352c339749e38f42cf586795ec5a0a5d7e57e
-
-   1.402067954s  INFO vagrant::package:389: Fetched versions for libxpm
-        - release: 3.5.17
-        - commit: 10070a4e998c1a223dec437847c38dc27dbe85d4
-
-   1.409719477s  INFO vagrant::package:389: Fetched versions for glad
-        - release: 2.0.8
-        - commit: 27bed1181560211b55e39a9b132fef8c5846aae5
-
-   1.410149287s  INFO vagrant::package:389: Fetched versions for readline
-        - release: 8.3
-        - unstable: 8.3
-
-   1.410623958s  INFO vagrant::package:389: Fetched versions for startup-notification
-        - release: 0.12
-        - commit: 64eb585315cfb1fb4fe68c8f705956e9fed46545
-
-   1.410714636s  INFO vagrant::package:389: Fetched versions for st
-        - release: 0.9.3
-        - commit: 6e970474743d57a5d8b054c41fd3bff2bc895742
-
-   1.419436759s  INFO vagrant::package:389: Fetched versions for x265
-        - release: 4.1
-        - commit: 9e551a994f970a24f0e49bcebe3d43ef08448b01
-
-   1.429079104s  INFO vagrant::package:389: Fetched versions for muon
-        - release: 0.5.0
-        - commit: d1e42d116e088ce378a1634b763c30962a59f5a1
-
-   1.443183800s  INFO vagrant::package:389: Fetched versions for less
-        - release: 685
-        - unstable: 687
-        - commit: 7c5f3101970ec2f9ba9c32bca519ff86cfb8d7af
-
-   1.443766003s  INFO vagrant::package:389: Fetched versions for rofi
-        - release: 2.0.0
-        - commit: ea148cbb467b6b7b5811e3c1cf0e3c6cff8c937e
-
-   1.443964979s  INFO vagrant::package:389: Fetched versions for util-linux
-        - release: 2.41.2
-        - commit: 21bf9f6d442e42dc62ca7905770f2429a7eb0cb9
-
-   1.444837745s  INFO vagrant::package:389: Fetched versions for glaze
-        - release: 6.1.0
-        - commit: f86721a9b301f309558b342ffeae47c670ffccdd
-
-   1.448437742s  INFO vagrant::package:389: Fetched versions for speex
-        - release: 1.2.1
-        - commit: 05895229896dc942d453446eba6f9f5ddcf95422
-
-   1.450243734s  INFO vagrant::package:389: Fetched versions for glibc
-        - release: 2.42
-        - unstable: 2.42.9000
-        - commit: 244c404ae85003f45aa491a50b6902655ee2df15
-
-   1.451222266s  INFO vagrant::package:389: Fetched versions for rmpc
-        - release: 0.10.0
-        - commit: 3a0f82b0c3298ec8bfb8bceb06a2fbb4c51143dd
-
-   1.455718558s  INFO vagrant::package:389: Fetched versions for ostree
-        - release: 2025.7
-        - commit: c6f0b5b2bc26b22fbceee0dc28a0f31349c28d41
-
-   1.455982558s  INFO vagrant::package:389: Fetched versions for wayfire
-        - release: 0.10.0
-        - commit: 9c427024e849b0c676184c1af3c82b38f1f8fb67
-
-   1.459057618s  INFO vagrant::package:389: Fetched versions for sysvinit
-        - release: 3.15
-        - commit: 2da36cf51d4816438d5f944ec5e5d2f56f49e292
-
-   1.460810072s  INFO vagrant::package:389: Fetched versions for ripgrep
-        - release: 15.1.0
-        - commit: 57c190d56eedac90c061a238b63dbfed434fee50
-
-   1.464925451s  INFO vagrant::package:389: Fetched versions for rhash
-        - release: 1.4.6
-        - commit: b76c6a3312422c09817c2cef40442b2f2d9d4689
-
-   1.465213026s  INFO vagrant::package:389: Fetched versions for snowball
-        - release: 3.0.1
-        - commit: 8f22b43ad2f2fbd27ea33344780d94d2c463dcfd
-
-   1.466165272s  INFO vagrant::package:389: Fetched versions for xbitmaps
-        - release: 1.1.3
-        - commit: 35307f27a4554f47534fe235be12128157888a7b
-
-   1.467576902s  INFO vagrant::package:389: Fetched versions for rubberband
-        - release: 4.0.0
-        - commit: e4296ac80b1170018a110bc326fd0d45a0eb27d6
-
-   1.474810343s  INFO vagrant::package:389: Fetched versions for wpa_supplicant
-        - release: 2.11
-        - commit: a76b36b48ffb1a401e106bdf40ba8359cdd10c72
-
-   1.474907491s  INFO vagrant::package:389: Fetched versions for xauth
-        - release: 1.1.4
-        - commit: 1cb1d8e0284870a03970a0a45d1c8cfe7ec6a696
-
-   1.476629597s  INFO vagrant::package:389: Fetched versions for tinyxxd
+   1.548335720s  INFO vagrant::package:389: Fetched versions for libtirpc
         - release: 1.3.7
-        - commit: 2a872e538bdda2c56d3c01d13fb408768c9f335b
 
-   1.478251730s  INFO vagrant::package:389: Fetched versions for catgirl
-        - release: 2.2a
-        - unstable: 2.2a
-        - commit: 38dc6a301914efd34f9a57cf75e4d0dae8a529fc
+   1.549188732s  INFO vagrant::package:389: Fetched versions for libspng
+        - release: 0.7.4
+        - commit: adc94393dbeddf9e027d1b2dfff7c1bab975224e
 
-   1.481457681s  INFO vagrant::package:389: Fetched versions for psmisc
-        - release: 23.7
-        - commit: f3b51bdc90b6b5cb610528cce3d8262a932d50f0
+   1.558988085s  INFO vagrant::package:389: Fetched versions for libdatachannel
+        - release: 0.24.0
+        - commit: 2e4d6d86b1502252f8dfbb3c687a387e69c548c7
 
-   1.485654975s  INFO vagrant::package:389: Fetched versions for pango
-        - release: 1.57.0
-        - commit: 2fb8d7782ec0e166aeeb961402db8afae521d574
+   1.565591176s  INFO vagrant::package:389: Fetched versions for libjpeg-turbo
+        - release: 3.1.2
+        - commit: 0b742742c873025e2a127918d4969238ace7ae5b
 
-   1.486220920s  INFO vagrant::package:389: Fetched versions for perl
-        - release: 5.42.0
-        - unstable: 5.43.5
-        - commit: b3ee914dfbab2a3260c49ee83ecda5fa55581de7
+   1.568461511s  INFO vagrant::package:389: Fetched versions for libxdamage
+        - release: 1.1.6
+        - commit: 1319ae5cfbde5b75e23383baa5e00cc23513448c
 
-   1.499079195s  INFO vagrant::package:389: Fetched versions for wev
-        - release: 1.1.0
-        - commit: b09b664dd2d1b11dd68e03f8c0363ac0ef76f1e0
+   1.571277338s  INFO vagrant::package:389: Fetched versions for libjuice
+        - release: 1.7.0
+        - commit: 5948a4162d37bc213d6051b67ee2876ccc5a99a6
 
-   1.501543708s  INFO vagrant::package:389: Fetched versions for pastel
-        - release: 0.11.0
-        - commit: b60e89932629b2d162e1ff9f3976a5a0ef1e5db9
-
-   1.502210807s  INFO vagrant::package:389: Fetched versions for x264
-        - commit: 0480cb05fa188d37ae87e8f4fd8f1aea3711f7ee
-
-   1.503345335s  INFO vagrant::package:389: Fetched versions for patchelf
-        - release: 0.18.0
-        - commit: d0f70eea5397606c486857e0a105e53ec123904a
-
-   1.515699937s  INFO vagrant::package:389: Fetched versions for wbg
-        - release: 1.3.0
-        - commit: bc00df2244a0d8f88d4051f505ef9aebb51447ca
-
-   1.522179779s  INFO vagrant::package:389: Fetched versions for pigz
-        - release: 2.8
-        - commit: fe4894f57739e3039a2ffc2a2a360d35e19bacbe
-
-   1.524803500s  INFO vagrant::package:389: Fetched versions for wf-config
-        - release: 0.10.0
-        - commit: 3597fcdccac71015cbfd20656c43caec30f10240
-
-   1.535572269s  INFO vagrant::package:389: Fetched versions for util-macros
-        - release: 1.20.2
-        - commit: a9d71e3fd8e6758b70be31c586921bbbcd2a8449
-
-   1.538030759s  INFO vagrant::package:389: Fetched versions for wget
+   1.571365197s  INFO vagrant::package:389: Fetched versions for wget
         - release: 1.25.0
         - commit: 74e4c0d2096c1a5a29b1498278e8b90d7211e2be
 
-   1.538252547s  INFO vagrant::package:389: Fetched versions for wayland-protocols
-        - release: 1.46
-        - commit: 6141e1154303dadd5c3e480bc4a16e26f1dcb2af
+   1.571826263s  INFO vagrant::package:389: Fetched versions for libva
+        - release: 2.22.0
+        - commit: 161f3b51e282cd6d2bc146b2755f14dab73ca014
 
-   1.538272554s  INFO vagrant::package:389: Fetched versions for wayland
-        - release: 1.24.0
-        - commit: d81525a235e48cc5de3e4005a16ddb1fbdfd9d7c
+   1.581722381s  INFO vagrant::package:389: Fetched versions for libepoxy
+        - release: 1.5.10
+        - commit: 167802b7db5b753798d2208f393e3ab45201dd5f
 
-   1.543428473s  INFO vagrant::package:389: Fetched versions for scdoc
-        - release: 1.11.4
-        - commit: 70de0e5e5d3bc40134ee65c35f1631656199f4be
+   1.591172379s  INFO vagrant::package:389: Fetched versions for libuv
+        - release: 1.51.0
+        - commit: 8e024629fe76c7e4d009fd01ccf8b329c99433d3
 
-   1.544292818s  INFO vagrant::package:389: Fetched versions for pixman
-        - release: 0.46.4
-        - commit: f824cac6478971c0f71e4dfe8a60ebf70224076a
+   1.591207488s  INFO vagrant::package:389: Fetched versions for libconfig
+        - release: 1.8.1
+        - commit: 02d9a6bda1165a3afc2c5571f12404d6d0e73557
 
-   1.555735603s  INFO vagrant::package:389: Fetched versions for pulseaudio
-        - release: 17.0
-        - commit: be2efb69b97ee49ba81094d49a1b8d7be0c588c2
+   1.591874878s  INFO vagrant::package:389: Fetched versions for libseccomp
+        - release: 2.6.0
+        - commit: 2bc718995e782a8473ba9db8509a398ef69b2edc
 
-   1.556436306s  INFO vagrant::package:389: Fetched versions for xcb-util
-        - release: 0.4.1
-        - commit: bdba930aaac6ee6f271133674b40f1a9d895c6d4
-
-   1.557255338s  INFO vagrant::package:389: Fetched versions for wayfire-plugins-extra
-        - release: 0.10.0
-        - commit: 54da4e261a77bb3ec5ed4a7ceef0978311d6cfff
-
-   1.560333299s  INFO vagrant::package:389: Fetched versions for pciutils
-        - release: 3.14.0
-        - commit: 3ec74c71c01878f92e751f15bb8febe720c3ab40
-
-   1.560989337s  INFO vagrant::package:389: Fetched versions for pinentry
-        - release: 1.3.2
-        - commit: 954b3da04ac95ffb23ce9eac34ff99633cffdb47
-
-   1.561975226s  INFO vagrant::package:389: Fetched versions for xcb-proto
-        - release: 1.17.0
-        - commit: 2ec66abb885801f9d5944ef7b830c24401592b49
-
-   1.566090145s  INFO vagrant::package:389: Fetched versions for picom
-        - release: 12.5
-        - commit: be577470d9a725d44c397429f66f606ae1f22436
-
-   1.570328898s  INFO vagrant::package:389: Fetched versions for pkgconf
-        - release: 2.5.1
-        - commit: a1e09753bc4353fdd21957f6c1fd55d7e53662e4
-
-   1.575967204s  INFO vagrant::package:389: Fetched versions for vala
-        - release: 0.56.18
-        - commit: d680994c54dd34b8bd3bd808f0023be19ea647da
-
-   1.575986068s  INFO vagrant::package:389: Fetched versions for tllist
-        - release: 1.1.0
-        - commit: 05b463da2ee4a81903126756689282f99f88cc30
-
-   1.580088150s  INFO vagrant::package:389: Fetched versions for ply
-        - release: 3.11
-        - commit: 5c4dc94d4c6d059ec127ee1493c735963a5d2645
-
-   1.583075418s  INFO vagrant::package:389: Fetched versions for pugixml
-        - release: 1.15
-        - commit: 61c944895e071872370219cadade8423dc6e04dc
-
-   1.584048929s  INFO vagrant::package:389: Fetched versions for sdbus-cpp
-        - release: 2.2.1
-        - commit: 28b78822cfc5fbec4bd9906168493e9985f586ed
-
-   1.587572417s  INFO vagrant::package:389: Fetched versions for pcre2
-        - release: 10.47
-        - commit: 954a9217ab8fbfb3dda91c74fb1b52f4be677baa
-
-   1.589188255s  INFO vagrant::package:389: Fetched versions for rust
-        - release: 1.91.1
-        - nightly: 2025-11-24
-        - commit: b64df9d1012f2482b54a4d959548cf8fc67e820c
-
-   1.592585248s  INFO vagrant::package:389: Fetched versions for socat
-        - release: 1.8.0.3
-        - unstable: 2.0.0-b9
-        - commit: 78cc5ae1a57470b1978c14ff8b65729f1bb6a719
-
-   1.595566501s  INFO vagrant::package:389: Fetched versions for websocketpp
-        - release: 0.8.2
-        - commit: 4dfe1be74e684acca19ac1cf96cce0df9eac2a2d
-
-   1.595969889s  INFO vagrant::package:389: Fetched versions for scour
-        - release: 0.38.2
-        - commit: 0609c596766ec98e4e2092b49bd03b802702ba1a
-
-   1.596118907s  INFO vagrant::package:389: Fetched versions for polkit
-        - release: 126
-        - commit: 242610da73be078960052cd727c38bc20e35b8da
-
-   1.601723574s  INFO vagrant::package:389: Fetched versions for vorbis
-        - release: 1.3.7
-        - commit: 851cce991da34adf5e1f3132588683758a6369ec
-
-   1.602078035s  INFO vagrant::package:389: Fetched versions for tz
-        - release: 2025b
-
-   1.607350823s  INFO vagrant::package:389: Fetched versions for pipewire
-        - release: 1.4.9
-        - unstable: 1.4.9
-        - commit: fc26e6321b110ad2156bebf16b5a505eedc3b7c9
-
-   1.608244687s  INFO vagrant::package:389: Fetched versions for qr-code-generator
-        - release: 1.8.0
-        - commit: 2c9044de6b049ca25cb3cd1649ed7e27aa055138
-
-   1.608638557s  INFO vagrant::package:389: Fetched versions for traceroute
-        - release: 2.1.6
-
-   1.614310629s  INFO vagrant::package:389: Fetched versions for unrar
-        - release: 7.2.2
-
-   1.615185616s  INFO vagrant::package:389: Fetched versions for tuun
-        - release: 5.9.0
-        - commit: 722b8ba79ad0f3e1872bd2c1733c3fd1aa613b75
-
-   1.617388710s  INFO vagrant::package:389: Fetched versions for tomlplusplus
-        - release: 3.4.0
-        - commit: e7aaccca3fa3dbde9818ab8313250f3da4976e37
-
-   1.619421424s  INFO vagrant::package:389: Fetched versions for sdl
-        - release: 3.2.26
-        - commit: 9896dc18e7fe12e4ce034fe77ac51a8d5730830e
-
-   1.621981493s  INFO vagrant::package:389: Fetched versions for tmux
-        - release: 3.5a
-        - commit: 348f16093c35cbb318281e68f4405dae5b2627d1
-
-   1.622057022s  INFO vagrant::package:389: Fetched versions for pyserial
-        - release: 3.5
-        - commit: d0e467358e2967b6b0aef8c35e7db72d744cb8f2
-
-   1.625955193s  INFO vagrant::package:389: Fetched versions for pyparsing
-        - release: 3.2.5
-        - commit: 64fdc61ae5a877f98404aa491f21368508d1222f
-
-   1.626901153s  INFO vagrant::package:389: Fetched versions for quickshell
-        - release: 0.2.1
-        - commit: ed036d514b0fdbce03158a0b331305be166f4555
-
-   1.627611762s  INFO vagrant::package:389: Fetched versions for qemu
-        - release: 10.1.2
-        - commit: de074358e99b8eb5076d3efa267e44c292c90e3e
-
-   1.629083447s  INFO vagrant::package:389: Fetched versions for qt
-        - release: 6.10.1
-        - 5: 5.15.18
-        - commit: 36cee508a088e1570e1d89e060c3ccd14585d3f1
-
-   1.630390855s  INFO vagrant::package:389: Fetched versions for typst
-        - release: 0.14.0
-        - commit: 630fbbec415c5d0dd854b62d6039b11dd10c4961
-
-   1.630717547s  INFO vagrant::package:389: Fetched versions for vulkan-headers
-        - release: 1.4.334
-        - sdk: 1.4.328.1
-        - commit: 6aefb8eb95c8e170d0805fd0f2d02832ec1e099a
-
-   1.632211443s  INFO vagrant::package:389: Fetched versions for ufw
-        - release: 0.36.2
-        - commit: bdb71dc636c918421d50cac647353b2be08202a0
-
-   1.635705452s  INFO vagrant::package:389: Fetched versions for libxp
+   1.592341229s  INFO vagrant::package:389: Fetched versions for libxp
         - release: 1.0.4
         - commit: 3822576fc3f36125fffa5b866bb96586883970bc
 
-   1.636488570s  INFO vagrant::package:389: Fetched versions for typos
-        - unstable: 1.39.2
-        - release: 1.39.2
-        - commit: a1a16c7b7c25d1c27cc750525aada8b9ae68b716
+   1.594667864s  INFO vagrant::package:389: Fetched versions for libxfont
+        - release: 2.0.7
+        - commit: 2c2e44c94ef17ecd5003a173237b57b315e28d93
 
-   1.637707304s  INFO vagrant::package:389: Fetched versions for vulkan-loader
-        - release: 1.4.334
-        - sdk: 1.4.328.1
-        - commit: ce04129aceb2d3f592b0bd6b4ecde0c5f020fafd
+   1.596654887s  INFO vagrant::package:389: Fetched versions for curl
+        - release: 8.17.0
+        - unstable: 8.17.0
+        - commit: 4041eea61edd8cf66c6f85c47a430bb5774f017c
 
-   1.642258435s  INFO vagrant::package:389: Fetched versions for python
-        - release: 3.14.0
-        - unstable: 3.15.0a2
-        - commit: 369ce2b139a5b76c9c093cba1cee287cb6ffeec1
+   1.599630885s  INFO vagrant::package:389: Fetched versions for libx11
+        - release: 1.8.12
+        - commit: 369c6a806554429798b531cbf4267d8c8fcf6ed1
 
-   1.674549101s  INFO vagrant::package:389: Fetched versions for gcc
-        - release: 15.2.0
-        - unstable: 16
-        - commit: a2f4b0466be29c853c32498ae49c1acfa1594f30
+   1.599840355s  INFO vagrant::package:389: Fetched versions for libtiff
+        - release: 4.7.1
+        - commit: fe56942cd082d77b0b9a5dd3578140a8e33e985b
 
-   1.676809503s  INFO vagrant::package:389: Fetched versions for steam
-        - release: 1.0.0.85
+   1.601699169s  INFO vagrant::package:389: Fetched versions for libtool
+        - release: 2.6.0
+        - commit: c4abf359f849187fa7f505a0a34f15f2bd66db24
 
-   1.682250378s  INFO vagrant::package:389: Fetched versions for libev
+   1.602335439s  INFO vagrant::package:389: Fetched versions for libidn
+        - release: 2.3.8
+        - commit: 0d4cf4af37414c4f0710289a8b79c385b974c273
+        - 1: 1.43
+
+   1.603567958s  INFO vagrant::package:389: Fetched versions for libvpx
+        - release: 1.15.2
+        - commit: 1ec7b38c15d524ff1875f512e895e2d20865de8a
+
+   1.620640565s  INFO vagrant::package:389: Fetched versions for libsm
+        - release: 1.2.6
+        - commit: 5f6da959a34bcefc425b6e37462553acf44369a3
+
+   1.622874820s  INFO vagrant::package:389: Fetched versions for libxpm
+        - release: 3.5.17
+        - commit: 10070a4e998c1a223dec437847c38dc27dbe85d4
+
+   1.626774045s  INFO vagrant::package:389: Fetched versions for libgcrypt
+        - release: 1.11.2
+        - commit: 670646bbf185587c7de039430d71a38b7f0f8597
+
+   1.628292271s  INFO vagrant::package:389: Fetched versions for cairo
+        - release: 1.18.4
+        - unstable: 1.18.4
+        - commit: 04656d7450e229622546fd2b11496aa58c44181d
+
+   1.633979569s  INFO vagrant::package:389: Fetched versions for libxaw
+        - release: 1.0.16
+        - commit: 12e81cd8ade629256488782a2e7ae0322d84da53
+
+   1.634154534s  INFO vagrant::package:389: Fetched versions for libdisplay-info
+        - release: 0.3.0
+        - commit: 788c056e24eaf412832889afd46aaa41bec94e6a
+
+   1.635160150s  INFO vagrant::package:389: Fetched versions for cbindgen
+        - release: 0.29.2
+        - unstable: 0.29.2
+        - commit: ac824ecebc64c1b45720e324b4676eedcc2b177f
+
+   1.636376613s  INFO vagrant::package:389: Fetched versions for libsrtp
+        - release: 2.7.0
+        - commit: 163cb8ada1f0e7f0e3184f615d082f2ab40e6784
+
+   1.637180170s  INFO vagrant::package:389: Fetched versions for libxft
+        - release: 2.3.9
+        - commit: 69edd320e23b00d9aef240ce9b50f7bf482a12ef
+
+   1.638349620s  INFO vagrant::package:389: Fetched versions for libpcap
+        - release: 1.10.5
+        - commit: 7442d42f6c65a43d4f25cab4c7144b4fb1071a16
+
+   1.639208566s  INFO vagrant::package:389: Fetched versions for libfuse
+        - release: 3.17.4
+        - 2: 2.9.9
+        - commit: 02c0fc628006b0dcd18cf03f70021619ed817f08
+
+   1.640381382s  INFO vagrant::package:389: Fetched versions for libwebp
+        - release: 1.6.0
+        - commit: 3532891de4e7a94081f38a56008dbd41651b0ce1
+
+   1.643169565s  INFO vagrant::package:389: Fetched versions for libvpl-tools
+        - release: 1.4.0
+        - commit: 70efc4e7be548c25dac9aa461d84ae68d198bd53
+
+   1.650323969s  INFO vagrant::package:389: Fetched versions for cargo-c
+        - release: 0.10.18
+        - commit: 5fb145df3ea61f1ba4a7785d3524be8b37c64ce3
+
+   1.652287304s  INFO vagrant::package:389: Fetched versions for libxau
+        - release: 1.0.12
+        - commit: 962b015d498b1f186aea8e3b0b46fb9791831552
+
+   1.652456791s  INFO vagrant::package:389: Fetched versions for libssh2
+        - release: 1.11.1
+        - commit: b098a3c434e94eb46e85c487e744264d98c298ce
+
+   1.652502663s  INFO vagrant::package:389: Fetched versions for libslirp
+        - release: 4.9.1
+        - commit: 027a9abeba1ee97cff27c9002e71af0d4fc13607
+
+   1.653141938s  INFO vagrant::package:389: Fetched versions for libsndfile
+        - release: 1.2.2
+        - commit: d9a35ea0d5c64c19dd635ae578e0028df8f66d6a
+
+   1.653594427s  INFO vagrant::package:389: Fetched versions for cyrus-sasl
+        - release: 2.1.28
+        - commit: ac0c278817a082c625c496ec812318c019e0b96f
+
+   1.654919485s  INFO vagrant::package:389: Fetched versions for libxcb
+        - release: 1.17.0
+        - commit: 93ee2ac73c32dcb567259fb83c564a424cd9fef7
+
+   1.655998908s  INFO vagrant::package:389: Fetched versions for catfetch
+        - release: 1.5.1
+        - commit: 81201eaad30c5a8b6ab615cfd9631e22e3da3cc1
+
+   1.656719828s  INFO vagrant::package:389: Fetched versions for coreutils
+        - release: 9.9
+        - commit: 6b399ad35229e7f00dd344b9516228925a111d49
+
+   1.658383413s  INFO vagrant::package:389: Fetched versions for cli11
+        - release: 2.6.1
+        - commit: 60c518cda8c87ebb27cd4057738aa9114df11b50
+
+   1.658553350s  INFO vagrant::package:389: Fetched versions for chrony
+        - release: 4.8
+        - unstable: 4.8
+        - commit: 73f6657dfdb18dd06b0aea4ad8455e6767a16384
+
+   1.662129345s  INFO vagrant::package:389: Fetched versions for libxcomposite
+        - release: 0.4.6
+        - commit: f796f0a862849765ac5b6b5e861ea548b421b8f0
+
+   1.664178981s  INFO vagrant::package:389: Fetched versions for cmake
+        - release: 4.2.0
+        - unstable: 4.2.0
+        - commit: 6327dfeef888ca48703801038f0b14bb10581b40
+
+   1.666349384s  INFO vagrant::package:389: Fetched versions for dconf
+        - release: 0.49.0
+        - unstable: 0.49.0
+        - commit: 1f3a995aed4f64b356972cf0b7100ca5ccfeb4ba
+
+   1.666634173s  INFO vagrant::package:389: Fetched versions for dbus
+        - release: 1.16.2
+        - unstable: 1.16.2
+        - commit: 1bcf396c7872f317778f3ff5645af1630738d43f
+
+   1.666833341s  INFO vagrant::package:389: Fetched versions for cython
+        - release: 3.2.1
+        - unstable: 3.2.1
+        - commit: 6ee3a36c92ecdf82b06e0891c35aa09669091cf6
+
+   2.043873057s  INFO vagrant::package:389: Fetched versions for check
+        - release: 0.15.2
+        - commit: 455005dc29dc6727de7ee36fee4b49a13b39f73f
+
+   2.683455289s  INFO vagrant::package:389: Fetched versions for libev
         - release: 4.33
 
-   1.732706900s  INFO vagrant::package:389: Fetched versions for pyyaml
-        - release: 6.0.3
-        - commit: d51d8a138f7230834fc6e95635ff09ebd329185f
-
-   1.823447151s  INFO vagrant:67: Finished in 1s 733ms 649us 58ns
+   2.724105019s  INFO vagrant:67: Finished in 2s 684ms 951us 594ns
