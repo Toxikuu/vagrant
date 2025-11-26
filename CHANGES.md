@@ -7,6 +7,29 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.5.0 - 2025-11-25 21:44:28 -0600
+
+### Features
+
+ - Remove leading blank lines
+ - Add a few packages
+ - Add basename logic for nested packages
+ - Change package detection criteria
+ - Avoid a few hundred reallocs
+ - **[!]** Refactor and be stricter about expected regexes
+ - Tweak acl config
+
+### Fixes
+
+ - Create parent directories for nested packages
+ - Adapt broken configs to recent changes
+ - Move upstream for poppler
+
+### Chores
+
+ - Update dependencies
+
+
 ## 2.4.2 - 2025-11-23 23:01:03 -0600
 
 ### Features
