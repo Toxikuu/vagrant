@@ -1,0 +1,7 @@
+upstream = "KhronosGroup/SPIRV-LLVM-Translator"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

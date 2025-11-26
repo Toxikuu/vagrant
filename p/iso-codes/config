@@ -1,0 +1,7 @@
+upstream = "https://salsa.debian.org/iso-codes-team/iso-codes.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

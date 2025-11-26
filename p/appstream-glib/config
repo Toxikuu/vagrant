@@ -1,0 +1,9 @@
+upstream = "hughsie/appstream-glib"
+chance = 0.77
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,^appstream_glib_,,' | vsort"
+
+[[channels]]
+name = "commit"

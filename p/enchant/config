@@ -1,0 +1,8 @@
+upstream = "rrthomas/enchant"
+
+[[channels]]
+name = "release"
+fetch = "gr | vtrim -e 's,-,.,g' | vsort"
+
+[[channels]]
+name = "commit"

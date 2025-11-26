@@ -1,0 +1,7 @@
+upstream = "apache/apr"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
