@@ -7,10 +7,12 @@ fetch = "ca | vsort | vfs"
 [[channels]]
 name = "mainline"
 fetch = "ca | vsort"
+expected = '''^\d\.\d+-rc\d+$'''
 
 [[channels]]
 name = "next"
-fetch = "cr | grep -Eo 'next-[0-9]{8}' | cut -d- -f2-"
+fetch = "cr | grep -Eo 'next-[0-9]{8}'"
+expected = '''^next-\d{8}$'''
 
 [[channels]]
 upstream = "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git"

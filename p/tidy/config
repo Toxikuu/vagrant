@@ -7,6 +7,7 @@ fetch = "gr | fl | vsort"
 [[channels]]
 name = "next"
 fetch = "gr | grep -F next | vsort"
+expected = '''^\d+\.\d+\.\d+-next$'''
 
 [[channels]]
 name = "commit"

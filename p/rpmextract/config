@@ -6,3 +6,4 @@ fetch = "gr | vtrim -e 's,-.*,,' | vsort"
 
 [[channels]]
 name = "commit"
+fetch = "githead" # archlinux.org is flagged as the arch upstream type, so the fetch must be manually specified

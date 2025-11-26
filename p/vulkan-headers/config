@@ -7,6 +7,7 @@ fetch = "gr | vtrim -re 's,^(vulkan(-sdk|)|sdk)-,,' | fsl | vrepl | vsort"
 [[channels]]
 name = "sdk"
 fetch = "gr | grep '^vulkan-sdk-' | cut -d- -f3- | vsort"
+expected = '''^\d\.\d\.\d{3}\.\d$'''
 
 [[channels]]
 name = "commit"
