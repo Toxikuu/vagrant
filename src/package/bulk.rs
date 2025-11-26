@@ -14,7 +14,7 @@ use tracing::{debug, error};
 
 pub fn find_all() -> Result<Vec<Package>> {
     let search_path = Path::new("p");
-    let mut packages = vec![];
+    let mut packages = Vec::with_capacity(512);
 
     for entry in search_path.read_dir()?.flatten() {
         let path = entry.path();
