@@ -1,0 +1,3 @@
+release	1.8.1
+unstable	1.8.1
+commit	39572e129f3b1e5d0cf894d6c8fe8ab8eaa04551

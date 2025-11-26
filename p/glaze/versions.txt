@@ -1,2 +1,2 @@
 release	6.1.0
-commit	356ace6c0ce0abeddb3689b955548eed70770a40
+commit	c525f27b2a62700f850d18c228cdfc39d3f51ba4

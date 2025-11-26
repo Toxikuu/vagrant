@@ -343,6 +343,15 @@
     ]
   },
   {
+    "package": "bluefish",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.2.19"
+      }
+    ]
+  },
+  {
     "package": "boost",
     "versions": [
       {
@@ -718,6 +727,32 @@
     ]
   },
   {
+    "package": "cups-browsed",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.1"
+      },
+      {
+        "channel": "commit",
+        "version": "fcfc05d6f2d9e1aeb1805a9b7bdd724559ef4d0a"
+      }
+    ]
+  },
+  {
+    "package": "cups-filters",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.0.1"
+      },
+      {
+        "channel": "commit",
+        "version": "956283c74a34ae924266a2a63f8e5f529a1abd06"
+      }
+    ]
+  },
+  {
     "package": "curl",
     "versions": [
       {
@@ -761,6 +796,19 @@
       {
         "channel": "commit",
         "version": "6ee3a36c92ecdf82b06e0891c35aa09669091cf6"
+      }
+    ]
+  },
+  {
+    "package": "dash",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.5.13"
+      },
+      {
+        "channel": "commit",
+        "version": "5139d6a27763fc0be386e15634db21e45598b299"
       }
     ]
   },
@@ -991,6 +1039,15 @@
     ]
   },
   {
+    "package": "ed",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.22.2"
+      }
+    ]
+  },
+  {
     "package": "efibootmgr",
     "versions": [
       {
@@ -1108,6 +1165,19 @@
       {
         "channel": "commit",
         "version": "c09b9caece0459ec56b234a87583e1bfac3c3271"
+      }
+    ]
+  },
+  {
+    "package": "emacs",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "30.2"
+      },
+      {
+        "channel": "commit",
+        "version": "16a70518880ef8f54bd853020f1606d3abf04d8e"
       }
     ]
   },
@@ -1251,6 +1321,19 @@
     ]
   },
   {
+    "package": "fish",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "4.2.1"
+      },
+      {
+        "channel": "commit",
+        "version": "26cb52214001bc89aa06d419764ed4a1e13d5a34"
+      }
+    ]
+  },
+  {
     "package": "flac",
     "versions": [
       {
@@ -1272,7 +1355,7 @@
       },
       {
         "channel": "commit",
-        "version": "846b82bf8500c28ad10aa4c03480d7b420ad3ce4"
+        "version": "fbb6a0a19adc70678cb87ba1a2b8c32df2f9cda9"
       }
     ]
   },
@@ -1457,7 +1540,7 @@
       },
       {
         "channel": "commit",
-        "version": "3c62023d05e9112ac51678fef42b2ba6e582f383"
+        "version": "be848078841cbd937ff0ce7bb1564e09d5e2959e"
       }
     ]
   },
@@ -1502,6 +1585,28 @@
       {
         "channel": "release",
         "version": "0.26"
+      }
+    ]
+  },
+  {
+    "package": "gettext-tiny",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.3.2"
+      },
+      {
+        "channel": "commit",
+        "version": "55a8ae9015b7dd5b28e03e93286ab19528cc7e3e"
+      }
+    ]
+  },
+  {
+    "package": "ghostscript",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "10.06.0"
       }
     ]
   },
@@ -1570,7 +1675,7 @@
       },
       {
         "channel": "commit",
-        "version": "356ace6c0ce0abeddb3689b955548eed70770a40"
+        "version": "c525f27b2a62700f850d18c228cdfc39d3f51ba4"
       }
     ]
   },
@@ -1720,7 +1825,7 @@
       },
       {
         "channel": "commit",
-        "version": "955f7a7fc223642d1ede6d55f094961cb97bfa68"
+        "version": "b0a0e994d22dcae64e2b3af091164057cea7abe3"
       }
     ]
   },
@@ -1737,7 +1842,7 @@
       },
       {
         "channel": "commit",
-        "version": "272df5f6ba94018dac2b7d384e92115b795fe241"
+        "version": "03f499ec4602500939a1ed3c540cbd5183c20ce9"
       }
     ]
   },
@@ -1821,6 +1926,15 @@
       {
         "channel": "release",
         "version": "1.23.0"
+      }
+    ]
+  },
+  {
+    "package": "grub",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.12"
       }
     ]
   },
@@ -2036,7 +2150,7 @@
       },
       {
         "channel": "commit",
-        "version": "9de76e7caeae4007900b5f7f1c1d22424f19d85c"
+        "version": "77b5217bede62ec0a5204e2526e36a4295f754fe"
       }
     ]
   },
@@ -2063,6 +2177,32 @@
       {
         "channel": "commit",
         "version": "d546847a8cca6834e3c9382b876488b1428209c4"
+      }
+    ]
+  },
+  {
+    "package": "isl",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "0.27"
+      },
+      {
+        "channel": "commit",
+        "version": "e0979684a48e37fec687b9f76f7a4c392ca55840"
+      }
+    ]
+  },
+  {
+    "package": "iw",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.17"
+      },
+      {
+        "channel": "commit",
+        "version": "b9f9dda5898bd03ae679922e424097f556351790"
       }
     ]
   },
@@ -2174,6 +2314,23 @@
     ]
   },
   {
+    "package": "jq",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.8.1"
+      },
+      {
+        "channel": "unstable",
+        "version": "1.8.1"
+      },
+      {
+        "channel": "commit",
+        "version": "39572e129f3b1e5d0cf894d6c8fe8ab8eaa04551"
+      }
+    ]
+  },
+  {
     "package": "json-c",
     "versions": [
       {
@@ -2273,7 +2430,7 @@
       },
       {
         "channel": "commit",
-        "version": "7c5f3101970ec2f9ba9c32bca519ff86cfb8d7af"
+        "version": "6a18e00079a48af3ce477d0fd0b13d974da7858c"
       }
     ]
   },
@@ -2400,6 +2557,19 @@
       {
         "channel": "commit",
         "version": "02d9a6bda1165a3afc2c5571f12404d6d0e73557"
+      }
+    ]
+  },
+  {
+    "package": "libcupsfilters",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.1"
+      },
+      {
+        "channel": "commit",
+        "version": "fd01543f372ca3ba1f1c27bd3427110fa0094e3f"
       }
     ]
   },
@@ -2916,6 +3086,19 @@
       {
         "channel": "commit",
         "version": "62954d33fe729566e9d17b78ddaf013896a1f3c5"
+      }
+    ]
+  },
+  {
+    "package": "libppd",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "2.1.1"
+      },
+      {
+        "channel": "commit",
+        "version": "262d25e4125337201b452b072c7aa4b0d70a98d0"
       }
     ]
   },
@@ -3686,7 +3869,7 @@
       },
       {
         "channel": "commit",
-        "version": "bd558135ce9b4202fd66d3bb1154ca711a268328"
+        "version": "243c60af41356da2a77c64c4ffbc3da4dcfa835e"
       }
     ]
   },
@@ -3820,7 +4003,7 @@
       },
       {
         "channel": "next",
-        "version": "20251125"
+        "version": "next-20251126"
       },
       {
         "channel": "commit",
@@ -3867,7 +4050,7 @@
       },
       {
         "channel": "commit",
-        "version": "5d38cddc3b00b428f848fdeddc8334c4560db36a"
+        "version": "e81a564cb0031e93d34a941224b14ec73c69bf65"
       }
     ]
   },
@@ -4108,7 +4291,7 @@
       },
       {
         "channel": "commit",
-        "version": "3aa4be52f3abd2cf40d99ab3f7aa014991e90313"
+        "version": "1574a714387d0b529f06cf962a07716aaf238a5a"
       }
     ]
   },
@@ -4261,6 +4444,19 @@
     ]
   },
   {
+    "package": "nano",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "8.7"
+      },
+      {
+        "channel": "commit",
+        "version": "31fc5194b211dc4670f9bf7af1691ac301cbad70"
+      }
+    ]
+  },
+  {
     "package": "nasm",
     "versions": [
       {
@@ -4286,7 +4482,7 @@
       },
       {
         "channel": "commit",
-        "version": "d213ae3bb9c727dda1b48aac0f058ae5201d2a72"
+        "version": "1b3d0a670e730b338de6b716e2a60cf86351e44b"
       }
     ]
   },
@@ -5032,7 +5228,7 @@
       },
       {
         "channel": "commit",
-        "version": "9c9fc6e85f25f95a0bd888e7fd4bc74666d78cd7"
+        "version": "1dd1579d825e49336c3731b1985a34dbc49f513f"
       }
     ]
   },
@@ -5118,7 +5314,7 @@
       },
       {
         "channel": "commit",
-        "version": "56c2d82d7b40362f2676ee372f608eac8f9747f7"
+        "version": "3e72c3d2f0ce3004fec0f1487ca52de7461f362c"
       }
     ]
   },
@@ -5241,6 +5437,10 @@
       {
         "channel": "release",
         "version": "1.0"
+      },
+      {
+        "channel": "commit",
+        "version": "85d81dcda09833106c917eafb205455cfbc31a31"
       }
     ]
   },
@@ -5348,7 +5548,7 @@
       },
       {
         "channel": "commit",
-        "version": "1edb8506397812cbef66e9f7be0085443fc044c2"
+        "version": "21f93e127bad2b6ba3ec88684ddae47782c36eeb"
       }
     ]
   },
@@ -5813,6 +6013,19 @@
     ]
   },
   {
+    "package": "tcsh",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.24.16"
+      },
+      {
+        "channel": "commit",
+        "version": "66151bb47cb7bc0aef037110ec13ae7af45d67f9"
+      }
+    ]
+  },
+  {
     "package": "tealdeer",
     "versions": [
       {
@@ -6061,6 +6274,19 @@
       {
         "channel": "commit",
         "version": "d680994c54dd34b8bd3bd808f0023be19ea647da"
+      }
+    ]
+  },
+  {
+    "package": "vim",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "9.1.1927"
+      },
+      {
+        "channel": "commit",
+        "version": "efa3b1f86d0985a5a1c5b87981c2b7dcaca0815e"
       }
     ]
   },
@@ -6394,6 +6620,19 @@
     ]
   },
   {
+    "package": "xapian",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "1.4.30"
+      },
+      {
+        "channel": "commit",
+        "version": "6e12ad7cd2c4b89fb5e982700553bd54ec0d1261"
+      }
+    ]
+  },
+  {
     "package": "xauth",
     "versions": [
       {
@@ -6715,6 +6954,19 @@
       {
         "channel": "commit",
         "version": "ac862672e4d04e78f2b647af9d3d14544454e4b9"
+      }
+    ]
+  },
+  {
+    "package": "xfsprogs",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "6.17.0"
+      },
+      {
+        "channel": "commit",
+        "version": "de85869984a4095826fb170fc9bd6ae0053c9006"
       }
     ]
   },
@@ -7097,6 +7349,19 @@
       {
         "channel": "commit",
         "version": "fe179585e7c25234c2c224116ccfed8b0a78dbd9"
+      }
+    ]
+  },
+  {
+    "package": "zsh",
+    "versions": [
+      {
+        "channel": "release",
+        "version": "5.9"
+      },
+      {
+        "channel": "commit",
+        "version": "8a3ee5a802a89fd12ddc2741d8ac785bb4169bf4"
       }
     ]
   },

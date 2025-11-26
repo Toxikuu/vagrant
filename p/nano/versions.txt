@@ -1,0 +1,2 @@
+release	8.7
+commit	31fc5194b211dc4670f9bf7af1691ac301cbad70
