@@ -1,0 +1,10 @@
+upstream = "jqlang/jq"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "unstable"
+
+[[channels]]
+name = "commit"
