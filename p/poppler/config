@@ -1,9 +1,7 @@
-upstream = "https://anongit.freedesktop.org/git/poppler/poppler.git"
+upstream = "https://gitlab.freedesktop.org/poppler/poppler"
 
 [[channels]]
 name = "release"
-# There is a random tag for 2029 ??
-fetch = "defgitrelease | grep -vF '29.01.0'"
 
 [[channels]]
 name = "commit"
