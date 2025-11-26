@@ -1,0 +1,7 @@
+upstream = "zsh-users/zsh"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "openprinting/libppd"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

@@ -1,0 +1,7 @@
+upstream = "https://git.savannah.gnu.org/git/nano.git"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

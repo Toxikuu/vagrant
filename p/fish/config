@@ -1,0 +1,7 @@
+upstream = "fish-shell/fish-shell"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

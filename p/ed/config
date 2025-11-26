@@ -1,0 +1,4 @@
+upstream = "http://mirror.rit.edu/gnu/ed/?C=M&O=D"
+
+[[channels]]
+name = "release"

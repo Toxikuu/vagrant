@@ -1,0 +1,7 @@
+upstream = "tcsh-org/tcsh"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"

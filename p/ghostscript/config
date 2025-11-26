@@ -1,0 +1,5 @@
+upstream = "https://raw.githubusercontent.com/ArtifexSoftware/ghostpdl-downloads/refs/heads/master/README.md"
+
+[[channels]]
+name = "release"
+fetch = "cr | head -n1 | vrepo -3"

@@ -1,0 +1,7 @@
+[[channels]]
+name = "release"
+fetch = "gr | grep -v '^Release' | vtrim -e 's,-,.,g' | fl | vsort"
+expected = '''^1\.\d+\.\d+$'''
+
+[[channels]]
+name = "commit"
