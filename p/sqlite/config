@@ -1,4 +1,3 @@
-
 [[channels]]
 name = "release"
 fetch = "gr | vtrim -e 's,^ver?sion-?,,' | fsl | vsort"

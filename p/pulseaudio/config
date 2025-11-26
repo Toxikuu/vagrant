@@ -1,4 +1,3 @@
-
 [[channels]]
 name = "release"
 fetch = "defgitrelease | grep -vF 99 | fl"
