@@ -190,7 +190,6 @@ pub enum UpstreamType {
     Curl,
     Empty,
     Git,
-    GitHub,
 }
 
 impl UpstreamType {
@@ -203,38 +202,12 @@ impl UpstreamType {
             s if s.contains("C=M") && s.contains("O=D") => Self::Curl,
 
             // match github links or shortform
-            s if s.starts_with("https://github.com/") || s.split('/').count() == 2 => Self::GitHub,
+            s if s.starts_with("https://github.com/") || s.split('/').count() == 2 => Self::Git,
 
             "" => Self::Empty,
 
             // assume all else is git
             _ => Self::Git,
-        }
-    }
-
-    fn default_fetch_release(&self) -> String {
-        match self {
-            Self::Arch => String::from("archver"),
-            Self::Curl => String::from("defcurlrelease"),
-            Self::Empty => String::new(),
-            Self::Git | Self::GitHub => String::from("defgitrelease"),
-        }
-    }
-
-    fn default_fetch_unstable(&self) -> String {
-        match self {
-            Self::Arch => String::from("archver"),
-            Self::Curl => String::from("defcurlunstable"),
-            Self::Empty => String::new(),
-            Self::Git | Self::GitHub => String::from("defgitunstable"),
-        }
-    }
-
-    fn default_fetch_commit(&self) -> String {
-        match self {
-            Self::Arch | Self::Empty => String::new(),
-            Self::Curl => String::from("defcurlcommit"),
-            Self::Git | Self::GitHub => String::from("githead"),
         }
     }
 }
@@ -262,71 +235,42 @@ impl Package {
         self.config.channels.iter().find(|c| c.name == name)
     }
 
-    // pub fn get_channel_mut(&mut self, name: &str) -> Option<&mut PackageChannel> {
-    //     self.config.channels.iter_mut().find(|c| c.name == name)
-    // }
-
     pub fn set_defaults(&mut self) {
         if self.config.upstream.is_empty() {
             self.config.upstream = format!("{n}/{n}", n = self.name);
         }
 
-        if let Some(c) = self
-            .config
-            .channels
-            .iter_mut()
-            .find(|c| c.name == "release")
-            && c.enabled
-        {
-            if c.fetch.is_empty() {
-                let upstream = &c.upstream.as_ref().unwrap_or(&self.config.upstream);
-                let upstream_type = UpstreamType::from_str(upstream);
-                c.fetch = upstream_type.default_fetch_release();
-            }
+        for channel in &mut self.config.channels {
+            let upstream = channel.upstream.as_ref().unwrap_or(&self.config.upstream);
+            let ut = UpstreamType::from_str(upstream);
 
-            if c.expected.is_none() {
-                c.expected = Some(r"^[0-9]+(\.[0-9]+)*$".into());
-            }
-        }
+            if channel.fetch.is_empty() {
+                channel.fetch = match (ut, channel.name.as_str()) {
+                    (UpstreamType::Arch, "release") => "archver".into(),
 
-        if let Some(c) = self
-            .config
-            .channels
-            .iter_mut()
-            .find(|c| c.name == "unstable")
-            && c.enabled
-        {
-            if c.fetch.is_empty() {
-                let upstream = &c.upstream.as_ref().unwrap_or(&self.config.upstream);
-                let upstream_type = UpstreamType::from_str(upstream);
-                c.fetch = upstream_type.default_fetch_unstable();
-            }
+                    (UpstreamType::Curl, "release") => "defcurlrelease".into(),
+                    (UpstreamType::Curl, "unstable") => "defcurlunstable".into(),
+                    (UpstreamType::Curl, "commit") => "defcurlcommit".into(),
 
-            if c.expected.is_none() {
-                c.expected =
-                    Some(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$".into());
-            }
-        }
+                    (UpstreamType::Empty, _) => String::new(),
 
-        if let Some(c) = self.config.channels.iter_mut().find(|c| c.name == "commit")
-            && c.enabled
-        {
-            if c.fetch.is_empty() {
-                let upstream = &c.upstream.as_ref().unwrap_or(&self.config.upstream);
-                let upstream_type = UpstreamType::from_str(upstream);
+                    (UpstreamType::Git, "release") => "defgitrelease".into(),
+                    (UpstreamType::Git, "unstable") => "defgitunstable".into(),
+                    (UpstreamType::Git, "commit") => "defgitcommit".into(),
 
-                if matches!(
-                    upstream_type,
-                    UpstreamType::Curl | UpstreamType::Arch | UpstreamType::Empty
-                ) {
-                    c.enabled = false;
-                } else {
-                    c.fetch = upstream_type.default_fetch_commit();
+                    _ => panic!("Invalid config in {}: Missing fetch for {}", self.name, channel.name)
                 }
             }
 
-            if c.expected.is_none() {
-                c.expected = Some(r"^[0-9a-f]{40}$".into());
+            if channel.expected.is_none() {
+                channel.expected = match channel.name.as_str() {
+                    "release" => Some(r"^[0-9]+(\.[0-9]+)*$".into()),
+                    "unstable" => Some(r"^[0-9]+(\.[0-9]+)*-?(rc|alpha|beta|a|b|pre|dev)?[0-9]*$".into()),
+                    "commit" => Some(r"^[0-9a-f]{40}$".into()),
+                    n if n.parse::<u64>().is_ok() => Some(format!(r"^{n}(\.[0-9]+)*$")),
+
+                    _ => panic!("Invalid config in {}: Missing expected for {}", self.name, channel.name)
+                }
             }
         }
     }
