@@ -1,5 +1,8 @@
-upstream = "https://https.git.savannah.gnu.org/git/acl.git"
+upstream = "https://git.savannah.gnu.org/git/acl.git"
 chance = 0.25
 
 [[channels]]
 name = "release"
+
+[[channels]]
+name = "commit"
