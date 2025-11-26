@@ -1,3 +1,3 @@
 release	1.91.1
-nightly	2025-11-24
-commit	b64df9d1012f2482b54a4d959548cf8fc67e820c
+nightly	2025-11-26
+commit	80d8f292d82d735f83417221dd63b0dd2bbb8dd2

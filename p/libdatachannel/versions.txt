@@ -1,2 +1,2 @@
 release	0.24.0
-commit	8c31097ea78f051e857d0aa1b2f6efb26cd12b7e
+commit	2e4d6d86b1502252f8dfbb3c687a387e69c548c7
