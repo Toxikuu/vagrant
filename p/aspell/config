@@ -2,4 +2,3 @@ upstream = "http://mirror.rit.edu/gnu/aspell/?C=M&O=D"
 
 [[channels]]
 name = "release"
-fetch = '''ca | vsort'''
