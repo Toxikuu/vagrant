@@ -18,7 +18,8 @@ pub fn find_all() -> Result<Vec<Package>> {
 
     for entry in search_path.read_dir()?.flatten() {
         let path = entry.path();
-        if path.is_dir() {
+
+        if path.join("config").is_file() {
             let file_name = path
                 .file_name()
                 .wrap_err_with(|| format!("Invalid filename in {}", path.display()))?
