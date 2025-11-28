@@ -1,14 +1,14 @@
 [
   {
     "channel": "release",
-    "version": "10.19"
+    "version": "10.20"
   },
   {
     "channel": "unstable",
-    "version": "10.19"
+    "version": "10.20"
   },
   {
     "channel": "commit",
-    "version": "0dd6dffc79362ad41d84a7f22b5098f69dfa55f3"
+    "version": "4dfbf077cf708e4bbffa8e086d78d6652bbd69d8"
   }
 ]
