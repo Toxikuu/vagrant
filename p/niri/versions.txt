@@ -1,2 +1,2 @@
 release	25.08
-commit	54c7fdcd1adcfade596aca1070062f3f0fb5d4d0
+commit	0652342df8fffa93abcc5e567be1afb3eab002f6

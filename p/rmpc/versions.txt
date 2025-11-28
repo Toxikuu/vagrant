@@ -1,2 +1,2 @@
 release	0.10.0
-commit	3a0f82b0c3298ec8bfb8bceb06a2fbb4c51143dd
+commit	e3917850d944f99a6a35202e2d76345c992fc524

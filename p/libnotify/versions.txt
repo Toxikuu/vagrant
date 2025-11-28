@@ -1,0 +1,2 @@
+release	0.8.7
+commit	0e115f553a3a932cde162ae872324c840b6d808f

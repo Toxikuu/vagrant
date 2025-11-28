@@ -1,2 +1,2 @@
 release	6.17
-commit	69149c1883d67bcafcdee1d10b5c6ebbc51ff812
+commit	05fc34f6296f6f310f25d1e993fb6dae1243c379

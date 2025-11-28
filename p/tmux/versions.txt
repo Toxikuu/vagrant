@@ -1,2 +1,2 @@
-release	3.5a
-commit	f949f9a23a76de3fd8762382a33dcaefa39b607b
+release	3.6
+commit	e9afd2bb5efa385de70a273ee93022d365fdd5de
