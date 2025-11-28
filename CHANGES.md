@@ -7,6 +7,30 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.6.0 - 2025-11-28 17:10:36 -0600
+
+### Features
+
+ - **[!]** Rework commit script
+ - Add several packages
+ - Add several packages
+ - **[!]** Return to using git for _gitremote
+
+### Fixes
+
+ - Use defcurlrelease for aspell
+ - Normalize spaces to tabs in _gitremote
+ - Fix upstreams for inkscape and poppler
+
+### Chores
+
+ - Update dependencies
+
+### Docs
+
+ - Update todos
+
+
 ## 2.5.0 - 2025-11-25 21:44:28 -0600
 
 ### Features
