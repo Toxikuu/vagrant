@@ -1,3 +1,3 @@
 release	2.4.8
 unstable	2.5.14
-commit	32a3e5f83bbb8c6f21fcc11d28330e136fbe1785
+commit	674aa54242d121354b5edd066d6753194446cbd7
