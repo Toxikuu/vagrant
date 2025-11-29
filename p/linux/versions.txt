@@ -1,4 +1,4 @@
 release	6.17.9
 mainline	6.18-rc7
 next	next-20251128
-commit	e6640487845061255af9614ec0a192e4fafa486e
+commit	19eef1d98eeda3745df35839190b7d4a4adea656
