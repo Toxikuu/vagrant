@@ -1,2 +1,2 @@
-release	25.08
-commit	0652342df8fffa93abcc5e567be1afb3eab002f6
+release	25.11
+commit	b35bcae35b3f9665043c335e55ed5828af77db85
