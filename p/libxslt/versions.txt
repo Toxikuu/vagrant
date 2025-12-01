@@ -1,2 +1,2 @@
-release	1.1.44
-commit	243c60af41356da2a77c64c4ffbc3da4dcfa835e
+release	1.1.45
+commit	35323d6a15f6e63c9919ddbc0abe64c90a0dd88a
