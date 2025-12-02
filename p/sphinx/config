@@ -1,0 +1,7 @@
+upstream = "sphinx-doc/sphinx"
+
+[[channels]]
+name = "release"
+
+[[channels]]
+name = "commit"
