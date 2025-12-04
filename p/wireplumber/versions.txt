@@ -1,2 +1,2 @@
 release	0.5.12
-commit	ceed5dca7c19c287dd75c32e73cd4e99d9d88445
+commit	beded0214d6d0b199e069a6b54b7f57994937b16
