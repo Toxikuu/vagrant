@@ -1,2 +1,2 @@
 release	0.6.25
-commit	3729e461f98a2d79a017b7a6a5cfcb6398acdbff
+commit	619f4e5181c41c4ac3e0637059d377b7dc1aaa38
