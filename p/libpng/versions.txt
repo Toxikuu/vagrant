@@ -1,2 +1,2 @@
-release	1.6.51
-commit	62954d33fe729566e9d17b78ddaf013896a1f3c5
+release	1.6.52
+commit	0441becac5befce801b5c8503c4c467540e0d1e0
