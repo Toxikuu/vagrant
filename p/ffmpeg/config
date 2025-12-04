@@ -1,10 +1,34 @@
 [[channels]]
 name = "release"
-fetch = "gr | tolower | vtrim -e 's,^n,,' | vfs | vsort"
+fetch = "defgitrelease"
 
 [[channels]]
 name = "unstable"
-fetch = "gr | tolower | vtrim -e 's,^n,,' | vsort"
+fetch = "defgitunstable"
 
 [[channels]]
 name = "commit"
+
+[[channels]]
+name = "7"
+fetch = ''' defgitrelease | grep '^7\.' '''
+
+[[channels]]
+name = "6"
+fetch = ''' defgitrelease | grep '^6\.' '''
+
+[[channels]]
+name = "5"
+fetch = ''' defgitrelease | grep '^5\.' '''
+
+[[channels]]
+name = "4"
+fetch = ''' defgitrelease | grep '^4\.' '''
+
+[[channels]]
+name = "3"
+fetch = ''' defgitrelease | grep '^3\.' '''
+
+[[channels]]
+name = "2"
+fetch = ''' defgitrelease | grep '^2\.' '''
