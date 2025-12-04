@@ -1,2 +1,2 @@
-release	2.32.58
-commit	b5bd4c585f6e1a650b438cb8c843346560786896
+release	2.32.60
+commit	2ac889d4bc79b2ec3dcd70ad3a1be6cc5f0e70f9
