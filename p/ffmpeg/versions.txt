@@ -1,3 +1,9 @@
 release	8.0.1
 unstable	8.1-dev
-commit	9ed71a837b9416a7d1e28335fff3f4a43807addc
+commit	12e7d095b1ac11db7074a2886fc4bd2cd4ef7532
+7	7.1.3
+6	6.1.4
+5	5.1.8
+4	4.4.6
+3	3.4.14
+2	2.8.22
