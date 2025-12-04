@@ -1,2 +1,2 @@
-release	2.4.15
-commit	9241614cee7e9faaf04b015dd8fc517509988cac
+release	2.4.16
+commit	a101405bbf83daaed1976c6cf8158fbc9baa7b27
