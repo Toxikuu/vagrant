@@ -1,2 +1,2 @@
-release	3.11.0
-commit	ffefc0e7ed32a884bf1d5f8a7ceb341cc4ed3f2a
+release	3.12.0
+commit	43878680c994989f16637dc47be19bb8dc154985
