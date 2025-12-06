@@ -1,7 +1,9 @@
 # TODO
 
 - [ ] Make ERROR and WARN logs less ugly
-- [ ] Consider renaming to vat to avoid confusion with hashicorp's vagrant
+- [ ] Rename project to "vat"
+    - This avoids confusion with hashicorp's vagrant
+    - I also just prefer that name
 - [x] Add upstream as a field for release, unstable, and commit. If defined, the
   regular upstream field should fill out release, unstable, and commit's
   upstreams. This is just a clearer way to override upstreams.
@@ -37,3 +39,4 @@
     - ~~Probably add an `org` field to `Package` in the form "org/name"~~
 - [ ] Support chances at the channel level
 - [x] Ensure curl doesn't write incomplete files
+- [ ] Fix commit script behavior for newly added channels
