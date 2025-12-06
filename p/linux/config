@@ -7,7 +7,7 @@ fetch = "ca | vsort | vfs"
 [[channels]]
 name = "mainline"
 fetch = "ca | vsort"
-expected = '''^\d\.\d+-rc\d+$'''
+expected = '''^\d\.\d+(-rc\d+)?$'''
 
 [[channels]]
 name = "next"
