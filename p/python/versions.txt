@@ -1,3 +1,3 @@
-release	3.14.1
+release	3.14.2
 unstable	3.15.0a2
-commit	b3bf2128989e550a7a02acbaa47389023b2c6bc9
+commit	eba449a1989265a923174142dd67dee074f90967
