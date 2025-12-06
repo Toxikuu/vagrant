@@ -1,18 +1,18 @@
 [
   {
     "channel": "release",
-    "version": "6.17.9"
+    "version": "6.18"
   },
   {
     "channel": "mainline",
-    "version": "6.18-rc7"
+    "version": "6.18"
   },
   {
     "channel": "next",
-    "version": "next-20251128"
+    "version": "next-20251205"
   },
   {
     "channel": "commit",
-    "version": "6bda50f4333fa61c07f04f790fdd4e2c9f4ca610"
+    "version": "416f99c3b16f582a3fc6d64a1f77f39d94b76de5"
   }
 ]
