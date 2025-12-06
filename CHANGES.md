@@ -7,6 +7,27 @@
 > Major ones are prefixed with **[!!]**.
 
 
+## 2.6.1 - 2025-12-05 23:06:03 -0600
+
+### Features
+
+ - Revise ffmpeg
+ - Add a couple packages
+
+### Fixes
+
+ - Use porcelain for git status in release script
+ - Mainline linux releases aren't always release candidates
+
+### Chores
+
+ - Update dependencies
+
+### Docs
+
+ - Update todos
+
+
 ## 2.6.0 - 2025-11-28 17:10:36 -0600
 
 ### Features
