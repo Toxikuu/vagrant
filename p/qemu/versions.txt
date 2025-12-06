@@ -1,2 +1,2 @@
-release	10.1.2
-commit	1053bb627cf564e8b81ad0ef0dcc0fad9ff76de5
+release	10.1.3
+commit	2257f52a97f28ce3be4366817ea8817ad866562b
