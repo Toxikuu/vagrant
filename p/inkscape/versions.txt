@@ -1,2 +1,2 @@
 release	1.4.2
-commit	26aa5983fa1b0ecbfccafd170d27a425260825ff
+commit	6392134a9e6e7a85c3bdff9d0b313c860cb093f7
