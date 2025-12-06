@@ -1,2 +1,2 @@
-release	3.6
-commit	1a3db6b65e384c67f31a27c21757b737f4fe35cd
+release	3.6a
+commit	ef0a7e328c8c407d1a368e326536cf79d8258a09
