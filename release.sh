@@ -13,7 +13,7 @@ die() {
 }
 
 # Checks
-[[ -z "$(git status -s)" ]] || die "Uncommitted changes"
+[[ -z "$(git status --porcelain=v1)" ]] || die "Uncommitted changes"
 make check || die "Failed checks"
 make || die "Build failed"
 
